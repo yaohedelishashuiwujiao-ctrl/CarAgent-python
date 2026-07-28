@@ -1,62 +1,233 @@
-# 17-错误恢复和 Fallback
+# 17-错误恢复、Fallback 和 Contract
 
 ## 这一层解决什么问题
 
-真实 Agent 不可能每次都一次成功。错误恢复和 Fallback 让系统在工具无数据、权限边界、能力不匹配、依赖异常或 contract 未满足时，能换路径继续，而不是立刻失败。
+真实 Agent 不可能每次都一次成功。它可能遇到：
+
+- RAG 没检索到
+- SQL 查不到数据
+- SQL 被数据权限拒绝
+- WebSearch 网络失败
+- 工具能力不匹配
+- 依赖服务不健康
+- 模型想提前结束，但用户要求的 PPT/图表/结构化输出还没生成
+
+如果没有错误恢复，Agent 就会变成一条脆弱的单链路：首选工具失败，任务就失败；或者模型反复调用同一个失败工具，直到超时。
+
+这一章要讲清楚两个概念：
+
+1. **Fallback**：首选路径不够时，展开备用工具或换路径。
+2. **Contract**：Runtime 对“任务是否真的完成”的硬判断，不是模型说完成就完成。
+
+## Contract 到底是什么
+
+这里的 contract 不是法律合同，也不是普通 prompt 约束。它是 Runtime 维护的一组**任务完成条件**。
+
+源码在：
+
+- `agent_runtime/src/tool_system/task_contract.py`
+- `agent_runtime/src/tool_system/agent_loop.py`
+
+核心结构是：
+
+```text
+TaskRequirementState
+  output_contract: OutputContract
+  requirements: dict[str, Requirement]
+```
+
+其中 `OutputContract` 表示用户明确要求的输出形态：
+
+```text
+required_artifacts: pptx / chart
+structured_json_required: true / false
+```
+
+如果用户说：
+
+```text
+生成 6 页 PPT
+```
+
+Runtime 会生成 requirement：
+
+```text
+artifact:pptx
+description = Generate a valid pptx artifact with exactly 6 slides.
+status = open
+```
+
+如果用户说：
+
+```text
+输出结构化 JSON
+```
+
+Runtime 会生成：
+
+```text
+output:structured_json
+```
+
+如果是事实问答类任务，路由配置还会追加 evidence requirement，例如需要 SQL、knowledge 或 web evidence。
+
+## 为什么必须有 Contract
+
+没有 contract 时，模型很容易“嘴上完成”：
+
+```text
+用户：生成一份 PPT
+模型：好的，PPT 已生成，内容如下……
+```
+
+但实际没有文件。
+
+或者：
+
+```text
+用户：给我一份带引用的手册依据
+模型：根据资料可以得出……
+```
+
+但没有任何 citation。
+
+所以 Runtime 必须把“完成”变成可检查的状态：
+
+| 用户要求 | Runtime 检查 |
+|---|---|
+| 生成 PPT | 是否真的有 pptx 文件，且非空、可打开、页数正确 |
+| 生成图表 | 是否真的有 chart 文件 |
+| 结构化 JSON | 是否通过 StructuredOutput |
+| 事实回答 | 是否有满足类型和数量的 evidence |
+| 多步骤计划 | TodoWrite 计划是否完成或被明确修订 |
+
+这就是 contract 的意义：**防止模型把未完成任务说成完成。**
 
 ## 最小模式
 
 ```mermaid
 flowchart TD
-    PRIMARY[Primary tools] --> RESULT[ToolResult]
-    RESULT --> BAD{无数据/能力不匹配/权限/依赖问题?}
-    BAD -- no --> CONTINUE[继续当前路径]
-    BAD -- yes --> FALLBACK[扩展 fallback tools]
-    FALLBACK --> LLM[模型重新选择动作]
-    LLM --> CONTRACT{contract 满足?}
-    CONTRACT -- yes --> FINAL[最终回答]
-    CONTRACT -- no --> REMIND[contract reminder / completion recovery]
-    REMIND --> LLM
+    U[用户请求] --> C[TaskRequirementState.from_user_request]
+    C --> OC[OutputContract<br/>PPT/Chart/JSON]
+    C --> ER[Evidence Requirement<br/>SQL/RAG/Web]
+    OC --> LOOP[Agent Loop]
+    ER --> LOOP
+
+    LOOP --> LLM[模型调用]
+    LLM --> D{有 tool_use?}
+
+    D -- 有 --> TOOL[执行工具]
+    TOOL --> TR[ToolResult]
+    TR --> UP1[update_from_tool_result]
+    TR --> EV[register_evidence]
+    EV --> UP2[update_from_evidence]
+    UP1 --> LOOP
+    UP2 --> LOOP
+
+    D -- 没有 --> SAT{requirement_state.is_satisfied?}
+    SAT -- 是 --> FINAL[允许最终回答]
+    SAT -- 否 --> REMIND[contract reminder<br/>不要结束，继续完成]
+    REMIND --> LOOP
 ```
 
-## 加上这一层后 Loop 怎么变化
+## Fallback 和 Contract 的关系
 
-没有 Fallback：
+Fallback 解决的是：
 
 ```text
-首选工具失败 -> 任务失败
+当前路径不够，换工具或换证据来源
 ```
 
-有 Fallback：
+Contract 解决的是：
 
 ```text
-首选工具失败 -> 暴露备用工具 -> 模型换路
-contract 未满足 -> reminder / completion recovery
+换了路径之后，任务到底有没有完成
 ```
 
-## 我们项目里的真实源码
+两者经常一起出现：
 
-核心文件：
+```text
+模型尝试直接回答
+-> Runtime 发现 contract 未满足
+-> discovery_stage 从 primary 切到 fallback
+-> 给模型 contract reminder
+-> 模型改用 fallback tools
+-> 工具结果回来后更新 requirement
+-> contract 满足后才能 final
+```
 
-- `agent_runtime/src/tool_system/agent_loop.py`
-- `agent_runtime/src/routing_decision.py`
-- `agent_runtime/src/tool_system/run_state.py`
-- `agent_runtime/src/tool_system/run_budget.py`
+源码位置在 `agent_loop.py`：
 
-相关变量：
+```text
+if not tool_uses:
+    if not requirement_state.is_satisfied:
+        if discovery_stage == "primary" and route_policy.fallback_tools:
+            discovery_stage = "fallback"
+            discovery_expansion_reasons.append("output_contract_unmet")
+        contract_reminder_count += 1
+        reminder = requirement_state.reminder()
+        ...
+        continue
+```
 
-- `discovery_stage`
-- `discovery_expansion_reasons`
-- `preferred_tools`
-- `fallback_tools`
-- `contract_reminder_count`
-- `completion_recovery`
-- `disabled_tool_names`
-- `force_synthesis_reason`
+这段逻辑的意思是：**模型没有继续调工具，并不等于可以结束；Runtime 先检查 contract。**
 
-## 关键参数 / 数据结构
+## Contract 如何被更新
 
-会触发 fallback 的典型状态：
+### 1. 工具结果更新产物要求
+
+源码：
+
+```text
+TaskRequirementState.update_from_tool_result()
+```
+
+如果工具是 `AutoPptxGenerate`，Runtime 会检查：
+
+- output 里是否有 `file_path`
+- 路径是否在允许 workspace 内
+- 文件是否存在
+- 文件是否非空
+- 文件是否能作为 zip/pptx 打开
+- slide 数是否满足用户要求
+- 如果要求每页表格/来源，slide_manifest 是否可验证
+
+只有全部通过，`artifact:pptx` 才会变成：
+
+```text
+status = satisfied
+```
+
+### 2. Evidence 更新事实要求
+
+源码：
+
+```text
+TaskRequirementState.update_from_evidence(citations)
+```
+
+如果某个 requirement 要求：
+
+```text
+evidence_kinds = ("knowledge", "web_fetch")
+minimum_evidence_count = 1
+```
+
+那么当 `register_evidence()` 注册出对应类型 citation 后，这个 requirement 才会 satisfied。
+
+### 3. TodoWrite 更新计划完成要求
+
+源码：
+
+```text
+update_plan_completion(has_plan=True, plan_complete=...)
+```
+
+如果复杂任务用了 TodoWrite，Runtime 会要求模型不要留下 pending/in_progress step 就结束。
+
+## Fallback 什么时候触发
+
+典型触发条件：
 
 ```text
 NO_DATA
@@ -67,46 +238,135 @@ PERMISSION_DENIED
 output_contract_unmet
 ```
 
-RouteDecision 中每个 route 都有：
+源码中，工具结果如果属于这些状态，并且当前还在 primary 阶段，就会：
 
-| 字段 | 说明 |
-|---|---|
-| `preferred_tools` | 第一阶段优先工具 |
-| `fallback_tools` | 边界或失败后展开的备用工具 |
-| `tool_profile` | 工具 profile |
-| `expected_evidence_kinds` | 期望证据类型 |
+```text
+discovery_stage = "fallback"
+discovery_expansion_reasons.append(...)
+audit event = tool_discovery_expanded
+```
+
+这不是让模型乱用工具，而是把 route 中预定义的 `fallback_tools` 加入候选集。
+
+## 举例 1：RAG 没检索到
+
+用户问：
+
+```text
+遥控泊车有哪些注意事项？
+```
+
+路由：
+
+```text
+manual_qa
+preferred_tools = KnowledgeSearch, KnowledgeFetch
+fallback_tools = SubjectsSqlSchema, SubjectsSqlQuery, WebSearch, WebFetch, StructuredOutput, SendUserMessage
+```
+
+如果 `KnowledgeSearch` 返回 `NO_DATA` 或 `DATA_COVERAGE_INSUFFICIENT`：
+
+```text
+primary 工具不足
+-> discovery_stage = fallback
+-> 模型可选择 WebFetch 或说明知识库覆盖边界
+```
+
+注意：这时 final 不是必须失败。因为手册问答没有硬性产物 contract，如果已有证据足够，可以合成答案；证据不足则必须说明边界。
+
+## 举例 2：用户要求 PPT，但模型只回答文字
+
+用户：
+
+```text
+生成 6 页悬架系统调研 PPT
+```
+
+Runtime 生成：
+
+```text
+artifact:pptx open
+```
+
+如果模型没有调用 `AutoPptxGenerate`，而是直接输出：
+
+```text
+我已经为你整理了 6 页内容……
+```
+
+Agent Loop 会检查：
+
+```text
+requirement_state.is_satisfied == False
+output_contract.required == True
+```
+
+然后：
+
+```text
+不允许 final
+发送 reminder
+如果没有 eligible tool，则 finalize_blocked
+```
+
+这就是 contract 的硬约束。
+
+## 举例 3：资料覆盖不足但仍要交付 PPT
+
+源码里还有一个特殊恢复路径：
+
+```text
+coverage_insufficient_results >= 4
+and requirement_state.output_contract.required
+-> try_generate_coverage_limited_pptx()
+```
+
+意思是：如果用户要 PPT，系统反复发现资料覆盖不足，不能无限空转，也不能编造。可以生成“资料覆盖受限版”PPT，并在每页或说明中标注缺口。
+
+这比“失败”更好，也比“瞎编完整报告”安全。
 
 ## 面试官可能怎么问
 
-### 问：如果 RAG 没检索到怎么办？
+### 问：你刚才说 contract，这个 contract 到底是什么？
 
 30 秒回答：
 
-> 如果 KnowledgeSearch 返回 no_data 或 coverage insufficient，Runtime 不会直接失败，而是把结果作为 observation 交给模型，并可能从 primary 阶段扩展到 fallback 工具，例如 SQL、WebFetch 或 StructuredOutput，具体取决于 route。
+> Contract 是 Runtime 维护的任务完成条件。比如用户要 PPT，就生成 `artifact:pptx` requirement；用户要结构化 JSON，就生成 `output:structured_json`；事实问答会有 evidence requirement。模型停止调用工具不代表完成，Runtime 必须检查这些 requirement 是否 satisfied。
 
 2 分钟展开：
 
-> 比如 manual_qa 路由优先走 KnowledgeSearch/KnowledgeFetch。如果知识库覆盖不足，会暴露 fallback 工具。模型可以选择 WebFetch 查允许来源，或者基于已有证据说明边界。对于必须生成产物的任务，如果 contract 未满足，Runtime 会提醒模型继续完成，而不是接受一段文字。
+> 它解决的是模型“嘴上完成”的问题。比如 PPT 必须真的有 pptx 文件，且文件存在、非空、能打开、页数符合要求；图表必须有真实 chart 文件；事实回答必须有 citation evidence。只有这些条件满足，Agent Loop 才允许 final。否则会给模型 contract reminder，让它继续调用工具或说明边界。
 
 源码级追问：
 
-> Agent Loop 中当 result.outcome_status 属于 NO_DATA、CAPABILITY_MISMATCH、DATA_COVERAGE_INSUFFICIENT、DEPENDENCY_UNHEALTHY、PERMISSION_DENIED 时，会把 `discovery_stage` 从 primary 切到 fallback，并记录 `tool_discovery_expanded` audit event。
+> 代码在 `task_contract.py`。`OutputContract.from_user_request()` 从用户文本里识别 PPT、Chart、JSON；`TaskRequirementState.update_from_tool_result()` 校验工具产物；`update_from_evidence()` 根据 citations 满足证据要求；`agent_loop.py` 在 `not tool_uses` 分支检查 `requirement_state.is_satisfied`。
 
-### 问：Fallback 会不会让模型乱用工具？
+### 问：Fallback 和 Contract 有什么区别？
 
 30 秒回答：
 
-> 不会。Fallback 只是扩展候选集，工具仍然要经过 allowed_tools、preflight、权限和资源池策略。
+> Fallback 是换路径，Contract 是验收标准。Fallback 解决“当前工具不够用”；Contract 判断“任务是否真的完成”。换了工具以后，也必须满足 contract 才能结束。
 
-## 如果继续追问到细节
+### 问：如果没有工具能满足 contract 怎么办？
 
-可以说：
+30 秒回答：
 
-- `completion_recovery` 用于模型试图提前结束但 contract 未满足的场景。
-- provider 支持 tool_choice 时，可以强制指定工具或 required。
-- Ark Responses 当前不强制 tool_choice，Runtime 用候选集收窄和提示约束。
+> 如果 output contract required，但没有 eligible tool，Runtime 不能假装成功，会 `finalize_blocked`，说明具体边界。对于覆盖不足的 PPT 场景，可以生成覆盖受限版，但必须标注资料缺口。
+
+### 问：Contract 会不会太死，导致模型不能灵活回答？
+
+30 秒回答：
+
+> Contract 只约束硬需求，比如文件、结构化输出和证据。普通问答没有显式产物要求时，不会强制产物 contract；但事实回答仍要尽量走 evidence 和 citation。
+
+## 容易踩坑
+
+- 不要把 contract 说成 prompt 里的建议。它是 Runtime-enforced 状态。
+- 不要说 fallback 等于降级。这里 fallback 是扩大备用工具或换证据来源，不是降低质量。
+- 不要说“模型判断完成”。真实逻辑是模型尝试完成，Runtime 做 gate。
+- 不要把 coverage-limited PPT 说成编造兜底，它必须明确资料覆盖边界。
 
 ## 本层小结
 
-错误恢复和 Fallback 让 Agent 从“单链路失败”变成“有边界的多路径执行”。
+这一章真正要讲的是：Agent 的恢复能力不只是“失败后换工具”，还包括“换工具后仍然要验收”。Fallback 给 Agent 多条路，Contract 保证它不能把没完成的任务说成完成。
 
