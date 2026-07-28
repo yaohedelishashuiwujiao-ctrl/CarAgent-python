@@ -6,6 +6,20 @@
 
 所以我们项目里的 system prompt 是动态组装的。它不是孤立的 prompt 工程，而是 Agent Harness 的一部分。
 
+这里不要把它理解成“写一个更长的 prompt”。动态 system prompt 的工程目标是把 Runtime 状态翻译成模型能理解的操作边界。
+
+如果所有任务都用固定 prompt，会有几个问题：
+
+| 问题 | 后果 |
+|---|---|
+| 简单查询也看到大量无关规则 | token 浪费，模型注意力分散 |
+| 模型不知道当前 route | 可能用错工具，比如参数题先查 RAG |
+| 模型不知道 contract | 可能用户要 PPT 但只返回文字 |
+| 模型不知道 citation 规则 | 可能编造引用 |
+| 模型不知道 fallback 工具 | primary 失败后不知道换路 |
+
+动态 Prompt 的本质是：每轮模型调用前，Runtime 把当前任务策略、证据要求、工具边界和完成条件注入进去。
+
 ## 最小模式
 
 ```mermaid
@@ -43,6 +57,18 @@ style prompt
 ```
 
 这样模型不是凭空决定工具，而是在 Runtime 给出的边界内决策。
+
+所以它不是 prompt hack，而是控制面的一部分：
+
+```text
+RouteDecision 决定策略
+RequirementState 决定完成条件
+ToolRegistry 决定可见工具
+RunState 决定当前进展摘要
+System Prompt 把这些状态翻译给模型
+```
+
+模型仍然负责推理，但推理发生在 Runtime 给出的工程边界内。
 
 ## 我们项目里的真实源码
 
@@ -173,4 +199,3 @@ tool_profile
 ## 本层小结
 
 System Prompt 动态组装是 Agent Harness 的“策略注入层”。它把路由、证据、执行规则和完成条件交给模型，但最终执行和校验仍由 Runtime 负责。
-

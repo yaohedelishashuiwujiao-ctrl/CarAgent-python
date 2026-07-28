@@ -6,6 +6,21 @@
 
 TaskRequirementState 解决的是“什么才算完成”。
 
+这是 Agent 工程里非常核心的一层：把自然语言目标变成可检查的完成条件。
+
+用户说“帮我做一个 6 页 PPT”，模型可能理解成“给你 6 页内容大纲”。但系统真正要交付的是一个可打开的 `.pptx` 文件。用户说“对比车型参数”，模型可能直接凭经验回答，但系统应该要求结构化数据或可追溯证据。
+
+TaskRequirementState 做的就是这件事：
+
+```text
+从用户请求中抽取硬需求
+在工具结果、证据和产物生成后更新状态
+模型想结束时检查 is_satisfied
+不满足就把 reminder 放回上下文
+```
+
+它让“完成”不再是模型主观说了算。
+
 ## 最小模式
 
 ```mermaid
@@ -35,6 +50,15 @@ flowchart TD
 未满足则返回 contract reminder
 满足才 finalize
 ```
+
+这一层和 RunState 的区别：
+
+| 模块 | 问题 |
+|---|---|
+| RunState | 过程有没有进展 |
+| TaskRequirementState | 最终要求有没有满足 |
+
+过程有进展不代表最终完成。比如已经查到资料，但还没生成 PPT；或者已经生成图表，但缺 citation。RequirementState 管的是最终验收。
 
 ## 我们项目里的真实源码
 
@@ -98,4 +122,3 @@ Requirement 可能包括：
 ## 本层小结
 
 TaskRequirementState 是 Agent 从 demo 走向生产的关键：最终答案必须满足任务契约，而不是只看模型是否停止。
-

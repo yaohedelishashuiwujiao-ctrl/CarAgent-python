@@ -6,6 +6,19 @@ Agent Loop 会不断追加工具调用和工具结果。RAG chunk、SQL rows、W
 
 Context Compact 解决的是：在不破坏工具调用配对关系的前提下，把旧工具结果外置、压缩或裁剪。
 
+这里最重要的不是“省 token”，而是“在省 token 的同时不破坏 Agent transcript”。
+
+工具调用消息和工具结果消息有配对关系。如果随便截断，会出现：
+
+| 错误压缩方式 | 后果 |
+|---|---|
+| 删除 tool_use 但保留 tool_result | provider 可能拒绝请求 |
+| 删除 citation 对应原文 | 最终答案无法追溯 |
+| 删除最近 observation | 模型忘记刚刚发生什么 |
+| 只按字符长度裁剪 | 破坏 JSON、工具块或多轮语义 |
+
+所以 Context Compact 要按原子单元处理，而不是简单 `messages[-N:]`。
+
 ## 最小模式
 
 ```mermaid
@@ -37,6 +50,16 @@ flowchart TD
 超过 hard 阈值按原子单元裁剪
 保留 citation ids、关键数值和任务摘要
 ```
+
+这是一种分层压缩策略：
+
+```text
+soft 阈值：尽量外置旧工具结果，保留结构
+hard 阈值：再按原子消息单元裁剪
+最后插入 snapshot：告诉模型哪些内容被压缩
+```
+
+这样既控制成本，也尽量保留任务连续性。
 
 ## 我们项目里的真实源码
 
@@ -164,4 +187,3 @@ constraints
 ## 本层小结
 
 Context Compact 让长任务能继续跑，但它不是魔法。它通过外置、原子裁剪和快照，在成本、格式正确性和信息保留之间做工程折中。
-

@@ -6,6 +6,22 @@ Tool Use 让模型不只是生成文本，而是可以调用外部能力。
 
 在我们项目中，RAG、SQL、WebFetch、图表、PPT 都是工具。模型不直接访问数据库或向量库，而是输出结构化的 tool_use，Runtime 负责执行。
 
+这里的工程重点不是“模型能调函数”，而是把不确定的自然语言意图，转换成 Runtime 可以校验和执行的结构化动作。
+
+普通 RAG 是固定链路：
+
+```text
+query -> retrieve -> prompt -> answer
+```
+
+Tool Use 之后变成：
+
+```text
+模型根据当前任务和 observation，决定下一步需不需要检索、查 SQL、取全文、生成图表或生成 PPT
+```
+
+这个变化让系统适合复杂任务，但也引入新风险：模型可能选错工具、参数写错、重复调用、越权调用，或者在没有证据时提前回答。所以 Tool Use 后面必须继续叠加 Registry、Preflight、Scheduler、State 和 Contract。
+
 ## 最小模式
 
 ```mermaid
@@ -35,6 +51,16 @@ Runtime 校验并执行
 工具结果变成 observation
 LLM 基于 observation 继续推理
 ```
+
+这一步有一个容易忽略的算法含义：tool_result 不是给用户看的最终答案，而是下一轮模型推理的 observation。
+
+也就是说，Agent Loop 不是一次性流程，而是：
+
+```text
+思考 -> 行动 -> 观察 -> 再思考
+```
+
+每次 observation 都会改变下一轮决策空间。这也是 Agentic RAG 和普通 RAG Chain 最大的区别之一。
 
 ## 我们项目里的真实源码
 
@@ -111,4 +137,3 @@ provider 兼容：
 ## 本层小结
 
 Tool Use 是 Agent 从“会说”变成“能行动”的关键。RAG 在我们项目里就是 Tool Use 的一种。
-

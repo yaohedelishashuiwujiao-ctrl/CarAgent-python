@@ -6,6 +6,21 @@ Agent 最大的问题之一是黑盒：模型为什么选这个工具？为什�
 
 我们项目用 audit events、job events、final metadata、trace id 和持久化快照，把 Agent 执行过程拆开记录。它不是完整的插件式 Hook Bus，但足够支撑排查、评测和面试讲解。
 
+可观测性不是“方便看日志”这么简单。对 Agent 系统来说，它决定你能不能把一次失败从黑盒还原成可分析链路。
+
+比如用户说“为什么没生成 PPT”，你不能只回答“模型没做好”。你要能追到：
+
+```text
+路由是不是 artifact_generation
+有没有暴露 AutoPptxGenerate
+模型有没有调用工具
+工具有没有执行成功
+OutputContract 有没有满足
+失败原因是无数据、依赖异常，还是产物校验失败
+```
+
+Audit Events 就是把这些节点结构化记录下来。
+
 ## 最小模式
 
 ```mermaid
@@ -40,6 +55,10 @@ Agent 失败 -> 只能看到最终一句话或错误
 Agent 每个关键节点 -> 记录结构化事件
 最终 metadata -> 可回放工具、状态、失败原因、候选集变化
 ```
+
+这也是评测和优化的基础。
+
+没有 audit，只能看最终答案好不好；有 audit，才能知道问题出在检索、路由、工具选择、并发调度、citation 还是 contract。
 
 ## 我们项目里的真实源码
 
@@ -156,4 +175,3 @@ termination_reason
 ## 本层小结
 
 Audit Events 让 Agent 从黑盒变成可解释执行过程。面试时这是生产化能力的关键证据。
-

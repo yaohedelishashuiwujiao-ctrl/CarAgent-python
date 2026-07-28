@@ -6,6 +6,24 @@ Agent 任务可能要跑几十秒甚至更久。用户不能只看一个 loading
 
 SSE 流式事件返回解决的是：后端如何把异步 Agent Job 的过程推给前端，并支持断线续传。
 
+这层的工程意义不只是“实时显示”。它让长任务从黑盒等待变成可解释过程。
+
+Agent 运行中会发生很多中间状态：
+
+```text
+queued
+running
+model_turn
+tool_use
+tool_result
+contract_reminder
+fallback
+final
+error
+```
+
+如果前端只轮询最终 status，用户不知道系统是在检索、生成 PPT、等待工具，还是已经失败。SSE 把这些中间事件流式推给前端，改善体验，也方便调试。
+
 ## 最小模式
 
 ```mermaid
@@ -36,6 +54,16 @@ flowchart TD
 前端能展示 running/tool_use/tool_result/final/error
 断线后用 Last-Event-ID 续传
 ```
+
+为什么用 SSE 而不是简单轮询？
+
+| 方案 | 问题 |
+|---|---|
+| 轮询 status | 粒度粗，延迟高，工具过程不可见 |
+| WebSocket | 双向能力强，但连接管理更复杂 |
+| SSE | 单向事件流足够，浏览器原生支持，适合 job 事件推送 |
+
+这里前端主要是接收后端事件，不需要高频双向通信，所以 SSE 是更轻的选择。
 
 ## 我们项目里的真实源码
 
@@ -145,4 +173,3 @@ Last-Event-ID: 12
 ## 本层小结
 
 SSE 是前端体验和任务可恢复性的关键。它把后端异步 job 的内部进度变成用户可见的事件流。
-

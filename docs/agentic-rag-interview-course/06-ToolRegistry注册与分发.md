@@ -6,6 +6,25 @@ ToolRegistry 解决“工具越来越多后，Agent Loop 不能写一堆 if-else
 
 主循环不应该关心每个工具怎么执行，它只需要把 `ToolCall` 交给注册表。
 
+从工程角度看，ToolRegistry 解决的是能力扩展问题。
+
+如果没有注册表，每新增一个工具，就要在 Agent Loop 里加分支。工具多了以后，主循环会变成业务逻辑堆叠：
+
+```text
+if KnowledgeSearch
+elif SQLQuery
+elif WebFetch
+elif AutoPptxGenerate
+...
+```
+
+这会导致两个后果：
+
+- Agent Loop 随工具增长越来越难维护。
+- 工具的权限、超时、并发、结果标准化散落在不同分支里。
+
+ToolRegistry 的设计是把“循环”和“能力”解耦：Loop 只懂协议，Registry 负责找到能力并执行。
+
 ## 最小模式
 
 ```mermaid
@@ -35,6 +54,16 @@ result = tool_registry.dispatch(call, tool_context)
 ```
 
 这样主循环保持稳定，工具能力可以扩展。
+
+这也是 Agent Harness 的核心设计原则之一：
+
+```text
+Loop 尽量稳定
+能力通过注册扩展
+控制策略通过 policy 注入
+```
+
+所以新增工具不是改主循环，而是新增一个符合协议的能力单元。
 
 ## 我们项目里的真实源码
 
@@ -106,4 +135,3 @@ StructuredOutput
 ## 本层小结
 
 ToolRegistry 是工具系统的分发中心，它让 Agent Loop 保持一个稳定循环，而不是随着工具数量增长变成硬编码流程。
-

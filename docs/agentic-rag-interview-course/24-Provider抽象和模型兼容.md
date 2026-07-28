@@ -6,6 +6,28 @@
 
 Agent Loop 如果直接依赖某个厂商格式，后续换模型会很痛苦。所以项目做了 Provider 抽象，把不同模型统一成 `ChatResponse`。
 
+Provider 抽象解决的是模型接口差异对 Agent Loop 的污染问题。
+
+Agent Loop 真正关心的只有四件事：
+
+```text
+模型文本输出是什么
+有没有 tool_use
+token usage 是多少
+finish_reason 是什么
+```
+
+但不同厂商在这些事情上的表达完全不同。如果让主循环直接处理厂商格式，后果是：
+
+| 问题 | 后果 |
+|---|---|
+| tool call 格式散落在主循环 | 换模型容易改坏 Agent Loop |
+| usage 字段不统一 | 成本统计和 RunBudget 不稳定 |
+| streaming 事件格式不统一 | 前端事件和审计难统一 |
+| 强制 tool_choice 能力不同 | 路由策略无法通用 |
+
+Provider 层就是把这些差异收敛到边界上。
+
 ## 最小模式
 
 ```mermaid
@@ -35,6 +57,15 @@ Agent Loop 只调用 provider.chat(...)
 Provider 负责格式转换
 返回统一 ChatResponse
 ```
+
+这样做的算法工程意义是：Agent Loop 的状态机保持稳定，模型厂商只是执行后端。
+
+```text
+Agent Loop 不关心 Ark/OpenAI/GLM 怎么表示 tool call
+Agent Loop 只关心统一的 response.tool_uses
+```
+
+这让模型路由、成本控制、工具调度、citation 和 contract 不需要跟着模型厂商一起重写。
 
 ## 我们项目里的真实源码
 
@@ -195,4 +226,3 @@ MINIMAX_API_KEY
 ## 本层小结
 
 Provider 抽象让 Agent Loop 稳定，模型厂商差异被封装在适配层。面试时这是工程成熟度的体现。
-

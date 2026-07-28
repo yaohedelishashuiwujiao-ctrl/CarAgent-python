@@ -6,6 +6,27 @@
 
 ToolResult 协议把这些情况结构化，让 Agent Loop 可以做正确决策。
 
+这层的工程意义很大：Agent 的恢复能力不是来自模型“更努力想一想”，而是来自 Runtime 能看懂工具到底发生了什么。
+
+如果工具只返回字符串：
+
+```text
+"error: no rows found"
+```
+
+模型可能不知道这是无数据、权限不足、SQL 写错，还是数据源挂了。它很容易重复调用同一个工具。
+
+ToolResult 把结果变成机器可读状态：
+
+```text
+no_data -> 可以换 query、换工具或给边界回答
+permission_denied -> 不能重试，应提示权限边界
+dependency_unhealthy -> 不该继续依赖这个工具
+data_coverage_insufficient -> 可以 fallback 或生成 coverage-limited 产物
+```
+
+所以 ToolResult 是 Agent Loop 的观察协议，也是后续熔断、fallback、citation 和 contract 的基础。
+
 ## 最小模式
 
 ```mermaid
@@ -31,6 +52,15 @@ flowchart LR
 ```text
 工具失败 -> Runtime 知道失败类型 -> 禁用/重试/fallback/提醒模型换工具
 ```
+
+注意：ToolResult 的接收者有两个。
+
+| 接收者 | 看什么 |
+|---|---|
+| 模型 | 看到 observation，决定下一步怎么推理 |
+| Runtime | 读取 outcome_status/reason_code，更新状态、预算、证据和失败路径 |
+
+这就是为什么它不能只是给模型的一段文本。
 
 ## 我们项目里的真实源码
 
@@ -116,4 +146,3 @@ cancelled
 ## 本层小结
 
 ToolResult 是 Agent Harness 的观察协议。没有标准化 observation，就没有可靠的恢复、调度和证据闭环。
-

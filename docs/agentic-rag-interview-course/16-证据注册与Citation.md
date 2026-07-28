@@ -6,6 +6,19 @@ RAG/SQL/Web 工具返回的信息如果不进入证据系统，模型最后可�
 
 证据注册与 Citation 让最终答案可追溯。
 
+这层不是简单“在答案后面加引用”。它解决的是事实回答的归因问题。
+
+在 Agentic RAG 里，证据来源不止 RAG：
+
+| 来源 | 例子 |
+|---|---|
+| SQL | 车型参数、统计结果、结构化配置 |
+| RAG | 用户手册、论文、维修资料 chunk |
+| WebFetch | 网页内容 |
+| Tool artifact | 图表、PPT、导出的中间结果 |
+
+如果不统一注册证据，模型最后很可能把 SQL 数值、RAG 文本和自己推理混在一起。Citation 系统把工具结果先登记成证据，再要求最终答案引用已登记的 citation id。
+
 ## 最小模式
 
 ```mermaid
@@ -35,6 +48,16 @@ flowchart TD
 最终事实声明必须引用有效 citation id
 引用错误会触发修复
 ```
+
+这里的关键设计是：citation id 不是模型随便编的。
+
+正确流程是：
+
+```text
+工具结果 -> 抽取 evidence candidate -> 去重 -> 分配 citation_id -> final answer 引用这些 id
+```
+
+如果模型引用了不存在的编号，Runtime 可以发现并修复。这比“请你提供引用”的 prompt 可靠得多。
 
 ## 我们项目里的真实源码
 
@@ -105,4 +128,3 @@ Citation item 关键字段：
 ## 本层小结
 
 Citation 不是展示格式，而是事实可信度和审计链路的一部分。
-
