@@ -1,18 +1,8 @@
 # Agentic RAG 面试型源码拆解课程
 
-这套文档的目标不是包装项目，而是把 SubjectsAgent 的真实实现拆成可以面试表达的层级。
+这套文档按搭积木的顺序拆解 SubjectsAgent：从最小 Agent Loop 开始，一层层加入 Tool Use、权限、状态、任务、上下文、后端作业、Provider 兼容和成本控制。目标是面试时能从概念讲到源码、参数和边界。
 
-组织方式参考 `learn-claude-code`：先从最小 Agent Loop 开始，每一篇只加一个 Harness 机制，最后组合成完整 Agentic RAG 系统。区别是这里所有内容都绑定本项目源码，不讲不存在的能力。
-
-## 阅读顺序
-
-第一遍只看每篇的“这一层解决什么问题”和 Mermaid 图，建立整体链路。
-
-第二遍看“我们项目里的真实源码”，把概念映射到代码。
-
-第三遍重点看“面试官可能怎么问”，按 30 秒、2 分钟、源码级追问三层回答训练。
-
-## 第一批：Agent Loop + Tool Use
+## 已完成章节
 
 | 编号 | 文档 | 本层新增机制 |
 |---:|---|---|
@@ -34,17 +24,16 @@
 | 15 | [OutputContract 产物判断](./15-OutputContract产物判断.md) | PPT/Chart 必须真实生成 |
 | 16 | [证据注册与 Citation](./16-证据注册与Citation.md) | evidence -> citation -> final repair |
 | 17 | [错误恢复和 Fallback](./17-错误恢复和Fallback.md) | primary 到 fallback，contract reminder |
+| 18 | [System Prompt 动态组装](./18-SystemPrompt动态组装.md) | Prompt 不是固定文本，而是运行时组装 |
+| 19 | [Audit Events 和可观测性](./19-AuditEvents和可观测性.md) | 用事件和 metadata 解释 Agent 黑盒 |
+| 20 | [Context Compact 上下文压缩](./20-ContextCompact上下文压缩.md) | 工具结果外置和原子裁剪 |
+| 21 | [前端到后端请求链路](./21-前端到后端请求链路.md) | Web -> Job API -> Runtime -> SSE |
+| 22 | [Backend Job 生命周期](./22-BackendJob生命周期.md) | queued/admitted/running/final 状态机 |
+| 23 | [SSE 流式事件返回](./23-SSE流式事件返回.md) | Last-Event-ID 断线续传 |
+| 24 | [Provider 抽象和模型兼容](./24-Provider抽象和模型兼容.md) | 统一不同模型工具调用格式 |
+| 25 | [成本控制闭环](./25-成本控制闭环.md) | route cost、budget、tier、RunBudget |
 
-## 源码总入口
+## 后续章节方向
 
-- Agent 主循环：`agent_runtime/src/tool_system/agent_loop.py`
-- 工具注册：`agent_runtime/src/tool_system/registry.py`
-- 默认工具：`agent_runtime/src/tool_system/defaults.py`
-- 工具协议：`agent_runtime/src/tool_system/protocol.py`
-- 前置检查：`agent_runtime/src/tool_system/preflight.py`
-- 工具调度：`agent_runtime/src/tool_system/scheduler.py`
-- 运行状态：`agent_runtime/src/tool_system/run_state.py`
-- 运行预算：`agent_runtime/src/tool_system/run_budget.py`
-- 任务契约：`agent_runtime/src/tool_system/task_contract.py`
-- 后端作业：`backend/app/services/agent_jobs.py`
+后面会继续认真写，不批量生成：模型路由、并发调度、SQL 工具链、RAG 全流程、Memory、Artifact、部署、真实案例和专项面试追问。
 
