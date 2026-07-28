@@ -1,0 +1,67 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: chassis-platform-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root_dev_password
+      MYSQL_DATABASE: chassis_platform
+      MYSQL_USER: chassis
+      MYSQL_PASSWORD: chassis_dev_password
+      TZ: Asia/Shanghai
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+      - ./database/seed.sql:/docker-entrypoint-initdb.d/02_seed.sql:ro
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+
+  redis:
+    image: redis:7.4
+    container_name: chassis-platform-redis
+    ports:
+      - "${REDIS_PORT:-6380}:6379"
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis_data:/data
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: chassis-platform-backend
+    ports:
+      - "8001:8001"
+    environment:
+      - DATA_BACKEND=mysql
+      - DATABASE_URL=mysql+pymysql://chassis:chassis_dev_password@mysql:3306/chassis_platform
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - mysql
+      - redis
+    restart: unless-stopped
+
+  agent-service:
+    build:
+      context: .
+      dockerfile: agent_service/Dockerfile
+    container_name: chassis-platform-agent
+    ports:
+      - "8002:8002"
+    environment:
+      - AGENT_PROVIDER=${AGENT_PROVIDER:-openai}
+      - AGENT_API_KEY=${AGENT_API_KEY:-}
+      - AGENT_BASE_URL=${AGENT_BASE_URL:-https://ark.cn-beijing.volces.com/api/v3}
+      - AGENT_MODEL=${AGENT_MODEL:-doubao-seed-character-251128}
+      - AGENT_TEMPERATURE=${AGENT_TEMPERATURE:-0.2}
+      - BACKEND_URL=http://backend:8001
+      - AGENT_MAX_TURNS=${AGENT_MAX_TURNS:-20}
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  mysql_data:
+  redis_data:

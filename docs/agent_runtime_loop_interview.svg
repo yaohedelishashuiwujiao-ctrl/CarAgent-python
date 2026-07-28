@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120">
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#0f172a"/>
+    </marker>
+    <marker id="blueArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="purpleArrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#7c3aed"/>
+    </marker>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.13"/>
+    </filter>
+    <style>
+      .bg { fill:#f8fafc; }
+      .title { font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif; font-size:36px; font-weight:900; fill:#0f172a; }
+      .subtitle { font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif; font-size:17px; fill:#475569; }
+      .section { font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif; font-size:18px; font-weight:800; fill:#334155; }
+      .box { fill:white; stroke:#cbd5e1; stroke-width:1.6; rx:18; filter:url(#shadow); }
+      .blue { fill:#eff6ff; stroke:#93c5fd; stroke-width:2; rx:18; filter:url(#shadow); }
+      .green { fill:#ecfdf5; stroke:#5eead4; stroke-width:2; rx:18; filter:url(#shadow); }
+      .purple { fill:#f5f3ff; stroke:#c4b5fd; stroke-width:2; rx:18; filter:url(#shadow); }
+      .orange { fill:#fff7ed; stroke:#fdba74; stroke-width:2; rx:18; filter:url(#shadow); }
+      .red { fill:#fef2f2; stroke:#fca5a5; stroke-width:2; rx:18; filter:url(#shadow); }
+      .yellow { fill:#fffbeb; stroke:#facc15; stroke-width:1.8; rx:18; filter:url(#shadow); }
+      .title2 { font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif; font-size:21px; font-weight:900; fill:#0f172a; }
+      .text { font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif; font-size:15px; fill:#334155; }
+      .small { font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif; font-size:12px; fill:#64748b; }
+      .code { font-family:"JetBrains Mono","Consolas",monospace; font-size:12px; fill:#475569; }
+      .num { font-family:"Noto Sans CJK SC","Microsoft YaHei",Arial,sans-serif; font-size:15px; font-weight:900; fill:white; }
+      .badge { fill:#0f172a; }
+      .arrow { stroke:#0f172a; stroke-width:2.4; fill:none; marker-end:url(#arrow); }
+      .blueArrow { stroke:#2563eb; stroke-width:2.6; fill:none; marker-end:url(#blueArrow); }
+      .purpleArrow { stroke:#7c3aed; stroke-width:3.2; fill:none; marker-end:url(#purpleArrow); }
+      .dash { stroke:#64748b; stroke-width:2; stroke-dasharray:8 7; fill:none; marker-end:url(#arrow); }
+      .loopArea { fill:#faf5ff; stroke:#d8b4fe; stroke-width:2; stroke-dasharray:10 8; rx:28; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1800" height="1120"/>
+
+  <text class="title" x="70" y="62">Agent Runtime Loop：LLM + Harness 连续工作链路</text>
+  <text class="subtitle" x="70" y="94">面试讲法：核心不是框架名，而是我们自己实现的 Agent Harness 如何装配上下文、暴露工具、执行工具、回灌 observation，并多轮完成任务。</text>
+
+  <!-- Entry -->
+  <rect class="blue" x="70" y="155" width="300" height="145"/>
+  <circle class="badge" cx="100" cy="185" r="15"/><text class="num" x="95" y="191">1</text>
+  <text class="title2" x="125" y="192">用户问题进入会话</text>
+  <text class="text" x="100" y="226">前端请求：POST /api/agent/chat_stream</text>
+  <text class="text" x="100" y="250">携带 prompt + session_id</text>
+  <text class="code" x="100" y="278">AgentPage.tsx → agent_runtime.py proxy</text>
+
+  <rect class="blue" x="70" y="360" width="300" height="170"/>
+  <circle class="badge" cx="100" cy="390" r="15"/><text class="num" x="95" y="396">2</text>
+  <text class="title2" x="125" y="397">Agent Web Harness</text>
+  <text class="text" x="100" y="431">_chat_stream(handler, payload)</text>
+  <text class="text" x="100" y="455">创建 NDJSON 流式响应</text>
+  <text class="text" x="100" y="479">解析 provider / api_key / session</text>
+  <text class="code" x="100" y="507">agent_runtime/web_app.py</text>
+
+  <rect class="green" x="450" y="155" width="330" height="170"/>
+  <circle class="badge" cx="480" cy="185" r="15"/><text class="num" x="475" y="191">3</text>
+  <text class="title2" x="505" y="192">复用 / 创建 ClawdREPL</text>
+  <text class="text" x="480" y="226">_get_web_repl(session_id)</text>
+  <text class="text" x="480" y="250">WEB_REPLS 内存缓存</text>
+  <text class="text" x="480" y="274">Session.load(session_id) 恢复历史</text>
+  <text class="code" x="480" y="302">ClawdREPL: provider + registry + context</text>
+
+  <rect class="green" x="450" y="385" width="330" height="170"/>
+  <circle class="badge" cx="480" cy="415" r="15"/><text class="num" x="475" y="421">4</text>
+  <text class="title2" x="505" y="422">写入 Conversation</text>
+  <text class="text" x="480" y="456">conversation.add_user_message(prompt)</text>
+  <text class="text" x="480" y="480">保留多轮上下文：</text>
+  <text class="text" x="500" y="504">user / assistant / tool_use / tool_result</text>
+  <text class="code" x="480" y="532">src/agent/conversation.py</text>
+
+  <!-- Loop area -->
+  <rect class="loopArea" x="850" y="135" width="860" height="745"/>
+  <text class="section" x="890" y="174">核心循环：run_agent_loop()</text>
+
+  <rect class="purple" x="900" y="205" width="350" height="185"/>
+  <circle class="badge" cx="930" cy="235" r="15"/><text class="num" x="925" y="241">5</text>
+  <text class="title2" x="955" y="242">Context Builder</text>
+  <text class="text" x="930" y="276">组装本轮 LLM 输入：</text>
+  <text class="text" x="950" y="302">system prompt + output style</text>
+  <text class="text" x="950" y="326">conversation history</text>
+  <text class="text" x="950" y="350">tool_schemas = registry.list_specs()</text>
+  <text class="code" x="930" y="376">src/tool_system/agent_loop.py</text>
+
+  <rect class="purple" x="1320" y="205" width="340" height="185"/>
+  <circle class="badge" cx="1350" cy="235" r="15"/><text class="num" x="1345" y="241">6</text>
+  <text class="title2" x="1375" y="242">LLM Provider Adapter</text>
+  <text class="text" x="1350" y="276">provider.chat_stream_response()</text>
+  <text class="text" x="1350" y="300">失败则 provider.chat()</text>
+  <text class="text" x="1350" y="324">统一模型协议差异</text>
+  <text class="code" x="1350" y="350">ChatResponse(content, usage, tool_uses)</text>
+  <text class="small" x="1350" y="374">Anthropic tool_use / OpenAI tool_calls → tool_uses</text>
+
+  <rect class="yellow" x="1075" y="460" width="410" height="125"/>
+  <circle class="badge" cx="1105" cy="490" r="15"/><text class="num" x="1100" y="496">7</text>
+  <text class="title2" x="1130" y="497">模型输出分叉</text>
+  <text class="text" x="1105" y="531">A. 没有 tool_uses：这是最终回答</text>
+  <text class="text" x="1105" y="555">B. 有 tool_uses：进入工具 Harness</text>
+
+  <rect class="orange" x="900" y="650" width="350" height="185"/>
+  <circle class="badge" cx="930" cy="680" r="15"/><text class="num" x="925" y="686">8</text>
+  <text class="title2" x="955" y="687">Tool Harness</text>
+  <text class="text" x="930" y="721">ToolRegistry.dispatch(call, context)</text>
+  <text class="text" x="930" y="745">get(name) 查工具</text>
+  <text class="text" x="930" y="769">validate_json_schema(input)</text>
+  <text class="text" x="930" y="793">ensure_tool_allowed + permission</text>
+  <text class="code" x="930" y="821">src/tool_system/registry.py</text>
+
+  <rect class="orange" x="1320" y="650" width="340" height="185"/>
+  <circle class="badge" cx="1350" cy="680" r="15"/><text class="num" x="1345" y="686">9</text>
+  <text class="title2" x="1375" y="687">Tools 执行环境</text>
+  <text class="text" x="1350" y="721">SQL：Schema / Glob / Query</text>
+  <text class="text" x="1350" y="745">Knowledge：Search / Fetch</text>
+  <text class="text" x="1350" y="769">Web：Search / Fetch</text>
+  <text class="text" x="1350" y="793">Chart / PPT / File / Task / MCP</text>
+  <text class="code" x="1350" y="821">src/tool_system/tools/*.py</text>
+
+  <!-- Final / telemetry -->
+  <rect class="red" x="450" y="700" width="330" height="165"/>
+  <circle class="badge" cx="480" cy="730" r="15"/><text class="num" x="475" y="736">10</text>
+  <text class="title2" x="505" y="737">流式过程观测</text>
+  <text class="text" x="480" y="771">on_event: tool_use / result / error</text>
+  <text class="text" x="480" y="795">on_text_chunk: text_delta</text>
+  <text class="text" x="480" y="819">emit_telemetry: phase / stats / flow</text>
+  <text class="code" x="480" y="847">web_app._ndjson_event()</text>
+
+  <rect class="blue" x="70" y="700" width="300" height="165"/>
+  <circle class="badge" cx="100" cy="730" r="15"/><text class="num" x="95" y="736">11</text>
+  <text class="title2" x="125" y="737">前端得到结果</text>
+  <text class="text" x="100" y="771">实时展示回答文本</text>
+  <text class="text" x="100" y="795">展示工具调用 trace</text>
+  <text class="text" x="100" y="819">展示来源、耗时、错误、轮次</text>
+  <text class="code" x="100" y="847">AgentPage: telemetry + messages</text>
+
+  <!-- Observation box -->
+  <rect class="green" x="900" y="935" width="760" height="115"/>
+  <circle class="badge" cx="930" cy="965" r="15"/><text class="num" x="925" y="971">12</text>
+  <text class="title2" x="955" y="972">Observation 回灌：多轮 Agent 的关键</text>
+  <text class="text" x="930" y="1006">工具结果不是直接结束，而是写回上下文：Anthropic 写 conversation.add_tool_result_message()；OpenAI-compatible 写 role=tool 消息。</text>
+  <text class="text" x="930" y="1032">下一轮 LLM 会看到上一轮 observation，因此能继续查数、修正、综合，直到 final answer。</text>
+
+  <!-- Arrows -->
+  <path class="blueArrow" d="M370 227 L445 227"/>
+  <path class="arrow" d="M220 300 L220 355"/>
+  <path class="blueArrow" d="M370 445 L445 445"/>
+  <path class="arrow" d="M615 325 L615 380"/>
+  <path class="blueArrow" d="M780 470 C815 470 820 305 895 305"/>
+  <path class="arrow" d="M1250 298 L1315 298"/>
+  <path class="arrow" d="M1490 390 C1490 430 1450 450 1410 460"/>
+  <path class="arrow" d="M1160 390 C1160 430 1195 440 1220 460"/>
+  <path class="arrow" d="M1190 585 C1165 610 1125 625 1090 650"/>
+  <path class="arrow" d="M1250 742 L1315 742"/>
+  <path class="purpleArrow" d="M1490 835 C1490 925 1340 910 1280 932"/>
+  <path class="purpleArrow" d="M900 992 C815 992 812 750 900 742"/>
+  <text class="small" x="720" y="955" transform="rotate(-78 720,955)">ToolResult / error 作为 observation 回到下一轮</text>
+
+  <path class="blueArrow" d="M1075 522 C880 570 840 740 785 780"/>
+  <path class="blueArrow" d="M450 782 L375 782"/>
+
+  <!-- Side notes -->
+  <rect class="box" x="70" y="930" width="710" height="120"/>
+  <text class="title2" x="100" y="965">多轮对话的状态变化</text>
+  <text class="text" x="100" y="999">同一 session_id：优先复用 WEB_REPLS[session_id]；进程重启或未命中时用 Session.load(session_id) 从磁盘恢复。</text>
+  <text class="text" x="100" y="1025">每个用户问题追加为新的 user message；最终 assistant text、tool_use、tool_result 共同构成后续上下文。</text>
+
+  <rect class="box" x="870" y="70" width="840" height="42"/>
+  <text class="small" x="900" y="96">对应源码：web_app.py::_chat_stream / _get_web_repl；src/repl/core.py::ClawdREPL；src/tool_system/agent_loop.py::run_agent_loop；registry.py::dispatch；conversation.py::Conversation</text>
+</svg>

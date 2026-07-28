@@ -1,0 +1,6 @@
+# MMDetection instance segmentation stack
+# Install a compatible PyTorch build first, then:
+openmim
+mmengine
+mmcv>=2.0.0
+mmdet

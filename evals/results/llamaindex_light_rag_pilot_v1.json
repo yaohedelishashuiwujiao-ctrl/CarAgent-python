@@ -1,0 +1,409 @@
+{
+  "schema": "subjects_rag_retrieval_eval/v3",
+  "suite_id": "subjects-agent-rag-pilot-v1",
+  "description": "Exploratory 10-case retrieval-only pilot. Labels were assembled from the checked-in corpus manifests and inspected against the current index, so this is not a held-out benchmark.",
+  "label_quality": "pilot_not_human_held_out",
+  "suite_path": "evals/suites/rag_pilot_v1.json",
+  "index": {
+    "provider": "llamaindex-agentic-rag",
+    "ready": true,
+    "index_type": "hybrid-dense-sparse-rrf-rerank",
+    "framework": "LlamaIndex",
+    "chunking": {
+      "parser": "SentenceSplitter",
+      "strategy": "structure-aware metadata + semantic token windows",
+      "chunk_size": 1024,
+      "chunk_overlap": 150
+    },
+    "embedding": {
+      "provider": "huggingface",
+      "model": "BAAI/bge-small-zh-v1.5",
+      "dimension": 512
+    },
+    "vector_store": {
+      "type": "Milvus",
+      "uri": "http://127.0.0.1:19530",
+      "collection": "subjects_agent_chunks",
+      "metric": "COSINE",
+      "index": "HNSW"
+    },
+    "keyword_store": {
+      "type": "OpenSearch",
+      "url": "http://127.0.0.1:9200",
+      "index": "subjects-agent-chunks",
+      "retrieval": "BM25"
+    },
+    "fusion": {
+      "method": "RRF",
+      "k": 60
+    },
+    "reranker": {
+      "model": "BAAI/bge-reranker-base",
+      "top_n": 10
+    },
+    "agent_tools": [
+      "LlamaIndex FunctionTool:KnowledgeSearch",
+      "LlamaIndex FunctionTool:KnowledgeFetch"
+    ],
+    "index_version": null
+  },
+  "wall_seconds": 58.919,
+  "peak_rss_mb": 2172.2,
+  "case_count": 10,
+  "metrics": {
+    "hit_rate_at_1": 0.9,
+    "hit_rate_at_3": 0.9,
+    "hit_rate_at_5": 0.9,
+    "hit_rate_at_10": 1.0,
+    "recall_at_1": 0.9,
+    "recall_at_3": 0.9,
+    "recall_at_5": 0.9,
+    "recall_at_10": 1.0,
+    "mrr_at_10": 0.9167,
+    "latency_p50_ms": 2973.894,
+    "latency_p95_ms": 3276.434
+  },
+  "cases": [
+    {
+      "query": "问界M5纯电遥控泊车",
+      "expected_document_ids": [
+        "aito-m5ev-se-manual-2025-cn-zh"
+      ],
+      "expected_chunk_ids": [],
+      "returned_document_ids": [
+        "aito-m5ev-se-manual-2025-cn-zh",
+        "aito-m5ev-se-manual-2025-cn-zh",
+        "aito-m5ev-se-manual-2025-cn-zh",
+        "aito-m5ev-se-manual-2025-cn-zh",
+        "aito-m5ev-se-manual-2025-cn-zh",
+        "aito-m5ev-se-manual-2025-cn-zh",
+        "aito-m5ev-se-manual-2025-cn-zh",
+        "aito-m5ev-se-manual-2025-cn-zh",
+        "aito-m5ev-se-manual-2025-cn-zh",
+        "aito-m5ev-se-manual-2025-cn-zh"
+      ],
+      "returned_chunk_ids": [
+        "chunk-aebaa11a556e23ed3c3f",
+        "chunk-4e95f91de54c1eb5f2d2",
+        "chunk-8ddb2f8be7bbd1912859",
+        "chunk-ced368d1717d21e1acf6",
+        "chunk-aad1f7602bf263236866",
+        "chunk-ce303373304185039d4e",
+        "chunk-9689e0467c72a319b693",
+        "chunk-495de401725369d283a6",
+        "chunk-1183b3262a50a1a2c60c",
+        "chunk-5dc40f76000df658afee"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 3276.434
+    },
+    {
+      "query": "哈弗H9拖车牵引注意事项",
+      "expected_document_ids": [
+        "haval-h9-manual-2020-cn-zh"
+      ],
+      "expected_chunk_ids": [],
+      "returned_document_ids": [
+        "haval-h9-manual-2020-cn-zh",
+        "haval-h9-manual-2020-cn-zh",
+        "haval-h6-guochao-manual-2022-cn-zh",
+        "aito-m5ev-se-manual-2025-cn-zh",
+        "haval-h6-guochao-manual-2022-cn-zh",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-10",
+        "haval-h6-2025-cn-zh",
+        "haval-h6-2025-cn-zh",
+        "haval-dargo-2025-cn-zh",
+        "haval-raptor-2025-cn-zh"
+      ],
+      "returned_chunk_ids": [
+        "chunk-38d4d3a11733f9410132",
+        "chunk-a907ad690e7746391ff6",
+        "chunk-d436f7b567fe9427e856",
+        "chunk-6819ee43ca61ad00aa35",
+        "chunk-9d1aa226774c40cd0f4f",
+        "chunk-4043874446b80224c608",
+        "chunk-f9cd9ce34deeeb144c26",
+        "chunk-a4bedf98c5d46af1d17b",
+        "chunk-50ee643570b16ece0e3e",
+        "chunk-048d6ed1f604f365f77c"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 2994.119
+    },
+    {
+      "query": "蔚来ET5轮胎气压",
+      "expected_document_ids": [
+        "nio-et5-2025-cn-zh-manual-11-pdf-1"
+      ],
+      "expected_chunk_ids": [],
+      "returned_document_ids": [
+        "nio-et5-2025-cn-zh-manual-11-pdf-1",
+        "nio-et5-2025-cn-zh-manual-11-pdf-1",
+        "nio-et5-2025-cn-zh-manual-11-pdf-1",
+        "nio-et5-2025-cn-zh-manual-11-pdf-1",
+        "nio-et5-2025-cn-zh-manual-11-pdf-1",
+        "nio-et5-2025-cn-zh-manual-11-pdf-1",
+        "nio-et5-2025-cn-zh-manual-11-pdf-1",
+        "nio-et5-2025-cn-zh-manual-11-pdf-1",
+        "nio-et5t-2025-cn-zh-manual-12",
+        "nio-et5-2025-cn-zh-manual-11"
+      ],
+      "returned_chunk_ids": [
+        "chunk-d2e9b049a32e3b775c8c",
+        "chunk-7a40ac6a97e4a8cd8770",
+        "chunk-c355a8cc4f66245258bf",
+        "chunk-9b0a104d480400416cae",
+        "chunk-a038a41563c5bf75c003",
+        "chunk-1a5ace216ded67630ed5",
+        "chunk-7b4eb19d5d7ee0e610e9",
+        "chunk-a30bbe49e01f1a8d1468",
+        "chunk-4436406da70dad4f0761",
+        "chunk-92bb56d4dc2d17b25d31"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 2963.052
+    },
+    {
+      "query": "乐道L60儿童安全座椅",
+      "expected_document_ids": [
+        "onvo-l60-2025-cn-zh-manual-18-pdf-2",
+        "onvo-l60-2025-cn-zh-manual-18-pdf-3",
+        "onvo-l60-2025-cn-zh-manual-18-pdf-4"
+      ],
+      "expected_chunk_ids": [],
+      "returned_document_ids": [
+        "onvo-l60-2025-cn-zh-manual-18-pdf-3",
+        "onvo-l60-2025-cn-zh-manual-18-pdf-4",
+        "onvo-l60-2025-cn-zh-manual-18-pdf-2",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-9",
+        "li-l9-ultra-2024-cn-zh",
+        "onvo-l60-2025-cn-zh-manual-18-pdf-3",
+        "onvo-l60-2025-cn-zh-manual-18-pdf-3",
+        "onvo-l60-2025-cn-zh-manual-18-pdf-2",
+        "onvo-l60-2025-cn-zh-manual-18-pdf-3",
+        "onvo-l60-2025-cn-zh-manual-18-pdf-4"
+      ],
+      "returned_chunk_ids": [
+        "chunk-6dacf4f997de9ea07158",
+        "chunk-c79a29c6fd8bf7613cb7",
+        "chunk-d905f269fd17ce4133e4",
+        "chunk-fa2ef66bbe20231565bd",
+        "chunk-06a308d1f5561132c2de",
+        "chunk-fcd174f0f3a616c02d92",
+        "chunk-3973ab3d187460cdef7f",
+        "chunk-aa557e134ef1a39e00e7",
+        "chunk-e74f88525b96bb5f22f1",
+        "chunk-df7ffedc32e2e0a19425"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 2973.894
+    },
+    {
+      "query": "欧拉好猫充电",
+      "expected_document_ids": [
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-10",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-11",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-12",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-5",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-6",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-7",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-8",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-9"
+      ],
+      "expected_chunk_ids": [],
+      "returned_document_ids": [
+        "ora-goodcat-2025-cn-zh-manual-35",
+        "ora-goodcat-2025-cn-zh",
+        "ora-goodcat-2025-cn-zh-manual-36",
+        "ora-goodcat-2025-cn-zh",
+        "ora-goodcat-2025-cn-zh",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-11",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-10",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-10",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-11",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-12"
+      ],
+      "returned_chunk_ids": [
+        "chunk-47da844c7b7c51c60a31",
+        "chunk-a6b4e5cdfcd2bb464bd2",
+        "chunk-0a5bca555cf97801043e",
+        "chunk-db7cf54fad93846f280b",
+        "chunk-db6f376cc13a605941a6",
+        "chunk-36163c7c1ccb655a3469",
+        "chunk-a299624668c3d9040e76",
+        "chunk-386f60623d93990b2ba6",
+        "chunk-c3fc267d1dbf7cdb2799",
+        "chunk-23f61e4384fb5540f737"
+      ],
+      "first_relevant_rank": 6,
+      "latency_ms": 2978.168
+    },
+    {
+      "query": "Model 3 rear wheel arch collision repair",
+      "expected_document_ids": [
+        "tesla-model-3-collision-repair-rear-wheel-arch-cn-zh"
+      ],
+      "expected_chunk_ids": [],
+      "returned_document_ids": [
+        "tesla-model-3-collision-repair-rear-wheel-arch-cn-zh",
+        "tesla-model-3-collision-repair-rear-wheel-arch-cn-zh",
+        "tesla-model-3-collision-repair-correction-code-cn-zh",
+        "tesla-model-3-collision-repair-rear-wheel-arch-cn-zh",
+        "tesla-model-3-collision-repair-rear-wheel-arch-cn-zh",
+        "tesla-model-3-collision-repair-correction-code-cn-zh",
+        "aito-m5ev-se-manual-2025-cn-zh",
+        "yangwang-u9-2025-cn-zh",
+        "yangwang-u8-2025-cn-zh",
+        "tesla-model-3-collision-repair-correction-code-cn-zh"
+      ],
+      "returned_chunk_ids": [
+        "chunk-a27e0cb7d28a1b987bf9",
+        "chunk-cb073724307a6f185954",
+        "chunk-31b019b1e5235b573fdb",
+        "chunk-09b51d8494da2dc39be2",
+        "chunk-06c7bf32e9c96e5ba5d7",
+        "chunk-8c8b7134cfcff6975c2a",
+        "chunk-aad1f7602bf263236866",
+        "chunk-9ef1f2f559a31d850a02",
+        "chunk-901963715583cbfd2023",
+        "chunk-15ebec919aa4aee9b185"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 2976.394
+    },
+    {
+      "query": "理想ONE保养周期",
+      "expected_document_ids": [
+        "lixiang-one-maintenance-schedule-cn-zh"
+      ],
+      "expected_chunk_ids": [],
+      "returned_document_ids": [
+        "lixiang-one-maintenance-schedule-cn-zh",
+        "li-l9-ultra-2024-cn-zh",
+        "lixiang-one-maintenance-schedule-cn-zh",
+        "li-l7-ultra-2025-cn-zh",
+        "li-l8-2026-cn-zh",
+        "li-l8-2026-cn-zh",
+        "li-l8-2026-cn-zh",
+        "li-l6-2025-cn-zh",
+        "li-l9-2025-cn-zh",
+        "li-l8-2025-cn-zh"
+      ],
+      "returned_chunk_ids": [
+        "chunk-faaa0cb2f0851e49a9e4",
+        "chunk-5d5a9497950b26c50e45",
+        "chunk-f4ed3a930ad7c1331d14",
+        "chunk-457ee97df8920095d91b",
+        "chunk-69a90fbfd6e35aaa49eb",
+        "chunk-604d45bedce1a8f129c9",
+        "chunk-7d461d1c85d77c2b1bae",
+        "chunk-289ddbd42f48c823f6e3",
+        "chunk-c93fe90c7aecf17c0dd3",
+        "chunk-672659d0514faef6abeb"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 2701.677
+    },
+    {
+      "query": "Global EV Outlook 2026",
+      "expected_document_ids": [
+        "iea-global-ev-data-2026",
+        "iea-global-ev-outlook-2026"
+      ],
+      "expected_chunk_ids": [],
+      "returned_document_ids": [
+        "iea-global-ev-data-2026",
+        "iea-global-ev-outlook-2026",
+        "iea-global-ev-data-2026",
+        "iea-global-ev-outlook-2026",
+        "iea-global-ev-outlook-2026",
+        "geely-galaxy-e5-2025-cn-zh",
+        "geely-galaxy-l7-2025-cn-zh",
+        "aito-m5ev-se-manual-2025-cn-zh",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-6",
+        "zeekr-007-2025-cn-zh"
+      ],
+      "returned_chunk_ids": [
+        "chunk-eba511a7ef49f2b11c4c",
+        "chunk-e6a40d49d4fbdc56ec06",
+        "chunk-f63e1ce45d29766bd402",
+        "chunk-c7e6acf13c42ac1bddf9",
+        "chunk-b249f47c3b749f9e0a24",
+        "chunk-f700fc009be77cad855f",
+        "chunk-136634019c0bb9ce5c67",
+        "chunk-36a5d322fdf3eb646620",
+        "chunk-bbd924c9a41bd09774f4",
+        "chunk-8e8c18fb4ee5ece16338"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 2985.85
+    },
+    {
+      "query": "2025 全国汽车召回",
+      "expected_document_ids": [
+        "samr-auto-recalls-2025"
+      ],
+      "expected_chunk_ids": [],
+      "returned_document_ids": [
+        "samr-auto-recalls-2025",
+        "samr-auto-recalls-2025",
+        "samr-auto-recalls-2025",
+        "samr-auto-recalls-2025",
+        "samr-auto-recalls-2025",
+        "samr-auto-recalls-2025",
+        "samr-auto-recalls-2025",
+        "samr-auto-recalls-2025",
+        "samr-auto-recalls-2025",
+        "samr-auto-recalls-2025"
+      ],
+      "returned_chunk_ids": [
+        "chunk-299a564b8d0a37d7a702",
+        "chunk-48fb35454512a2acc99b",
+        "chunk-3b64c6266c1618e281aa",
+        "chunk-0fbffb71edbc0d0f24b2",
+        "chunk-e0f6afd7bdc3191cc5a9",
+        "chunk-063a37e3c34703d81b20",
+        "chunk-06b8a94e2f081212fe40",
+        "chunk-95e57bd3db7c44f50cb0",
+        "chunk-1b07a1d6ec7927675df7",
+        "chunk-52649a0c3fe6aa005543"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 2963.045
+    },
+    {
+      "query": "汽车行业稳增长工作方案 2025 2026",
+      "expected_document_ids": [
+        "cn-auto-growth-plan-2025-2026"
+      ],
+      "expected_chunk_ids": [],
+      "returned_document_ids": [
+        "cn-auto-growth-plan-2025-2026",
+        "cn-auto-growth-plan-2025-2026",
+        "cn-auto-growth-plan-2025-2026",
+        "cn-auto-growth-plan-2025-2026",
+        "cn-auto-growth-plan-2025-2026",
+        "cn-auto-growth-plan-2025-2026",
+        "cn-auto-growth-plan-2025-2026",
+        "cn-automotive-economy-2024",
+        "cn-automotive-economy-2024",
+        "cn-automotive-economy-2024"
+      ],
+      "returned_chunk_ids": [
+        "chunk-0dbd00137a068f44c503",
+        "chunk-91211967dfe0b74f9d6f",
+        "chunk-b31b2123737321e83532",
+        "chunk-a404a0cab445f2d0319a",
+        "chunk-881d59d4fc808102096a",
+        "chunk-9caa9a4b46e1d8651b08",
+        "chunk-be3c6b98fb07dd0d17e8",
+        "chunk-c477d8749c3a1de65f21",
+        "chunk-1397443640f80d06c21e",
+        "chunk-45fc06eeacea3c34f1fe"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 2829.673
+    }
+  ],
+  "index_version": null
+}

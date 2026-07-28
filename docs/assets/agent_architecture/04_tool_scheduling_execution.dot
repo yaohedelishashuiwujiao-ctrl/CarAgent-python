@@ -1,0 +1,54 @@
+digraph G {
+
+graph [
+  rankdir=TB,
+  bgcolor="white",
+  pad="0.22",
+  nodesep="0.28",
+  ranksep="0.48",
+  splines=ortho,
+  fontname="Noto Sans CJK SC",
+  labelloc="t",
+  fontsize=24
+];
+node [
+  shape=box,
+  style="rounded,filled",
+  fontname="Noto Sans CJK SC",
+  fontsize=13,
+  margin="0.12,0.08",
+  color="#3e5f6d",
+  penwidth=1.1,
+  fillcolor="#f7fafb"
+];
+edge [
+  fontname="Noto Sans CJK SC",
+  fontsize=10,
+  color="#627b87",
+  arrowsize=0.65
+];
+
+graph [label="04 工具调度执行：准确性与并行/批处理"];
+
+tool_use [label="模型输出 tool_use[]\n同一轮代表同一依赖层", fillcolor="#eaf8ef"];
+normalize [label="normalize_call()\n工具声明 input_aliases -> canonical fields", fillcolor="#edf9f2"];
+preflight [label="Preflight\n工具存在 / allowlist / 权限 / data_scope\nschema / dependency / coverage", fillcolor="#edf9f2"];
+dedupe [label="Dedupe\nbatch 内去重\nrun 级重复调用拦截", fillcolor="#edf9f2"];
+decision [label="Scheduler Decision\nbatch / parallel / serial\n写入 tool_scheduler_decision", fillcolor="#edf9f2"];
+batch [label="Batch Path\n同一只读工具 + supports_batch\nrun_batch()", fillcolor="#edf9f2"];
+parallel [label="Parallel Path\nread-only + idempotent + no side effect\nsupports_parallel", fillcolor="#edf9f2"];
+serial [label="Serial Path\n有副作用/依赖关系/不可并行", fillcolor="#edf9f2"];
+registry [label="ToolRegistry.dispatch()\n二次权限检查 + execute_tool_with_policy", fillcolor="#edf9f2"];
+pool [label="Resource Pool\nmodel / sql / tool / artifact\n并发与超时控制", fillcolor="#fff8e8"];
+result [label="ToolResult\noutcome_status / reason_code\nretryable / diagnostics", fillcolor="#f7fafb"];
+ledger [label="Scheduler Ledger\nrequested / dispatched / rejected\nstatus_counts / reason_counts", fillcolor="#f7fafb"];
+
+tool_use -> normalize -> preflight -> dedupe -> decision;
+decision -> batch;
+decision -> parallel;
+decision -> serial;
+batch -> registry;
+parallel -> registry;
+serial -> registry;
+registry -> pool -> result -> ledger;
+}

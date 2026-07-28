@@ -1,0 +1,4083 @@
+[
+  {
+    "series_id": 5714,
+    "series_name": "宏光MINIEV",
+    "status": "downloaded",
+    "sha256": "206589bc7b64619bacb76b309514561e8d7d53b5fa801ee3ee4e4db1e12b9801",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5714.json"
+  },
+  {
+    "series_id": 6674,
+    "series_name": "长安Lumin",
+    "status": "downloaded",
+    "sha256": "71adba1062003c15749aad5d0ec61cc6b53ccb3095aa8c12f26df739ad54be25",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6674.json"
+  },
+  {
+    "series_id": 6924,
+    "series_name": "熊猫",
+    "status": "downloaded",
+    "sha256": "2c13370401c205fc0f6fed45f64b20411ae42f69f76be2b3f42587188e7fafde",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6924.json"
+  },
+  {
+    "series_id": 7231,
+    "series_name": "奔腾小马",
+    "status": "downloaded",
+    "sha256": "b0ed08530bf88ed9e222a2850761fb20a31dea8bf7de04d07a160b719a32efbf",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7231.json"
+  },
+  {
+    "series_id": 5515,
+    "series_name": "零跑T03",
+    "status": "downloaded",
+    "sha256": "cab22f36857c3ef11e5dd27c6f7a167857626b98cf9a0e3c08342160d08485de",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5515.json"
+  },
+  {
+    "series_id": 6309,
+    "series_name": "QQ冰淇淋",
+    "status": "downloaded",
+    "sha256": "b224a1dd6d8760b4b88b295cef60add11d79a8ade26de502d50dc1a3e858121a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6309.json"
+  },
+  {
+    "series_id": 4218,
+    "series_name": "小蚂蚁",
+    "status": "downloaded",
+    "sha256": "7b9426d5dbf198900ff03c90bf672e655c51b5e041dae1119e98838cf72108e9",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4218.json"
+  },
+  {
+    "series_id": 6719,
+    "series_name": "五菱Air ev晴空",
+    "status": "downloaded",
+    "sha256": "53a3f2bcc6fbe495f7ce809bcd5fea4dd1f004f75e74dfb3b802c82f108b00e2",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6719.json"
+  },
+  {
+    "series_id": 6845,
+    "series_name": "凯翼拾月",
+    "status": "downloaded",
+    "sha256": "7e8f4316dd48b18cf2785480636fb00351c1ac76bbc6a1e46d8989519b773426",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6845.json"
+  },
+  {
+    "series_id": 8191,
+    "series_name": "睿蓝蓝气球",
+    "status": "downloaded",
+    "sha256": "5a1d14ac26a041a04346ed42504e2e0847f91447c4829980a6de2514eecb880b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8191.json"
+  },
+  {
+    "series_id": 8301,
+    "series_name": "埃尚",
+    "status": "downloaded",
+    "sha256": "6878c49aac9c37e7235d480f1649950cc062e19b106b9dc863c1fb423df08bd3",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8301.json"
+  },
+  {
+    "series_id": 6720,
+    "series_name": "易至EV2",
+    "status": "downloaded",
+    "sha256": "c63dc7b6a391d855ed7f7700d80d67aa66f860771d31eaf91f707e6f1343b899",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6720.json"
+  },
+  {
+    "series_id": 4689,
+    "series_name": "昌河北斗星",
+    "status": "downloaded",
+    "sha256": "df49b6348873d7c75c90fa33175ba0e27c24176d317bbacbf5e6e95670f130a1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4689.json"
+  },
+  {
+    "series_id": 6431,
+    "series_name": "风光MINIEV",
+    "status": "downloaded",
+    "sha256": "f3546bd1936eb795fbde215f928ea641342f19b9af5b674c334eb06d2b10f742",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6431.json"
+  },
+  {
+    "series_id": 4949,
+    "series_name": "易至EV3",
+    "status": "downloaded",
+    "sha256": "9a403a6b1bc0648841e144a79db47b39d21fecc3417bc7bf299dcd6a5b2c1f40",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4949.json"
+  },
+  {
+    "series_id": 7577,
+    "series_name": "知豆彩虹",
+    "status": "downloaded",
+    "sha256": "3647ed23666f42e92c2cc0935ba6db55fcec7f7d0138fd21e712ea0ed73fff6e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7577.json"
+  },
+  {
+    "series_id": 5724,
+    "series_name": "凌宝BOX",
+    "status": "downloaded",
+    "sha256": "c9b92dad553db4191727e5f117e4d811dea7d9b5365bce1a5385e52ce88d68f1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5724.json"
+  },
+  {
+    "series_id": 6436,
+    "series_name": "凌宝uni",
+    "status": "downloaded",
+    "sha256": "ed43e9ccbc680b97a28a7cf1b3a6258e7927624d9d7a951b3b0bffcfd773cc87",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6436.json"
+  },
+  {
+    "series_id": 5973,
+    "series_name": "花仙子",
+    "status": "downloaded",
+    "sha256": "1082611f04e5db483e9b96ebe3af224471fda8de13871d858b0134174143d107",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5973.json"
+  },
+  {
+    "series_id": 5740,
+    "series_name": "昌河北斗星X5",
+    "status": "downloaded",
+    "sha256": "80e6b199433b070de8f513420aa78cb265176450aa32a4932a07a7e946222fc7",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5740.json"
+  },
+  {
+    "series_id": 7772,
+    "series_name": "钇为花仙子",
+    "status": "downloaded",
+    "sha256": "eeaea1466095dd4838895d7e1f7b644fd0cc14cdc31847a197866e191db082fb",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7772.json"
+  },
+  {
+    "series_id": 7965,
+    "series_name": "骏驰EK",
+    "status": "downloaded",
+    "sha256": "df9d81ea9360321b98ca28692931c3abcdfb14658603dbc9c897b2974f8eb1ae",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7965.json"
+  },
+  {
+    "series_id": 7806,
+    "series_name": "星愿",
+    "status": "downloaded",
+    "sha256": "915bbf511223edcd5abd0639098f50994d1643cb4bad3f29fdf6dac157e4f3b6",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7806.json"
+  },
+  {
+    "series_id": 6762,
+    "series_name": "海鸥",
+    "status": "downloaded",
+    "sha256": "293c3b06bab50855cc560d91eb78bbacfd89760e49c1cff18d274e7f9564a783",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6762.json"
+  },
+  {
+    "series_id": 8086,
+    "series_name": "极狐贝塔T1",
+    "status": "downloaded",
+    "sha256": "a2fbdb4dd36d921beb93d3e2060e429f4513a6191dba79dbcfa3c536300b7e3c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8086.json"
+  },
+  {
+    "series_id": 6139,
+    "series_name": "海豚",
+    "status": "downloaded",
+    "sha256": "91209cabf2594a1fcf204358c5fd88e41373a50ec583310b43c0fb58661ef273",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6139.json"
+  },
+  {
+    "series_id": 8499,
+    "series_name": "QQ3 EV",
+    "status": "downloaded",
+    "sha256": "d09254d80b280dd0c381f5d7fcf1d169e66cfac939a18a7ab927748bb21f4dcf",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8499.json"
+  },
+  {
+    "series_id": 8585,
+    "series_name": "缤果Pro",
+    "status": "downloaded",
+    "sha256": "1045c323d6a138eed6c0a11d02ac5895a9dfc1548001efa0ed1eae9198f9b27b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8585.json"
+  },
+  {
+    "series_id": 7990,
+    "series_name": "firefly萤火虫",
+    "status": "downloaded",
+    "sha256": "40b71d6f81543cddc1534f48f54a0a30f4a70b40f5930bdaab826f29c318988b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7990.json"
+  },
+  {
+    "series_id": 8189,
+    "series_name": "缤果S",
+    "status": "downloaded",
+    "sha256": "ec165c352d3f76a283781ca5bced65d4eb8d8bb9f61f5a9c3e371e23350e9574",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8189.json"
+  },
+  {
+    "series_id": 7045,
+    "series_name": "五菱缤果",
+    "status": "downloaded",
+    "sha256": "22b32dc64d56b717f269c40240f1258c9ac7c842cd737889b9542a0dd9db4f9c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7045.json"
+  },
+  {
+    "series_id": 7918,
+    "series_name": "AION UT",
+    "status": "downloaded",
+    "sha256": "9cff4a7d9dee552819bd423c796d7df73901df953ecec94dccd9b441d9f070d0",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7918.json"
+  },
+  {
+    "series_id": 209,
+    "series_name": "MINI",
+    "status": "downloaded",
+    "sha256": "f3b3235ed8a3986db050e151d817314a1a656f4c1a159d626f957b393d17508c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/209.json"
+  },
+  {
+    "series_id": 711,
+    "series_name": "GR YARIS",
+    "status": "downloaded",
+    "sha256": "7a39bc10956e4d09ce9b11a492701cdf6e0d08d29d72a9faeb9fbbc8afd91c98",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/711.json"
+  },
+  {
+    "series_id": 7364,
+    "series_name": "纳米01",
+    "status": "downloaded",
+    "sha256": "931886399f7001cf2f2b4600857473b580f1f9881c3f6eb7cbe10c557a0cf047",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7364.json"
+  },
+  {
+    "series_id": 5823,
+    "series_name": "欧拉好猫",
+    "status": "downloaded",
+    "sha256": "55fdd0e062ef04abb38217afd8717b5d3ca7de301f6c64040c06d7fdf4ffdf1a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5823.json"
+  },
+  {
+    "series_id": 7576,
+    "series_name": "电动MINI COOPER",
+    "status": "downloaded",
+    "sha256": "b193dfd8ea52dec5bccdb4e744bc3b8d0b362e75a827ac429bfa917e46433d97",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7576.json"
+  },
+  {
+    "series_id": 8422,
+    "series_name": "AION UT super",
+    "status": "downloaded",
+    "sha256": "dea999b7d1cdb2a1cd262f0a6331d261bf1346cde2fab10e74ace7d41fc8d92f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8422.json"
+  },
+  {
+    "series_id": 7866,
+    "series_name": "电动MINI JCW",
+    "status": "downloaded",
+    "sha256": "49be46cc1e4b4503bb52b04002591e16d35b91a31f5099bd581cbeab4d427933",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7866.json"
+  },
+  {
+    "series_id": 3178,
+    "series_name": "MINI JCW",
+    "status": "downloaded",
+    "sha256": "e4f1711009b121fdb9fbcd698b4c89bb0ad76d7ca61a8129061bf84a39f698ec",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3178.json"
+  },
+  {
+    "series_id": 6322,
+    "series_name": "欧拉好猫GT",
+    "status": "downloaded",
+    "sha256": "7481744ed8d6bf7c82f25c0d6c67a8fca0c32c35df7153f37795669be18cc94a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6322.json"
+  },
+  {
+    "series_id": 8058,
+    "series_name": "多米",
+    "status": "downloaded",
+    "sha256": "d5ff33e8757e27c9da6647844999472cdff84dea01df05fa41eb5cf148892b2f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8058.json"
+  },
+  {
+    "series_id": 4387,
+    "series_name": "焕驰",
+    "status": "downloaded",
+    "sha256": "6cd90f9bdd7d7312d1d4d517be1ea3f37ea134a88ed2f8dd6804f345f7935bb2",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4387.json"
+  },
+  {
+    "series_id": 7186,
+    "series_name": "钇为3",
+    "status": "downloaded",
+    "sha256": "af8561fb66afc636cda625aa7b15d190cd1b32136ffa4cc5698ee6cc647bb806",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7186.json"
+  },
+  {
+    "series_id": 5223,
+    "series_name": "江淮iEV7",
+    "status": "downloaded",
+    "sha256": "fe499e6ae571a1a56df4a306d78ca387b878be9d73b452df295492d349697a0f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5223.json"
+  },
+  {
+    "series_id": 5964,
+    "series_name": "秦PLUS",
+    "status": "downloaded",
+    "sha256": "527f923ac2f7b2628e5344fcdc815bec5e5f339b9190e339daeb35f51e7bc5cb",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5964.json"
+  },
+  {
+    "series_id": 614,
+    "series_name": "朗逸",
+    "status": "downloaded",
+    "sha256": "445785cdb00bb3b6c3d2058d2361adb24919a356b9b5826a89d4ddf3fb132d97",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/614.json"
+  },
+  {
+    "series_id": 442,
+    "series_name": "速腾",
+    "status": "downloaded",
+    "sha256": "2c9087dc05a56381e49ece23cb7518f92c7d167fc1ae0f802783522d6a8a05bb",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/442.json"
+  },
+  {
+    "series_id": 6998,
+    "series_name": "小鹏MONA M03",
+    "status": "downloaded",
+    "sha256": "e56ebb08385e7a497024f7ee025e2df2dc4dd7cfc56dd5215cc60f218ed61046",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6998.json"
+  },
+  {
+    "series_id": 448,
+    "series_name": "轩逸",
+    "status": "downloaded",
+    "sha256": "5ddf30d1b5a30809d72447c50df84e1308145252643a1acb223a95b57759039e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/448.json"
+  },
+  {
+    "series_id": 526,
+    "series_name": "卡罗拉",
+    "status": "downloaded",
+    "sha256": "8c57cd44b29fb263fbfb992430e4bfa19ada88970d16be99dfd24b4be226eb5b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/526.json"
+  },
+  {
+    "series_id": 6651,
+    "series_name": "MG4",
+    "status": "downloaded",
+    "sha256": "73ed3ae05f7fd69971d6458161092b116b1de6592d3641d2f4410b543d9f851f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6651.json"
+  },
+  {
+    "series_id": 5273,
+    "series_name": "星瑞",
+    "status": "downloaded",
+    "sha256": "6529b2a69dbe4c6d8adc77b96f4e70f852b08f934661f5864a5bb58ca50b4a58",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5273.json"
+  },
+  {
+    "series_id": 3170,
+    "series_name": "奥迪A3",
+    "status": "downloaded",
+    "sha256": "65df57ba96ebbc62f6b6bea108b7985071b9c4db7209fec982524764fed1df76",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3170.json"
+  },
+  {
+    "series_id": 3556,
+    "series_name": "帝豪",
+    "status": "downloaded",
+    "sha256": "229dc42871748cfdac1c742de468dc6acdf4726d57c12295b179aae79c8e9c07",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3556.json"
+  },
+  {
+    "series_id": 2429,
+    "series_name": "逸动",
+    "status": "downloaded",
+    "sha256": "d2e0f2f5d59639be882c32272f8a0ff420e9cb1699763d833e63428bfb67ff3f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2429.json"
+  },
+  {
+    "series_id": 135,
+    "series_name": "思域",
+    "status": "downloaded",
+    "sha256": "2a54cfdeba18fb33f573f10f42b021decf8208f737a3cd48cae8ad6958b2a068",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/135.json"
+  },
+  {
+    "series_id": 633,
+    "series_name": "宝来",
+    "status": "downloaded",
+    "sha256": "6f880969df8d6373ec8bce05627e9334ffd29bd1e26273b6106f7992eb60c71a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/633.json"
+  },
+  {
+    "series_id": 6664,
+    "series_name": "艾瑞泽8",
+    "status": "downloaded",
+    "sha256": "bbdf34e2ead30f96648b6baa58ec973337eb4df5d024711071d4af6e80ef1377",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6664.json"
+  },
+  {
+    "series_id": 871,
+    "series_name": "高尔夫",
+    "status": "downloaded",
+    "sha256": "28a61d640bb5cea002249baf1c4a5775b9db928137897ee850a38d33dcf706fb",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/871.json"
+  },
+  {
+    "series_id": 7981,
+    "series_name": "海豹05 DM-i",
+    "status": "downloaded",
+    "sha256": "674d32a2eef7cbfd1ffd9b7b0fa96aea25b7a2c459ae8bd43cfed036aa57b8be",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7981.json"
+  },
+  {
+    "series_id": 8006,
+    "series_name": "零跑B01",
+    "status": "downloaded",
+    "sha256": "0c87402527c3ac2dd617d2fa6a66cf3ba5e2c66ced54bd9976b3801bb92f27c1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8006.json"
+  },
+  {
+    "series_id": 4764,
+    "series_name": "奔驰A级",
+    "status": "downloaded",
+    "sha256": "c0c17f6619bbb09fff53b459cd3f3b4637f8641e54e223c269cb842f7c94cd28",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4764.json"
+  },
+  {
+    "series_id": 6265,
+    "series_name": "大众ID.3",
+    "status": "downloaded",
+    "sha256": "9b5f7e0f253261069f2da914f65d96748c82a2f0f70495e917cbe51653153a2a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6265.json"
+  },
+  {
+    "series_id": 3294,
+    "series_name": "马自达3 昂克赛拉",
+    "status": "downloaded",
+    "sha256": "c3bce0d56f0b40a1b863f8210033c286fb9ae4bcfb8b3361896d993ce780eb2d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3294.json"
+  },
+  {
+    "series_id": 51,
+    "series_name": "伊兰特",
+    "status": "downloaded",
+    "sha256": "892df255a0abf4ffa2775ca5bb9a1a7200848529ac6d9f43ce9e1c63b5ea9d9a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/51.json"
+  },
+  {
+    "series_id": 8278,
+    "series_name": "零跑Lafa5",
+    "status": "downloaded",
+    "sha256": "0e13264c58339f95049684f832245a6d7ce9c23e487b93bd90106e3d392d4ec8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8278.json"
+  },
+  {
+    "series_id": 4402,
+    "series_name": "领克03",
+    "status": "downloaded",
+    "sha256": "7b9882d3c97af975943caf1d3ce8e3e0e828ece264a8d55318335946497989ae",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4402.json"
+  },
+  {
+    "series_id": 3457,
+    "series_name": "凌渡",
+    "status": "downloaded",
+    "sha256": "fa3d275677916ff85f9cd5a381b414eed84876607abff5a21b8de5eb81210e38",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3457.json"
+  },
+  {
+    "series_id": 3462,
+    "series_name": "雷凌",
+    "status": "downloaded",
+    "sha256": "b21120cf322d1c400ce12636069995076667aab50bd4735d19670ca3f5df128b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3462.json"
+  },
+  {
+    "series_id": 8211,
+    "series_name": "银河星耀6",
+    "status": "downloaded",
+    "sha256": "fb9c5f93d20c1a306c0ccad0724a6969d50685b4c3c04f6d18002dcd4a3097d4",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8211.json"
+  },
+  {
+    "series_id": 3751,
+    "series_name": "威朗",
+    "status": "downloaded",
+    "sha256": "a68a9cda12b52d66fb890fdc3d95cd92fedfdb224fd4b49ee9dc06e9047ef7b8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3751.json"
+  },
+  {
+    "series_id": 7860,
+    "series_name": "AION RT",
+    "status": "downloaded",
+    "sha256": "1c670a499c40b8db6d36168c9955a090e26c043b14386cc1f26b5d9bc62b2af7",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7860.json"
+  },
+  {
+    "series_id": 7827,
+    "series_name": "宝马2系",
+    "status": "downloaded",
+    "sha256": "879f7e58d193a1eefca05d60b4392154d0d0312636018d1dc60fbe8b7b3a7178",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7827.json"
+  },
+  {
+    "series_id": 6335,
+    "series_name": "长安UNI-V",
+    "status": "downloaded",
+    "sha256": "62299a2df1e890878fb170249df7a1ee1287ddc8af9adce83bb5a3783d613c10",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6335.json"
+  },
+  {
+    "series_id": 6386,
+    "series_name": "型格",
+    "status": "downloaded",
+    "sha256": "3271c80e4d5bc171eead6cf41358c2210978c07b3bb8abde6c949117c01f74e2",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6386.json"
+  },
+  {
+    "series_id": 7829,
+    "series_name": "高尔夫GTI",
+    "status": "downloaded",
+    "sha256": "deb0d574b06f8bcc5a34cb3c9af501a3c1afb6076f8b12d277192f3e23048574",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7829.json"
+  },
+  {
+    "series_id": 8041,
+    "series_name": "艾瑞泽8 PRO",
+    "status": "downloaded",
+    "sha256": "9fa4f4cf397cb1c7bb08ec284e003bc51306063a64f89636302fd50cc63aaa48",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8041.json"
+  },
+  {
+    "series_id": 7167,
+    "series_name": "银河L6",
+    "status": "downloaded",
+    "sha256": "781cc3e3112e7bc0631d5731896af2ec3da2a82bf6a6c0101c51ad7ef0224c98",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7167.json"
+  },
+  {
+    "series_id": 896,
+    "series_name": "思域(进口)",
+    "status": "downloaded",
+    "sha256": "23fc6d1f25306237c4f6a1768c49afb568ea648d32ab55ad6770e02ba66afa3e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/896.json"
+  },
+  {
+    "series_id": 987,
+    "series_name": "标致408",
+    "status": "downloaded",
+    "sha256": "20c4364f2ed410f695c425765ee80823dc2102a6c4a636943daa6d0266862f05",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/987.json"
+  },
+  {
+    "series_id": 4869,
+    "series_name": "荣威i5",
+    "status": "downloaded",
+    "sha256": "ac7d12b8b9e8e4565ce26d0c3cdead3a56da9797f4f3dd99ae4c9d6282f6ea13",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4869.json"
+  },
+  {
+    "series_id": 6337,
+    "series_name": "驱逐舰05",
+    "status": "downloaded",
+    "sha256": "05bc2b033570f512894b6ad8154c10d8fa703b9f3b614b97bc304e9c3048a7fd",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6337.json"
+  },
+  {
+    "series_id": 8084,
+    "series_name": "奔驰CLA新能源",
+    "status": "downloaded",
+    "sha256": "e3f4510f8aecbef849682b6ba0c40c8ee038d16eb7984209a83cfe262311ea0a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8084.json"
+  },
+  {
+    "series_id": 3230,
+    "series_name": "宝马2系(进口)",
+    "status": "downloaded",
+    "sha256": "d104bb53edbb6f71e27d8d2ee770bfe31134fa019511753052534387a2dbd5d1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3230.json"
+  },
+  {
+    "series_id": 5217,
+    "series_name": "奔驰A级AMG",
+    "status": "downloaded",
+    "sha256": "c3bcac997604bb188498849ae0495a93c1b54d36adc38c401a425d03a7756530",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5217.json"
+  },
+  {
+    "series_id": 532,
+    "series_name": "MG5",
+    "status": "downloaded",
+    "sha256": "e8358829ce4f2723af6260a27c82ac4fdbd250cf9274609d195dfd8a9e509b97",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/532.json"
+  },
+  {
+    "series_id": 3405,
+    "series_name": "艾瑞泽5",
+    "status": "downloaded",
+    "sha256": "a3faa66b4565ae54c8ad9705737757e975a076b08828397ea9badfdbd2e63382",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3405.json"
+  },
+  {
+    "series_id": 2842,
+    "series_name": "奔驰A级AMG(进口)",
+    "status": "downloaded",
+    "sha256": "9424c9197fb5d98452068f54fa3904056753e49114e1287bce2b1518065c5e73",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2842.json"
+  },
+  {
+    "series_id": 8512,
+    "series_name": "荣威i6",
+    "status": "downloaded",
+    "sha256": "64b8489453b06dc1951370156848a714416c04812e9b678e9f2e2277154ab2c1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8512.json"
+  },
+  {
+    "series_id": 2886,
+    "series_name": "起亚K3",
+    "status": "downloaded",
+    "sha256": "932b79a63d315d5c3b6d75d4a993b29543ea9d3ce4f89a99c4bc87a69f88a9e2",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2886.json"
+  },
+  {
+    "series_id": 425,
+    "series_name": "骐达TIIDA",
+    "status": "downloaded",
+    "sha256": "15905843eb59f34cc600619dc9db4e4c03db9703c7ece33e0f020f9f6de8bac2",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/425.json"
+  },
+  {
+    "series_id": 5944,
+    "series_name": "影豹",
+    "status": "downloaded",
+    "sha256": "cf716e53ef6578d08b9dae881370adbcb4c300891a2597df27b7f3cee4fe304a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5944.json"
+  },
+  {
+    "series_id": 4776,
+    "series_name": "微蓝6",
+    "status": "downloaded",
+    "sha256": "ddf7559e0af8fb8fbfa8f7468f66153406d43c6f7bf0862a80f54f341f6fbec6",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4776.json"
+  },
+  {
+    "series_id": 2967,
+    "series_name": "奔驰CLA AMG",
+    "status": "downloaded",
+    "sha256": "209146e0fbd88fbfc2ec38844dd07e325edf7c945018190d4eb32ab7bdb73d6e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2967.json"
+  },
+  {
+    "series_id": 2966,
+    "series_name": "奔驰CLA(进口)",
+    "status": "downloaded",
+    "sha256": "f639a94b51123a38f56640df12b7f798f8d5db9fe24d2791a7172f86ceaac161",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2966.json"
+  },
+  {
+    "series_id": 4702,
+    "series_name": "缤瑞",
+    "status": "downloaded",
+    "sha256": "d18c2504dd2f1ba9aa1be34e5e92af9dd69593075b095a079cb04403228b0a10",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4702.json"
+  },
+  {
+    "series_id": 7154,
+    "series_name": "风云A8",
+    "status": "downloaded",
+    "sha256": "9da54b4b0387410620eaa8c7948da63b29b3055748b59375eb90f3b928ada9ad",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7154.json"
+  },
+  {
+    "series_id": 5137,
+    "series_name": "捷达VA3",
+    "status": "downloaded",
+    "sha256": "77ce4b7d64ca65c052606cf3de190b56a4bd11e556560d050ad82af4ff494c6d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5137.json"
+  },
+  {
+    "series_id": 7946,
+    "series_name": "宝马M240i",
+    "status": "downloaded",
+    "sha256": "097b63ebe93f47b8844362c766e60e897ffdb9a7bbb962908222acdbf99f1c7b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7946.json"
+  },
+  {
+    "series_id": 5963,
+    "series_name": "凌尚",
+    "status": "downloaded",
+    "sha256": "455387149ac4058785385ae4e72b3a9e0eabe71b6a169f9d1ac9dd5b49e30085",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5963.json"
+  },
+  {
+    "series_id": 7863,
+    "series_name": "风云A8L",
+    "status": "downloaded",
+    "sha256": "a03ad1f705c7ae5cb426be1c11d455abf6034153af7e2348e8fc15f92102af39",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7863.json"
+  },
+  {
+    "series_id": 6619,
+    "series_name": "AION S Plus",
+    "status": "downloaded",
+    "sha256": "3ee5f220ae3ee6978bb807dc38decbdd929ee1feb2c4d00a1fe41fa9a726a3ba",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6619.json"
+  },
+  {
+    "series_id": 8062,
+    "series_name": "逸动PHEV",
+    "status": "downloaded",
+    "sha256": "82628de0c477e0a295b820b3c262000936f2ff900d36a0b0e86a7847a90293aa",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8062.json"
+  },
+  {
+    "series_id": 5008,
+    "series_name": "科鲁泽",
+    "status": "downloaded",
+    "sha256": "1213559c937b0e0bb7b26a5b13314df3ed63772c9023e47a3da4a4d785ae402b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5008.json"
+  },
+  {
+    "series_id": 3263,
+    "series_name": "斯巴鲁WRX",
+    "status": "downloaded",
+    "sha256": "47aaf185e1bc6b6071411237914caaced9d43ecb8e0cd32694089e1d1a0e0351",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3263.json"
+  },
+  {
+    "series_id": 835,
+    "series_name": "MG6",
+    "status": "downloaded",
+    "sha256": "17d436a2fcb78d22f71f5f5e0af5c603896c1af5fd0c42c4edf3df2b525cbb73",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/835.json"
+  },
+  {
+    "series_id": 7278,
+    "series_name": "伊兰特Elantra N",
+    "status": "downloaded",
+    "sha256": "a7311aef31bb7f21819f59770de32a262a5d5c33134d0fb72173e1ac57a05011",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7278.json"
+  },
+  {
+    "series_id": 7890,
+    "series_name": "捷达VA7",
+    "status": "downloaded",
+    "sha256": "ce13910c23f466a2ab6636fc2b31a6114a20034b76e181297173365a405227ff",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7890.json"
+  },
+  {
+    "series_id": 5026,
+    "series_name": "AION S",
+    "status": "downloaded",
+    "sha256": "50b2b1262673931e25f766c9c5e2f6d236c1d6a229628e321d804bdd2926a66d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5026.json"
+  },
+  {
+    "series_id": 519,
+    "series_name": "明锐",
+    "status": "downloaded",
+    "sha256": "a2137663a8ec3f9a4cbe9793c2a79f3589936774a656e65daea2de4a09d214db",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/519.json"
+  },
+  {
+    "series_id": 5238,
+    "series_name": "比亚迪e2",
+    "status": "downloaded",
+    "sha256": "87511853048127a20a2a89ca1b4b888a5b97fdeeca25b182588c9312d2689a06",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5238.json"
+  },
+  {
+    "series_id": 7945,
+    "series_name": "宝马M235L",
+    "status": "downloaded",
+    "sha256": "b191bb9ded3973577b675cbd89d6d450a10a75dd58bfad92d2b73b9e59432276",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7945.json"
+  },
+  {
+    "series_id": 2761,
+    "series_name": "秦新能源",
+    "status": "downloaded",
+    "sha256": "80a779ded61356d3a08b6b1a96cda2635368ace8984f4d7f3cc97d8f6fee262e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2761.json"
+  },
+  {
+    "series_id": 7980,
+    "series_name": "荣威D6",
+    "status": "downloaded",
+    "sha256": "49a09b50a5263028efe891d0f24121e33b9001810c995c7ec4e96c0685b8f693",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7980.json"
+  },
+  {
+    "series_id": 6976,
+    "series_name": "逸达",
+    "status": "downloaded",
+    "sha256": "25f4a923d39f9eb7a88cdd7eab82a8b653b0bba778e7ff89f09fdf71bcbd438b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6976.json"
+  },
+  {
+    "series_id": 5103,
+    "series_name": "奕炫",
+    "status": "downloaded",
+    "sha256": "c334308a9a8b4cd366762669f75c78e977751b058f02e4df2387d070dcc996d9",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5103.json"
+  },
+  {
+    "series_id": 8536,
+    "series_name": "帝豪甲醇",
+    "status": "downloaded",
+    "sha256": "b29ee33aed8a115838b93a6cc0f4e3dbf7622f549ffe855afaae9dad9570d40b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8536.json"
+  },
+  {
+    "series_id": 7452,
+    "series_name": "AION S MAX",
+    "status": "downloaded",
+    "sha256": "e9afd69843b57d9d65ae54a35b3a4f8071b73dd4a38470be9fe7ca558bbd9eec",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7452.json"
+  },
+  {
+    "series_id": 4343,
+    "series_name": "逸动新能源",
+    "status": "downloaded",
+    "sha256": "60af33490c0c49f923aebaff6e666f3818566e16d40f405270473909dbb192e8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4343.json"
+  },
+  {
+    "series_id": 4983,
+    "series_name": "吉利几何A",
+    "status": "downloaded",
+    "sha256": "191adc210176e9db9e71d905f1a0cfe8ef176cc06186339408ef73559c1e0ecc",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4983.json"
+  },
+  {
+    "series_id": 6735,
+    "series_name": "长安UNI-V 智电iDD",
+    "status": "downloaded",
+    "sha256": "a73a4f8a419b6eeb7722a5b3d49a2fd24e088000c4f10f2cb3331332296bfc10",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6735.json"
+  },
+  {
+    "series_id": 6345,
+    "series_name": "欧拉芭蕾猫",
+    "status": "downloaded",
+    "sha256": "870ea8bce5cb53ba52bec5c115ce61dbce37d3b53c42a07a886a7df81b2eb206",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6345.json"
+  },
+  {
+    "series_id": 4421,
+    "series_name": "东风风神E70",
+    "status": "downloaded",
+    "sha256": "99165d9e1c7484dbcebe285e9cce0a27cd64280ade22c4300c86a5c3ae74b07b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4421.json"
+  },
+  {
+    "series_id": 5371,
+    "series_name": "比亚迪e3",
+    "status": "downloaded",
+    "sha256": "09bbb23b0dde602cfe8b28bcdc77fb1d610c6e9085f5b618baaf65cfcd54e40a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5371.json"
+  },
+  {
+    "series_id": 8525,
+    "series_name": "领汇e5",
+    "status": "downloaded",
+    "sha256": "c6f2519be7ee24182b7a061fb71a8319d31c7bb9d1c124e591164ed02efd38d9",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8525.json"
+  },
+  {
+    "series_id": 6923,
+    "series_name": "锐程PLUS",
+    "status": "downloaded",
+    "sha256": "e374b33551b382608287eaa16ba145911514c0b5253fb9ca007349a30332abb6",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6923.json"
+  },
+  {
+    "series_id": 8657,
+    "series_name": "长安欧尚530",
+    "status": "downloaded",
+    "sha256": "2e950a872a52315ce2ea01e2c977a02f2bca7abb1c2302b29fa55b5d7d0f7fc8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8657.json"
+  },
+  {
+    "series_id": 5396,
+    "series_name": "畅巡",
+    "status": "downloaded",
+    "sha256": "0df875dc97fbebd1524ee664eb1fe93431afff19c11e597988f84698bcdede43",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5396.json"
+  },
+  {
+    "series_id": 4490,
+    "series_name": "启辰D60",
+    "status": "downloaded",
+    "sha256": "5f6cd9b98eb7ab1a7016c1cd3ef3c462d292938dad1466653ea8368ef2c9b042",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4490.json"
+  },
+  {
+    "series_id": 6863,
+    "series_name": "吉利几何G6",
+    "status": "downloaded",
+    "sha256": "e87de56844bde7927b6be59cb55ffb89dc0a32fe6f9c743c53b75756d817e739",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6863.json"
+  },
+  {
+    "series_id": 7198,
+    "series_name": "曹操60",
+    "status": "downloaded",
+    "sha256": "03d98b86040a51d4aef531974e0cb1b0477e7c89f1c0b4c9c0ea1e5850da1808",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7198.json"
+  },
+  {
+    "series_id": 7895,
+    "series_name": "长安欧尚520",
+    "status": "downloaded",
+    "sha256": "dcc895eaa04e45b758eb5d4c6c7a9bf09bf8ec70fbf12fe97f42fe651a5a1d46",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7895.json"
+  },
+  {
+    "series_id": 8017,
+    "series_name": "羿驰05",
+    "status": "downloaded",
+    "sha256": "d65e275c7172edbd1388ccf867de72a1403643b1065e684f4e2ea8cf125d52fc",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8017.json"
+  },
+  {
+    "series_id": 5801,
+    "series_name": "荣威i6 MAX新能源",
+    "status": "downloaded",
+    "sha256": "f57527ddd790479cf85fe99153a96a8a0a3886b80d7c71057f94262546215eeb",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5801.json"
+  },
+  {
+    "series_id": 5078,
+    "series_name": "Polestar 2",
+    "status": "downloaded",
+    "sha256": "2eaa86c937db66f58eb8fb09bdb51630875cd944cffb4bf5b7e6a91051c642d2",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5078.json"
+  },
+  {
+    "series_id": 5183,
+    "series_name": "启辰D60EV",
+    "status": "downloaded",
+    "sha256": "2240fe626e9b7245f965d9c310079dac537a65a5ad3a3bdfdcb1f7b443e97404",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5183.json"
+  },
+  {
+    "series_id": 5403,
+    "series_name": "艾瑞泽e",
+    "status": "downloaded",
+    "sha256": "5b6f1340a3f54bc90d7220182a92ad3a8ee257d02807b46d651952af2cc064ea",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5403.json"
+  },
+  {
+    "series_id": 8225,
+    "series_name": "荣威E6",
+    "status": "downloaded",
+    "sha256": "7a95bcbcda4a8b04253019fe2857744879864cadf8c80e77835830f622294d2a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8225.json"
+  },
+  {
+    "series_id": 6173,
+    "series_name": "北京U5 PLUS",
+    "status": "downloaded",
+    "sha256": "834bb2f9a36d975104b42b0ff586646443a683077824e08ec09608526679af86",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6173.json"
+  },
+  {
+    "series_id": 5589,
+    "series_name": "e爱丽舍",
+    "status": "downloaded",
+    "sha256": "cc2ca17c458261ee91fed6c9802febc31ff180a28ec9f05e1609c70c1ca02d0e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5589.json"
+  },
+  {
+    "series_id": 7251,
+    "series_name": "江淮A5 PLUS",
+    "status": "downloaded",
+    "sha256": "a61403237aba9466d13b1faf1c4b65267487be783d2d40e26b1d20fb462bad2f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7251.json"
+  },
+  {
+    "series_id": 6215,
+    "series_name": "枫叶60s",
+    "status": "downloaded",
+    "sha256": "2537a6f5ab41452763eab35b26cbfe5e4a3084b9be7731914da960dd330924e1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6215.json"
+  },
+  {
+    "series_id": 6116,
+    "series_name": "轩度",
+    "status": "downloaded",
+    "sha256": "3e177dae426e9b0758c2802ea1278ed37df08e63d6e01ad0515edf314792c570",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6116.json"
+  },
+  {
+    "series_id": 4614,
+    "series_name": "风行S50EV",
+    "status": "downloaded",
+    "sha256": "6ac911a908062e7dfdc72b8f23ce741ec5d0855d61cf2447b9e94c2b3ec9748f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4614.json"
+  },
+  {
+    "series_id": 5914,
+    "series_name": "思皓A5",
+    "status": "downloaded",
+    "sha256": "8f40489f9eb7f999fb29a46aff32cae55ea07fd95c42330444793aba3a607400",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5914.json"
+  },
+  {
+    "series_id": 6005,
+    "series_name": "羿",
+    "status": "downloaded",
+    "sha256": "f8047fb3a4015960fb608ef488e13f52d8fe6f95c7ad61df35b6e4e47414a811",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6005.json"
+  },
+  {
+    "series_id": 6844,
+    "series_name": "轩度EV",
+    "status": "downloaded",
+    "sha256": "c8d74b87516ad13a6e8c602fa445203395c29c6cf7dffcf8275caaa9f43f0079",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6844.json"
+  },
+  {
+    "series_id": 6488,
+    "series_name": "风行S60EV",
+    "status": "downloaded",
+    "sha256": "0a7812ee769778e7f49ce45e790467bd35da96b3ba0665741fdd8c84aa951b1d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6488.json"
+  },
+  {
+    "series_id": 7573,
+    "series_name": "爱跑",
+    "status": "downloaded",
+    "sha256": "e0ca7422a897fde38c7b3d81299940f677a993c73f2bf7810628c6ede3ac32f6",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7573.json"
+  },
+  {
+    "series_id": 7581,
+    "series_name": "吉祥AIR",
+    "status": "downloaded",
+    "sha256": "acbccfa9800bc6b5374a9827fbb8d7a0e4366320aa7fa6a9c05a7758941c60cf",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7581.json"
+  },
+  {
+    "series_id": 6947,
+    "series_name": "枫叶60s PRO",
+    "status": "downloaded",
+    "sha256": "19f8b9961142e238c3997a5e9b0bf7713d40d82a54f018c991a7bd58cb37eefb",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6947.json"
+  },
+  {
+    "series_id": 4628,
+    "series_name": "江淮iEVA50",
+    "status": "downloaded",
+    "sha256": "2e77eda9dcdb30748f4c1e505ea94c40108b75973288143c5eb33e795e5bfd39",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4628.json"
+  },
+  {
+    "series_id": 110,
+    "series_name": "凯美瑞",
+    "status": "downloaded",
+    "sha256": "5fe22841ac97280f3e5c2529cc97fb299311faac5441489e1583f15cd114833e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/110.json"
+  },
+  {
+    "series_id": 66,
+    "series_name": "宝马3系",
+    "status": "downloaded",
+    "sha256": "e60e7ccc22e30f469ebe5169cfa0253a0a649ac15b6f6e093a1506ecc3bd31b1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/66.json"
+  },
+  {
+    "series_id": 588,
+    "series_name": "奔驰C级",
+    "status": "downloaded",
+    "sha256": "85f224081c44b76530eeb24f26a39b518a88bf0092d68cf827bf7c2ff6207f3f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/588.json"
+  },
+  {
+    "series_id": 78,
+    "series_name": "雅阁",
+    "status": "downloaded",
+    "sha256": "3a79ec78f602a6687aaccfa868b392ebfcfc44b65ee952f76fa9517942cee089",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/78.json"
+  },
+  {
+    "series_id": 496,
+    "series_name": "迈腾",
+    "status": "downloaded",
+    "sha256": "36962e4e0a59cd19efa24f1c9bd7e023beb5223324dcae12212b69b8c4e54ed1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/496.json"
+  },
+  {
+    "series_id": 5346,
+    "series_name": "Model 3",
+    "status": "downloaded",
+    "sha256": "43a8d5fe427d02dd1acafd493691ef9d85a4b5b2deec2f85ec3e02e93e1baf5a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5346.json"
+  },
+  {
+    "series_id": 528,
+    "series_name": "帕萨特",
+    "status": "downloaded",
+    "sha256": "210e131462fbf167f7b0358ff63da2a73b7329da054ec08f2cc9b0458f123d6e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/528.json"
+  },
+  {
+    "series_id": 692,
+    "series_name": "奥迪A4L",
+    "status": "downloaded",
+    "sha256": "de365bda6a88e825574627b246cba4fa4bbb56d4ba95e09f2d13e2121ef198f9",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/692.json"
+  },
+  {
+    "series_id": 4962,
+    "series_name": "亚洲龙",
+    "status": "downloaded",
+    "sha256": "01e8bcad26077a728d794d75ddbc7dbd91598ba0c9e7c78699f388be16d4c42d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4962.json"
+  },
+  {
+    "series_id": 117,
+    "series_name": "蒙迪欧",
+    "status": "downloaded",
+    "sha256": "acf8fa2317ab8d3e81850173bc8044c226f448eaa969148176f05a349e5339f9",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/117.json"
+  },
+  {
+    "series_id": 8109,
+    "series_name": "悦意08",
+    "status": "downloaded",
+    "sha256": "e6ec85e8484491cbe0271e7ffd8f60abe2f402908358e81d84a8fa1e3bbcd903",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8109.json"
+  },
+  {
+    "series_id": 5062,
+    "series_name": "迈腾 PHEV",
+    "status": "downloaded",
+    "sha256": "b8c2874f272edfef597c84eb0091cd60df4ad741ece9cdbc8772ff6a5a4f91d6",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5062.json"
+  },
+  {
+    "series_id": 7588,
+    "series_name": "海豹06",
+    "status": "downloaded",
+    "sha256": "bd27f9bd50fb77af8f6bf55a6f93c8493e7d73d72049040c759fbb9c4c1ece1a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7588.json"
+  },
+  {
+    "series_id": 7578,
+    "series_name": "秦L",
+    "status": "downloaded",
+    "sha256": "5decbf1051257e580e48fba44769cdcb302522ceb07b2b2e7346736fdb2140d6",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7578.json"
+  },
+  {
+    "series_id": 7855,
+    "series_name": "奥迪A5L",
+    "status": "downloaded",
+    "sha256": "df70e48abddeb2dc9f4544c3b9b53780e74468cb5baae2c4a3a677e0d7510501",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7855.json"
+  },
+  {
+    "series_id": 5349,
+    "series_name": "凯迪拉克CT5",
+    "status": "downloaded",
+    "sha256": "2a1b09eff6bf3fb53057551c3a61dcbc89b2c11004a634ded82a0a1573e18e0d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5349.json"
+  },
+  {
+    "series_id": 8562,
+    "series_name": "领克07GT",
+    "status": "downloaded",
+    "sha256": "57ee0eb3d139f16c2b79ee2c67a0fc43dd25bf8f1206480e3cfebf0747669a02",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8562.json"
+  },
+  {
+    "series_id": 4410,
+    "series_name": "红旗H5",
+    "status": "downloaded",
+    "sha256": "b98310efdfcefa17e8ca5990ddbce4819a6c0dde2ac4a9c8c8a716bbeb783e5f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4410.json"
+  },
+  {
+    "series_id": 834,
+    "series_name": "君越",
+    "status": "downloaded",
+    "sha256": "abb8baa1c3c375e7287c8117fbf8f06f45a69b071c0483c18c383d86c3fc4000",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/834.json"
+  },
+  {
+    "series_id": 3158,
+    "series_name": "沃尔沃S60",
+    "status": "downloaded",
+    "sha256": "3de3ec04525387546fb79b5825bbebdab5a0ac545ea0e1a6b580bd47d438a368",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3158.json"
+  },
+  {
+    "series_id": 8190,
+    "series_name": "极狐贝塔S3",
+    "status": "downloaded",
+    "sha256": "e4e64fc239a503d93e7b0abc52b3b47dcd5ad4dca13493f5c39f56b72f27b77a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8190.json"
+  },
+  {
+    "series_id": 634,
+    "series_name": "天籁",
+    "status": "downloaded",
+    "sha256": "eb59d3636d21f2ab857ae3deb8c0f54cfe40e3c3eef8367aa8b32a61536ebef6",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/634.json"
+  },
+  {
+    "series_id": 164,
+    "series_name": "君威",
+    "status": "downloaded",
+    "sha256": "4dffa81fa667bf3b761cbc7e324d7725a79b6bedeed46b674cc28811696665f2",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/164.json"
+  },
+  {
+    "series_id": 7694,
+    "series_name": "海豹06GT",
+    "status": "downloaded",
+    "sha256": "cb4722250c0ed00750a106477cb88c6bef55f7c9d86784feb2f394d7c873f118",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7694.json"
+  },
+  {
+    "series_id": 8313,
+    "series_name": "银河星耀7",
+    "status": "downloaded",
+    "sha256": "bc35b2c6f5c3252ea4de06d026016b03c10ad9a4a1558d2b9a92aac00e9afd80",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8313.json"
+  },
+  {
+    "series_id": 6544,
+    "series_name": "宝马i3",
+    "status": "downloaded",
+    "sha256": "4c5979d0c76501ba4db25b98ab7356252f67a747b85eade2e94ea31a9d0d6233",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6544.json"
+  },
+  {
+    "series_id": 6120,
+    "series_name": "凡尔赛C5 X",
+    "status": "downloaded",
+    "sha256": "1375a0e3b1020ea663a62bd016f281627ea4894984c0356ffab42cf0f906b276",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6120.json"
+  },
+  {
+    "series_id": 905,
+    "series_name": "一汽-大众CC",
+    "status": "downloaded",
+    "sha256": "d58828db0c799d1ed5e61b92a85fe2348e687126e344b1f54379d5dab7f1875d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/905.json"
+  },
+  {
+    "series_id": 8010,
+    "series_name": "极氪007GT",
+    "status": "downloaded",
+    "sha256": "ae92d434178c53e513df367ebb6b9e597b113bce7991fc45774003a5f15b06d8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8010.json"
+  },
+  {
+    "series_id": 7327,
+    "series_name": "极狐 阿尔法S5",
+    "status": "downloaded",
+    "sha256": "13934fbed9dab66d6f3a0b06124fca6bd9a33caf786cf42c58b435c3daa6b6d1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7327.json"
+  },
+  {
+    "series_id": 8201,
+    "series_name": "海豹06 DM-i旅行版",
+    "status": "downloaded",
+    "sha256": "1bd428772e2eb45eab1f088936fa5bcbacf04729f793fb4f7ec501fcf8ebb1e6",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8201.json"
+  },
+  {
+    "series_id": 4809,
+    "series_name": "英仕派",
+    "status": "downloaded",
+    "sha256": "18bf1b73cd8b2c6521a940d1f6974c81d075e8567f00d7978fc8e8d924fc0bfc",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4809.json"
+  },
+  {
+    "series_id": 7817,
+    "series_name": "奥迪A5L Sportback",
+    "status": "downloaded",
+    "sha256": "f488140489101d082bfc448ac68c689d3752aeffbe6759db900a0cbbd907fca7",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7817.json"
+  },
+  {
+    "series_id": 8244,
+    "series_name": "深蓝L06",
+    "status": "downloaded",
+    "sha256": "bda0e660a4964237687af5828f7982628d113aca53d283fb7f6502ea1ee32e7d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8244.json"
+  },
+  {
+    "series_id": 2649,
+    "series_name": "索纳塔",
+    "status": "downloaded",
+    "sha256": "932cf986570d440e8c03cbb3c843427fe209fedfb25135fb0381f37b55d90cd3",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2649.json"
+  },
+  {
+    "series_id": 8158,
+    "series_name": "银河A7 EM",
+    "status": "downloaded",
+    "sha256": "64be9e849a69b485a5d6c27625be1037f8bbd80651d133c6c3ec43c4f93cf415",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8158.json"
+  },
+  {
+    "series_id": 7925,
+    "series_name": "奥迪E5 Sportback",
+    "status": "downloaded",
+    "sha256": "2cefc8e58624c52c7b11e65ca7b10b5c8802fcf3a0317785712eeea75e8b5c16",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7925.json"
+  },
+  {
+    "series_id": 2968,
+    "series_name": "宝马4系",
+    "status": "downloaded",
+    "sha256": "c8b87fd738f74f4c1fd74684bf72cd9479baa6bbed208ab3c3300cdf6a5f7d82",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2968.json"
+  },
+  {
+    "series_id": 8462,
+    "series_name": "海豹07 EV",
+    "status": "downloaded",
+    "sha256": "bf713815b4e5f659b9c6ff04d03f3f265484d58e75a9e0b7807077efe265a79e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8462.json"
+  },
+  {
+    "series_id": 7491,
+    "series_name": "极氪007",
+    "status": "downloaded",
+    "sha256": "b9bd5bc498d765042ab6a61d22ce9a35ab70c76bb6c4e393eebf869ac0627868",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7491.json"
+  },
+  {
+    "series_id": 6394,
+    "series_name": "海豹",
+    "status": "downloaded",
+    "sha256": "28a2038a185f5d6ed62c4096498c0b2087784a183088d168331202801138060e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6394.json"
+  },
+  {
+    "series_id": 6903,
+    "series_name": "丰田bZ3",
+    "status": "downloaded",
+    "sha256": "f7036276e8ce38b829a728470e78382d21e68191af997b0edf01d48be5dc6fd8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6903.json"
+  },
+  {
+    "series_id": 6477,
+    "series_name": "林肯Z",
+    "status": "downloaded",
+    "sha256": "83f7049f66800dbaefc00271a5dfff8876f228d23b3535ebe8f43362373adbb1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6477.json"
+  },
+  {
+    "series_id": 7306,
+    "series_name": "蔚来ET5T",
+    "status": "downloaded",
+    "sha256": "bc8913fb30a374c3a11ab54ef2d5c23e1187037fdde77452f8ce35b38a10de64",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7306.json"
+  },
+  {
+    "series_id": 5576,
+    "series_name": "领克07 EM-P",
+    "status": "downloaded",
+    "sha256": "c8b383d7e30de50768e060a558060e18f06bc2d61ef347b81048f2144f9835e8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5576.json"
+  },
+  {
+    "series_id": 6453,
+    "series_name": "蔚来ET5",
+    "status": "downloaded",
+    "sha256": "5cd3b2a2d25395ba99c19304a9ef06b5899e8986fb46b63a92493f71b30e4019",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6453.json"
+  },
+  {
+    "series_id": 8312,
+    "series_name": "与众07",
+    "status": "downloaded",
+    "sha256": "c53bbffaf2c8f4fee1ebbd98ba303eba487c899ce15aa2e4961287328096054f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8312.json"
+  },
+  {
+    "series_id": 8243,
+    "series_name": "日产N6",
+    "status": "downloaded",
+    "sha256": "52cfc49f173388118c485accfc048974bff1246af81e0b5e1cb4a5efddb835b7",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8243.json"
+  },
+  {
+    "series_id": 7752,
+    "series_name": "阿维塔06",
+    "status": "downloaded",
+    "sha256": "1fca108fb2f7777e68507f0467414721c23f0e487e8274702123252c2719fd68",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7752.json"
+  },
+  {
+    "series_id": 7822,
+    "series_name": "海豹07 DM-i",
+    "status": "downloaded",
+    "sha256": "f6ad88106cfbbb26da5dfd134628e9fb6b73a7a20ff1de69f6bc01b6343fa1b3",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7822.json"
+  },
+  {
+    "series_id": 538,
+    "series_name": "奥迪A5(进口)",
+    "status": "downloaded",
+    "sha256": "2c3e931f34d5bf95a0f95965d1bb6cccab100d7dbe64f93cb6cc2f4379612d2b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/538.json"
+  },
+  {
+    "series_id": 4904,
+    "series_name": "帕萨特插电混动",
+    "status": "downloaded",
+    "sha256": "0fd6fa83a67b6714885a2b640f0d7003941d40ff11f8f81d433b8f92580e5df6",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4904.json"
+  },
+  {
+    "series_id": 8538,
+    "series_name": "阿维塔06T",
+    "status": "downloaded",
+    "sha256": "bd94d0163f01d5fd0298c24a27bd1007c5b146568f5125ac811e5e9491b1abff",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8538.json"
+  },
+  {
+    "series_id": 471,
+    "series_name": "奥迪A4(进口)",
+    "status": "downloaded",
+    "sha256": "edf144af23f9df2616cf554105eae5f52efc9e66a2a4e38d49ddc17bfcd1ddf5",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/471.json"
+  },
+  {
+    "series_id": 5593,
+    "series_name": "凯迪拉克CT4",
+    "status": "downloaded",
+    "sha256": "f014986b936a126d013adc6b627443b1c9a783114fe2a87667ab5c2ed5a4e595",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5593.json"
+  },
+  {
+    "series_id": 6002,
+    "series_name": "红旗E-QM5",
+    "status": "downloaded",
+    "sha256": "0939d4220e7d7c8026261f7b1d52ab0cfe24be35fd08d7573c91dd8b84acb486",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6002.json"
+  },
+  {
+    "series_id": 3189,
+    "series_name": "宝马M4",
+    "status": "downloaded",
+    "sha256": "d6f065be026af54e076ff9a69d582a5b58cfe5378ff129cc6928c5add09282c7",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3189.json"
+  },
+  {
+    "series_id": 7692,
+    "series_name": "马自达EZ-6",
+    "status": "downloaded",
+    "sha256": "6fffb871021f5b7784eb2593606d0bcb93042dc5ed1368a586679710ad10b35c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7692.json"
+  },
+  {
+    "series_id": 7349,
+    "series_name": "五菱星光",
+    "status": "downloaded",
+    "sha256": "92069a8daf33ba2ade3da9dee50a76ec3655e73ba231ca5d77411a0e3a370d9c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7349.json"
+  },
+  {
+    "series_id": 8666,
+    "series_name": "银河A7 EV",
+    "status": "downloaded",
+    "sha256": "252c828567eacafa767bd625c423cb530004a45bf5b9dbaf12a87e2c3219219f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8666.json"
+  },
+  {
+    "series_id": 2717,
+    "series_name": "奔驰C级AMG",
+    "status": "downloaded",
+    "sha256": "5891ecf0d12e0e940ec8d2693d13069212bc34001f66577f11289c9b35221ff2",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2717.json"
+  },
+  {
+    "series_id": 6460,
+    "series_name": "红旗H6",
+    "status": "downloaded",
+    "sha256": "ccfb35b17671652c7371a1a73efa39c8b8b176cbfbdb535a13dcc143f0175e48",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6460.json"
+  },
+  {
+    "series_id": 531,
+    "series_name": "MG7",
+    "status": "downloaded",
+    "sha256": "b6b5945bbca7451a90063837e56b1c17b12c4203bcc24caab6bbab0b99669a14",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/531.json"
+  },
+  {
+    "series_id": 2196,
+    "series_name": "宝马M3",
+    "status": "downloaded",
+    "sha256": "963de2c2647544857b3d1ac377ebdea22bf247f371fb21c239e51609d5d3e46f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2196.json"
+  },
+  {
+    "series_id": 2299,
+    "series_name": "标致508",
+    "status": "downloaded",
+    "sha256": "f976fa4d45b9a4f664473ff79bde675798eb8a4635f4cb1c7b477a6ba8a45d73",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2299.json"
+  },
+  {
+    "series_id": 7738,
+    "series_name": "深蓝L07",
+    "status": "downloaded",
+    "sha256": "0ae71acbf1463e0f065b8d4911a64da21d8b2924534a557471cb14d95ce1f7db",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7738.json"
+  },
+  {
+    "series_id": 4349,
+    "series_name": "奔驰C级新能源",
+    "status": "downloaded",
+    "sha256": "421317f7d8fd84fc2170ec4072ec816da069bcd3d7dce567e7ec1b1b0f7c0010",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4349.json"
+  },
+  {
+    "series_id": 2246,
+    "series_name": "起亚K5",
+    "status": "downloaded",
+    "sha256": "195167bb5f9d8596be760f9c60352a5c00fc5dc40e25f0dabf142cf1e6fc7043",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2246.json"
+  },
+  {
+    "series_id": 6353,
+    "series_name": "深蓝SL03",
+    "status": "downloaded",
+    "sha256": "5471710871a0be1c356c61e39ae0dc8024a0bff53e8d5aa3a63a8591e4313168",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6353.json"
+  },
+  {
+    "series_id": 4031,
+    "series_name": "迈锐宝XL",
+    "status": "downloaded",
+    "sha256": "eaab71629b1e4325b60c6b747b10865e47af17f5c51a90e9bb438f3b3a98839d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4031.json"
+  },
+  {
+    "series_id": 2190,
+    "series_name": "沃尔沃V60",
+    "status": "downloaded",
+    "sha256": "fcf917150b7dba878b9e956e84a17ced1dccfdbcf1ea4fa774f4ee10da3d56d4",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2190.json"
+  },
+  {
+    "series_id": 8465,
+    "series_name": "smart精灵#6",
+    "status": "downloaded",
+    "sha256": "72278ea6fa4da570d8174f83385c5631ad6522b94a6b4f85b9d7bb52bbb20a28",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8465.json"
+  },
+  {
+    "series_id": 5275,
+    "series_name": "红旗H5 PHEV",
+    "status": "downloaded",
+    "sha256": "b5cb304c82b65d859ba3fa894780658049b9ecd7bc19e9a5705e1c6df1df4885",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5275.json"
+  },
+  {
+    "series_id": 2732,
+    "series_name": "奥迪S4",
+    "status": "downloaded",
+    "sha256": "67c4b617982add991f67960373cd5703b6b1a4aa091549adf13ec451715890b7",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2732.json"
+  },
+  {
+    "series_id": 3825,
+    "series_name": "Giulia朱丽叶",
+    "status": "downloaded",
+    "sha256": "55319382bf38a7f322172ef7ebb45d6fbed7bd0a90c78ee3420b412522e926b1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3825.json"
+  },
+  {
+    "series_id": 8161,
+    "series_name": "荣威M7 DMH",
+    "status": "downloaded",
+    "sha256": "1d760bb61c29188958f78e2225b3e2dc88d6e5955b3641691b662c90a838e436",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8161.json"
+  },
+  {
+    "series_id": 2735,
+    "series_name": "奥迪RS 5",
+    "status": "downloaded",
+    "sha256": "04216e481eca84d70ea531ee3e1908dfbe6aa53406ad268a4ce9d82ceb54c6a9",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2735.json"
+  },
+  {
+    "series_id": 8015,
+    "series_name": "比亚迪e7",
+    "status": "downloaded",
+    "sha256": "3a85bd1fe602ef8f31d49bd4a96a925e4a24fd7aaa797311d72974aa907395e3",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8015.json"
+  },
+  {
+    "series_id": 466,
+    "series_name": "奔腾B70",
+    "status": "downloaded",
+    "sha256": "40e6dada7da40674dde722aa5b24cde20f4f4c55b6a808446cad811e00cc6909",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/466.json"
+  },
+  {
+    "series_id": 3171,
+    "series_name": "速派",
+    "status": "downloaded",
+    "sha256": "84d5173069c769cc7c8af4ad152e28519f506385b1b0474aa374014c93f3d1f5",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3171.json"
+  },
+  {
+    "series_id": 6770,
+    "series_name": "奔驰C级AMG新能源",
+    "status": "downloaded",
+    "sha256": "602f974112942ea46a390424fe41bae0687992705ea39f7ea64c4611998b1c34",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6770.json"
+  },
+  {
+    "series_id": 7705,
+    "series_name": "红旗天工05",
+    "status": "downloaded",
+    "sha256": "3de50d3426120e96afb25d3619bd8dedeb6fc5576e2721038c4351b6751e5028",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7705.json"
+  },
+  {
+    "series_id": 5480,
+    "series_name": "宝马i4",
+    "status": "downloaded",
+    "sha256": "f23059c7aa074e2c9fab5e88462740c444a17719eea11ef403712e029b41980a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5480.json"
+  },
+  {
+    "series_id": 2733,
+    "series_name": "奥迪RS 4",
+    "status": "downloaded",
+    "sha256": "638ec2ecdbf6cb77e1e607ef85887ab3188714c4a19808f25a979432d85ae222",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2733.json"
+  },
+  {
+    "series_id": 3682,
+    "series_name": "Mirai",
+    "status": "downloaded",
+    "sha256": "40c280aa19451d4e1ddee5d8fd7c731435afb76dc4f519addc3c70683c66d8d1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3682.json"
+  },
+  {
+    "series_id": 6785,
+    "series_name": "标致408X",
+    "status": "downloaded",
+    "sha256": "e3d927ae46f2a20d15411c22478e7c683d2957f5b62fc3dd713fe6ead8d68645",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6785.json"
+  },
+  {
+    "series_id": 7301,
+    "series_name": "荣威D7",
+    "status": "downloaded",
+    "sha256": "1936682d7b961311e99898deb891f774edf345c723380b58f58591de22fb09e9",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7301.json"
+  },
+  {
+    "series_id": 2734,
+    "series_name": "奥迪S5",
+    "status": "downloaded",
+    "sha256": "dfa33a50d7fecf35a20f233091d3dbef77aa3faee16e916850bbccd57f7afc21",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2734.json"
+  },
+  {
+    "series_id": 7947,
+    "series_name": "宝马i4 M",
+    "status": "downloaded",
+    "sha256": "42b50f4fb89d7deb297b9b74d37e05dd5ff4378ca93edabd3537492eff6f8a00",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7947.json"
+  },
+  {
+    "series_id": 7178,
+    "series_name": "英仕派新能源",
+    "status": "downloaded",
+    "sha256": "2e76e8e41ebcc359c015005bb7c45fbead328e9bc8b4eba747de7fa13bc676aa",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7178.json"
+  },
+  {
+    "series_id": 8522,
+    "series_name": "领汇e7",
+    "status": "downloaded",
+    "sha256": "5dbc4369a961d4a02f4319c3462513d60bbc470b5f757e7cf51cc515b451fd46",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8522.json"
+  },
+  {
+    "series_id": 6124,
+    "series_name": "欧拉闪电猫",
+    "status": "downloaded",
+    "sha256": "df9e701dd4010d9543fa1c376636972ed311c11a1b6ff85d14db875b5fa462f3",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6124.json"
+  },
+  {
+    "series_id": 7723,
+    "series_name": "五菱E5",
+    "status": "downloaded",
+    "sha256": "f79de7fcc62fc37705a87da8ecf4b898308a5ddd4043e39ab1c20305d0075e93",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7723.json"
+  },
+  {
+    "series_id": 7407,
+    "series_name": "灵悉L",
+    "status": "downloaded",
+    "sha256": "a934c220fabe45b9858e9f26202f141c00ad8601c1cf11de69743b46b5d69e70",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7407.json"
+  },
+  {
+    "series_id": 8314,
+    "series_name": "北京EU8",
+    "status": "downloaded",
+    "sha256": "a32da3ce5a3f5f9708181eef7436a977a7632e14fccea690057564865a10e76d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8314.json"
+  },
+  {
+    "series_id": 8485,
+    "series_name": "海豹08",
+    "status": "downloaded",
+    "sha256": "481f501b9c57c9f28f56fd62c1782052ff9ce0a531f00df7b2dc1d8cc19a8bd1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8485.json"
+  },
+  {
+    "series_id": 18,
+    "series_name": "奥迪A6L",
+    "status": "downloaded",
+    "sha256": "3d3585c1307be8252ee3cf7fd3bd7439e6487e5c587aaf4e14dcf7c20c810a44",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/18.json"
+  },
+  {
+    "series_id": 197,
+    "series_name": "奔驰E级",
+    "status": "downloaded",
+    "sha256": "11b6dd5e2f989d33956a04e0a7fca0239bae74f160c1729544a5117239fe3f92",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/197.json"
+  },
+  {
+    "series_id": 65,
+    "series_name": "宝马5系",
+    "status": "downloaded",
+    "sha256": "94ed387fc6ab2c728e907396e07e97c7f90d9851ffadb6bb8ad119fcaa49dc62",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/65.json"
+  },
+  {
+    "series_id": 6962,
+    "series_name": "小米SU7",
+    "status": "downloaded",
+    "sha256": "7f6731a83127ce2cf91a1fda1ebf8938b071f95c5a74bfc23f6ec80c7d5abf2d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6962.json"
+  },
+  {
+    "series_id": 8424,
+    "series_name": "启境GT7",
+    "status": "downloaded",
+    "sha256": "5cd77e50ebe6e6d505295fdc583330d785ed75ea2bead2c66d490609dc1d66d8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8424.json"
+  },
+  {
+    "series_id": 403,
+    "series_name": "雷克萨斯ES",
+    "status": "downloaded",
+    "sha256": "59dc6fed17be546b6b0b352b803b61d5d198f3c25d7b937cf3d423a1afd269b6",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/403.json"
+  },
+  {
+    "series_id": 7659,
+    "series_name": "腾势Z9GT",
+    "status": "downloaded",
+    "sha256": "192e2663eeed6d5e1152e006197c6c7190a8838c8f4bf6ed9db750b1b30b86bc",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7659.json"
+  },
+  {
+    "series_id": 6091,
+    "series_name": "极氪001",
+    "status": "downloaded",
+    "sha256": "22e72ba89efe2564ba85eaf8a14e9b8da360ea86009d6fa0afc0bdd743c11ed2",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6091.json"
+  },
+  {
+    "series_id": 5499,
+    "series_name": "汉",
+    "status": "downloaded",
+    "sha256": "2afa6132d596e6e80e7b406130132d7375c1f7aaadda013bc9ec8e507a468812",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5499.json"
+  },
+  {
+    "series_id": 7724,
+    "series_name": "铂智7",
+    "status": "downloaded",
+    "sha256": "dc99c60841fa04d46897761bc4c78c049b84c8d7d2b9eb3fd7abf5e22a576812",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7724.json"
+  },
+  {
+    "series_id": 8508,
+    "series_name": "尚界Z7",
+    "status": "downloaded",
+    "sha256": "0a584c3458aba7e87437efbb7ae0a65864f2a333ceecf5b3acacce8c171316ef",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8508.json"
+  },
+  {
+    "series_id": 8176,
+    "series_name": "领克10",
+    "status": "downloaded",
+    "sha256": "75be538546e0660955b114eb8b884da3c7798548cc632c1eb87f9b6dd791a955",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8176.json"
+  },
+  {
+    "series_id": 7225,
+    "series_name": "风云A9L",
+    "status": "downloaded",
+    "sha256": "3a8a2ef7a9a2f12a025831ff1e3fc80ef8bd337a22b2cd2804ebcd1b26eb0635",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7225.json"
+  },
+  {
+    "series_id": 8140,
+    "series_name": "长安启源A06",
+    "status": "downloaded",
+    "sha256": "4fa6a290eea5036f2d98bc6648dccd4e460448378a8482f96fc5db5ad2ce37df",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8140.json"
+  },
+  {
+    "series_id": 4206,
+    "series_name": "沃尔沃S90",
+    "status": "downloaded",
+    "sha256": "35f88a697bcb7ba87d1c9ed1ce11abd2808546aeaa3f93a8f7a48168876125cd",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4206.json"
+  },
+  {
+    "series_id": 8042,
+    "series_name": "银河星耀8",
+    "status": "downloaded",
+    "sha256": "4bf79d39eea50e6fab704ada37d05d8affff6c5037ed7c0e8f44634fac82c907",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8042.json"
+  },
+  {
+    "series_id": 8100,
+    "series_name": "别克至境L7",
+    "status": "downloaded",
+    "sha256": "a8fd82049224a0a24524266d1e8790e52a347cac7670441b81e9d9e37a8f8eeb",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8100.json"
+  },
+  {
+    "series_id": 3802,
+    "series_name": "凯迪拉克CT6",
+    "status": "downloaded",
+    "sha256": "0b3b3224f83409ac3909d03dbf92af8a66acec62f9c2325c9197dde68c40d657",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3802.json"
+  },
+  {
+    "series_id": 7859,
+    "series_name": "汉L",
+    "status": "downloaded",
+    "sha256": "97ec87d27726aa69e6830b1a12339e16894cf42a808bf7bf42db5787b9a6868e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7859.json"
+  },
+  {
+    "series_id": 5213,
+    "series_name": "小鹏P7",
+    "status": "downloaded",
+    "sha256": "7466134053f184ed63e0a44297d008bfd6fd0aeaf9e797ed66ac56d2e3b6fad4",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5213.json"
+  },
+  {
+    "series_id": 5998,
+    "series_name": "奥迪A7L",
+    "status": "downloaded",
+    "sha256": "cbaafbd9c22fd808e9de4c4e7a9eaadbe1be8022b0c1d51632d464407fcffd05",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5998.json"
+  },
+  {
+    "series_id": 7554,
+    "series_name": "小鹏P7+",
+    "status": "downloaded",
+    "sha256": "21b60b3c8fe1f23f203bfca62839360b63ab173699504cad3f971be1ff910f68",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7554.json"
+  },
+  {
+    "series_id": 8554,
+    "series_name": "尚界Z7T",
+    "status": "downloaded",
+    "sha256": "eb518e262bb985bcdcb7e3a85cfcedb18d733fa93361456cda3cf367a75579a0",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8554.json"
+  },
+  {
+    "series_id": 2614,
+    "series_name": "皇冠(进口)",
+    "status": "downloaded",
+    "sha256": "7b807a1586742ee2b570ac1ea71748589ab3a44e2fe9f6a6a22d8595013961ad",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2614.json"
+  },
+  {
+    "series_id": 5566,
+    "series_name": "红旗H9",
+    "status": "downloaded",
+    "sha256": "af9f609bff240b5894e3f76122f5574fc4d6b4b6c5f38532052106781d8a4252",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5566.json"
+  },
+  {
+    "series_id": 7209,
+    "series_name": "长安启源A07",
+    "status": "downloaded",
+    "sha256": "297f18aa52fcb145cd68aa118d40c6a2b0e57beb54204c69fe6126201b98f09a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7209.json"
+  },
+  {
+    "series_id": 740,
+    "series_name": "奥迪A7",
+    "status": "downloaded",
+    "sha256": "f6ec1fadb53eddf392baf3ae31c401dcb3c2d2292e79fbfc7f05a9f3b2c1d7b5",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/740.json"
+  },
+  {
+    "series_id": 7935,
+    "series_name": "日产N7",
+    "status": "downloaded",
+    "sha256": "06e5b5a80e40546d71a9a715cc8edcb59cb9d60892fbec67b114c285f300c762",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7935.json"
+  },
+  {
+    "series_id": 7035,
+    "series_name": "星途ES",
+    "status": "downloaded",
+    "sha256": "faad257caa79469583eaf2f5ecc654ea8b8ae843f601902d5c77ca3ea370db1f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7035.json"
+  },
+  {
+    "series_id": 7630,
+    "series_name": "享界S9",
+    "status": "downloaded",
+    "sha256": "c462129abf023cd12a7900c3d3460c60077a68b4a2e9e66b9e0b9f9835dcd47f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7630.json"
+  },
+  {
+    "series_id": 4083,
+    "series_name": "捷豹XFL",
+    "status": "downloaded",
+    "sha256": "32b21df770c2fa775b10f93f7b7e39c809fdf54908b5a6a40f418b37eb637797",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4083.json"
+  },
+  {
+    "series_id": 472,
+    "series_name": "奥迪A6(进口)",
+    "status": "downloaded",
+    "sha256": "c60bef7e404a2f857ad277b2e931e37c50d8233a23f01d2521edc8d6328fd6a4",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/472.json"
+  },
+  {
+    "series_id": 8207,
+    "series_name": "享界S9T",
+    "status": "downloaded",
+    "sha256": "d3aeae8d5b8ef409929fa5db04933e688d8fce8ca19b5741804d6f554c793ab2",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8207.json"
+  },
+  {
+    "series_id": 450,
+    "series_name": "奔驰E级(进口)",
+    "status": "downloaded",
+    "sha256": "305257eebd37949d89f0280521312af87e1d38f7e0eb8c9a321ba524f9b92892",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/450.json"
+  },
+  {
+    "series_id": 7126,
+    "series_name": "阿维塔12",
+    "status": "downloaded",
+    "sha256": "c6cdc460816f452e00a459a94f8fe1ca8ed87524658d59d49bd594757633b622",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7126.json"
+  },
+  {
+    "series_id": 8105,
+    "series_name": "奥迪A6L e-tron",
+    "status": "downloaded",
+    "sha256": "5165e566ffcec1c1d68abbff6c4827db9d1697f384b78a3703f6b52280bf6404",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8105.json"
+  },
+  {
+    "series_id": 202,
+    "series_name": "宝马5系(进口)",
+    "status": "downloaded",
+    "sha256": "e0c977b4b22d001cec4a89c0cf281fbab17bcb294194d3bf4d0fc8a71282566b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/202.json"
+  },
+  {
+    "series_id": 7355,
+    "series_name": "智界S7",
+    "status": "downloaded",
+    "sha256": "e45c2fef4fd8cf6d4c6ee16906257fdceed81f64e52fa76b0e98045c705b21e4",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7355.json"
+  },
+  {
+    "series_id": 7838,
+    "series_name": "腾势Z9",
+    "status": "downloaded",
+    "sha256": "373917e47bd610edc56a2527dd655d3ac2fc08b05db03e17f776ba03461da877",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7838.json"
+  },
+  {
+    "series_id": 4867,
+    "series_name": "Taycan",
+    "status": "downloaded",
+    "sha256": "1e0ecc8e0838050cefb466fad63860a2f6d063e1d2b9bffa740ef271aa0b06fd",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4867.json"
+  },
+  {
+    "series_id": 7170,
+    "series_name": "银河E8",
+    "status": "downloaded",
+    "sha256": "8e6525b4446d8d03387423b932354f0899e303edd4a537d8b4cf21f4af6a8e56",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7170.json"
+  },
+  {
+    "series_id": 7514,
+    "series_name": "智己L6",
+    "status": "downloaded",
+    "sha256": "21e993a205758a59cd28b8e7ec6af58e164f374bcb4f37309fdb57784fc38da9",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7514.json"
+  },
+  {
+    "series_id": 7915,
+    "series_name": "小米SU7 Ultra",
+    "status": "downloaded",
+    "sha256": "612bbd305036fcf3c0b72fd3acc24087d8f682ea9b79ed7415a9be081a8b2bbe",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7915.json"
+  },
+  {
+    "series_id": 7344,
+    "series_name": "宝马i5",
+    "status": "downloaded",
+    "sha256": "8deb8e0be6c74874984a6ee8e0b34cc3b781eb374a6133b07c9d0788726f2dab",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7344.json"
+  },
+  {
+    "series_id": 7398,
+    "series_name": "eπ007",
+    "status": "downloaded",
+    "sha256": "48071e6194fa7a94d5d9de8733008164f4a6dbcd522c988035d5205d5c87f073",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7398.json"
+  },
+  {
+    "series_id": 4768,
+    "series_name": "奔驰E级新能源",
+    "status": "downloaded",
+    "sha256": "7e1a563746cf78af347d49fa72be92ca06719b6df9881815d0a3a4d7d4ad5a57",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4768.json"
+  },
+  {
+    "series_id": 2994,
+    "series_name": "奥迪RS 7",
+    "status": "downloaded",
+    "sha256": "f15fc0c413c57d1db57426f80156651aa830ac19a78d9d64b331eaf554eed4ad",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2994.json"
+  },
+  {
+    "series_id": 5264,
+    "series_name": "蔚来ET7",
+    "status": "downloaded",
+    "sha256": "ae15c40f80c177b0748b100df542aebcdf4eb9dd9e38c87dcc99ea1f229fc8c0",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5264.json"
+  },
+  {
+    "series_id": 4176,
+    "series_name": "捷尼赛思G80",
+    "status": "downloaded",
+    "sha256": "07afd1acbbd4a5a5feb117a35a0b90dde1342c1473e02c91c6532676b9c9b530",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4176.json"
+  },
+  {
+    "series_id": 6640,
+    "series_name": "奔驰EQE",
+    "status": "downloaded",
+    "sha256": "22656f21712b62caa126d247c7da18551aa1b5feb5cd0fe4071a4a87fba460f1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6640.json"
+  },
+  {
+    "series_id": 8259,
+    "series_name": "岚图追光 L",
+    "status": "downloaded",
+    "sha256": "b0034a97e51a56c5d05172eef60c4f93a44e8944dbb4aeb31ad64e942b60b2b1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8259.json"
+  },
+  {
+    "series_id": 6915,
+    "series_name": "岚图追光",
+    "status": "downloaded",
+    "sha256": "79c36e9f2297bf0355dee771678b78e0430523d1a1e46dde1dcda6e1a4c37b78",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6915.json"
+  },
+  {
+    "series_id": 7698,
+    "series_name": "极氪001 FR",
+    "status": "downloaded",
+    "sha256": "e6d3a0015389508fdc0618ee1d589efe1c45616ff310ed32b32f79c6435bc632",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7698.json"
+  },
+  {
+    "series_id": 4029,
+    "series_name": "沃尔沃V90",
+    "status": "downloaded",
+    "sha256": "3115d1a8f1d218c3afc252e1e52d2799b2de315d04bb4e6d1836573f3bd41e2c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4029.json"
+  },
+  {
+    "series_id": 2737,
+    "series_name": "奥迪RS 6",
+    "status": "downloaded",
+    "sha256": "01da2b1f847898d84c90ee0384b991c98ad667dca4fc7c9c796eef85109526ac",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2737.json"
+  },
+  {
+    "series_id": 5824,
+    "series_name": "极狐 阿尔法S",
+    "status": "downloaded",
+    "sha256": "cd5bd3cd7ad66a3e4dbe62ca5b5255e882ce6130d53f7c33e029200cf86aa500",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5824.json"
+  },
+  {
+    "series_id": 4864,
+    "series_name": "沃尔沃S90插电式混动",
+    "status": "downloaded",
+    "sha256": "287fd75da6e3b5172939c6e385229d397d011f5aa5cbebbf96aee0f6317684fa",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4864.json"
+  },
+  {
+    "series_id": 7245,
+    "series_name": "红旗EH7",
+    "status": "downloaded",
+    "sha256": "f82e7cd4aae0698f4f9ca1600c9f5610a42f2145103804bde57c2d8a36bdd81e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7245.json"
+  },
+  {
+    "series_id": 8050,
+    "series_name": "沃尔沃ES90",
+    "status": "downloaded",
+    "sha256": "17e6e350f280de0ad90e8c02f4c92a86262a8270e56e7ed5c6684461914fe1c5",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8050.json"
+  },
+  {
+    "series_id": 5955,
+    "series_name": "比亚迪e9",
+    "status": "downloaded",
+    "sha256": "9b8562358934fd11a90c3b351b75d63511d699a4c1e1147ff2efe1013e723354",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5955.json"
+  },
+  {
+    "series_id": 7629,
+    "series_name": "星海S7",
+    "status": "downloaded",
+    "sha256": "22c0518f748f669532ce14eda340f84a3243c4322b7c270dacf02f734abc31fb",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7629.json"
+  },
+  {
+    "series_id": 6012,
+    "series_name": "智己L7",
+    "status": "downloaded",
+    "sha256": "5f6377ba4220e3a4f805db31b84c6ddb3feb427db434b45bafa30fb5d3f470b3",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6012.json"
+  },
+  {
+    "series_id": 7826,
+    "series_name": "宝骏享境",
+    "status": "downloaded",
+    "sha256": "ddb8814b6e89b6cfed4f14dcbe1a379b798a4734351173f23cbe0e5a226af08d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7826.json"
+  },
+  {
+    "series_id": 8053,
+    "series_name": "极狐 阿尔法S6",
+    "status": "downloaded",
+    "sha256": "152aeab9902d42870d8faaad93a8d6dac5c222582f2662be11ec24fa4012fbac",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8053.json"
+  },
+  {
+    "series_id": 7787,
+    "series_name": "宝马M5新能源",
+    "status": "downloaded",
+    "sha256": "b91a44031fb2c22d7e4d1b8e48a160877c1c582f4cb5af40317b5f1b68246462",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7787.json"
+  },
+  {
+    "series_id": 2736,
+    "series_name": "奥迪S6",
+    "status": "downloaded",
+    "sha256": "f5c14d90113c3f7fce3e0591d293231f30b308b91ef0d4fd6b9b5438d3fe6d9b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2736.json"
+  },
+  {
+    "series_id": 7084,
+    "series_name": "昊铂GT",
+    "status": "downloaded",
+    "sha256": "0d235e74674ff1ae2d42a6a1978e506da1909e6609c99c92142532ca89acf43d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7084.json"
+  },
+  {
+    "series_id": 2738,
+    "series_name": "奥迪S7",
+    "status": "downloaded",
+    "sha256": "e8394ee783ef2a05e12b17c4ba4e96f0ca53e59743cb34ff7744d4529e94af5b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2738.json"
+  },
+  {
+    "series_id": 8246,
+    "series_name": "昊铂A800",
+    "status": "downloaded",
+    "sha256": "8a388bdde3445754431826b914e54fbbe3e8645ce2293d1f5e4463db031886b4",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8246.json"
+  },
+  {
+    "series_id": 7948,
+    "series_name": "宝马i5 M60",
+    "status": "downloaded",
+    "sha256": "44c619d9845a012346db852ea4885a2d6ef08d4398e5dd89b82794cc53ac5251",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7948.json"
+  },
+  {
+    "series_id": 6925,
+    "series_name": "飞凡F7",
+    "status": "downloaded",
+    "sha256": "774b9d0875cfc4e70e77b999bb9ec06727627ee456de335032054f15e27e0bda",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6925.json"
+  },
+  {
+    "series_id": 8523,
+    "series_name": "领汇e9",
+    "status": "downloaded",
+    "sha256": "c2e6a3aad279627ed315459ab139511fb611cfeb057dcaf2827f1fff1313a6c0",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8523.json"
+  },
+  {
+    "series_id": 6462,
+    "series_name": "奔驰EQE AMG",
+    "status": "downloaded",
+    "sha256": "f173cae5cd9cd052cfeb125e6ac7c5c22687082687edce8359170f132487e3c4",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6462.json"
+  },
+  {
+    "series_id": 6497,
+    "series_name": "机甲龙",
+    "status": "downloaded",
+    "sha256": "6ff418b053aecfdc1188a9239045f2018f9272269429ea0632770d915dacbcaa",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6497.json"
+  },
+  {
+    "series_id": 59,
+    "series_name": "奔驰S级",
+    "status": "downloaded",
+    "sha256": "edd47f9cebad7f8c412ad2800433c323c129167584f378b68f4ca873d0211a94",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/59.json"
+  },
+  {
+    "series_id": 3665,
+    "series_name": "迈巴赫S级",
+    "status": "downloaded",
+    "sha256": "42c25ff00eb366b12ae840ff9260d03a65ef3b77b39cc17a9a1449db0469a250",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3665.json"
+  },
+  {
+    "series_id": 153,
+    "series_name": "宝马7系",
+    "status": "downloaded",
+    "sha256": "2ec02edfe12b2ca8c7b4ed14238f872ae65415cc83c5cf299b4bb893cacb2156",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/153.json"
+  },
+  {
+    "series_id": 7927,
+    "series_name": "尊界S800",
+    "status": "downloaded",
+    "sha256": "115057ce40b86c94b93b4a2df7d98721f8d7c11f8c892fedfd4c490f69790b4e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7927.json"
+  },
+  {
+    "series_id": 703,
+    "series_name": "Panamera",
+    "status": "downloaded",
+    "sha256": "08f2649f4a2dd9e75ae269dcfa1f4de7641303979be21f52a1de43a01a265011",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/703.json"
+  },
+  {
+    "series_id": 146,
+    "series_name": "奥迪A8",
+    "status": "downloaded",
+    "sha256": "26818744cb5b9292fae7430c7e421cc4a0ec2034c897ddf8db09a4d40d95e725",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/146.json"
+  },
+  {
+    "series_id": 341,
+    "series_name": "雷克萨斯LS",
+    "status": "downloaded",
+    "sha256": "61cd42371cf59f5ffb2367a6ff1a33db3b60a05ed698cdf56e279a2dc6ece963",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/341.json"
+  },
+  {
+    "series_id": 7391,
+    "series_name": "仰望U7",
+    "status": "downloaded",
+    "sha256": "b80932901a9175a8e4b81938bad6115c205b0e351bd589f4e7bc4ca2e5356543",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7391.json"
+  },
+  {
+    "series_id": 7546,
+    "series_name": "蔚来ET9",
+    "status": "downloaded",
+    "sha256": "d9939de12ac5e16b09962fd783a7285afe3a0b0f67c7e416bb523f9f1fa912d0",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7546.json"
+  },
+  {
+    "series_id": 6287,
+    "series_name": "飞驰插电混动",
+    "status": "downloaded",
+    "sha256": "329e49c6ade240c1b53262d78a8b075371e85dbf58ba5d150664eb2712b3b67d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6287.json"
+  },
+  {
+    "series_id": 265,
+    "series_name": "幻影",
+    "status": "downloaded",
+    "sha256": "30c38e120ba05bf5d31d029c83f70977bf3341fdf7413c892fa0516c2e028627",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/265.json"
+  },
+  {
+    "series_id": 3464,
+    "series_name": "宝马8系",
+    "status": "downloaded",
+    "sha256": "3bc183cde4fd568454c02b5dc2d4e39d1cfcaad33f1f32d4d0603052a6a1c6b0",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3464.json"
+  },
+  {
+    "series_id": 6427,
+    "series_name": "宝马i7",
+    "status": "downloaded",
+    "sha256": "49f6fa5849acdb0dad757dd0b4a5ed532997927fd2837ae9b795cad4da332872",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6427.json"
+  },
+  {
+    "series_id": 7672,
+    "series_name": "红旗金葵花国雅",
+    "status": "downloaded",
+    "sha256": "085ec24243f372f449a1b2bc2dc3a51c101212afe584552bb36bb84b4c03a641",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7672.json"
+  },
+  {
+    "series_id": 836,
+    "series_name": "古思特",
+    "status": "downloaded",
+    "sha256": "7dd4006a3acd06c4559041bcf772fd2fbf89e70bc67b74dccc09f57446d9bb7a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/836.json"
+  },
+  {
+    "series_id": 3108,
+    "series_name": "红旗金葵花国礼",
+    "status": "downloaded",
+    "sha256": "354337af7b30449bbc9b7d16e40cf2285fd31c10118ecb66a54c8ed9a97f4e67",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3108.json"
+  },
+  {
+    "series_id": 7378,
+    "series_name": "EMEYA",
+    "status": "downloaded",
+    "sha256": "9644c5367bef8c80764e2bef2bdb6f645d46ba720db7867890e78cca816f699e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7378.json"
+  },
+  {
+    "series_id": 4344,
+    "series_name": "奔驰S级新能源",
+    "status": "downloaded",
+    "sha256": "bf93122ba5d4859405e7c914f7d230b68508048ff925b0ac1145e421217c0b23",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4344.json"
+  },
+  {
+    "series_id": 4322,
+    "series_name": "Panamera新能源",
+    "status": "downloaded",
+    "sha256": "000620c1c4587a89d8b72b492cc2b34505abedbc4c84b04689342b01d84b467f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4322.json"
+  },
+  {
+    "series_id": 5382,
+    "series_name": "奔驰EQS",
+    "status": "downloaded",
+    "sha256": "ebfe8d6615b4b664591b0f8761be3040eb015f39ad706b49a02b2360a27e25c8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5382.json"
+  },
+  {
+    "series_id": 2739,
+    "series_name": "奥迪S8",
+    "status": "downloaded",
+    "sha256": "f030582d63a847eef559756e69a7859a0243944127cfd83b64201b3ef2d7b9f0",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2739.json"
+  },
+  {
+    "series_id": 7065,
+    "series_name": "奔驰S级AMG新能源",
+    "status": "downloaded",
+    "sha256": "e0f70dff4689de3ff87f7eff8eff39556f480de7736713ae13db1b8ef4d31462",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7065.json"
+  },
+  {
+    "series_id": 7143,
+    "series_name": "迈巴赫S级新能源",
+    "status": "downloaded",
+    "sha256": "59dcd3cfb0acc0c3e897786a95ec869b4090c29ce1e181da7222d65d0432760b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7143.json"
+  },
+  {
+    "series_id": 3982,
+    "series_name": "捷尼赛思G90",
+    "status": "downloaded",
+    "sha256": "7799425a702a33562812915427d51a3f66433c80e71519023d9d83c699b2f79d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3982.json"
+  },
+  {
+    "series_id": 7950,
+    "series_name": "宝马M760Le",
+    "status": "downloaded",
+    "sha256": "ae886e59f7437f7bf0299f16cc996bd66a3ade1ea7fe6589fc0cb726fcce7ebc",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7950.json"
+  },
+  {
+    "series_id": 7949,
+    "series_name": "宝马i7 M70L",
+    "status": "downloaded",
+    "sha256": "c82bb68a380b704df5655a420f4f506a2345d1ba0b91292cebcdef94ffa33268",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7949.json"
+  },
+  {
+    "series_id": 6231,
+    "series_name": "奔驰EQS AMG",
+    "status": "downloaded",
+    "sha256": "79ce147b7a615105f0cea5adea2c29ea0f401f0b5c0c9e8fb48459fcd3d51043",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6231.json"
+  },
+  {
+    "series_id": 7848,
+    "series_name": "LUMMA GS650 齐伯林",
+    "status": "downloaded",
+    "sha256": "82d180206e5e4c6c1f3d610329bd1ceaccc6a738b5eb197ab715149db2f18e34",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7848.json"
+  },
+  {
+    "series_id": 162,
+    "series_name": "保时捷911",
+    "status": "downloaded",
+    "sha256": "07fedc0a8a75d9e90c7d5ae47f8d3dddfba48b784870eb395c24c5b4f99d1d01",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/162.json"
+  },
+  {
+    "series_id": 4175,
+    "series_name": "保时捷718",
+    "status": "downloaded",
+    "sha256": "2840d70f20315dab0789e68021b25ee095bf402af41c92b10b69ddac1704b57b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4175.json"
+  },
+  {
+    "series_id": 3451,
+    "series_name": "AMG GT",
+    "status": "downloaded",
+    "sha256": "827256395d3fa39b0ec70107a7a448bb2d3b579310e6b7963762af3acc52d863",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3451.json"
+  },
+  {
+    "series_id": 6916,
+    "series_name": "奔驰CLE",
+    "status": "downloaded",
+    "sha256": "a66165f2a0b477ed5e3e505b464e1eb1c3e05c244a74408c8030642fa4e0fbc8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6916.json"
+  },
+  {
+    "series_id": 102,
+    "series_name": "Mustang",
+    "status": "downloaded",
+    "sha256": "68e7046596d2d7d7e634c740ef183f90451ed1687458e60333466ae7b92706e1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/102.json"
+  },
+  {
+    "series_id": 8547,
+    "series_name": "法拉利Luce",
+    "status": "downloaded",
+    "sha256": "9462395819d08a1d59eb06270a89488c225880a3d60e8cec81cc038f8c53e288",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8547.json"
+  },
+  {
+    "series_id": 3357,
+    "series_name": "宝马M2",
+    "status": "downloaded",
+    "sha256": "657b8a448719c60b56b89b1c170e7b375e5e04e84aced1609dcc96ae15291dfe",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3357.json"
+  },
+  {
+    "series_id": 8196,
+    "series_name": "Amalfi",
+    "status": "downloaded",
+    "sha256": "e877cb610f687ed4ed5a7cc2f4c43a19b4e7d3536c3c5f6bab6dc5f28965cf2a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8196.json"
+  },
+  {
+    "series_id": 7116,
+    "series_name": "仰望U9",
+    "status": "downloaded",
+    "sha256": "5bae15e05da4c1de5a59823609a1421d97ddb180d088bd675ead026a3e238404",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7116.json"
+  },
+  {
+    "series_id": 6917,
+    "series_name": "奔驰CLE AMG",
+    "status": "downloaded",
+    "sha256": "69e207090c157525c24e05dca216e184b161dcc6a1f06e054d1368ca33d867a2",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6917.json"
+  },
+  {
+    "series_id": 6276,
+    "series_name": "法拉利296",
+    "status": "downloaded",
+    "sha256": "1b9b64690e195a933d97ceeddd986d457cb9e97216acfd37c2102ab65b0b1374",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6276.json"
+  },
+  {
+    "series_id": 7753,
+    "series_name": "欧陆插电混动",
+    "status": "downloaded",
+    "sha256": "72a786d3426f2905e683d0654c452ac8768f7d6ac7b4c547421911c9e50f384e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7753.json"
+  },
+  {
+    "series_id": 2557,
+    "series_name": "斯巴鲁BRZ",
+    "status": "downloaded",
+    "sha256": "e4d1009c32c7f1afa2885f68e4f21745b8b6d83dc964233b6d1aba4f087e04d8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2557.json"
+  },
+  {
+    "series_id": 7176,
+    "series_name": "Revuelto",
+    "status": "downloaded",
+    "sha256": "28b43a2ce5a82cee6c91626c924ee7c04b13face5ee989c5217aa06a70290583",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7176.json"
+  },
+  {
+    "series_id": 6028,
+    "series_name": "EMIRA",
+    "status": "downloaded",
+    "sha256": "a215ad4ee992ca9b75db4998b5841b8bb19915890e3f2586056e1ed40c233ca2",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6028.json"
+  },
+  {
+    "series_id": 2617,
+    "series_name": "SUPRA",
+    "status": "downloaded",
+    "sha256": "cc0dd083f5656c3b96f6b88a52dae93d28b87079aba05de46d12423b1f55672f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2617.json"
+  },
+  {
+    "series_id": 5517,
+    "series_name": "Roma",
+    "status": "downloaded",
+    "sha256": "234b5bb6f34f439a32fa1553634832a66deef6157b372c62d7b21ad4664ea19d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5517.json"
+  },
+  {
+    "series_id": 5755,
+    "series_name": "MG Cyberster",
+    "status": "downloaded",
+    "sha256": "22031da3746c52d233606e4fcbecf1199a38f9f725e078e2d25342a86e6242b4",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5755.json"
+  },
+  {
+    "series_id": 551,
+    "series_name": "GranTurismo",
+    "status": "downloaded",
+    "sha256": "b22938f5df86ec274306aa7fd4bf44a3d7fb2dc585ff2e645799fda930155df7",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/551.json"
+  },
+  {
+    "series_id": 385,
+    "series_name": "V8 Vantage",
+    "status": "downloaded",
+    "sha256": "8b1d2d824a74dff2935e253f041bbf7f4c7463a1fd5f0f3de6b6f4b9ee9e2ae7",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/385.json"
+  },
+  {
+    "series_id": 2623,
+    "series_name": "雷克萨斯LC",
+    "status": "downloaded",
+    "sha256": "961410460c5a2f719a73aa42b03a7918d7c1cbd39dd8eb22b6eadae887b46399",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2623.json"
+  },
+  {
+    "series_id": 7759,
+    "series_name": "Temerario",
+    "status": "downloaded",
+    "sha256": "722f121e5b5b1ed01de7861b6db89e4328666418ba8134f0286bd37fca936e3d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7759.json"
+  },
+  {
+    "series_id": 6421,
+    "series_name": "闪灵",
+    "status": "downloaded",
+    "sha256": "5f93f2189f9f57f381fa95f0c2f8aec16023ec7b102e6bccfb9e1af56caab4c0",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6421.json"
+  },
+  {
+    "series_id": 8289,
+    "series_name": "法拉利849",
+    "status": "downloaded",
+    "sha256": "9d36d25d37839198ab28e4e8a4d20bced3a067761ea5785238631c265a1d253f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8289.json"
+  },
+  {
+    "series_id": 7729,
+    "series_name": "法拉利12Cilindri",
+    "status": "downloaded",
+    "sha256": "3c560ed476cdbc1e8fc78c5816b8fcaa6795b693d301f19e44bf42735d79f171",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7729.json"
+  },
+  {
+    "series_id": 7293,
+    "series_name": "阿斯顿·马丁DB12",
+    "status": "downloaded",
+    "sha256": "d5cbd0a4a462a6087544e75cf8236ee482d006908ac0809b85f2c49ddcfa3e47",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7293.json"
+  },
+  {
+    "series_id": 2720,
+    "series_name": "奔驰SL级AMG",
+    "status": "downloaded",
+    "sha256": "9e27f5e78ca8cfc69961f473fc6c49d67cfdfd7c28c0f21f60487b94e7a3e1f7",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2720.json"
+  },
+  {
+    "series_id": 5305,
+    "series_name": "迈凯伦GT",
+    "status": "downloaded",
+    "sha256": "5ff0d726c48d9f700a268c7ab5de3e1700c91427307c7d0bf432773fc0dd15c3",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5305.json"
+  },
+  {
+    "series_id": 3891,
+    "series_name": "阿斯顿·马丁DB11",
+    "status": "downloaded",
+    "sha256": "e5e395cbd7e309e2db5a0a8098b0d1f1e17afd24fbcd03a13f156acf06a5bb8a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3891.json"
+  },
+  {
+    "series_id": 5646,
+    "series_name": "玛莎拉蒂MC20",
+    "status": "downloaded",
+    "sha256": "8c5704827c48c5ccac01eaf2e0d78bcf96bec335d5c842039b1201fc8b585c06",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5646.json"
+  },
+  {
+    "series_id": 5986,
+    "series_name": "Artura",
+    "status": "downloaded",
+    "sha256": "8519bec91bd4c91d2063cc846c2f737f8d6ef5ffd0a2a93216269e0bc6b13156",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5986.json"
+  },
+  {
+    "series_id": 5146,
+    "series_name": "Valhalla",
+    "status": "downloaded",
+    "sha256": "93441a84990904faf4746932816693396c5fcf7a3ff69f9fe90c6080b258b0e5",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5146.json"
+  },
+  {
+    "series_id": 5331,
+    "series_name": null,
+    "status": "downloaded",
+    "sha256": "7fca2f5fb1148103c5e55e220addcdb87d7d38e48f8aeabf0f4dd95409a66672",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5331.json"
+  },
+  {
+    "series_id": 6955,
+    "series_name": "羿驰01",
+    "status": "downloaded",
+    "sha256": "a0a947cfdeda485634f4e3428156a3d83c4c60918cd93d02828e0dbc1375a2e9",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6955.json"
+  },
+  {
+    "series_id": 386,
+    "series_name": "Vanquish",
+    "status": "downloaded",
+    "sha256": "cefdb3e6b8f7d274e0ba7d46d7024405eb32b1dc146c8414bb361908d97d1cd2",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/386.json"
+  },
+  {
+    "series_id": 582,
+    "series_name": "阿斯顿·马丁DBS",
+    "status": "downloaded",
+    "sha256": "ff58e000dc82948374568352ed6e92239b564df54bacc947c04b420ee0259dd8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/582.json"
+  },
+  {
+    "series_id": 7788,
+    "series_name": "Valiant",
+    "status": "downloaded",
+    "sha256": "1cafc3ed668203ac4bbd3c65db805175fa26ad7c6011cc4b02d78c71c6ee18f7",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7788.json"
+  },
+  {
+    "series_id": 6366,
+    "series_name": "AMG GT新能源",
+    "status": "downloaded",
+    "sha256": "67965d38f8de5e54bd112356667f941ccf48c7dc569079baa9e05750be6ba54b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6366.json"
+  },
+  {
+    "series_id": 6677,
+    "series_name": "GranTurismo 新能源",
+    "status": "downloaded",
+    "sha256": "6022c1c4bdabdbabfda7d603af76c54d7e9d60ee392adfa90a02a4cdcf32c250",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6677.json"
+  },
+  {
+    "series_id": 903,
+    "series_name": "GranCabrio",
+    "status": "downloaded",
+    "sha256": "6f7fc9edad3c556a642de53823db91404a73f2669776d825ea0e288b51ae5f87",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/903.json"
+  },
+  {
+    "series_id": 6934,
+    "series_name": "昊铂SSR",
+    "status": "downloaded",
+    "sha256": "c62ca4646ff011aa30ae05e43bbb464447cf41b7c1d1e90557416fc29515b0ea",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6934.json"
+  },
+  {
+    "series_id": 911,
+    "series_name": "X-BOW",
+    "status": "downloaded",
+    "sha256": "deb420c8614108a31b151952feeafb0c9090baff1602feee6f5a5f5f793f5e6c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/911.json"
+  },
+  {
+    "series_id": 5918,
+    "series_name": "SS DOLPHIN",
+    "status": "downloaded",
+    "sha256": "cdb95a3a24693278092c7584369c575010da038c8bd99a39df8a5966d5035a66",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5918.json"
+  },
+  {
+    "series_id": 6272,
+    "series_name": "赛那SIENNA",
+    "status": "downloaded",
+    "sha256": "fe2d399fb6a2895fde6d7f5e60129d5b0b5953852f7de9d892af574a3c71a94c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6272.json"
+  },
+  {
+    "series_id": 8298,
+    "series_name": "零跑D99",
+    "status": "downloaded",
+    "sha256": "56caabb09bef7177ff501a6bb8dffe6d5325610e14d41fbff9871b6aa7ed15d1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8298.json"
+  },
+  {
+    "series_id": 7400,
+    "series_name": "星海V9",
+    "status": "downloaded",
+    "sha256": "9e4c9225410afe1fd7ac3b7298cdf61aa4c7be2e37aa8f92683d98a6498536e7",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7400.json"
+  },
+  {
+    "series_id": 6669,
+    "series_name": "腾势D9",
+    "status": "downloaded",
+    "sha256": "8915384ba2515d2ea37585de923342a09e255e73592195245965dd2448c3c4dc",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6669.json"
+  },
+  {
+    "series_id": 6672,
+    "series_name": "格瑞维亚",
+    "status": "downloaded",
+    "sha256": "ee54a7001f6bb5a5c5c6edd353f39afcb858025148ea45344ed57253b2353af9",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6672.json"
+  },
+  {
+    "series_id": 166,
+    "series_name": "别克GL8",
+    "status": "downloaded",
+    "sha256": "10a4dbf1bfa918ca92b35a7da1a29eae2fdf8945ffb51977fe26494a61a9cd5b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/166.json"
+  },
+  {
+    "series_id": 6459,
+    "series_name": "岚图梦想家",
+    "status": "downloaded",
+    "sha256": "5c4646e12c52d688eafdfc1aca7662c8b21737a9f9bb517b455b4ee0ff46f023",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6459.json"
+  },
+  {
+    "series_id": 8187,
+    "series_name": "星光730新能源",
+    "status": "downloaded",
+    "sha256": "742b4710ad379f6e60a1ab44741a9f7faa64480dc87156d69eee0191b2fc22ee",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8187.json"
+  },
+  {
+    "series_id": 7076,
+    "series_name": "魏牌 高山",
+    "status": "downloaded",
+    "sha256": "51db4417e39623b335e5d1293c23a2856e3a2147ce21b87012a905af0f798809",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7076.json"
+  },
+  {
+    "series_id": 4174,
+    "series_name": "传祺M8",
+    "status": "downloaded",
+    "sha256": "49eab28d01b60ff37bc7e60550e3f2acf8856ec6a22d33df6a92ddd60cbf384c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4174.json"
+  },
+  {
+    "series_id": 880,
+    "series_name": "奥德赛",
+    "status": "downloaded",
+    "sha256": "a4bbba116a6f50be39022a34818f92681415bea57dff5aca8e637634092c85d9",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/880.json"
+  },
+  {
+    "series_id": 7824,
+    "series_name": "智界V9",
+    "status": "downloaded",
+    "sha256": "8dcebb1e4aaa72a7639425ea4aae9e8c5d90f59b4b8cc9fe1cde0d561b3f2fd4",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7824.json"
+  },
+  {
+    "series_id": 7329,
+    "series_name": "传祺E8 PHEV",
+    "status": "downloaded",
+    "sha256": "804bf6b751aa70d8a6ab85d26b172b044c52088674820ee6038b248ca4c6e00a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7329.json"
+  },
+  {
+    "series_id": 7851,
+    "series_name": "夏",
+    "status": "downloaded",
+    "sha256": "f89519328ab84e210186973ef95f7a51ba30213bb6a3a112c6410ad4420f0c37",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7851.json"
+  },
+  {
+    "series_id": 7658,
+    "series_name": "别克GL8新能源",
+    "status": "downloaded",
+    "sha256": "7cdbd1e33cb1c222678ee656271d7a5603c72b5c0f1c92a644673efe6752508a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7658.json"
+  },
+  {
+    "series_id": 6846,
+    "series_name": "极氪009",
+    "status": "downloaded",
+    "sha256": "cb576d4cbb3c405d0927133446cd52fe39a89c8abc6bd2d3df92b1f8db199e63",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6846.json"
+  },
+  {
+    "series_id": 8039,
+    "series_name": "传祺向往M8",
+    "status": "downloaded",
+    "sha256": "ea3a3e3b43b7c21567228aa23438408f0f6034bb99cd7db7ac6d5c801b10f5f9",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8039.json"
+  },
+  {
+    "series_id": 8188,
+    "series_name": "星光730",
+    "status": "downloaded",
+    "sha256": "71789bab61b85991e995f08148444c6d10b91b7c78e412b4bd5196652b608ecc",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8188.json"
+  },
+  {
+    "series_id": 7067,
+    "series_name": "小鹏X9",
+    "status": "downloaded",
+    "sha256": "24d3e9efaf6bf84be712dcd12f860da1dfb9d7249a92285d2d3006b3e8efdea5",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7067.json"
+  },
+  {
+    "series_id": 6118,
+    "series_name": "库斯途",
+    "status": "downloaded",
+    "sha256": "9309c18b292b92c8747d6f03b7abd744d60cac2713eeb4133666fcaed3e95c3c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6118.json"
+  },
+  {
+    "series_id": 4662,
+    "series_name": "传祺M6",
+    "status": "downloaded",
+    "sha256": "0460d08c7e465aa9641a7e6cc8b27f811d755a25604404c4ea4fd3aab5f0a7b0",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4662.json"
+  },
+  {
+    "series_id": 2565,
+    "series_name": "艾力绅",
+    "status": "downloaded",
+    "sha256": "1a4b1510a0e0e39300d7e6c88884aaee6367baaf8ea109933f3b58ce015333bc",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2565.json"
+  },
+  {
+    "series_id": 2107,
+    "series_name": "埃尔法",
+    "status": "downloaded",
+    "sha256": "963d78ffce8ba6cc4e80d46e212d7a1fda3ed320dc82d5c7bd3e79d69c6dd139",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2107.json"
+  },
+  {
+    "series_id": 7873,
+    "series_name": "别克至境世家",
+    "status": "downloaded",
+    "sha256": "44b86d1f81a55fa42bc9ea5c1dd125db6762a953204d418b2cd9d4c5f9b0950b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7873.json"
+  },
+  {
+    "series_id": 6939,
+    "series_name": "理想MEGA",
+    "status": "downloaded",
+    "sha256": "78e4ddd1c912f14f3f426de513a279e0bf9730e72bcb10d02517310adc9ff622",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6939.json"
+  },
+  {
+    "series_id": 8440,
+    "series_name": "极狐问道V9",
+    "status": "downloaded",
+    "sha256": "dcc9a6f3eb0ab659f8e5e3add1bfc39b258f4083a5e2514e9c9aad69296fcc87",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8440.json"
+  },
+  {
+    "series_id": 7010,
+    "series_name": "世纪",
+    "status": "downloaded",
+    "sha256": "8c5fedd99cdbf4a4a92dcc5ac8baa4994c08bbf4e661055d7c03d05b5724ecc0",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7010.json"
+  },
+  {
+    "series_id": 3823,
+    "series_name": "奔驰V级",
+    "status": "downloaded",
+    "sha256": "f11fcd4a06568d955122e7eb4c828252c6d13f10722f34f8561a9cc19a3faa52",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3823.json"
+  },
+  {
+    "series_id": 5445,
+    "series_name": "威然",
+    "status": "downloaded",
+    "sha256": "b8e365fef08aa7853ca2561b7aef45963de3faddc25f59995b854804ce4605f8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5445.json"
+  },
+  {
+    "series_id": 8318,
+    "series_name": "鑫源向上V6 新能源",
+    "status": "downloaded",
+    "sha256": "b1b9e11eb2e6dc103df18af352f2ed0c97bf953d4e8481ad8b76d3cccaec1d6c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8318.json"
+  },
+  {
+    "series_id": 7796,
+    "series_name": "传祺E8",
+    "status": "downloaded",
+    "sha256": "718a68bfadef69e9da991ea652d416e4707367a52d53497e372dfa633110d3ff",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7796.json"
+  },
+  {
+    "series_id": 7380,
+    "series_name": "红旗HQ9 PHEV",
+    "status": "downloaded",
+    "sha256": "f4eeb477bdb820d6d46c2135ec44e6b31d5b9f127a80f900fee609120b3525a8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7380.json"
+  },
+  {
+    "series_id": 2084,
+    "series_name": "威霆",
+    "status": "downloaded",
+    "sha256": "bdc9b2d8d19f0afc7473b824ab56a19f1e92315d69e7674573a09be9614a14e6",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2084.json"
+  },
+  {
+    "series_id": 8436,
+    "series_name": "银河V900",
+    "status": "downloaded",
+    "sha256": "fa1d8bcc99b8c4328910ef114a20e234401eb7e5a4b30dc41b0c274b3e2bd9df",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8436.json"
+  },
+  {
+    "series_id": 3718,
+    "series_name": "威尔法",
+    "status": "downloaded",
+    "sha256": "27c8304c26f92f4de7f9e6e1841e9a4431725c6347fe3b2bc4cf68ccbe4131fe",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3718.json"
+  },
+  {
+    "series_id": 8184,
+    "series_name": "比亚迪M9",
+    "status": "downloaded",
+    "sha256": "e4fdb219ead9b79386f6c6bac1b2868574f9fb0d7c18fc97f10a0425df33b95b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8184.json"
+  },
+  {
+    "series_id": 8524,
+    "series_name": "领汇M9",
+    "status": "downloaded",
+    "sha256": "dfcfeb53316b0b6b31e59d6eaf4484028c77b8157c4594a47b97a435f8ece015",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8524.json"
+  },
+  {
+    "series_id": 7631,
+    "series_name": "极氪MIX",
+    "status": "downloaded",
+    "sha256": "df7ac514ae8fa4c38c5c7d6b554350b9407793bbe092c8cb960a3d8f345522c1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7631.json"
+  },
+  {
+    "series_id": 5220,
+    "series_name": "雷克萨斯LM",
+    "status": "downloaded",
+    "sha256": "ee1b2fafdec675aadd1e9cb849c53ce02992cdbf8fbc7389e5ca6912b601f14c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5220.json"
+  },
+  {
+    "series_id": 6726,
+    "series_name": "红旗HQ9",
+    "status": "downloaded",
+    "sha256": "998052b5d14a4e6e82b7e7d8153a3320edca3a35a34304c61edbce758871e142",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6726.json"
+  },
+  {
+    "series_id": 333,
+    "series_name": "途安",
+    "status": "downloaded",
+    "sha256": "cbd5c889a505165d8526ceb679b11871d81c1856ed0df97f8ee18b98d87147b8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/333.json"
+  },
+  {
+    "series_id": 284,
+    "series_name": "嘉华",
+    "status": "downloaded",
+    "sha256": "4a41f0f6064a59c56ec7c5b3b6794e0c8f60ccd2ac7b02db6ae0588a74076e28",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/284.json"
+  },
+  {
+    "series_id": 4686,
+    "series_name": "大通G50",
+    "status": "downloaded",
+    "sha256": "a73e3db14dbcadbcbef0fe79a2a79274c09ee2d956fd7f5ea06fa846707f9034",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4686.json"
+  },
+  {
+    "series_id": 7365,
+    "series_name": "沃尔沃EM90",
+    "status": "downloaded",
+    "sha256": "545369a438078905e5d2be72a75c2d7e1061b4dc4c9a4fa309a15c245b6c532f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7365.json"
+  },
+  {
+    "series_id": 3064,
+    "series_name": "大通G10",
+    "status": "downloaded",
+    "sha256": "9238dd7f69e8212220efb50f9e028c9226c1da01b2dcab5f6a317df0e100fd98",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3064.json"
+  },
+  {
+    "series_id": 6869,
+    "series_name": "传祺E9",
+    "status": "downloaded",
+    "sha256": "c97600ed12af58042505a5dd24b9fdc11105d26da6e50eacc51416155913e801",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6869.json"
+  },
+  {
+    "series_id": 3814,
+    "series_name": "途睿欧",
+    "status": "downloaded",
+    "sha256": "986bed53f201413da1116a8684d933744612f8381b280f2ae643c44ac07db7cf",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3814.json"
+  },
+  {
+    "series_id": 5450,
+    "series_name": "五菱宏光PLUS",
+    "status": "downloaded",
+    "sha256": "5288048dade49b3f2b152a88a04d1c81300476ac90c524474ef178fe1e6c95c5",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5450.json"
+  },
+  {
+    "series_id": 5772,
+    "series_name": "五菱凯捷",
+    "status": "downloaded",
+    "sha256": "3e7d5cbfe600de07b0a7282752b33e994ba34bc6ae8abb98d55c4d2fb47f4008",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5772.json"
+  },
+  {
+    "series_id": 2540,
+    "series_name": "菱智",
+    "status": "downloaded",
+    "sha256": "3f9e00d1b32ad33691bbb891bd13b6c67386b9c9ade58483ce70f1ccb760bc76",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/2540.json"
+  },
+  {
+    "series_id": 6701,
+    "series_name": "锐胜王牌M7",
+    "status": "downloaded",
+    "sha256": "a7de0b6c8acb9b9bfa14476ab088025cd29e61f43e4d50ec8711898fe93f9bb3",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6701.json"
+  },
+  {
+    "series_id": 6650,
+    "series_name": "五菱佳辰",
+    "status": "downloaded",
+    "sha256": "f5ae28356c08fba75c37ae5a29b844416b44bd2526939736b62cc609a483ccf0",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6650.json"
+  },
+  {
+    "series_id": 8715,
+    "series_name": "鑫源向上V6",
+    "status": "downloaded",
+    "sha256": "2f62b4dfe3960b9e924c42bd27311cff0e2bc772b7141b2dfc0cd7252c00fd9c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8715.json"
+  },
+  {
+    "series_id": 7537,
+    "series_name": "翼真L380",
+    "status": "downloaded",
+    "sha256": "8f3d1d17e3cb045461c5deae9678bd6a25ff1113b884976ae2fe6bbd251b06e8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7537.json"
+  },
+  {
+    "series_id": 5753,
+    "series_name": "荣威iMAX8",
+    "status": "downloaded",
+    "sha256": "7cfcc8e92628cace74ac5ee650d39b783d9a74d8082c1bb036a8f8a664ae4964",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5753.json"
+  },
+  {
+    "series_id": 7924,
+    "series_name": "大通G50插电混动",
+    "status": "downloaded",
+    "sha256": "b3a9b2e12b7ba2089445f9dd44e98336901fbc4af9dc61329a29c3b43c397405",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7924.json"
+  },
+  {
+    "series_id": 5825,
+    "series_name": "比亚迪D1",
+    "status": "downloaded",
+    "sha256": "c280758db4045c0360e62fd46ddb7a46a92c34e923eedf07a96f93b73f148516",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5825.json"
+  },
+  {
+    "series_id": 5950,
+    "series_name": "菱智PLUS",
+    "status": "downloaded",
+    "sha256": "ac76ec467099c4b41fc0881c4d090d7e4557a1a5c56c20417056c881fe68913a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5950.json"
+  },
+  {
+    "series_id": 7120,
+    "series_name": "极狐 考拉",
+    "status": "downloaded",
+    "sha256": "1c87d415290d67dbf9ae3cef8faa22ee1fe69ecf144a279723889ab3c1319e13",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7120.json"
+  },
+  {
+    "series_id": 6039,
+    "series_name": "五菱征程",
+    "status": "downloaded",
+    "sha256": "af0ad4abb4aa05d8d1d65d1bd44d167fb89f5e92d2ce20623113dd8192113b81",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6039.json"
+  },
+  {
+    "series_id": 7751,
+    "series_name": "吉利幸福号",
+    "status": "downloaded",
+    "sha256": "aff738de48ec062e5450ae3a26b07a221e5ed92b9843708991b809d029947be4",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7751.json"
+  },
+  {
+    "series_id": 7211,
+    "series_name": "大家7",
+    "status": "downloaded",
+    "sha256": "8c1527368505825d871c93041cd76b507bbf2d395190ca04a5bb62bdf50b4eb1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7211.json"
+  },
+  {
+    "series_id": 6641,
+    "series_name": "荣威iMAX8新能源",
+    "status": "downloaded",
+    "sha256": "ac7d9c7dc16258edfb8dc1ae459b467d434c02ed36ff02996400db61fc4a8a74",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6641.json"
+  },
+  {
+    "series_id": 6778,
+    "series_name": "五菱征程新能源",
+    "status": "downloaded",
+    "sha256": "8e04ec6f80399619da9bba712ba5afba45122f767ac7d098a3515071b2b45510",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6778.json"
+  },
+  {
+    "series_id": 6702,
+    "series_name": "锐胜王牌M7新能源",
+    "status": "downloaded",
+    "sha256": "c0238459241ab06a32c46af32058ef88b9cf4325f134a3402df4e06804dfff4b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6702.json"
+  },
+  {
+    "series_id": 8214,
+    "series_name": "锐胜M8新能源",
+    "status": "downloaded",
+    "sha256": "3a0de1b32d5dc0207240609b69d6de9a19bc74c440dbd4037443df254e7a1d5d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8214.json"
+  },
+  {
+    "series_id": 3351,
+    "series_name": "瑞风M3",
+    "status": "downloaded",
+    "sha256": "61864a91dd932bec4e01114638f785e8a849fbf87f5bd71bb494e7c39581f4ff",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3351.json"
+  },
+  {
+    "series_id": 7333,
+    "series_name": "大通G70",
+    "status": "downloaded",
+    "sha256": "0f4b7c404e66cf2b472d0f5edc5eb4ca4ca977a9e4e9013d57e0a0614c872723",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7333.json"
+  },
+  {
+    "series_id": 6479,
+    "series_name": "大通G90",
+    "status": "downloaded",
+    "sha256": "6014fbe6f175475d3bf267b42b15ec33f5ec90b3aa81474fa5d74182c74c5e58",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6479.json"
+  },
+  {
+    "series_id": 7221,
+    "series_name": "瑞风RF8 PHEV",
+    "status": "downloaded",
+    "sha256": "bb69ff1778d3f5d91da56273e63a6c17b987c475e6ad6998ada328620bf7c679",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7221.json"
+  },
+  {
+    "series_id": 6008,
+    "series_name": "奔腾NAT",
+    "status": "downloaded",
+    "sha256": "6a97ca0cdad1eff0adee9c97a154b057967135856366cc4bfe7000affec9a7f8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6008.json"
+  },
+  {
+    "series_id": 831,
+    "series_name": "比亚迪e6",
+    "status": "downloaded",
+    "sha256": "eedb8206af49381d504ba3ab4cd700af642536e1aa297119ba5904180e644a66",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/831.json"
+  },
+  {
+    "series_id": 6553,
+    "series_name": "五菱微旅车",
+    "status": "downloaded",
+    "sha256": "a01677cc36786d4eb7c030eb1fa9dea82bbfd32c1f822e40ce734cb753c5b813",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6553.json"
+  },
+  {
+    "series_id": 7592,
+    "series_name": "vala pro",
+    "status": "downloaded",
+    "sha256": "21559b185e7ed0be4c71880810fe4280015783ed3cd72fb91d698ce46f1ffc48",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7592.json"
+  },
+  {
+    "series_id": 6148,
+    "series_name": "大家9",
+    "status": "downloaded",
+    "sha256": "4e1ba909abe12c08b3bec3485e015ce95fe66f8067f1655abf5437d0c4b99de0",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6148.json"
+  },
+  {
+    "series_id": 4418,
+    "series_name": "菱智新能源",
+    "status": "downloaded",
+    "sha256": "347be02ac6aee040b2502a16f2b0c49fee7962150663c4c3050372250627abd6",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4418.json"
+  },
+  {
+    "series_id": 8060,
+    "series_name": "Summer",
+    "status": "downloaded",
+    "sha256": "681c275f65c562774d5ff80037b4e0a9c00ce28ff45cf4c47cfac8f749b82c14",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8060.json"
+  },
+  {
+    "series_id": 8719,
+    "series_name": "别克GL8高定",
+    "status": "downloaded",
+    "sha256": "253867797eab9be0ccd93258244d4e990e7fd17cf9dd057c63db2b3570a3d5fe",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8719.json"
+  },
+  {
+    "series_id": 7904,
+    "series_name": "睿蓝8",
+    "status": "downloaded",
+    "sha256": "b4f1013384acf60ab59733e0654a04ddb1793aad484089d146a8b2e2d6cf834b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7904.json"
+  },
+  {
+    "series_id": 4090,
+    "series_name": "瑞风M4",
+    "status": "downloaded",
+    "sha256": "a2bb548013cd2e3ef1f7de13034afc4cc487ca4de54bb5a70ffad946ad17c279",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4090.json"
+  },
+  {
+    "series_id": 7441,
+    "series_name": "瑞风RF8",
+    "status": "downloaded",
+    "sha256": "a7e859e5ce73b7dbbd615071bec74e39f4bea2c3ca13a7241a0b9bc45ce955af",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7441.json"
+  },
+  {
+    "series_id": 4464,
+    "series_name": "Lorinser VS系列",
+    "status": "downloaded",
+    "sha256": "1bca05140a2f995f926ae9998abaf4e470f45020bf40883dc9ee1bb3ef054edb",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4464.json"
+  },
+  {
+    "series_id": 8419,
+    "series_name": "锐胜M8",
+    "status": "downloaded",
+    "sha256": "8794830067d70c60b4e9d5686dff29c815248ba567466d220833c0a91a5060a4",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8419.json"
+  },
+  {
+    "series_id": 6506,
+    "series_name": "瑞风E3",
+    "status": "downloaded",
+    "sha256": "30b58f309dc534105e5c5606d4223f2226ce04e2eecd09fc0ab5b83f8ee359f9",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6506.json"
+  },
+  {
+    "series_id": 6938,
+    "series_name": "沃森威尔福特黑武士",
+    "status": "downloaded",
+    "sha256": "0e30badbf30b13b0e0e2a5b7aa7b27266f94564a03e923ae5dd94f4ebd7d6345",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6938.json"
+  },
+  {
+    "series_id": 8260,
+    "series_name": "宸辉VL900",
+    "status": "downloaded",
+    "sha256": "9b80df8cd792f73c8122350a50096c967e2b9eba9e21eb4bba3791e2114e4c98",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8260.json"
+  },
+  {
+    "series_id": 8320,
+    "series_name": "小傲旋",
+    "status": "downloaded",
+    "sha256": "5361959a7468abe85b15a20f588ddcbfe4fc58271b4cbb5a6e416e722450be2f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8320.json"
+  },
+  {
+    "series_id": 7892,
+    "series_name": "领途M8",
+    "status": "downloaded",
+    "sha256": "ee5ef85c739571ad7a8fdd3963c9722d71d482eddde0c8743721b47fdb4c8365",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7892.json"
+  },
+  {
+    "series_id": 4805,
+    "series_name": "风行M7",
+    "status": "downloaded",
+    "sha256": "5fde79c14bec8669b6fdf32f0a03f3d49449167b95b6ee34574adf5f35430fed",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4805.json"
+  },
+  {
+    "series_id": 5861,
+    "series_name": "枫叶80v",
+    "status": "downloaded",
+    "sha256": "cae07953d9a0a4b38711d204ac710141932ed1eb4541fcc4e4d8dea3506d615c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5861.json"
+  },
+  {
+    "series_id": 8276,
+    "series_name": "沃尔法海狮",
+    "status": "downloaded",
+    "sha256": "b8776077e9f77cb00ef6a4437483ae6b1445b92587dbebc4e28b1316fab7826c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8276.json"
+  },
+  {
+    "series_id": 7930,
+    "series_name": "瑞风M3 PHEV",
+    "status": "downloaded",
+    "sha256": "c400d82984fbd1f7ae1fc134a958c6be7b15f71fea58e239a24e248b8393a87e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7930.json"
+  },
+  {
+    "series_id": 8678,
+    "series_name": "拾光星光730福祉车",
+    "status": "downloaded",
+    "sha256": "7919fbfff659db611ee1cb4bff63de178308d8c209150cd75850afa3ad6055c1",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8678.json"
+  },
+  {
+    "series_id": 6136,
+    "series_name": "迈莎锐V级",
+    "status": "downloaded",
+    "sha256": "4179d6a1493f7b1a0b95e993528166a44f49f94da5c3a85bd3023167106a0a9a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6136.json"
+  },
+  {
+    "series_id": 6581,
+    "series_name": "风光380",
+    "status": "downloaded",
+    "sha256": "5762a1a8e68a8a273b694f4fd3c010cc44ec2af960592d850458bd9bd835ae79",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6581.json"
+  },
+  {
+    "series_id": 6772,
+    "series_name": "克蒂帝亚",
+    "status": "downloaded",
+    "sha256": "31cc8a9b6dfa1407c1f74f3467a2343cf5e5ffce9395fc6fe0e346a524d17df9",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6772.json"
+  },
+  {
+    "series_id": 7540,
+    "series_name": "风行游艇新能源",
+    "status": "downloaded",
+    "sha256": "4296019b4c4c18d23b405c0356e79ecdecebfe4ca4fa27dd83a9dc9dcd94b2d9",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7540.json"
+  },
+  {
+    "series_id": 5831,
+    "series_name": "Lorinser LS系列",
+    "status": "downloaded",
+    "sha256": "720626a0e06cde8fff9c37a32762efee7d1268f9c8a6df76999dbd6f5dc29211",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5831.json"
+  },
+  {
+    "series_id": 5329,
+    "series_name": "傲旋",
+    "status": "downloaded",
+    "sha256": "b0eeb9ea1d865e9285dfbe1dc6648d1411ed0f122b8b1122d9bc85d30ca2690a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5329.json"
+  },
+  {
+    "series_id": 5649,
+    "series_name": "博速 V级",
+    "status": "downloaded",
+    "sha256": "15407cc645565f0f67144a82d370d8f05834239a03a9593c253530afafe90339",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5649.json"
+  },
+  {
+    "series_id": 7988,
+    "series_name": "泰坦S6",
+    "status": "downloaded",
+    "sha256": "cd27d4d72612d2eb5ab7237e499b509db6ee33b0c3df738e5382d30a705d40e2",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7988.json"
+  },
+  {
+    "series_id": 8650,
+    "series_name": "拾光福祉车",
+    "status": "downloaded",
+    "sha256": "519c9a1e7dbcc69319487e2080598036f44ae71c2bf844d3213482004c8a771f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8650.json"
+  },
+  {
+    "series_id": 8518,
+    "series_name": "格瑞维亚高定",
+    "status": "downloaded",
+    "sha256": "a403f342b063aa0e547964cb6b3559d67eb49977ca43bd9b6db5714282fbf6a4",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8518.json"
+  },
+  {
+    "series_id": 8496,
+    "series_name": "高顶格瑞维亚 罗伦士·旅行家",
+    "status": "downloaded",
+    "sha256": "4e5336a495bda69eba5fb04559a10e07f3b80d92183c6a602e937aee72e567b8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8496.json"
+  },
+  {
+    "series_id": 8239,
+    "series_name": "赫菲特高顶赛那",
+    "status": "downloaded",
+    "sha256": "bd91347116d4631921e0a6d28ad2ce4d41e89cc041ae16bd0b0c46e74ebb6319",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8239.json"
+  },
+  {
+    "series_id": 6713,
+    "series_name": "克蒂巴赫",
+    "status": "downloaded",
+    "sha256": "c4d16ddcc92cd8a70ee2d17725e354ba27066e095b8410016cef16705d53095c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6713.json"
+  },
+  {
+    "series_id": 6096,
+    "series_name": "Lorinser LX",
+    "status": "downloaded",
+    "sha256": "b1a28078637a7b78e8f82e84117dc4f81e2ef1897a87c5b555d0a8fed71e82e6",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6096.json"
+  },
+  {
+    "series_id": 6391,
+    "series_name": "风光E380",
+    "status": "downloaded",
+    "sha256": "c6dc4e5789063ff58adf734cec66b0f31f139d0c2326d9a7565828a852854c23",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6391.json"
+  },
+  {
+    "series_id": 7350,
+    "series_name": "瑞风E4",
+    "status": "downloaded",
+    "sha256": "a6d6e7fbe2453dcd7ea0a0bbb338f0a4c9dd96108d20280a54ccba37618a79b7",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7350.json"
+  },
+  {
+    "series_id": 7846,
+    "series_name": "领途E-M8",
+    "status": "downloaded",
+    "sha256": "1e630de0c92c00b60a4cfd711d129cfe6c2cd5b735bf616bdd1d064d7e970fa2",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7846.json"
+  },
+  {
+    "series_id": 8141,
+    "series_name": "迈凯宾",
+    "status": "downloaded",
+    "sha256": "731e17999364b092e1808447deb09bdb3c76effc1fdac8312a3013f03ee11a63",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8141.json"
+  },
+  {
+    "series_id": 5764,
+    "series_name": "远志M1",
+    "status": "downloaded",
+    "sha256": "25a0034395da084ba4f974829b4e9c89ef794d5f46d326af90cad32d14fa8b95",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5764.json"
+  },
+  {
+    "series_id": 7485,
+    "series_name": "巴菲特S",
+    "status": "downloaded",
+    "sha256": "b2f8076c022bc0b2bfe8561ce4f511f44d9266eec25f130b3b94443b436ecac3",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7485.json"
+  },
+  {
+    "series_id": 7004,
+    "series_name": "iMAX8全家版",
+    "status": "downloaded",
+    "sha256": "19eac0f4c312f3a96460d48c0dca3f85d1e9206e4886121f418511babb2279ea",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7004.json"
+  },
+  {
+    "series_id": 8019,
+    "series_name": "博歌赛那",
+    "status": "downloaded",
+    "sha256": "708660eb03f224639775c1843fb118941d6fcecfe6bbd048359bf323fac99cbf",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8019.json"
+  },
+  {
+    "series_id": 8139,
+    "series_name": "欧尔法",
+    "status": "downloaded",
+    "sha256": "cb9843e82de8febb805ce4acb4f0f210c947b43917d08e83de402dcfd86da7ed",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8139.json"
+  },
+  {
+    "series_id": 6364,
+    "series_name": "维努斯",
+    "status": "downloaded",
+    "sha256": "7a768a29cbdf434b1ad0a1252aa3b7305a3b14a58081c0028ab483719712b6ff",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6364.json"
+  },
+  {
+    "series_id": 8047,
+    "series_name": "克慕勒阿尔法AL系列",
+    "status": "downloaded",
+    "sha256": "7660c9dc7ffbceea265ca1e4ffd8a0bdd72d17deb291103d7bb4b1e875f2fb52",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8047.json"
+  },
+  {
+    "series_id": 8200,
+    "series_name": "拉帝",
+    "status": "downloaded",
+    "sha256": "18142b32988acae50f4f5740108592293729c7c1339a256667a7c5ab64123490",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8200.json"
+  },
+  {
+    "series_id": 7795,
+    "series_name": "克慕勒阿尔法AH系列",
+    "status": "downloaded",
+    "sha256": "79e3afdc3b702025c00c22eddb3e97a0a55523f1dcaa09186e0efffa23971369",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7795.json"
+  },
+  {
+    "series_id": 8164,
+    "series_name": "巴菲特9",
+    "status": "downloaded",
+    "sha256": "706f9cf181223bd8cb1d42852b5b88d3d8eaad42e465363cc80dd50b7388505e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8164.json"
+  },
+  {
+    "series_id": 7768,
+    "series_name": "钧天纵横家",
+    "status": "downloaded",
+    "sha256": "5e4316999b76f4fd1a0af1c6715d3fa188e05de49f8f28abef1cdbc5f79d7541",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7768.json"
+  },
+  {
+    "series_id": 8272,
+    "series_name": "克蒂昆仑",
+    "status": "downloaded",
+    "sha256": "fdaece8d1d1b4a736809b3e00d846dfb78ddb73c1279eb63eef9332afea9bfef",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8272.json"
+  },
+  {
+    "series_id": 8680,
+    "series_name": "布鲁德",
+    "status": "downloaded",
+    "sha256": "f34fa02ed5791959040ea344f203d993ea1471c69023acc9a6dcaf4ded7a68f9",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8680.json"
+  },
+  {
+    "series_id": 8698,
+    "series_name": null,
+    "status": "downloaded",
+    "sha256": "7fca2f5fb1148103c5e55e220addcdb87d7d38e48f8aeabf0f4dd95409a66672",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8698.json"
+  },
+  {
+    "series_id": 6469,
+    "series_name": "克蒂圣姆峰",
+    "status": "downloaded",
+    "sha256": "c5f0baef27322f76df92aa4bae71f1aa8e02196368919699ab8a55961eaef825",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6469.json"
+  },
+  {
+    "series_id": 5177,
+    "series_name": "车驰V系列",
+    "status": "downloaded",
+    "sha256": "ca52e943376356f30cbf9d12a985bfc356a88211e4c9647892d83c40cc797ddf",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5177.json"
+  },
+  {
+    "series_id": 7488,
+    "series_name": "Lorinser LW系列",
+    "status": "downloaded",
+    "sha256": "cfbf8156eaf7abf8aafa2862b6dc4a5de9d951f70727425e4fd4d6277b6f4567",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7488.json"
+  },
+  {
+    "series_id": 5328,
+    "series_name": "车驰Sprinter",
+    "status": "downloaded",
+    "sha256": "8fb8647ab6cb8ef9a599262251b0cf27e52d6c4662953f35a53cca12b8c69008",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5328.json"
+  },
+  {
+    "series_id": 8082,
+    "series_name": "天玑系列",
+    "status": "downloaded",
+    "sha256": "99bae934a01a87e5cf161855a0566736f8aa454ee421b6f752f52a060d7b724b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8082.json"
+  },
+  {
+    "series_id": 6951,
+    "series_name": "枫叶80v PRO",
+    "status": "downloaded",
+    "sha256": "42ad77dffc6bd0bb5a075877237909aa6a48bf58c79c51243f25684b80dff2d9",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6951.json"
+  },
+  {
+    "series_id": 5469,
+    "series_name": "铂驰VC系列",
+    "status": "downloaded",
+    "sha256": "09c4ed9477a688c15fcaa5fe5dac2d2cfa61daeaf7d51a06ad4c02e7c322057d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5469.json"
+  },
+  {
+    "series_id": 7624,
+    "series_name": "蓝鲸",
+    "status": "downloaded",
+    "sha256": "8231f235e7e24aa57835bb1d34e9c80f9ea838d6ab81f851f63e6b4227f59dd8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7624.json"
+  },
+  {
+    "series_id": 8080,
+    "series_name": "星曜系列",
+    "status": "downloaded",
+    "sha256": "568d6241b198f5dfbbc1874cec430894b38116a7f4818596984e40f8789d6536",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8080.json"
+  },
+  {
+    "series_id": 8240,
+    "series_name": "赫菲特途睿欧",
+    "status": "downloaded",
+    "sha256": "b22014594f3bef44823a6837c6f0b9e9f052b42cc53d5f592fa6fb1a9c02c0e7",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8240.json"
+  },
+  {
+    "series_id": 8081,
+    "series_name": "天枢系列",
+    "status": "downloaded",
+    "sha256": "d8b03419fa39e0aade55c7c647454012e252b59d733a8c9760b596876861b7c6",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8081.json"
+  },
+  {
+    "series_id": 7081,
+    "series_name": "盛唐北铃V-Class",
+    "status": "downloaded",
+    "sha256": "f856f83df3a5b7de05961b46519c196b50945a743d8110c8b886d7678bc08757",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7081.json"
+  },
+  {
+    "series_id": 8044,
+    "series_name": "克慕勒阿尔法A系列",
+    "status": "downloaded",
+    "sha256": "8eb4e792cac9478ab646653e672a6119a93a558a44de2ee22a6e21d8b64d2b0e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8044.json"
+  },
+  {
+    "series_id": 8263,
+    "series_name": "Lorinser T系列",
+    "status": "downloaded",
+    "sha256": "b3d7378a17580ee152544455c44662290531e07209d8f96247d6dc5709b608f8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8263.json"
+  },
+  {
+    "series_id": 7779,
+    "series_name": "枫叶80v L",
+    "status": "downloaded",
+    "sha256": "c753982e4022a7a576277578f5f3fc34be7ec01daee5fdff2592d8fc101c69c7",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7779.json"
+  },
+  {
+    "series_id": 7906,
+    "series_name": "华东牌商务车",
+    "status": "downloaded",
+    "sha256": "3f45bacfd4b56b5bf7fe71310a07b2ee47b0fd989e7d2061466ca94a30499758",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7906.json"
+  },
+  {
+    "series_id": 8168,
+    "series_name": "莎尔法",
+    "status": "downloaded",
+    "sha256": "67efe19b8d1c886c3880fec39414721abf1026258c3990049c34a2ce89a42161",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8168.json"
+  },
+  {
+    "series_id": 8309,
+    "series_name": "瑞一卡德加",
+    "status": "downloaded",
+    "sha256": "705dbb87e3f38d6724c56c9ccc30fba23d95ea4a8658e2b15f2a7172fb504f05",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8309.json"
+  },
+  {
+    "series_id": 7620,
+    "series_name": "摩登部落",
+    "status": "downloaded",
+    "sha256": "7d482a3f0f484ab53727f2d8d58c21be245fe95842937c213496063696acabc4",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7620.json"
+  },
+  {
+    "series_id": 6859,
+    "series_name": "克蒂翔翼",
+    "status": "downloaded",
+    "sha256": "ec454b5ed98b628de2210cbc630087808ec0b3027fde0a939f8c2ac7b98f0af6",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6859.json"
+  },
+  {
+    "series_id": 6783,
+    "series_name": "拓锐斯特威霆",
+    "status": "downloaded",
+    "sha256": "cd233846f919fb9886a6974787014e2400c10f4c7b4a532f0186feba5f5e4b25",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6783.json"
+  },
+  {
+    "series_id": 7429,
+    "series_name": "途瑞欧雅典纳",
+    "status": "downloaded",
+    "sha256": "d649b6114a95626f4e9426a870764c72b0c67e8694c9490d3d1b2f768ae32fe4",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7429.json"
+  },
+  {
+    "series_id": 6679,
+    "series_name": "珑致G20金骑士",
+    "status": "downloaded",
+    "sha256": "4063390679838d497523b764d820d204835dfc5359b94dbd882fe3effd6fd0ea",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6679.json"
+  },
+  {
+    "series_id": 7883,
+    "series_name": "克蒂山河",
+    "status": "downloaded",
+    "sha256": "38f6c391076684a509569f1ebe8ab51b1af216bc9cc2abae8b757278ce67b09f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7883.json"
+  },
+  {
+    "series_id": 8142,
+    "series_name": "钧天格瑞维亚",
+    "status": "downloaded",
+    "sha256": "7f38b04af169ab63db0b55173bc00a0c8ba3f5c7670c86d41d43e920836d388f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8142.json"
+  },
+  {
+    "series_id": 8238,
+    "series_name": "赫菲特高顶格瑞维亚",
+    "status": "downloaded",
+    "sha256": "e06dab539784bca561a7a7031440d4b0ad21424c412c51fd9861903c2f480284",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8238.json"
+  },
+  {
+    "series_id": 8521,
+    "series_name": "焜驰麒麟",
+    "status": "downloaded",
+    "sha256": "69d8b1151e6fdfe1326259b9ea71c9df509ba5766df243e77ef502a7c321cc76",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8521.json"
+  },
+  {
+    "series_id": 7622,
+    "series_name": "瀚海苍穹",
+    "status": "downloaded",
+    "sha256": "211bdfa1230941c6f658aaa3c679266d50e9c5306d131c635a56353cd17ad3cb",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7622.json"
+  },
+  {
+    "series_id": 8515,
+    "series_name": "华东祥云 插电混动",
+    "status": "downloaded",
+    "sha256": "c034422540db93a06233a09b698a31305fbcea65d4f3b6ad029529a3446c3119",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8515.json"
+  },
+  {
+    "series_id": 8514,
+    "series_name": "华东祥云",
+    "status": "downloaded",
+    "sha256": "a2da8e4f772bcf61885a94f57545696ff7e1c7c1c6b8edb7436d0bf99c26db89",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8514.json"
+  },
+  {
+    "series_id": 5975,
+    "series_name": "LUMMA CLR V",
+    "status": "downloaded",
+    "sha256": "587aedae6ae150df7ad7d2c53d231386511a5447c208ac647bf02b827047cac8",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5975.json"
+  },
+  {
+    "series_id": 6452,
+    "series_name": "莱茵旅行者",
+    "status": "downloaded",
+    "sha256": "55be0baa3dce9148c15f4f581aa92e2c19d1f44156c273334525c07511a2230c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6452.json"
+  },
+  {
+    "series_id": 6678,
+    "series_name": "拓锐斯特V-Class",
+    "status": "downloaded",
+    "sha256": "8bd2e3169f6c86e04fa1c6bad62b256f0d125692b8182141d35b471150fc1428",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6678.json"
+  },
+  {
+    "series_id": 6587,
+    "series_name": "克蒂雪堆白",
+    "status": "downloaded",
+    "sha256": "82e9707a2e7275d58a32a3c4d2833bc06aa4ab4dd18d842c058b690d5cba1784",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6587.json"
+  },
+  {
+    "series_id": 7884,
+    "series_name": "克蒂山川",
+    "status": "downloaded",
+    "sha256": "1fffe15d32d67b95e9c35f9138ea40ba3df664ea3f22fe9ec9170257751ee81d",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7884.json"
+  },
+  {
+    "series_id": 6638,
+    "series_name": "凌际星云系列",
+    "status": "downloaded",
+    "sha256": "7e266b6228b922b989e353b28ad4de3a3c2df4bf4c0c3c6573d732c56632c8ed",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6638.json"
+  },
+  {
+    "series_id": 7419,
+    "series_name": "车驰Vito",
+    "status": "downloaded",
+    "sha256": "866f6db378ac697dd51068aa8ff5cbac8d9132dc9511492bd9a98f4565682b08",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7419.json"
+  },
+  {
+    "series_id": 6235,
+    "series_name": "雅升V-Class",
+    "status": "downloaded",
+    "sha256": "937a489d017c1231926afb0dbb7283b3d20d7f6d01962e71872166b9ebffbbbb",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6235.json"
+  },
+  {
+    "series_id": 7623,
+    "series_name": "致锋",
+    "status": "downloaded",
+    "sha256": "c1a900382b36f28b8e5ed07b1d04061f8da8c53ae10d7f35a4fc434ef8f6986f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7623.json"
+  },
+  {
+    "series_id": 7621,
+    "series_name": "致臻",
+    "status": "downloaded",
+    "sha256": "f42fc5b74434429e6e185507431023b5d8b6c8c3233f16f57d4da032b34a4ca7",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7621.json"
+  },
+  {
+    "series_id": 3655,
+    "series_name": "卡升威霆",
+    "status": "downloaded",
+    "sha256": "55758b639a25f75468c4e69e58756ebbd1d41db95f1ebc97d7735ecb887c46c6",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/3655.json"
+  },
+  {
+    "series_id": 4865,
+    "series_name": "Lorinser MS500L",
+    "status": "downloaded",
+    "sha256": "a2cf4ff304f506296f43fdfac879d09861f76dce6981335e7089f59d4cd20b9f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4865.json"
+  },
+  {
+    "series_id": 4448,
+    "series_name": "卡升V-Class",
+    "status": "downloaded",
+    "sha256": "ae5efc7ab5dba0f17c194c331bd85f96ca565d4876e87e93f0d6d44ceaf850f5",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/4448.json"
+  },
+  {
+    "series_id": 8665,
+    "series_name": "宏运高顶格瑞维亚",
+    "status": "downloaded",
+    "sha256": "dac4a07cc6a98d4586b94afadf587b84071a16a2651a252e98ffc5c625897253",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8665.json"
+  },
+  {
+    "series_id": 6857,
+    "series_name": "克蒂WALD",
+    "status": "downloaded",
+    "sha256": "1bd0b1e22f8eab7a9c075dddf18b15ef7511c8edeea3cf29f66c6ac623b73165",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6857.json"
+  },
+  {
+    "series_id": 6733,
+    "series_name": "焜驰V-Class",
+    "status": "downloaded",
+    "sha256": "3c469e1a3979a82981eab910d24bdfdfce40a9bb0827a23c01b1e3249fdc1d3e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6733.json"
+  },
+  {
+    "series_id": 8310,
+    "series_name": "WALD City M7",
+    "status": "downloaded",
+    "sha256": "cfbadbabb9c2eb4b9a3423c4cb9c40baaa87d44925a4e8809498f7bd6d34d739",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8310.json"
+  },
+  {
+    "series_id": 7819,
+    "series_name": "睿吉馬Vito",
+    "status": "downloaded",
+    "sha256": "77ef451eb54996a43d170868297ce0bdfa2f65e0c93d883e5e66f8dd0a76bf5c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7819.json"
+  },
+  {
+    "series_id": 5956,
+    "series_name": "晓澳V-Class",
+    "status": "downloaded",
+    "sha256": "8aaffc47925569c5e0caeeefa67c73507b564fe03178e3a8bf6ab2a281f93ddd",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5956.json"
+  },
+  {
+    "series_id": 5722,
+    "series_name": "金冠V级",
+    "status": "downloaded",
+    "sha256": "2e2c880de5c3f8c0b329df36b5d1d1ca8d921d527d12c3d92dc71c13bbc0741e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5722.json"
+  },
+  {
+    "series_id": 8071,
+    "series_name": "焜驰威霆",
+    "status": "downloaded",
+    "sha256": "bc00b1913f3fb6ab92e7a8e55cc045a73685eb1af02a2f28c05b9eb232549e7e",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8071.json"
+  },
+  {
+    "series_id": 7845,
+    "series_name": "礼骊汽车威霆",
+    "status": "downloaded",
+    "sha256": "3951c08334ba0b64ce028ee20a84e62aa41ef7fbf5d674a485308a5874ad8a4a",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7845.json"
+  },
+  {
+    "series_id": 6518,
+    "series_name": "卡漠兹V级",
+    "status": "downloaded",
+    "sha256": "5281aea8c021a4124652904eedb1603c1c47afa582fb7fbae5e1a31abe0af670",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/6518.json"
+  },
+  {
+    "series_id": 7820,
+    "series_name": "睿吉馬V级",
+    "status": "downloaded",
+    "sha256": "522c15fbc7a3262a24dfc44d61c8171ba655e898e7e952389531260ddefb1abd",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7820.json"
+  },
+  {
+    "series_id": 7663,
+    "series_name": "礼骊汽车V级",
+    "status": "downloaded",
+    "sha256": "324ddf9b7cb924f5deccd875a160f9dac06b640eb704932201cbe8c0d601ba1f",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7663.json"
+  },
+  {
+    "series_id": 8418,
+    "series_name": "WALD City S9",
+    "status": "downloaded",
+    "sha256": "085a413e267f48dc59a430153d7561808f825112f99c61e9a713f1b4616ddbc3",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8418.json"
+  },
+  {
+    "series_id": 7962,
+    "series_name": "晓澳VITO",
+    "status": "downloaded",
+    "sha256": "b6f3d1ef70b69de094c133e0470d107d86d1f20a5a01ac403cc90d6453f16d36",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7962.json"
+  },
+  {
+    "series_id": 8046,
+    "series_name": "塞里雅兰V级",
+    "status": "downloaded",
+    "sha256": "7fcb43b926bab9127f86bc8791e43c917d49fd744184b7e70517a987801a5e1b",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8046.json"
+  },
+  {
+    "series_id": 8287,
+    "series_name": "WALD City H7",
+    "status": "downloaded",
+    "sha256": "2a13d88ab818fc253866f35f4da508a97a06f1576918dfc912fec4b4de5b6998",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8287.json"
+  },
+  {
+    "series_id": 7256,
+    "series_name": "凌际威途系列",
+    "status": "downloaded",
+    "sha256": "f2cafbeee3b7f306c1f2c0b1051f43821123e8a45f4ec5106f36b5ffbad9ddc0",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7256.json"
+  },
+  {
+    "series_id": 8166,
+    "series_name": "WALD City S7",
+    "status": "downloaded",
+    "sha256": "7245d16d3c1d8371272c0b331073c5219fcdf728f3a2648c29c3583b00c9a1e6",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8166.json"
+  },
+  {
+    "series_id": 8011,
+    "series_name": "上喆浩达威霆",
+    "status": "downloaded",
+    "sha256": "d26d80266bc2a56cd3a35eb0bd1b0f047b98a714891e89ab0b7aa6a2f8d29731",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/8011.json"
+  },
+  {
+    "series_id": 5563,
+    "series_name": "上喆V-Class",
+    "status": "downloaded",
+    "sha256": "8133db0d06920668e0fbc2a291b3d4fe7eb6f28f16815d09e9deaf6a097093b0",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/5563.json"
+  },
+  {
+    "series_id": 7995,
+    "series_name": "雅升VITO",
+    "status": "downloaded",
+    "sha256": "d6bb6f22bc657acaee47e4b7feb462f694ab6f26e0cc06f5f830f66c6828295c",
+    "artifact_path": "resources/autohome_corpus/current_sale/raw/7995.json"
+  }
+]

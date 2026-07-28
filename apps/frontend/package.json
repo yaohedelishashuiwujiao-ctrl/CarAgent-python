@@ -1,0 +1,26 @@
+{
+  "name": "chassis-benchmark-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --configLoader runner",
+    "build": "tsc --noEmit && vite build --configLoader runner --outDir /tmp/subjects-agent-dist",
+    "preview": "vite preview --host 127.0.0.1 --port 4173"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.6.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "antd": "^5.22.6",
+    "echarts": "^5.5.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7"
+  }
+}

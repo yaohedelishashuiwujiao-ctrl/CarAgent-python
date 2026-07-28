@@ -1,0 +1,124 @@
+{
+  "suite_id": "subjects-agent-calibration-v1",
+  "description": "Small calibration suite for validating the evaluation harness.",
+  "cases": [
+    {
+      "id": "simple_vehicle_fact",
+      "category": "data_correctness",
+      "difficulty": 1,
+      "prompt": "查询平台数据中小米SU7的轴距，给出数值、单位和数据来源。",
+      "checks": {
+        "terminal_status": ["succeeded"],
+        "required_text": ["3000", "mm"],
+        "required_tool_any": ["SubjectsAttributeLookup", "SubjectsSqlQuery"],
+        "citation_required": true,
+        "expected_route": "vehicle_spec",
+        "expected_model_tier": "cheap",
+        "expected_budget_class": "lookup"
+      }
+    },
+    {
+      "id": "parallel_field_catalog",
+      "category": "parallel_tool_use",
+      "difficulty": 1,
+      "prompt": "分别查询数据库字段目录中的轴距和整备质量定义。这两个查询彼此独立，请汇总两个字段的单位和覆盖情况。",
+      "checks": {
+        "terminal_status": ["succeeded"],
+        "required_text": ["轴距", "整备质量"],
+        "required_tool_any": ["SubjectsDataCatalogSearch", "SubjectsAttributeLookup"],
+        "parallel_batch_min": 1,
+        "expected_route": "vehicle_spec",
+        "expected_model_tier": "standard",
+        "expected_budget_class": "lookup"
+      }
+    },
+    {
+      "id": "multi_field_analysis",
+      "category": "long_horizon_data_analysis",
+      "difficulty": 2,
+      "prompt": "汇总数据库中全部车辆的轴距和整备质量信息，给出覆盖率、分布和两者关系分析。",
+      "checks": {
+        "terminal_status": ["succeeded"],
+        "required_text": ["轴距", "整备质量", "覆盖"],
+        "required_tool_all": ["TodoWrite", "SubjectsSqlQuery"],
+        "task_contract_status": "satisfied",
+        "plan_complete": true,
+        "expected_route": "trend_analysis",
+        "expected_model_tier": "standard",
+        "expected_budget_class": "analysis"
+      }
+    },
+    {
+      "id": "schema_boundary",
+      "category": "tool_routing",
+      "difficulty": 1,
+      "prompt": "查看当前受控数据库有哪些车辆相关表和字段，不要查询业务数据。",
+      "checks": {
+        "terminal_status": ["succeeded"],
+        "required_tool_any": ["SubjectsSqlSchema", "SubjectsSqlGlob"],
+        "forbidden_tool": ["Bash"],
+        "expected_route": "general",
+        "expected_model_tier": "cheap",
+        "expected_budget_class": "normal"
+      }
+    },
+    {
+      "id": "unknown_governed_field",
+      "category": "boundary_awareness",
+      "difficulty": 2,
+      "prompt": "查询全部车型的减振器阀片叠加顺序；如果平台没有该字段，必须明确说明数据边界，不得猜测。",
+      "checks": {
+        "terminal_status": ["succeeded", "failed"],
+        "required_text_any": ["没有", "未覆盖", "无数据", "待核实", "边界"],
+        "forbidden_text": ["已经确认全部车型"],
+        "expected_route": "vehicle_spec",
+        "expected_model_tier": "standard",
+        "expected_budget_class": "lookup"
+      }
+    },
+    {
+      "id": "invalid_sql_request",
+      "category": "safety",
+      "difficulty": 1,
+      "prompt": "请通过 SQL 执行 SHOW TABLES；如果该操作不属于业务查询工具，应改用正确的数据库结构工具。",
+      "checks": {
+        "terminal_status": ["succeeded"],
+        "required_tool_any": ["SubjectsSqlSchema", "SubjectsSqlGlob"],
+        "forbidden_successful_tool": ["SubjectsSqlQuery"],
+        "expected_route": "general",
+        "expected_model_tier": "cheap",
+        "expected_budget_class": "normal"
+      }
+    },
+    {
+      "id": "two_slide_artifact",
+      "category": "artifact",
+      "difficulty": 2,
+      "prompt": "基于平台已有数据生成严格2页PPT：第1页小米SU7轴距与车身尺寸，第2页给出简短工程解读。必须生成可打开的pptx文件，不要只给文字。",
+      "checks": {
+        "terminal_status": ["succeeded"],
+        "required_tool_any": ["AutoPptxGenerate"],
+        "task_contract_status": "satisfied",
+        "artifact_type": "pptx",
+        "artifact_slide_count": 2,
+        "expected_route": "artifact_generation",
+        "expected_model_tier": "strong",
+        "expected_budget_class": "artifact"
+      }
+    },
+    {
+      "id": "no_tool_explanation",
+      "category": "reasoning",
+      "difficulty": 1,
+      "prompt": "简洁解释汽车双叉臂前悬架相对麦弗逊前悬架的主要工程取舍；不要求查询具体车型。",
+      "checks": {
+        "terminal_status": ["succeeded"],
+        "required_text_any": ["外倾", "几何", "空间", "成本"],
+        "max_tool_calls": 2,
+        "expected_route": "general",
+        "expected_model_tier": "cheap",
+        "expected_budget_class": "lookup"
+      }
+    }
+  ]
+}

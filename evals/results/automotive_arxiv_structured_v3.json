@@ -1,0 +1,3313 @@
+{
+  "schema": "subjects_rag_retrieval_eval/v2",
+  "suite_id": "automotive-arxiv-silver-v1",
+  "label_quality": "silver_model_generated_not_human_held_out",
+  "corpus_manifest": "resources/report_corpus/arxiv_chunks/manifest.jsonl",
+  "index": {
+    "provider": "platform",
+    "index_type": "hybrid-rrf",
+    "ready": true,
+    "document_count": 1006,
+    "chunk_count": 49082,
+    "retrievers": [
+      "bm25",
+      "char-tfidf"
+    ],
+    "dense": "disabled",
+    "reranker": "disabled",
+    "index_version": "340566ad7c85",
+    "tfidf_analyzer": "word"
+  },
+  "index_build_seconds": 23.29,
+  "peak_rss_mb": 1893.3,
+  "case_count": 100,
+  "metrics": {
+    "hit_rate_at_1": 0.61,
+    "hit_rate_at_3": 0.78,
+    "hit_rate_at_5": 0.79,
+    "hit_rate_at_10": 0.81,
+    "chunk_recall_at_1": 0.61,
+    "chunk_recall_at_3": 0.78,
+    "chunk_recall_at_5": 0.79,
+    "chunk_recall_at_10": 0.81,
+    "ndcg_at_1": 0.61,
+    "ndcg_at_3": 0.7133,
+    "ndcg_at_5": 0.7172,
+    "ndcg_at_10": 0.7239,
+    "document_hit_rate_at_1": 0.89,
+    "document_hit_rate_at_3": 0.93,
+    "document_hit_rate_at_5": 0.95,
+    "document_hit_rate_at_10": 0.98,
+    "recall_at_1": 0.61,
+    "recall_at_3": 0.78,
+    "recall_at_5": 0.79,
+    "mrr_at_10": 0.6949,
+    "latency_p50_ms": 485.942,
+    "latency_p95_ms": 550.15
+  },
+  "cases": [
+    {
+      "query": "How does accounting for chromatic aberration affect monocular depth estimation models according to the SOLAS study?",
+      "expected_document_ids": [
+        "arxiv-2501.17872v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-a0ea70ce53a5a8097bee"
+      ],
+      "returned_document_ids": [
+        "arxiv-2402.12041v2",
+        "arxiv-2402.12041v2",
+        "arxiv-2501.17872v1",
+        "arxiv-2607.00736v2",
+        "arxiv-2409.04086v2",
+        "arxiv-2501.17872v1",
+        "arxiv-2409.04086v2",
+        "arxiv-2607.00736v2",
+        "arxiv-2411.19717v1",
+        "arxiv-2411.19717v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-661cb799360e4eb01ef1",
+        "chunk-860173bfcb71613a62e4",
+        "chunk-a0ea70ce53a5a8097bee",
+        "chunk-76d40ec6e4867c861c0b",
+        "chunk-fea8c654e3e20488fdcf",
+        "chunk-311f9d211fd7b70c2a54",
+        "chunk-f94218b3ffb64fa33a39",
+        "chunk-297353c802c5644416eb",
+        "chunk-611c9ad7dfe6df3572a2",
+        "chunk-e8881bd486f65bd843b3"
+      ],
+      "first_relevant_rank": 3,
+      "latency_ms": 718.549
+    },
+    {
+      "query": "Which model performs worst among those evaluated for DOA estimation and why?",
+      "expected_document_ids": [
+        "arxiv-2501.07008v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-0af0d33d70762838e9fb"
+      ],
+      "returned_document_ids": [
+        "arxiv-2405.02788v1",
+        "arxiv-2405.02788v1",
+        "arxiv-2602.04169v4",
+        "arxiv-2606.31473v1",
+        "arxiv-2602.04169v4",
+        "arxiv-2501.07008v1",
+        "arxiv-2501.07008v1",
+        "arxiv-2509.15294v2",
+        "arxiv-2407.20465v3",
+        "arxiv-2606.31473v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-80b869cc21a8f226fb5c",
+        "chunk-9d9f339a456bf917b449",
+        "chunk-5409f5d4e0c3aa82a721",
+        "chunk-7a3a218a360730bff578",
+        "chunk-4c2e1020c8ee184848c0",
+        "chunk-c8de0bbf4d004adcb19e",
+        "chunk-6901d1935d2b3a53436f",
+        "chunk-47f4813374c552f34e18",
+        "chunk-bf9089a8bd0e973179f7",
+        "chunk-480a04e2a61cce1967c1"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 435.75
+    },
+    {
+      "query": "Why do most electric cars not require a multi-speed transmission?",
+      "expected_document_ids": [
+        "arxiv-2505.09631v4"
+      ],
+      "expected_chunk_ids": [
+        "chunk-52c5e9a50252c83970f3"
+      ],
+      "returned_document_ids": [
+        "arxiv-2505.09631v4",
+        "arxiv-2505.09631v4",
+        "arxiv-2401.15069v1",
+        "arxiv-2507.08222v2",
+        "arxiv-2407.14671v1",
+        "arxiv-2501.01781v2",
+        "arxiv-2401.15069v1",
+        "arxiv-2403.04378v1",
+        "arxiv-2412.20077v3",
+        "arxiv-2410.17282v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-52c5e9a50252c83970f3",
+        "chunk-a319c07007178d7852f9",
+        "chunk-eb1f081934a503b568f1",
+        "chunk-fde941a54018c9c8c283",
+        "chunk-ea0ff8798250aa912f86",
+        "chunk-8b3b364843053a28b1bd",
+        "chunk-438aa09fe1a1403b2aaf",
+        "chunk-06266adf0a413ab5640b",
+        "chunk-4031a5c1b5d865997678",
+        "chunk-b1f4cafb2aee700b1b56"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 373.312
+    },
+    {
+      "query": "How does the ROS Master facilitate communication between nodes in the ADORE framework?",
+      "expected_document_ids": [
+        "arxiv-2508.17985v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-8c80d1eb4bfd9945643c"
+      ],
+      "returned_document_ids": [
+        "arxiv-2508.17985v2",
+        "arxiv-2503.05839v2",
+        "arxiv-2508.17985v2",
+        "arxiv-2412.07817v2",
+        "arxiv-2502.20507v1",
+        "arxiv-2412.07817v2",
+        "arxiv-2503.05839v2",
+        "arxiv-2510.27344v1",
+        "arxiv-2404.12683v1",
+        "arxiv-2402.08061v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-8c80d1eb4bfd9945643c",
+        "chunk-32591a3175dff52f80d4",
+        "chunk-1f1d2b53e7fa52e7defe",
+        "chunk-fbc98b496315a0fabfb2",
+        "chunk-eb54b218701552b2c487",
+        "chunk-41bb8eb78d4468de36dc",
+        "chunk-8010981af7019491ed54",
+        "chunk-5c51c4cb7d95fcdad5e7",
+        "chunk-afeec59c4ffaaafe7afa",
+        "chunk-1e7ce0d5fdda1320d219"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 443.507
+    },
+    {
+      "query": "What is one recommended approach to bridge the Sim-to-Real gap for embodied AI systems?",
+      "expected_document_ids": [
+        "arxiv-2605.10653v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-a51d8ee22c4eeadba0b1"
+      ],
+      "returned_document_ids": [
+        "arxiv-2605.10653v1",
+        "arxiv-2605.10653v1",
+        "arxiv-2501.04150v1",
+        "arxiv-2511.23241v1",
+        "arxiv-2507.16413v1",
+        "arxiv-2511.23241v1",
+        "arxiv-2602.21141v2",
+        "arxiv-2501.04150v1",
+        "arxiv-2602.17174v2",
+        "arxiv-2602.21141v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-a51d8ee22c4eeadba0b1",
+        "chunk-8d5d1d4e458506c8a555",
+        "chunk-5c4bcad21b2af35ff1a4",
+        "chunk-feef2546ee94d12c45e4",
+        "chunk-339520cf728f8e6560e4",
+        "chunk-5ea6974e0b426b223fda",
+        "chunk-5debd10c953af8b4334e",
+        "chunk-ab779da9d68ad2381c4a",
+        "chunk-6e41e0772b74cafca39b",
+        "chunk-61c5140f4205048e964f"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 480.275
+    },
+    {
+      "query": "What advantage does the proposed extension to RISC-V SPMP provide for automotive microcontrollers?",
+      "expected_document_ids": [
+        "arxiv-2504.04498v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-e5cc0b087362bc910cdd"
+      ],
+      "returned_document_ids": [
+        "arxiv-2410.09839v1",
+        "arxiv-2410.09839v1",
+        "arxiv-2504.04498v1",
+        "arxiv-2504.04498v1",
+        "arxiv-2603.17757v1",
+        "arxiv-2603.17757v1",
+        "arxiv-2602.09554v1",
+        "arxiv-2604.17391v1",
+        "arxiv-2605.27804v1",
+        "arxiv-2605.00531v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-6a28a80bc9788ff09fbe",
+        "chunk-e77588202fc5a7f3a945",
+        "chunk-e5cc0b087362bc910cdd",
+        "chunk-f6451c7c1121e0d4aaae",
+        "chunk-40ac134bcb63618ab469",
+        "chunk-749bf973b3649e0acd48",
+        "chunk-75db2ccb1a100a60f499",
+        "chunk-41b9bf48a8461884d42a",
+        "chunk-f78fc6de7942cf0359f7",
+        "chunk-c6d1af6d1cefc43e97b1"
+      ],
+      "first_relevant_rank": 3,
+      "latency_ms": 462.516
+    },
+    {
+      "query": "For subproblems where an improvement is eventually found, which solver performs almost as well as the virtual best solver?",
+      "expected_document_ids": [
+        "arxiv-2510.05955v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-4d256fc697866e2cdc12"
+      ],
+      "returned_document_ids": [
+        "arxiv-2510.05955v1",
+        "arxiv-2510.05955v1",
+        "arxiv-2409.04226v1",
+        "arxiv-2509.08328v2",
+        "arxiv-2507.16584v1",
+        "arxiv-2503.19003v2",
+        "arxiv-2407.02491v2",
+        "arxiv-2408.11969v2",
+        "arxiv-2311.16900v2",
+        "arxiv-2409.09084v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-4d256fc697866e2cdc12",
+        "chunk-0c4961e701967caf5840",
+        "chunk-9e51c4e3135cf87ffdcd",
+        "chunk-eed1a8adbbf95cb8d27d",
+        "chunk-240603ee32b87f319dd7",
+        "chunk-f48431c9cefa6495d85e",
+        "chunk-b99db52e43268dd674fe",
+        "chunk-3697097062871db276e6",
+        "chunk-90a5d70115051c9b4bf5",
+        "chunk-a00515a8d069761f1d4d"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 505.57
+    },
+    {
+      "query": "What are the three primary referent categories in the Talk2Radar dataset?",
+      "expected_document_ids": [
+        "arxiv-2405.12821v3"
+      ],
+      "expected_chunk_ids": [
+        "chunk-758d2786158af795f300"
+      ],
+      "returned_document_ids": [
+        "arxiv-2405.12821v3",
+        "arxiv-2405.12821v3",
+        "arxiv-2411.10612v4",
+        "arxiv-2606.24387v1",
+        "arxiv-2402.11853v2",
+        "arxiv-2501.04479v1",
+        "arxiv-2409.04474v1",
+        "arxiv-2403.12070v1",
+        "arxiv-2511.02445v1",
+        "arxiv-2604.17391v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-758d2786158af795f300",
+        "chunk-befa2bba58d079596dca",
+        "chunk-6e9d0abf5d303e408157",
+        "chunk-31b39794199207b28423",
+        "chunk-92c8c408a0d9051ecb59",
+        "chunk-9dae661bdcec664ab472",
+        "chunk-ff6b75f00a3ba78b8093",
+        "chunk-3d535c9032dcbac6e90a",
+        "chunk-7e7403cf35f8b3b2945d",
+        "chunk-c6d15c7d6a7b1f04db42"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 435.207
+    },
+    {
+      "query": "Which algorithms are listed under the 'Fault-tolerant' column for materials science and quantum chemistry?",
+      "expected_document_ids": [
+        "arxiv-2409.14183v3"
+      ],
+      "expected_chunk_ids": [
+        "chunk-5d62765e4c62eff6649f"
+      ],
+      "returned_document_ids": [
+        "arxiv-2409.14183v3",
+        "arxiv-2512.19778v3",
+        "arxiv-2409.14183v3",
+        "arxiv-2512.19778v3",
+        "arxiv-2501.19070v1",
+        "arxiv-2509.08328v2",
+        "arxiv-2509.15294v2",
+        "arxiv-2501.19070v1",
+        "arxiv-2511.03308v1",
+        "arxiv-2501.15231v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-5d62765e4c62eff6649f",
+        "chunk-055f68afc2fcbf47ed31",
+        "chunk-c2a7a422ff8af67a8f0c",
+        "chunk-1bf5f2ad5660bb8dc160",
+        "chunk-166c18f6127f93def583",
+        "chunk-9272e07d5be3a239c5ce",
+        "chunk-f4bf1ab9ecbda4be7807",
+        "chunk-e5b19bac941ffcce53e9",
+        "chunk-6bad8517e937ad678e3e",
+        "chunk-18e25382eb356b66623a"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 470.216
+    },
+    {
+      "query": "How do the authors use LLMs to simulate diverse viewpoints in evaluating in-car conversational systems?",
+      "expected_document_ids": [
+        "arxiv-2311.07469v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-fb00fc63168b78246c1a"
+      ],
+      "returned_document_ids": [
+        "arxiv-2311.07469v2",
+        "arxiv-2311.07469v2",
+        "arxiv-2604.12615v1",
+        "arxiv-2402.11853v2",
+        "arxiv-2504.00859v3",
+        "arxiv-2504.11243v1",
+        "arxiv-2507.17722v1",
+        "arxiv-2507.19867v1",
+        "arxiv-2505.17066v3",
+        "arxiv-2511.00026v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-570e0f192fbaa37406fe",
+        "chunk-290cb6316ef00b7836ac",
+        "chunk-a040ee7fb1c24bff95be",
+        "chunk-f236dfc23f33e435bd3f",
+        "chunk-ce1e6509d46fa93de0c4",
+        "chunk-f3d73c5cc01d15f1ee9c",
+        "chunk-2f8f15675153d04e9900",
+        "chunk-d888ca2eb40d8a9d0578",
+        "chunk-7598f30ad8c729bb167c",
+        "chunk-ed73d364bcba861efbc1"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 462.748
+    },
+    {
+      "query": "What is a key challenge in automated optical inspection for high-stakes PCBs in the automotive sector?",
+      "expected_document_ids": [
+        "arxiv-2505.03576v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-dbf48145d9a420922791"
+      ],
+      "returned_document_ids": [
+        "arxiv-2505.03576v1",
+        "arxiv-2505.03576v1",
+        "arxiv-2509.26454v4",
+        "arxiv-2506.10524v1",
+        "arxiv-2508.03281v2",
+        "arxiv-2506.10528v1",
+        "arxiv-2509.17628v1",
+        "arxiv-2601.09680v1",
+        "arxiv-2402.12041v2",
+        "arxiv-2501.19070v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-dbf48145d9a420922791",
+        "chunk-ef01160ad82f05e6c550",
+        "chunk-c55a8b8c7241e68fed71",
+        "chunk-333cb2b8c62a47916d4a",
+        "chunk-ba078c379da8d9213c50",
+        "chunk-a56891f87e90b77ee0fa",
+        "chunk-08b7f4533e46149f2b1d",
+        "chunk-a18686a83a15465762c6",
+        "chunk-4e6bfc8ab7bf70b5cc87",
+        "chunk-26f6995ddb04dcc162b0"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 513.469
+    },
+    {
+      "query": "How does the proposed transformer-based distributed joint decoding improve upon the baseline distributed semantic segmentation approach?",
+      "expected_document_ids": [
+        "arxiv-2510.16747v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-0592d28e03c7a38ac41f"
+      ],
+      "returned_document_ids": [
+        "arxiv-2510.16747v1",
+        "arxiv-2510.16747v1",
+        "arxiv-2412.15595v1",
+        "arxiv-2509.01317v1",
+        "arxiv-2409.05770v1",
+        "arxiv-2503.05839v2",
+        "arxiv-2510.25901v1",
+        "arxiv-2505.20004v4",
+        "arxiv-2510.05955v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-0592d28e03c7a38ac41f",
+        "chunk-a423bec7a34c47e987c4",
+        "chunk-bc2ee95f1f61cd7fd878",
+        "chunk-171eeb8a5a70de5646fc",
+        "chunk-df580c1e2d2803c63b71",
+        "chunk-32591a3175dff52f80d4",
+        "chunk-47ece0aa7a6d75ce00d5",
+        "chunk-5e3e992673b5a18d6207",
+        "chunk-8610c369dba184b16e8c"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 456.042
+    },
+    {
+      "query": "Under what conditions does the proposed regularized estimation method for automotive radar ghost identification show enhanced performance compared to MP-IAA?",
+      "expected_document_ids": [
+        "arxiv-2602.11441v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-7b075719b8d4376cd41b"
+      ],
+      "returned_document_ids": [
+        "arxiv-2602.11441v1",
+        "arxiv-2602.11441v1",
+        "arxiv-2404.01437v1",
+        "arxiv-2605.28180v1",
+        "arxiv-2404.01437v1",
+        "arxiv-2511.01431v2",
+        "arxiv-2605.28180v1",
+        "arxiv-2602.04169v4",
+        "arxiv-2511.20003v1",
+        "arxiv-2602.03464v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-5ca2feaa241c14a62096",
+        "chunk-7b075719b8d4376cd41b",
+        "chunk-62ea8d0cf3b85a615c71",
+        "chunk-8def07a7ee59e6d3ed50",
+        "chunk-9b6e67fe4c995535bffe",
+        "chunk-f28dc260f9a49d6b47ee",
+        "chunk-2c9d4651f23e11e8f749",
+        "chunk-09aeb23f1e8267360066",
+        "chunk-3c4d1032e5cdde3e6ae9",
+        "chunk-d26760ae167380e5d28e"
+      ],
+      "first_relevant_rank": 2,
+      "latency_ms": 515.638
+    },
+    {
+      "query": "In what year was the paper on semi-supervised semantic mapping through label propagation with semantic texture meshes published?",
+      "expected_document_ids": [
+        "arxiv-2405.19921v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-5524921ecef61c546dbd"
+      ],
+      "returned_document_ids": [
+        "arxiv-2405.19921v2",
+        "arxiv-2405.19921v2",
+        "arxiv-2407.19320v4",
+        "arxiv-2311.07247v2",
+        "arxiv-2511.09740v1",
+        "arxiv-2507.05588v1",
+        "arxiv-2507.05588v1",
+        "arxiv-2606.15072v1",
+        "arxiv-2606.15072v1",
+        "arxiv-2409.11373v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-c277ba4ea6fdd596b524",
+        "chunk-5524921ecef61c546dbd",
+        "chunk-dcb69ef2f1a690e33bb6",
+        "chunk-deffaa102047610b6e02",
+        "chunk-b68073e6223dd1c487e7",
+        "chunk-da3243f262e528bd3d6c",
+        "chunk-deab53f86b310867a848",
+        "chunk-070c2bd8fff1a4f2069a",
+        "chunk-93c6c231997a1e19a8f4",
+        "chunk-d565f45d1d9eab64c131"
+      ],
+      "first_relevant_rank": 2,
+      "latency_ms": 503.564
+    },
+    {
+      "query": "What approach is used to overcome the limited availability of micro-CT data for training keypoint estimation models for self-piercing rivet joints?",
+      "expected_document_ids": [
+        "arxiv-2502.16752v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-98cbdc81a52fe8fed080"
+      ],
+      "returned_document_ids": [
+        "arxiv-2502.16752v1",
+        "arxiv-2502.16752v1",
+        "arxiv-2406.10708v2",
+        "arxiv-2504.11243v1",
+        "arxiv-2508.15431v2",
+        "arxiv-2404.19279v3",
+        "arxiv-2607.00736v2",
+        "arxiv-2604.25008v1",
+        "arxiv-2402.08427v1",
+        "arxiv-2404.19279v3"
+      ],
+      "returned_chunk_ids": [
+        "chunk-dcb3fe0c13a101565edb",
+        "chunk-98cbdc81a52fe8fed080",
+        "chunk-fc1d91155aeb91549af7",
+        "chunk-e45af8a424ca3290bf43",
+        "chunk-75f03b725982f7c9cff1",
+        "chunk-1448fb1e22000bba966e",
+        "chunk-297353c802c5644416eb",
+        "chunk-a5f7262dc102ac4ec5c5",
+        "chunk-942a09af8460abd9ec90",
+        "chunk-36a080c856c241efb4dd"
+      ],
+      "first_relevant_rank": 2,
+      "latency_ms": 550.15
+    },
+    {
+      "query": "How does NeRF++ handle the unbounded spatial coordinates in outdoor scene reconstruction?",
+      "expected_document_ids": [
+        "arxiv-2402.06826v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-f039402ca227d436f743"
+      ],
+      "returned_document_ids": [
+        "arxiv-2402.06826v1",
+        "arxiv-2402.06826v1",
+        "arxiv-2406.16289v1",
+        "arxiv-2406.16289v1",
+        "arxiv-2411.10546v2",
+        "arxiv-2504.00859v3",
+        "arxiv-2602.17124v1",
+        "arxiv-2411.10546v2",
+        "arxiv-2602.17124v1",
+        "arxiv-2502.09692v4"
+      ],
+      "returned_chunk_ids": [
+        "chunk-f039402ca227d436f743",
+        "chunk-bcf795f0df6ead309c76",
+        "chunk-b11812fc30988ce8c972",
+        "chunk-38924116df52fdf2e527",
+        "chunk-f88f7745841f16f17887",
+        "chunk-50501f5c8d22442c2302",
+        "chunk-5b62afdaf8676aec3a2b",
+        "chunk-d7d8a034bfa97a10547d",
+        "chunk-ccbc66f2264b7b7dc471",
+        "chunk-6aefcad1b3dc09a4c11b"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 422.174
+    },
+    {
+      "query": "How does the proposed method improve the coherence between generated and known regions in diffusion-based driving scenario imputation?",
+      "expected_document_ids": [
+        "arxiv-2509.12375v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-2ce3da8eefd95e6166ca"
+      ],
+      "returned_document_ids": [
+        "arxiv-2509.12375v1",
+        "arxiv-2509.12375v1",
+        "arxiv-2412.15507v1",
+        "arxiv-2605.00531v1",
+        "arxiv-2504.18083v1",
+        "arxiv-2406.04723v3",
+        "arxiv-2602.17909v2",
+        "arxiv-2312.00116v1",
+        "arxiv-2512.14235v1",
+        "arxiv-2411.04139v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-2ce3da8eefd95e6166ca",
+        "chunk-703dbe43f85b75bdc590",
+        "chunk-4981813b213cff3b5194",
+        "chunk-acebc50e5970788e9db5",
+        "chunk-b7f8ee63f8154a579296",
+        "chunk-a02abebf12d2795f195e",
+        "chunk-f5b277a74191b2e1c715",
+        "chunk-f17b4dcd1c8d50068d6a",
+        "chunk-54561becee8ce29a6bf1",
+        "chunk-097d52edee607e857184"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 502.62
+    },
+    {
+      "query": "What advantage do FPGAs provide in the proposed HIL framework for automotive network security validation?",
+      "expected_document_ids": [
+        "arxiv-2505.15393v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-2f4c7f7a67e258272134"
+      ],
+      "returned_document_ids": [
+        "arxiv-2505.15393v1",
+        "arxiv-2505.15393v1",
+        "arxiv-2607.03734v1",
+        "arxiv-2607.03734v1",
+        "arxiv-2511.22584v1",
+        "arxiv-2404.17332v1",
+        "arxiv-2504.14017v1",
+        "arxiv-2401.10724v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-cb8bc0b0e4c8c47966f3",
+        "chunk-a311dcba5fa0a596cbb9",
+        "chunk-a4556097b70b2a857511",
+        "chunk-749b0c91287e71eb8d6a",
+        "chunk-6030c58b1515858d6eb8",
+        "chunk-5524a43f5516b4f5a1bd",
+        "chunk-0ca270eeafae17318a12",
+        "chunk-1fcbe49dc20b4e64ba30"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 476.501
+    },
+    {
+      "query": "How does the acceptance ratio of critical frames in MCFS-2L compare to NWTT and R-NWTT as the number of TSN frames increases?",
+      "expected_document_ids": [
+        "arxiv-2605.09888v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-7be4ea7b3dca887011cb"
+      ],
+      "returned_document_ids": [
+        "arxiv-2605.09888v1",
+        "arxiv-2605.09888v1",
+        "arxiv-2407.17287v2",
+        "arxiv-2407.17287v2",
+        "arxiv-2412.20077v3",
+        "arxiv-2510.05955v1",
+        "arxiv-2409.08277v1",
+        "arxiv-2505.20004v4",
+        "arxiv-2311.16024v1",
+        "arxiv-2409.05904v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-7be4ea7b3dca887011cb",
+        "chunk-4d3f66393ede14860d64",
+        "chunk-5afff459debd83d20930",
+        "chunk-d697820db2b8607672bb",
+        "chunk-6e6e56e85b4241958586",
+        "chunk-51b7634361454bd269f9",
+        "chunk-b495625cb57669ae34e3",
+        "chunk-5e3e992673b5a18d6207",
+        "chunk-91ad1f1bb1f3116f0b44",
+        "chunk-b34487e59a81d3707d2a"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 570.897
+    },
+    {
+      "query": "Under the Garage Still condition without data augmentation, how does the benchmark implementation's performance compare to TURNIP's?",
+      "expected_document_ids": [
+        "arxiv-2411.00919v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-5c759f2ca99ecce82511"
+      ],
+      "returned_document_ids": [
+        "arxiv-2411.00919v1",
+        "arxiv-2411.00919v1",
+        "arxiv-2505.20004v4",
+        "arxiv-2510.05955v1",
+        "arxiv-2506.13171v1",
+        "arxiv-2603.17186v1",
+        "arxiv-2602.08750v1",
+        "arxiv-2510.05955v1",
+        "arxiv-2503.05839v2",
+        "arxiv-2605.18816v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-5c759f2ca99ecce82511",
+        "chunk-9fb0b9c7e5899b9fbccf",
+        "chunk-5e3e992673b5a18d6207",
+        "chunk-51b7634361454bd269f9",
+        "chunk-33dc6ada02d9afcfec8d",
+        "chunk-5ff7ae0099412b78b11c",
+        "chunk-1f02b65b2bfa8b0b276a",
+        "chunk-8610c369dba184b16e8c",
+        "chunk-32591a3175dff52f80d4",
+        "chunk-2b98e27cad5743e05d63"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 498.264
+    },
+    {
+      "query": "What key features are missing from existing public datasets that would be needed for a comprehensive 3D FSI benchmark?",
+      "expected_document_ids": [
+        "arxiv-2511.05596v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-53c112ab3626c363b3b6"
+      ],
+      "returned_document_ids": [
+        "arxiv-2511.05596v1",
+        "arxiv-2511.05596v1",
+        "arxiv-2510.27065v1",
+        "arxiv-2601.07280v1",
+        "arxiv-2406.09624v2",
+        "arxiv-2603.17186v1",
+        "arxiv-2406.09624v2",
+        "arxiv-2603.07584v2",
+        "arxiv-2411.17305v1",
+        "arxiv-2602.21141v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-53c112ab3626c363b3b6",
+        "chunk-3cb81da253b509496654",
+        "chunk-03cc9c4263a8ec587875",
+        "chunk-e16a2725e63c4ddffe5a",
+        "chunk-638cecccf086e37f05a2",
+        "chunk-de2bcdb18885c9585212",
+        "chunk-6f1ff8f57d3837a74a71",
+        "chunk-273be692b7264ddc134d",
+        "chunk-be39224c3288a3cb516c",
+        "chunk-7d97c72f6e59ab24b512"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 497.572
+    },
+    {
+      "query": "What technique does the proposed RTM use to reduce test suite size while preserving requirements coverage?",
+      "expected_document_ids": [
+        "arxiv-2505.20004v4"
+      ],
+      "expected_chunk_ids": [
+        "chunk-6f4d63ce4b81165eec70"
+      ],
+      "returned_document_ids": [
+        "arxiv-2505.20004v4",
+        "arxiv-2505.20004v4",
+        "arxiv-2605.00531v1",
+        "arxiv-2601.09762v1",
+        "arxiv-2606.17197v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-6f4d63ce4b81165eec70",
+        "chunk-5e3e992673b5a18d6207",
+        "chunk-c6d1af6d1cefc43e97b1",
+        "chunk-5fef839bdd9743b6a8c2",
+        "chunk-997ac047cf7df2b72147"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 453.888
+    },
+    {
+      "query": "What is a key limitation of the EVITA framework for threat modeling in vehicular systems?",
+      "expected_document_ids": [
+        "arxiv-2505.09048v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-09c9d7158b9557300b1b"
+      ],
+      "returned_document_ids": [
+        "arxiv-2512.14748v1",
+        "arxiv-2508.01207v1",
+        "arxiv-2508.01207v1",
+        "arxiv-2512.14748v1",
+        "arxiv-2505.09048v1",
+        "arxiv-2602.05877v1",
+        "arxiv-2505.09048v1",
+        "arxiv-2511.16399v1",
+        "arxiv-2404.17332v1",
+        "arxiv-2402.14862v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-16e9d151bb338949fbc0",
+        "chunk-4e456d66cc6a00303d96",
+        "chunk-44423a1f105ceec7f2bf",
+        "chunk-94bcf3205c7269a4fbb0",
+        "chunk-09c9d7158b9557300b1b",
+        "chunk-81ea721cf04752f919e8",
+        "chunk-c18ba64c1bcd3d1392ca",
+        "chunk-3c9cf99e498625237240",
+        "chunk-9aa5eced532845055386",
+        "chunk-48bd6b652bfa5159234d"
+      ],
+      "first_relevant_rank": 5,
+      "latency_ms": 508.014
+    },
+    {
+      "query": "Under what condition can the peak-and-spur group not be used for phase shifter error estimation of a specific transmitter?",
+      "expected_document_ids": [
+        "arxiv-2406.17320v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-5a298a648a4b8be4c725"
+      ],
+      "returned_document_ids": [
+        "arxiv-2406.17320v1",
+        "arxiv-2406.17320v1",
+        "arxiv-2401.10736v1",
+        "arxiv-2311.07212v1",
+        "arxiv-2401.10736v1",
+        "arxiv-2410.10027v2",
+        "arxiv-2311.07212v1",
+        "arxiv-2602.04169v4",
+        "arxiv-2402.10761v2",
+        "arxiv-2601.10413v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-2869cabacf5cf6588178",
+        "chunk-bfd9806ca6604350937e",
+        "chunk-a478ae94a417cd8c7088",
+        "chunk-0bbde048188d553c6c85",
+        "chunk-335b4e07a505c36437bd",
+        "chunk-dd4e98ba1a33788e5338",
+        "chunk-c06c5f9abf72ed7d1e3e",
+        "chunk-7ad9b730f59192bb8805",
+        "chunk-bdd4a36c42912223d14a",
+        "chunk-3405a6beb630bc85c178"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 524.246
+    },
+    {
+      "query": "Which organization funded the research described in this paper?",
+      "expected_document_ids": [
+        "arxiv-2602.17472v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-a0fa447b10755058132b"
+      ],
+      "returned_document_ids": [
+        "arxiv-2312.09790v1",
+        "arxiv-2406.07194v1",
+        "arxiv-2502.02602v1",
+        "arxiv-2602.08757v1",
+        "arxiv-2504.12736v2",
+        "arxiv-2501.17884v1",
+        "arxiv-2407.19320v4",
+        "arxiv-2511.03741v1",
+        "arxiv-2407.15031v2",
+        "arxiv-2505.01446v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-9c298e78ec9df662230a",
+        "chunk-9717ec2834dea0751d09",
+        "chunk-61ee4bb8b69871fcb0ae",
+        "chunk-95b0dd4733784373861b",
+        "chunk-b9f7ec3b876e5247bc63",
+        "chunk-39775e35faa3a100c335",
+        "chunk-9162d196672b3ebefe9c",
+        "chunk-029f04e6888e65c321f5",
+        "chunk-7ba74db6f52723b6d50e",
+        "chunk-f3f2da3715e9a52797c9"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 422.802
+    },
+    {
+      "query": "How does RampoNN classify a set of trajectories with respect to a given STL specification based on the reachable robustness interval?",
+      "expected_document_ids": [
+        "arxiv-2511.16765v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-2b90399d6887f4225fa6"
+      ],
+      "returned_document_ids": [
+        "arxiv-2511.16765v2",
+        "arxiv-2511.16765v2",
+        "arxiv-2311.12130v1",
+        "arxiv-2408.06983v1",
+        "arxiv-2408.06983v1",
+        "arxiv-2311.12130v1",
+        "arxiv-2507.07444v1",
+        "arxiv-2604.13325v1",
+        "arxiv-2510.20300v1",
+        "arxiv-2410.02771v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-1b7c56f6ed528704a5d2",
+        "chunk-2b90399d6887f4225fa6",
+        "chunk-59a6107d8de6636d2ae6",
+        "chunk-aea11bbcb1e98d04d3fd",
+        "chunk-8590b5154c61779cf2f6",
+        "chunk-ed884c4d237e009afaa8",
+        "chunk-c91bbd0e5a8f5cd2fce6",
+        "chunk-d392725b68c89e01ea2f",
+        "chunk-612d23270c798b769092",
+        "chunk-021c2fbb03de85645581"
+      ],
+      "first_relevant_rank": 2,
+      "latency_ms": 547.755
+    },
+    {
+      "query": "What is the focus of the study by Kalenda et al. (2018) as cited in the paper?",
+      "expected_document_ids": [
+        "arxiv-2511.02445v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-0b625c2aaf3eb89d6915"
+      ],
+      "returned_document_ids": [
+        "arxiv-2509.11658v1",
+        "arxiv-2404.17332v1",
+        "arxiv-2411.12563v1",
+        "arxiv-2402.04325v1",
+        "arxiv-2510.03377v1",
+        "arxiv-2507.15025v1",
+        "arxiv-2606.06699v1",
+        "arxiv-2606.27808v1",
+        "arxiv-2402.04325v1",
+        "arxiv-2505.13135v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-982e0e203207769d62cc",
+        "chunk-b52a5578e082e307780f",
+        "chunk-8ec2a379c97c0ae2417d",
+        "chunk-2917d006e88f5b72ccec",
+        "chunk-01727e4c5454079bac6a",
+        "chunk-2d6d44c84036cb9dbdb4",
+        "chunk-b117a76c5582bc770cc5",
+        "chunk-c45768b1da7fdac55d9c",
+        "chunk-875a9a264cafb2502ed9",
+        "chunk-9e6587dd04ba6ed2588f"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 535.303
+    },
+    {
+      "query": "What benefits have been demonstrated for Attentive User Interfaces in the context of automated driving take-over requests?",
+      "expected_document_ids": [
+        "arxiv-2402.10664v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-8a963ac7ca0284c15a70"
+      ],
+      "returned_document_ids": [
+        "arxiv-2402.10664v1",
+        "arxiv-2402.10664v1",
+        "arxiv-2502.20507v1",
+        "arxiv-2603.01560v1",
+        "arxiv-2506.01836v1",
+        "arxiv-2506.01836v1",
+        "arxiv-2607.14436v1",
+        "arxiv-2503.20544v1",
+        "arxiv-2603.19773v1",
+        "arxiv-2402.08061v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-037d61de4bf7b957a196",
+        "chunk-8a963ac7ca0284c15a70",
+        "chunk-00bee957cb6dc0a66b5c",
+        "chunk-298645e5d7a501d2aa3c",
+        "chunk-996053f679a2c77e90f4",
+        "chunk-9d55079075b9d3fedaef",
+        "chunk-d781db3ed70a6cde5841",
+        "chunk-ff9c190da90e69c00a29",
+        "chunk-c7ded1d207d696e39144",
+        "chunk-3b266f099d6c98e3070c"
+      ],
+      "first_relevant_rank": 2,
+      "latency_ms": 497.764
+    },
+    {
+      "query": "In the outdoor experiments, why did the corner reflector show a stronger reflection compared to the car?",
+      "expected_document_ids": [
+        "arxiv-2601.01551v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-bfc05faad18c0fd13226"
+      ],
+      "returned_document_ids": [
+        "arxiv-2601.01551v1",
+        "arxiv-2601.01551v1",
+        "arxiv-2312.11148v1",
+        "arxiv-2404.15290v1",
+        "arxiv-2406.10708v2",
+        "arxiv-2312.11148v1",
+        "arxiv-2605.19081v3",
+        "arxiv-2403.12176v5",
+        "arxiv-2403.12176v5",
+        "arxiv-2406.10708v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-bfc05faad18c0fd13226",
+        "chunk-5582d450a908a802e400",
+        "chunk-5a6e980b4a41e341b3e8",
+        "chunk-8aeb7085c3701dd0cbe2",
+        "chunk-04caa71be2c520cc839a",
+        "chunk-050184a1eaed626c0c39",
+        "chunk-99aae3acbf21e3de029d",
+        "chunk-69d6e5ab934777bff893",
+        "chunk-e2ea3b3a79719b567283",
+        "chunk-9d4e42b0d185ed043071"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 504.631
+    },
+    {
+      "query": "How is product-level closeness centrality defined in the context of predicting the emergence of a new comparative advantage?",
+      "expected_document_ids": [
+        "arxiv-2512.13178v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-7c7fa14066760c18a2d4"
+      ],
+      "returned_document_ids": [
+        "arxiv-2512.13178v1",
+        "arxiv-2512.13178v1",
+        "arxiv-2601.10413v1",
+        "arxiv-2607.05632v1",
+        "arxiv-2405.10818v1",
+        "arxiv-2405.10818v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-7c7fa14066760c18a2d4",
+        "chunk-21a336e67cc0715b1b08",
+        "chunk-7a0a2f4d34507ca42a3d",
+        "chunk-5eb3231d0087b7a69c10",
+        "chunk-5706f34af9990176d054",
+        "chunk-8c51fbdd1bb88cf9ae68"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 532.15
+    },
+    {
+      "query": "Where can the composition data and associated code for the bismuth telluride thermoelectric study be accessed?",
+      "expected_document_ids": [
+        "arxiv-2507.06101v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-68cc6fd08ac37e2f615e"
+      ],
+      "returned_document_ids": [
+        "arxiv-2507.06101v2",
+        "arxiv-2507.06101v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-449337d0cf6e84b4a43d",
+        "chunk-60ef006cc12a3622a0b9"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 505.186
+    },
+    {
+      "query": "Which security property is guaranteed by transmitting binaries over a MAC-authenticated channel in the migration protocol?",
+      "expected_document_ids": [
+        "arxiv-2603.17757v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-7ff02d14cee94be0e498"
+      ],
+      "returned_document_ids": [
+        "arxiv-2603.17757v1",
+        "arxiv-2603.17757v1",
+        "arxiv-2412.07817v2",
+        "arxiv-2604.21606v2",
+        "arxiv-2401.10736v1",
+        "arxiv-2401.10736v1",
+        "arxiv-2505.19004v2",
+        "arxiv-2505.19004v2",
+        "arxiv-2604.21606v2",
+        "arxiv-2508.02805v3"
+      ],
+      "returned_chunk_ids": [
+        "chunk-7ff02d14cee94be0e498",
+        "chunk-69729c609576577d9be8",
+        "chunk-af75b06f92cb17f77f0f",
+        "chunk-11b4dd90c5accefaf96f",
+        "chunk-2648ad9f2eff2b6cdb1b",
+        "chunk-378b5d8ee416abd8ce14",
+        "chunk-a50b974b6c8c2f3c04f3",
+        "chunk-4c839fc02a695144223e",
+        "chunk-bd1f3b3bda3d8f82ac4a",
+        "chunk-64418090b0238b3ae330"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 499.7
+    },
+    {
+      "query": "What technique does the collaborative automotive radar sensing approach use to recover azimuth angles from quantized measurements?",
+      "expected_document_ids": [
+        "arxiv-2403.08168v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-007ec7cfc17a509c3548"
+      ],
+      "returned_document_ids": [
+        "arxiv-2403.08168v1",
+        "arxiv-2403.08168v1",
+        "arxiv-2312.05423v2",
+        "arxiv-2312.05423v2",
+        "arxiv-2504.12154v1",
+        "arxiv-2405.17297v1",
+        "arxiv-2504.12154v1",
+        "arxiv-2509.15601v1",
+        "arxiv-2406.07399v1",
+        "arxiv-2602.17909v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-007ec7cfc17a509c3548",
+        "chunk-045119a229a952e669d2",
+        "chunk-e94ff195b671c19d22ab",
+        "chunk-1a64c50d3fb3139cedf7",
+        "chunk-44c25f637656a68c1846",
+        "chunk-19d49d79de4580523646",
+        "chunk-032142ddf74dce27581c",
+        "chunk-717cfbf03012d44dd5f4",
+        "chunk-d28197430563512bb808",
+        "chunk-5a1020707f5d6056ebc7"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 472.432
+    },
+    {
+      "query": "In the proposed domain generalization method, what does a higher DI value signify about the feature?",
+      "expected_document_ids": [
+        "arxiv-2504.06781v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-26b465b3f32b8f27196f"
+      ],
+      "returned_document_ids": [
+        "arxiv-2504.06781v1",
+        "arxiv-2504.06781v1",
+        "arxiv-2507.03486v3",
+        "arxiv-2605.00531v1",
+        "arxiv-2605.00531v1",
+        "arxiv-2406.07318v3",
+        "arxiv-2406.08516v1",
+        "arxiv-2506.10524v1",
+        "arxiv-2410.22897v3",
+        "arxiv-2606.14327v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-d322b001f08b056d9802",
+        "chunk-61b1eca04bd0bb3117dd",
+        "chunk-991fd92baf5a0507a410",
+        "chunk-c6d1af6d1cefc43e97b1",
+        "chunk-b3d02de846d2210560ac",
+        "chunk-8680a30b4d0e73101133",
+        "chunk-06164befd421fc5b01bd",
+        "chunk-155920328a3bef1ae2c5",
+        "chunk-9d1b7b6f8a682b7d31fe",
+        "chunk-24d6eb11282c1047c5f4"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 477.878
+    },
+    {
+      "query": "What were the phase margin and settling time for the first controller design with parameters ω_L=10 and β_b=3.162?",
+      "expected_document_ids": [
+        "arxiv-2410.19811v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-3b94b415b8918c167f67"
+      ],
+      "returned_document_ids": [
+        "arxiv-2410.19811v1",
+        "arxiv-2410.19811v1",
+        "arxiv-2603.00616v1",
+        "arxiv-2603.00616v1",
+        "arxiv-2402.07777v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-e0dd5d3b9c55bc8d001e",
+        "chunk-3b94b415b8918c167f67",
+        "chunk-a52528929bb4323797d5",
+        "chunk-ba5fe9ac8fe39c5f7660",
+        "chunk-3eb99114693dbc928429"
+      ],
+      "first_relevant_rank": 2,
+      "latency_ms": 548.283
+    },
+    {
+      "query": "What regular expression pattern must the Role field in the InterfaceDatatype class satisfy?",
+      "expected_document_ids": [
+        "arxiv-2510.27344v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-8e8d1c47ba80e1024eea"
+      ],
+      "returned_document_ids": [
+        "arxiv-2606.24387v1",
+        "arxiv-2504.00559v1",
+        "arxiv-2503.19412v1",
+        "arxiv-2607.06039v1",
+        "arxiv-2503.19412v1",
+        "arxiv-2510.27344v1",
+        "arxiv-2603.26022v1",
+        "arxiv-2604.24930v1",
+        "arxiv-2401.10736v1",
+        "arxiv-2407.11991v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-f99c3e94d18a0004cb85",
+        "chunk-58319a396137d5d3b03f",
+        "chunk-450d9a5059edc45c214d",
+        "chunk-010ae70acbdfceee398e",
+        "chunk-93e4f3585a94fbe2778a",
+        "chunk-8e8d1c47ba80e1024eea",
+        "chunk-68feadd6d44bc066566d",
+        "chunk-1d5d7a304c7b2430ad14",
+        "chunk-b1405813724d5b8b893d",
+        "chunk-65640a37c448c1ffd766"
+      ],
+      "first_relevant_rank": 6,
+      "latency_ms": 434.229
+    },
+    {
+      "query": "What is one drawback of using cache coloring for memory bandwidth management?",
+      "expected_document_ids": [
+        "arxiv-2502.02437v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-3cd6eed17ac81ad6750b"
+      ],
+      "returned_document_ids": [
+        "arxiv-2502.02437v1",
+        "arxiv-2502.02437v1",
+        "arxiv-2602.09554v1",
+        "arxiv-2401.15639v2",
+        "arxiv-2406.00182v1",
+        "arxiv-2501.10161v2",
+        "arxiv-2505.24363v1",
+        "arxiv-2501.10161v2",
+        "arxiv-2602.09554v1",
+        "arxiv-2505.03762v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-387aa068720c23d4cf69",
+        "chunk-4b124936fd60a3daa2f5",
+        "chunk-f05a50a62657b15395ff",
+        "chunk-60fff53e404a610843ac",
+        "chunk-cf4d83e48052e2a54ca6",
+        "chunk-06707d6f98e4730738cf",
+        "chunk-2d71a2b2cdfe716a73b9",
+        "chunk-4e2a9209a6a2a4867c4a",
+        "chunk-4bc955942d3cc244478e",
+        "chunk-415360b60c1b05e364b8"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 455.239
+    },
+    {
+      "query": "How many distinct products are included in the Furniture v1 dataset?",
+      "expected_document_ids": [
+        "arxiv-2603.17186v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-c65d5dcd90f54a0f28c5"
+      ],
+      "returned_document_ids": [
+        "arxiv-2603.17186v1",
+        "arxiv-2603.17186v1",
+        "arxiv-2512.13178v1",
+        "arxiv-2512.13178v1",
+        "arxiv-2410.23312v1",
+        "arxiv-2406.10708v2",
+        "arxiv-2409.12580v1",
+        "arxiv-2607.07226v1",
+        "arxiv-2509.08328v2",
+        "arxiv-2509.08328v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-c0e264f2ca3ccdce9c76",
+        "chunk-c65d5dcd90f54a0f28c5",
+        "chunk-edd331fbfff829182a35",
+        "chunk-8dc755c39371f417042b",
+        "chunk-4d15643e05e837f5dc52",
+        "chunk-658087a4e9114d4b621f",
+        "chunk-7d94bd7bda0f1244bd67",
+        "chunk-4f34e8b52a679346e9b5",
+        "chunk-17fda1a30fe3f1935ced",
+        "chunk-7fead7e89304bd21d488"
+      ],
+      "first_relevant_rank": 2,
+      "latency_ms": 430.368
+    },
+    {
+      "query": "At what frequency was the C910 core evaluated when running the Embench-IoT matmult-int benchmark near its maximum achievable frequency?",
+      "expected_document_ids": [
+        "arxiv-2505.24363v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-b56aa34a5f6c080be93f"
+      ],
+      "returned_document_ids": [
+        "arxiv-2505.24363v1",
+        "arxiv-2505.24363v1",
+        "arxiv-2505.03762v2",
+        "arxiv-2509.12770v2",
+        "arxiv-2505.03762v2",
+        "arxiv-2407.05938v2",
+        "arxiv-2605.22659v1",
+        "arxiv-2602.09554v1",
+        "arxiv-2402.07777v1",
+        "arxiv-2604.09559v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-b56aa34a5f6c080be93f",
+        "chunk-239f99a37ccea770d2f2",
+        "chunk-5beaf6f27f5f0afd53bb",
+        "chunk-6676ff092b5cba120f94",
+        "chunk-415360b60c1b05e364b8",
+        "chunk-ee7ae9a10970ef71cb58",
+        "chunk-b7486b2473f3e81e55dc",
+        "chunk-24b8208e83750217e29b",
+        "chunk-fa20d853e3eba20f1311",
+        "chunk-a46ea808d62a695fdd2a"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 468.28
+    },
+    {
+      "query": "What percentage cost reduction did the adaptive policy achieve over the baseline in the stationary environment?",
+      "expected_document_ids": [
+        "arxiv-2511.06479v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-87dcb986c578ea655fc3"
+      ],
+      "returned_document_ids": [
+        "arxiv-2511.06479v1",
+        "arxiv-2511.06479v1",
+        "arxiv-2601.07280v1",
+        "arxiv-2601.07280v1",
+        "arxiv-2606.26818v1",
+        "arxiv-2401.16123v2",
+        "arxiv-2409.04474v1",
+        "arxiv-2510.27344v1",
+        "arxiv-2503.17537v1",
+        "arxiv-2607.14021v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-87dcb986c578ea655fc3",
+        "chunk-aa52408d56f467686797",
+        "chunk-ea4a505cfda19c8c0f6d",
+        "chunk-79059bcd7e45417dd78f",
+        "chunk-4016b77479d2bb1fad3d",
+        "chunk-9d880a460fea137d7144",
+        "chunk-096064fd206d49e7f4c6",
+        "chunk-a185289f8a6921205c94",
+        "chunk-7e98b64c0d8f7d9b81cf",
+        "chunk-69de6d01fda30a907e80"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 475.674
+    },
+    {
+      "query": "What problem arises when using standard cross-entropy loss for binary classification on imbalanced radar data, and how is it addressed?",
+      "expected_document_ids": [
+        "arxiv-2312.09790v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-68855573adcf3d7accc8"
+      ],
+      "returned_document_ids": [
+        "arxiv-2404.15290v1",
+        "arxiv-2312.09790v1",
+        "arxiv-2411.17059v1",
+        "arxiv-2404.15290v1",
+        "arxiv-2404.17861v1",
+        "arxiv-2501.07008v1",
+        "arxiv-2509.12482v1",
+        "arxiv-2502.16752v1",
+        "arxiv-2603.16313v2",
+        "arxiv-2504.00859v3"
+      ],
+      "returned_chunk_ids": [
+        "chunk-b488658b8423d4bcf68e",
+        "chunk-68855573adcf3d7accc8",
+        "chunk-b7553b2551a5c25d2eb0",
+        "chunk-1e9c9ef6c6b5ca9418ba",
+        "chunk-0d5491f29801981f6053",
+        "chunk-6901d1935d2b3a53436f",
+        "chunk-cfe29bb91024894e4bee",
+        "chunk-b42cb7d554613af1a943",
+        "chunk-939ee4bb99f0deb99994",
+        "chunk-fdd16a38c848f5687999"
+      ],
+      "first_relevant_rank": 2,
+      "latency_ms": 515.518
+    },
+    {
+      "query": "What two methods are described for constructing the final semantic network from term embeddings?",
+      "expected_document_ids": [
+        "arxiv-2409.20010v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-85b118c1e342bc46095a"
+      ],
+      "returned_document_ids": [
+        "arxiv-2409.20010v1",
+        "arxiv-2409.20010v1",
+        "arxiv-2403.09529v1",
+        "arxiv-2605.31177v1",
+        "arxiv-2407.15031v2",
+        "arxiv-2604.01361v1",
+        "arxiv-2501.11351v1",
+        "arxiv-2407.08272v1",
+        "arxiv-2404.01437v1",
+        "arxiv-2411.19539v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-85b118c1e342bc46095a",
+        "chunk-7071dd2088297c26022c",
+        "chunk-30948bf0ec1503e3df6b",
+        "chunk-5bfab5df98e522a23a77",
+        "chunk-7ba74db6f52723b6d50e",
+        "chunk-2494ce8a911c74f2d7ca",
+        "chunk-9fb4d66546bde82c4479",
+        "chunk-6ffb556565c99ce9602a",
+        "chunk-7c5463f5ca85e70ec14e",
+        "chunk-a75359dfe4f957c2b6f2"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 467.806
+    },
+    {
+      "query": "How does the multi-weight voting strategy select the optimal cable grasping node?",
+      "expected_document_ids": [
+        "arxiv-2508.09558v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-d5f6c4c6da9ef4519f94"
+      ],
+      "returned_document_ids": [
+        "arxiv-2508.09558v1",
+        "arxiv-2508.09558v1",
+        "arxiv-2607.14021v1",
+        "arxiv-2505.20004v4",
+        "arxiv-2503.09409v2",
+        "arxiv-2405.14014v4",
+        "arxiv-2404.09557v1",
+        "arxiv-2503.05839v2",
+        "arxiv-2510.05955v1",
+        "arxiv-2408.11969v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-d5f6c4c6da9ef4519f94",
+        "chunk-9014acd84770da68bf0f",
+        "chunk-69de6d01fda30a907e80",
+        "chunk-5e3e992673b5a18d6207",
+        "chunk-82a7ec4fec2e8e0fdd43",
+        "chunk-dabca662bd8999f6ab6c",
+        "chunk-da7575364cc742db46cd",
+        "chunk-32591a3175dff52f80d4",
+        "chunk-8610c369dba184b16e8c",
+        "chunk-535b30ebda696efd75d8"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 424.439
+    },
+    {
+      "query": "What were the key experimental results of the format-preserving encryption method for protecting automotive location data?",
+      "expected_document_ids": [
+        "arxiv-2510.20300v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-e257e26e436f202db191"
+      ],
+      "returned_document_ids": [
+        "arxiv-2510.20300v1",
+        "arxiv-2510.20300v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-e257e26e436f202db191",
+        "chunk-57f9bed051c24818c930"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 490.604
+    },
+    {
+      "query": "What experimental setup was used to validate the simulation framework for automotive radar interference?",
+      "expected_document_ids": [
+        "arxiv-2605.19081v3"
+      ],
+      "expected_chunk_ids": [
+        "chunk-46f200639fb5f8372363"
+      ],
+      "returned_document_ids": [
+        "arxiv-2605.19081v3",
+        "arxiv-2601.01551v1",
+        "arxiv-2605.19081v3",
+        "arxiv-2605.22270v1",
+        "arxiv-2605.22270v1",
+        "arxiv-2512.24619v1",
+        "arxiv-2408.13645v3",
+        "arxiv-2405.14319v3",
+        "arxiv-2510.15808v1",
+        "arxiv-2311.14276v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-fca322320cef8a9c4694",
+        "chunk-4859dde22baa82eb5803",
+        "chunk-3c948ebb2bd51dbd6bbe",
+        "chunk-7d8fb396a54212611dca",
+        "chunk-0e5e84adb1efa0394b5f",
+        "chunk-0eb532c16393302f2f8e",
+        "chunk-7268c21f2838e2b8308c",
+        "chunk-5c343bfd8c141ae70d6a",
+        "chunk-bc5da5c5dc6ce56f48f5",
+        "chunk-29097100d9e741b5fe22"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 465.038
+    },
+    {
+      "query": "How does the first stage of the card game construct a backstory for human-vehicle collaboration?",
+      "expected_document_ids": [
+        "arxiv-2601.04601v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-1ffa17f68e5d576aa8dc"
+      ],
+      "returned_document_ids": [
+        "arxiv-2601.04601v1",
+        "arxiv-2601.04601v1",
+        "arxiv-2512.13444v1",
+        "arxiv-2512.13444v1",
+        "arxiv-2503.05839v2",
+        "arxiv-2510.05955v1",
+        "arxiv-2405.18838v1",
+        "arxiv-2512.24619v1",
+        "arxiv-2506.05822v1",
+        "arxiv-2512.24619v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-1ffa17f68e5d576aa8dc",
+        "chunk-a61ac6b6121cd2c282f7",
+        "chunk-d5900e53826088f81b1f",
+        "chunk-217dfa4f4f563821b6f5",
+        "chunk-32591a3175dff52f80d4",
+        "chunk-8610c369dba184b16e8c",
+        "chunk-962860fcde96d4b5f8ba",
+        "chunk-f998a2e4983608a843ce",
+        "chunk-93e2a0d2edcf994d529b",
+        "chunk-a5595c845170fe49556e"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 484.902
+    },
+    {
+      "query": "What is the approach of the AssocRules method for CAN bus intrusion detection?",
+      "expected_document_ids": [
+        "arxiv-2606.30430v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-2806b935c15b439c5938"
+      ],
+      "returned_document_ids": [
+        "arxiv-2506.10620v1",
+        "arxiv-2402.06904v1",
+        "arxiv-2402.06904v1",
+        "arxiv-2505.17274v1",
+        "arxiv-2508.04845v1",
+        "arxiv-2505.17274v1",
+        "arxiv-2604.20771v1",
+        "arxiv-2606.30430v1",
+        "arxiv-2606.30430v1",
+        "arxiv-2412.20255v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-628c68f98f5d0e4168a0",
+        "chunk-6e24faf1e44dc533279d",
+        "chunk-b9959a1c156a215697c6",
+        "chunk-e76fe5f151d89e855969",
+        "chunk-41ef6de05820eb236c10",
+        "chunk-0119d9117fb3786c6dc9",
+        "chunk-790b278486190d22331f",
+        "chunk-2806b935c15b439c5938",
+        "chunk-99208ec3b346cbc4c66c",
+        "chunk-4b44c0f99dbac529357a"
+      ],
+      "first_relevant_rank": 8,
+      "latency_ms": 489.059
+    },
+    {
+      "query": "How does the proposed method combine the lidar-like model and the object detection formulation for radar point cloud prediction?",
+      "expected_document_ids": [
+        "arxiv-2504.00859v3"
+      ],
+      "expected_chunk_ids": [
+        "chunk-5a9df00a2edfe2ab577a"
+      ],
+      "returned_document_ids": [
+        "arxiv-2512.14235v1",
+        "arxiv-2511.20003v1",
+        "arxiv-2512.14235v1",
+        "arxiv-2511.20003v1",
+        "arxiv-2504.00859v3",
+        "arxiv-2406.03129v1",
+        "arxiv-2410.13526v1",
+        "arxiv-2411.15016v2",
+        "arxiv-2512.17897v1",
+        "arxiv-2405.14014v4"
+      ],
+      "returned_chunk_ids": [
+        "chunk-3a5fd4fbb2cc9b2828c3",
+        "chunk-bfd12c6461f867f6c4ed",
+        "chunk-4584ff1329b0ae04372f",
+        "chunk-4ed36dcede70b79dd3ca",
+        "chunk-2eb499f6b95e76d6386f",
+        "chunk-a21ffa94ac2b49ecf51e",
+        "chunk-d97ae5a88dda260a19fc",
+        "chunk-2f83b10f99f9b9b0b3fc",
+        "chunk-dcabd3003d08453699be",
+        "chunk-f0a7530b25afd8659d0b"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 519.164
+    },
+    {
+      "query": "What are the key specifications of the Waymo dataset used in this work?",
+      "expected_document_ids": [
+        "arxiv-2505.01446v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-ef0d209ea6c8249aa7da"
+      ],
+      "returned_document_ids": [
+        "arxiv-2505.01446v1",
+        "arxiv-2507.17722v1",
+        "arxiv-2604.16769v2",
+        "arxiv-2501.04969v2",
+        "arxiv-2409.12580v1",
+        "arxiv-2408.10794v1",
+        "arxiv-2409.12580v1",
+        "arxiv-2501.04969v2",
+        "arxiv-2409.08277v1",
+        "arxiv-2604.16769v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-f3f2da3715e9a52797c9",
+        "chunk-b755dbfb44b46ab89565",
+        "chunk-2a5fccc527687117154f",
+        "chunk-e115f666e6b6e42de8a5",
+        "chunk-65451f227b976cadf492",
+        "chunk-e1e3c5284ffc0c4dd941",
+        "chunk-3febbaac3f99485108b6",
+        "chunk-d282adcfb4f46713476b",
+        "chunk-e857ff0ece07db1eebe2",
+        "chunk-45cf22d094fb3defa195"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 484.013
+    },
+    {
+      "query": "According to the text, how does the test error behave as algorithm complexity increases?",
+      "expected_document_ids": [
+        "arxiv-2411.08913v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-79abe0d7c6d1533095d5"
+      ],
+      "returned_document_ids": [
+        "arxiv-2411.08913v1",
+        "arxiv-2510.16857v2",
+        "arxiv-2505.20004v4",
+        "arxiv-2505.20004v4",
+        "arxiv-2409.10690v1",
+        "arxiv-2502.04201v1",
+        "arxiv-2409.10690v1",
+        "arxiv-2503.05839v2",
+        "arxiv-2602.04169v4",
+        "arxiv-2510.05955v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-79abe0d7c6d1533095d5",
+        "chunk-404a149db1a34d455573",
+        "chunk-5e3e992673b5a18d6207",
+        "chunk-f21065dba4c98d3b7756",
+        "chunk-c05b0803f2ba5a09c9d9",
+        "chunk-781e75b85c74e840268f",
+        "chunk-ab4ef001782de02e687f",
+        "chunk-32591a3175dff52f80d4",
+        "chunk-3e799e44ec3a4e53ab93",
+        "chunk-8610c369dba184b16e8c"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 454.543
+    },
+    {
+      "query": "What requirement does the evidence architecture need to address based on the Volkswagen emissions testing failure?",
+      "expected_document_ids": [
+        "arxiv-2607.04924v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-91dde0b557b11087177a"
+      ],
+      "returned_document_ids": [
+        "arxiv-2607.04924v1",
+        "arxiv-2607.04924v1",
+        "arxiv-2605.00531v1",
+        "arxiv-2404.17332v1",
+        "arxiv-2404.17332v1",
+        "arxiv-2409.04474v1",
+        "arxiv-2607.06170v1",
+        "arxiv-2605.00531v1",
+        "arxiv-2607.06170v1",
+        "arxiv-2407.17287v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-91dde0b557b11087177a",
+        "chunk-90861d62f9767adc059b",
+        "chunk-4121d1c78c27dcfb3006",
+        "chunk-09bdf5b503d508f0ad43",
+        "chunk-44a9fce7a07a00a32289",
+        "chunk-424561225e0039dbfd23",
+        "chunk-28fde98ff99c67051c5b",
+        "chunk-c6d1af6d1cefc43e97b1",
+        "chunk-f934b1307ab0c75bb555",
+        "chunk-8ee20676b0f49f823f33"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 476.215
+    },
+    {
+      "query": "According to the abstract, what advantages does the deterministic task scheduling approach provide?",
+      "expected_document_ids": [
+        "arxiv-2604.16143v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-908250d041a78e7b2351"
+      ],
+      "returned_document_ids": [
+        "arxiv-2604.16143v1",
+        "arxiv-2604.16143v1",
+        "arxiv-2503.05839v2",
+        "arxiv-2411.01902v1",
+        "arxiv-2411.00572v1",
+        "arxiv-2504.19835v2",
+        "arxiv-2503.05839v2",
+        "arxiv-2409.10690v1",
+        "arxiv-2407.17287v2",
+        "arxiv-2412.20077v3"
+      ],
+      "returned_chunk_ids": [
+        "chunk-908250d041a78e7b2351",
+        "chunk-4dcc46056cfedac030b6",
+        "chunk-ec410134048dbe8cdfb0",
+        "chunk-eeb541d380d10f911923",
+        "chunk-a6c164a0e96d584e053b",
+        "chunk-01698b5d04fc3e19ee8d",
+        "chunk-5f7963f5f2b4fd16d868",
+        "chunk-c05b0803f2ba5a09c9d9",
+        "chunk-cb9cff2e4aeef1d7883c",
+        "chunk-95fcf5d1f0d080417492"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 448.848
+    },
+    {
+      "query": "According to interviewee ID02, what is the benefit of integrating human factors specialists into regular work using agile practices?",
+      "expected_document_ids": [
+        "arxiv-2405.18838v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-ccd551d284fee8a7bd99"
+      ],
+      "returned_document_ids": [
+        "arxiv-2405.18838v1",
+        "arxiv-2405.18838v1",
+        "arxiv-2405.18841v1",
+        "arxiv-2405.18841v1",
+        "arxiv-2409.12676v1",
+        "arxiv-2409.12676v1",
+        "arxiv-2409.11778v1",
+        "arxiv-2405.18847v1",
+        "arxiv-2405.18847v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-ccd551d284fee8a7bd99",
+        "chunk-68ebff6320749354bed6",
+        "chunk-88707a8049daff2be273",
+        "chunk-816209339e060305150c",
+        "chunk-44f030f2502f98167743",
+        "chunk-0146393e3ed905e88c7c",
+        "chunk-854292bceae243d96449",
+        "chunk-a792be453e3e34def95d",
+        "chunk-09d83c67bdeb44ab73b7"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 490.852
+    },
+    {
+      "query": "How does the soft-phase exponent α1 change with increasing hard segment weight fraction (HSWF) in polyurea-graphene nanocomposites?",
+      "expected_document_ids": [
+        "arxiv-2311.07721v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-7e7fd2667efa68e608c3"
+      ],
+      "returned_document_ids": [
+        "arxiv-2311.07721v1",
+        "arxiv-2311.07721v1",
+        "arxiv-2505.13135v1",
+        "arxiv-2501.14819v1",
+        "arxiv-2311.11207v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-6d490d8679d91736a79a",
+        "chunk-7e7fd2667efa68e608c3",
+        "chunk-1a08d1294dff5608e08c",
+        "chunk-9784dfa3d68e569b1a6b",
+        "chunk-3d0e85f981d569a652a2"
+      ],
+      "first_relevant_rank": 2,
+      "latency_ms": 469.899
+    },
+    {
+      "query": "What sensitivity does the PTNWs/graphene heterostructure pressure sensor achieve in the 20-35 kPa pressure range?",
+      "expected_document_ids": [
+        "arxiv-2410.02256v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-b60753e9ace599318de4"
+      ],
+      "returned_document_ids": [
+        "arxiv-2410.02256v1",
+        "arxiv-2410.02256v1",
+        "arxiv-2510.15808v1",
+        "arxiv-2510.15808v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-b60753e9ace599318de4",
+        "chunk-9a12417e87063bcf7a3e",
+        "chunk-d899cfb6726de35869e8",
+        "chunk-ff6a16eb6bdac8527b66"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 454.421
+    },
+    {
+      "query": "Why does the lack of standardized definitions for distraction hinder VLM performance in driver monitoring systems?",
+      "expected_document_ids": [
+        "arxiv-2503.12281v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-4e6fff5ddecd63279a18"
+      ],
+      "returned_document_ids": [
+        "arxiv-2503.12281v1",
+        "arxiv-2503.12281v1",
+        "arxiv-2408.15177v1",
+        "arxiv-2401.15762v1",
+        "arxiv-2401.15762v1",
+        "arxiv-2405.18838v1",
+        "arxiv-2405.17788v1",
+        "arxiv-2511.02891v1",
+        "arxiv-2605.25021v1",
+        "arxiv-2606.15072v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-4e6fff5ddecd63279a18",
+        "chunk-e1cdcd30822b99aeeae3",
+        "chunk-014eaca03162276e1724",
+        "chunk-ae1eaed298753c15bfa4",
+        "chunk-5c4e66d039a5fff64b94",
+        "chunk-c1befc83c4a1f187a086",
+        "chunk-ba9a04bd5125567bf78c",
+        "chunk-da69682923de57731ca7",
+        "chunk-0af0bec735b3051448c5",
+        "chunk-98e3e3c194bb161d0125"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 491.097
+    },
+    {
+      "query": "What constraint ensures that a flow follows the same path in every period in the TTEthernet scheduling model?",
+      "expected_document_ids": [
+        "arxiv-2401.06579v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-5402fcd85310be075984"
+      ],
+      "returned_document_ids": [
+        "arxiv-2401.06579v1",
+        "arxiv-2401.06579v1",
+        "arxiv-2508.00915v2",
+        "arxiv-2404.14452v2",
+        "arxiv-2409.04333v1",
+        "arxiv-2510.01094v1",
+        "arxiv-2603.00616v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-e25e46aa7c34d335be64",
+        "chunk-5402fcd85310be075984",
+        "chunk-6268dde6a21ca33d2ab0",
+        "chunk-a915c4b25c0743896e10",
+        "chunk-be520cebad63c9ca8df9",
+        "chunk-ab7d370ec876fb60f17c",
+        "chunk-8b1faa24de4f6b044e2a"
+      ],
+      "first_relevant_rank": 2,
+      "latency_ms": 511.605
+    },
+    {
+      "query": "How do functional mixture regression models differ from functional clustering methods in handling heterogeneity?",
+      "expected_document_ids": [
+        "arxiv-2410.20138v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-1e7bc6bef3da19d830a8"
+      ],
+      "returned_document_ids": [
+        "arxiv-2410.20138v1",
+        "arxiv-2410.20138v1",
+        "arxiv-2403.03837v2",
+        "arxiv-2504.09684v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-1e7bc6bef3da19d830a8",
+        "chunk-10b60941de2e20a6e6da",
+        "chunk-17cb15e5e8ec0fec26b3",
+        "chunk-f48af89bcc054b1a80b0"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 425.18
+    },
+    {
+      "query": "What effect does setting the partitioning threshold to zero have on multicast stream partitioning?",
+      "expected_document_ids": [
+        "arxiv-2510.20440v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-963953b2c69679728e1e"
+      ],
+      "returned_document_ids": [
+        "arxiv-2510.20440v1",
+        "arxiv-2510.20440v1",
+        "arxiv-2409.10690v1",
+        "arxiv-2605.03641v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-963953b2c69679728e1e",
+        "chunk-e221a4cee0c088a5daaf",
+        "chunk-5c115e1197f3805ac960",
+        "chunk-dce8cf863966ff8170d5"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 447.987
+    },
+    {
+      "query": "What deep learning model architecture is developed for fault detection and diagnosis in this work?",
+      "expected_document_ids": [
+        "arxiv-2603.08165v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-6042b8627f252d4b7295"
+      ],
+      "returned_document_ids": [
+        "arxiv-2603.08165v1",
+        "arxiv-2603.08165v1",
+        "arxiv-2606.21887v2",
+        "arxiv-2607.03734v1",
+        "arxiv-2605.20742v1",
+        "arxiv-2607.03734v1",
+        "arxiv-2605.20742v1",
+        "arxiv-2607.04921v1",
+        "arxiv-2411.08913v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-6042b8627f252d4b7295",
+        "chunk-154ebe660b74df7b65c0",
+        "chunk-36f5444941d03582f2b2",
+        "chunk-670a6a7fbb8cb8b62578",
+        "chunk-be453b7961e61dec631e",
+        "chunk-d0bc85b0488655fbf903",
+        "chunk-ec374fe7bb005bff55d8",
+        "chunk-e8c32a4077b77aeafe87",
+        "chunk-643787a276ac95f6357a"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 494.011
+    },
+    {
+      "query": "How long can cognitive distraction from in-vehicle voice interactions impair attentional recovery after the interaction ends?",
+      "expected_document_ids": [
+        "arxiv-2602.05877v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-daa7d01fe26911db72fb"
+      ],
+      "returned_document_ids": [
+        "arxiv-2602.05877v1",
+        "arxiv-2511.02891v1",
+        "arxiv-2511.00026v1",
+        "arxiv-2511.00026v1",
+        "arxiv-2402.11853v2",
+        "arxiv-2511.02891v1",
+        "arxiv-2409.15795v1",
+        "arxiv-2601.19385v1",
+        "arxiv-2402.11853v2",
+        "arxiv-2409.15795v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-daa7d01fe26911db72fb",
+        "chunk-f6b75fb6f5e7370c8848",
+        "chunk-66ec305554bbea7a5d91",
+        "chunk-5ff31ab27e378f01e2c6",
+        "chunk-d04240303de5b6654622",
+        "chunk-c34bcf6cde8b01fb45f0",
+        "chunk-5a3a45b2046aaecbf7cd",
+        "chunk-7719be2791bb34387b9a",
+        "chunk-54d89c24425473c869cf",
+        "chunk-ab69723b23c8f6339c69"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 442.334
+    },
+    {
+      "query": "What accuracy targets relative to FP32 baseline were set for BEVFormer and Deeplabv3+/SSD in the MLPerf Automotive benchmark?",
+      "expected_document_ids": [
+        "arxiv-2510.27065v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-4ee3df4fb815f89e835c"
+      ],
+      "returned_document_ids": [
+        "arxiv-2510.27065v1",
+        "arxiv-2510.27065v1",
+        "arxiv-2404.15833v1",
+        "arxiv-2604.03814v1",
+        "arxiv-2604.26857v1",
+        "arxiv-2604.26857v1",
+        "arxiv-2606.15072v1",
+        "arxiv-2502.09692v4",
+        "arxiv-2601.01551v1",
+        "arxiv-2606.15072v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-4ee3df4fb815f89e835c",
+        "chunk-d68285d9ea42134383c0",
+        "chunk-77164099ca75861d6b89",
+        "chunk-26acaba938622fb31140",
+        "chunk-952546f1581584360d0d",
+        "chunk-4e1eb6f8c5b7347fa444",
+        "chunk-fa84e93472988157a143",
+        "chunk-3f6582ea324546295d51",
+        "chunk-3edf32744cd7e7a7d9b3",
+        "chunk-cc41d91a9e6c8bde9c00"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 517.983
+    },
+    {
+      "query": "How many epochs were used to train the CNNs (GANet, HD3 Net, PSMNet) when applying the CADE algorithm?",
+      "expected_document_ids": [
+        "arxiv-2312.08946v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-27c28b95430055bc8c05"
+      ],
+      "returned_document_ids": [
+        "arxiv-2312.08946v2",
+        "arxiv-2312.08946v2",
+        "arxiv-2507.01208v1",
+        "arxiv-2605.27968v1",
+        "arxiv-2505.13135v1",
+        "arxiv-2406.07766v1",
+        "arxiv-2311.11754v1",
+        "arxiv-2507.01208v1",
+        "arxiv-2401.12234v1",
+        "arxiv-2407.05982v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-27c28b95430055bc8c05",
+        "chunk-6369d6b3a83eccbb4927",
+        "chunk-778dc06e51581b5153e4",
+        "chunk-0ff2cbb7b834f87b807f",
+        "chunk-1a08d1294dff5608e08c",
+        "chunk-85a46b9090b2111a8116",
+        "chunk-cef96d99a0ffe50ee119",
+        "chunk-ceba5c1d60aa0c86443b",
+        "chunk-c51f56fa02283993f823",
+        "chunk-7c6825a4106d26605ba5"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 472.176
+    },
+    {
+      "query": "In the described default RAG-based approach, what determines whether a document's context is discarded after retrieval?",
+      "expected_document_ids": [
+        "arxiv-2504.11243v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-376fce5dfe91eb6dbc55"
+      ],
+      "returned_document_ids": [
+        "arxiv-2504.11243v1",
+        "arxiv-2504.11243v1",
+        "arxiv-2408.05933v1",
+        "arxiv-2412.20077v3",
+        "arxiv-2504.15427v5",
+        "arxiv-2510.15428v1",
+        "arxiv-2504.15427v5",
+        "arxiv-2604.07784v1",
+        "arxiv-2408.05933v1",
+        "arxiv-2603.17186v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-376fce5dfe91eb6dbc55",
+        "chunk-ba8a24a836d3d541e8ee",
+        "chunk-fe65b74f04b11226818a",
+        "chunk-425f3587c505e98e2b44",
+        "chunk-e2799950fa8cee7e2dcb",
+        "chunk-7423784e14f67baba130",
+        "chunk-ffb8414ec4ae0d38222c",
+        "chunk-22c9cb0c8dcb0d145a1e",
+        "chunk-2d0738c2b4a58eb1092d",
+        "chunk-0e59d0e1f706e0e601bc"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 482.575
+    },
+    {
+      "query": "What were the precision and recall scores achieved by the mean-shift based anomaly detector in the elimination scenario?",
+      "expected_document_ids": [
+        "arxiv-2405.01324v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-2fdc7c95eb03ec96a075"
+      ],
+      "returned_document_ids": [
+        "arxiv-2405.01324v1",
+        "arxiv-2405.01324v1",
+        "arxiv-2606.24387v1",
+        "arxiv-2606.24387v1",
+        "arxiv-2607.03734v1",
+        "arxiv-2411.12563v1",
+        "arxiv-2503.21496v1",
+        "arxiv-2508.15431v2",
+        "arxiv-2410.09043v2",
+        "arxiv-2410.16016v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-2fdc7c95eb03ec96a075",
+        "chunk-bd2f39977fbbadbf39d3",
+        "chunk-769043f911efcf1b5845",
+        "chunk-707d0d0503ae6ce74cb6",
+        "chunk-72ae890e3fcebf66a9e3",
+        "chunk-6b13ef80f6d7af2c008e",
+        "chunk-84973651100b5ddaeacf",
+        "chunk-4bcc9d46f131c25ab287",
+        "chunk-48b5a90ea5ee96784e86",
+        "chunk-b965c163d9a59afb59f2"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 514.08
+    },
+    {
+      "query": "What is the sample rate of the full simulation model implemented in MATLAB/Simulink for the thermal torque derating study?",
+      "expected_document_ids": [
+        "arxiv-2504.12736v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-d62fbfcdc5142e44ac50"
+      ],
+      "returned_document_ids": [
+        "arxiv-2504.12736v2",
+        "arxiv-2504.12736v2",
+        "arxiv-2511.07713v1",
+        "arxiv-2606.11226v1",
+        "arxiv-2505.01740v1",
+        "arxiv-2602.06639v1",
+        "arxiv-2511.16399v1",
+        "arxiv-2508.20223v1",
+        "arxiv-2604.28084v1",
+        "arxiv-2410.11726v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-0c2ab97a8de20927bdef",
+        "chunk-d62fbfcdc5142e44ac50",
+        "chunk-f9a2ee9d28a503215c4b",
+        "chunk-79ab3e6f1f36bb1eb721",
+        "chunk-619f82fbb7339853a7e6",
+        "chunk-47d684b40e53385a98b8",
+        "chunk-3c0849eaeaafa850a74c",
+        "chunk-ae02f47e4fad9168482a",
+        "chunk-3d207b83d28cebd5f54b",
+        "chunk-d82dc971659079fc5823"
+      ],
+      "first_relevant_rank": 2,
+      "latency_ms": 559.933
+    },
+    {
+      "query": "For a software-defined vehicle with 100 ECUs, what is the total vehicle version manifest verification latency according to the benchmarking of Uptane?",
+      "expected_document_ids": [
+        "arxiv-2607.07371v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-dd6c5185c27492bc831b"
+      ],
+      "returned_document_ids": [
+        "arxiv-2607.07371v2",
+        "arxiv-2607.07371v2",
+        "arxiv-2511.15479v1",
+        "arxiv-2511.15479v1",
+        "arxiv-2410.11847v1",
+        "arxiv-2411.10612v4",
+        "arxiv-2604.16319v1",
+        "arxiv-2411.10612v4",
+        "arxiv-2512.23780v1",
+        "arxiv-2407.17287v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-dd6c5185c27492bc831b",
+        "chunk-5fc5a1af7b2b7c8d998a",
+        "chunk-be448693ad8f5db85e84",
+        "chunk-1fc3219b3da4a47771f0",
+        "chunk-51c6aea018e6dc40b672",
+        "chunk-2a771df10b8c401a3483",
+        "chunk-8aaf74e28b3fd15acd3a",
+        "chunk-fa28bc6bec2e02173391",
+        "chunk-0561091ea7e2ac9204dd",
+        "chunk-ddc9beac62779e9151fa"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 570.73
+    },
+    {
+      "query": "What was the measured static contact angle of the chip surface after micromilling, and with what droplet volume was it determined?",
+      "expected_document_ids": [
+        "arxiv-2408.14083v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-6667730cd2c0cf4c81e2"
+      ],
+      "returned_document_ids": [
+        "arxiv-2408.14083v2",
+        "arxiv-2408.14083v2",
+        "arxiv-2401.00145v1",
+        "arxiv-2401.00145v1",
+        "arxiv-2604.06899v1",
+        "arxiv-2601.07280v1",
+        "arxiv-2507.17756v1",
+        "arxiv-2407.19320v4",
+        "arxiv-2408.11969v2",
+        "arxiv-2606.14216v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-6667730cd2c0cf4c81e2",
+        "chunk-6e59d464efe920bb897f",
+        "chunk-2f8c2aa85ff1a0976271",
+        "chunk-7ec9f7127d782fe893c6",
+        "chunk-f9eabd439ca2e4a974fb",
+        "chunk-4c5cf2bae37f4fdc1ea8",
+        "chunk-29f80a295743fdd7e418",
+        "chunk-dcb69ef2f1a690e33bb6",
+        "chunk-dbae806faf6012c8c372",
+        "chunk-2635d8688dbb6cec3c4d"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 525.962
+    },
+    {
+      "query": "In the definition of the eta function for the Binary Paint Shop Problem, under what condition does η(x,i) equal 1?",
+      "expected_document_ids": [
+        "arxiv-2509.15294v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-b7813990d848900638b0"
+      ],
+      "returned_document_ids": [
+        "arxiv-2509.15294v2",
+        "arxiv-2509.15294v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-b7813990d848900638b0",
+        "chunk-8dc4c6a4463a26f86324"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 554.752
+    },
+    {
+      "query": "In the NLOS radar model, how is the reflective surface portion within each range bin modeled?",
+      "expected_document_ids": [
+        "arxiv-2503.05413v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-0f0875eae66739b5d621"
+      ],
+      "returned_document_ids": [
+        "arxiv-2503.05413v2",
+        "arxiv-2503.05413v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-0f0875eae66739b5d621",
+        "chunk-ca8f6bbffe50de837ede"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 484.296
+    },
+    {
+      "query": "What cost reduction did Zhou et al. (2024) report for modular vehicles in cargo delivery compared to traditional methods?",
+      "expected_document_ids": [
+        "arxiv-2412.17885v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-12b54e37857533cf0816"
+      ],
+      "returned_document_ids": [
+        "arxiv-2412.17885v1",
+        "arxiv-2412.17885v1",
+        "arxiv-2605.00531v1",
+        "arxiv-2508.20437v1",
+        "arxiv-2504.13425v2",
+        "arxiv-2408.10794v1",
+        "arxiv-2512.19778v3",
+        "arxiv-2510.01094v1",
+        "arxiv-2601.07280v1",
+        "arxiv-2603.14851v3"
+      ],
+      "returned_chunk_ids": [
+        "chunk-12b54e37857533cf0816",
+        "chunk-7d3bf12a4cf11e8517c8",
+        "chunk-13eba9053d05b8ef0d71",
+        "chunk-17d49dfd694c471fcc96",
+        "chunk-06c7d24ff8648b1b42c3",
+        "chunk-664295cc9bdf28bb1301",
+        "chunk-aec9bea0b52ea96e1c98",
+        "chunk-dc8c9f898a46e4e6385e",
+        "chunk-eba50f8052630055e4ff",
+        "chunk-cb6a52cc892280a9670c"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 492.565
+    },
+    {
+      "query": "What topic did the survey by Yu, F. R., & Zhang, P. (2021) cover?",
+      "expected_document_ids": [
+        "arxiv-2407.14671v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-714978f3eb2a166e4524"
+      ],
+      "returned_document_ids": [
+        "arxiv-2407.14671v1",
+        "arxiv-2409.12580v1",
+        "arxiv-2407.14671v1",
+        "arxiv-2502.04201v1",
+        "arxiv-2409.10690v1",
+        "arxiv-2502.04201v1",
+        "arxiv-2409.04474v1",
+        "arxiv-2409.04474v1",
+        "arxiv-2508.11301v1",
+        "arxiv-2403.12176v5"
+      ],
+      "returned_chunk_ids": [
+        "chunk-714978f3eb2a166e4524",
+        "chunk-41e66a839614fa125580",
+        "chunk-ee57995d347b721dd3c4",
+        "chunk-894e08c81971aa9f1da4",
+        "chunk-eb11942e752cc18f9a48",
+        "chunk-7e7aa86735fe25418d79",
+        "chunk-a770968ce8470a51a6f5",
+        "chunk-096064fd206d49e7f4c6",
+        "chunk-237515cab7cc8fbf1525",
+        "chunk-9def871e4d5e8b5fca39"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 425.023
+    },
+    {
+      "query": "In the automotive industry visitor flow analysis, which state had the highest visitor flow throughout the study period?",
+      "expected_document_ids": [
+        "arxiv-2505.08822v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-7adaf56c4f56f4763514"
+      ],
+      "returned_document_ids": [
+        "arxiv-2505.08822v1",
+        "arxiv-2505.08822v1",
+        "arxiv-2406.01165v1",
+        "arxiv-2405.11492v1",
+        "arxiv-2503.03167v2",
+        "arxiv-2507.16788v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-7adaf56c4f56f4763514",
+        "chunk-c8932c1486362398c82c",
+        "chunk-10ecb14016f2f224ebf0",
+        "chunk-e64e941876056fb936f9",
+        "chunk-02a111b623688c9cf84b",
+        "chunk-7e843d96686c1a973332"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 505.372
+    },
+    {
+      "query": "How does the proposed flare removal method differ from previous RGB-only inpainting approaches?",
+      "expected_document_ids": [
+        "arxiv-2606.27576v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-c7cb7418a5e443787430"
+      ],
+      "returned_document_ids": [
+        "arxiv-2606.27576v1",
+        "arxiv-2606.27576v1",
+        "arxiv-2409.08277v1",
+        "arxiv-2505.20004v4",
+        "arxiv-2511.20003v1",
+        "arxiv-2412.08745v1",
+        "arxiv-2409.08277v1",
+        "arxiv-2605.27758v1",
+        "arxiv-2605.27758v1",
+        "arxiv-2606.21887v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-a4224c8c86ca22ee3dcf",
+        "chunk-1383c12e64199985fc24",
+        "chunk-139e35ba39c6a02bb2bc",
+        "chunk-5e3e992673b5a18d6207",
+        "chunk-f2ab603e31d8a5e927e5",
+        "chunk-d95bd63f07c1d789d9a1",
+        "chunk-1039413f49f32b7ba2fc",
+        "chunk-d778cc4b1ad109b89c29",
+        "chunk-77bd9744d39491194987",
+        "chunk-7306ee98d995cdc89eb4"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 423.19
+    },
+    {
+      "query": "Under what condition is TVAL not required in the proposed system?",
+      "expected_document_ids": [
+        "arxiv-2402.10761v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-e415c4c8927430406867"
+      ],
+      "returned_document_ids": [
+        "arxiv-2402.10761v2",
+        "arxiv-2402.10761v2",
+        "arxiv-2312.15914v1",
+        "arxiv-2511.20003v1",
+        "arxiv-2507.03486v3",
+        "arxiv-2312.15914v1",
+        "arxiv-2504.15427v5",
+        "arxiv-2505.00876v1",
+        "arxiv-2606.06699v1",
+        "arxiv-2601.10413v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-76cc9fb5b7162f685780",
+        "chunk-6074783501f9b15d97fd",
+        "chunk-d40a3dc6ca4932486fe1",
+        "chunk-9cfea063280306f8e979",
+        "chunk-991fd92baf5a0507a410",
+        "chunk-8fd525d619bab492352b",
+        "chunk-aced2fb62279c623330b",
+        "chunk-45e3f0c08a8f62796676",
+        "chunk-ffa24c40ae8ad46cb0d9",
+        "chunk-3405a6beb630bc85c178"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 451.227
+    },
+    {
+      "query": "What three discrete frequencies were used to obtain the parameters of the equivalent circuit model?",
+      "expected_document_ids": [
+        "arxiv-2402.07777v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-5624f730c4ac76e38e1c"
+      ],
+      "returned_document_ids": [
+        "arxiv-2402.07777v1",
+        "arxiv-2402.07777v1",
+        "arxiv-2311.16942v1",
+        "arxiv-2503.12566v3",
+        "arxiv-2409.04333v1",
+        "arxiv-2411.11699v1",
+        "arxiv-2501.17884v1",
+        "arxiv-2412.06961v1",
+        "arxiv-2409.04333v1",
+        "arxiv-2503.13128v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-37ee0f1b37200fa5a7ce",
+        "chunk-13bdd4ba059602a3e2a7",
+        "chunk-776943c2314176b8dafb",
+        "chunk-1e3324b59e48723038ed",
+        "chunk-a809fc03ddfe99034101",
+        "chunk-06c4a7c45b760a3de586",
+        "chunk-994950182e243b0c3c0d",
+        "chunk-5f18e0d907fbed90fbca",
+        "chunk-6aa22471d1a3c4808312",
+        "chunk-51af46f7b8dbd2175203"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 488.018
+    },
+    {
+      "query": "According to industry analyst John Lorenz, what advantage does Eliyan's chiplet approach offer?",
+      "expected_document_ids": [
+        "arxiv-2406.00182v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-53f57603ef3e7089cf6e"
+      ],
+      "returned_document_ids": [
+        "arxiv-2406.00182v1",
+        "arxiv-2406.00182v1",
+        "arxiv-2605.05280v1",
+        "arxiv-2601.07280v1",
+        "arxiv-2510.25137v2",
+        "arxiv-2605.00531v1",
+        "arxiv-2605.00531v1",
+        "arxiv-2601.07280v1",
+        "arxiv-2605.05280v1",
+        "arxiv-2408.05933v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-0acef08815f381601e80",
+        "chunk-53f57603ef3e7089cf6e",
+        "chunk-aa490aff5acd04532b51",
+        "chunk-9b8795fd3395b6c72a51",
+        "chunk-f7b579e67bd20bff04dd",
+        "chunk-c6d1af6d1cefc43e97b1",
+        "chunk-b3d02de846d2210560ac",
+        "chunk-7513f203f305a3a1c238",
+        "chunk-b66c12fc5870338d138d",
+        "chunk-d1e32001ba439965488a"
+      ],
+      "first_relevant_rank": 2,
+      "latency_ms": 423.444
+    },
+    {
+      "query": "What novel method does this paper introduce to address the curing challenge in multi-axis DLP printing?",
+      "expected_document_ids": [
+        "arxiv-2604.12236v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-cf2ece59b5882040800e"
+      ],
+      "returned_document_ids": [
+        "arxiv-2604.12236v2",
+        "arxiv-2604.12236v2",
+        "arxiv-2503.13741v1",
+        "arxiv-2408.04800v2",
+        "arxiv-2311.07798v1",
+        "arxiv-2503.13741v1",
+        "arxiv-2503.23892v1",
+        "arxiv-2603.21770v2",
+        "arxiv-2311.07798v1",
+        "arxiv-2408.04800v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-cf2ece59b5882040800e",
+        "chunk-1381d5c8ffa97a460711",
+        "chunk-c18194d2e1987cee81b1",
+        "chunk-470b6b945d6434c7ae74",
+        "chunk-381ff580abf6efaafac6",
+        "chunk-7e612e2e4155ac055f93",
+        "chunk-64744a6f4ec3ec21c478",
+        "chunk-5fdfd4bc400dcecbf2e0",
+        "chunk-9e07755dc17eced0b55c",
+        "chunk-bfec1861543314a255bd"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 475.329
+    },
+    {
+      "query": "What is the effect of introducing a reject class in a classifier according to the text?",
+      "expected_document_ids": [
+        "arxiv-2402.08208v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-cd7ebaf6b6e90c52f544"
+      ],
+      "returned_document_ids": [
+        "arxiv-2402.08208v2",
+        "arxiv-2607.06039v1",
+        "arxiv-2409.04086v2",
+        "arxiv-2402.08208v2",
+        "arxiv-2409.04086v2",
+        "arxiv-2401.15817v1",
+        "arxiv-2402.00954v1",
+        "arxiv-2511.01431v2",
+        "arxiv-2604.01361v1",
+        "arxiv-2605.10653v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-cd7ebaf6b6e90c52f544",
+        "chunk-eee71506f192b83df1d6",
+        "chunk-496bc4fc1ce2d5a5bbb8",
+        "chunk-ff0c1e0ff467e0e546ae",
+        "chunk-8ae652107a5c3031d736",
+        "chunk-94a272b16713e11f76e7",
+        "chunk-f6946dba89269bcba5c7",
+        "chunk-a72037ea75076b5b6d24",
+        "chunk-df8441b7f013296b1f67",
+        "chunk-8d5d1d4e458506c8a555"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 537.784
+    },
+    {
+      "query": "How does the proposed framework perform compared to depth completion models on ScanNetV2?",
+      "expected_document_ids": [
+        "arxiv-2409.08277v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-1039413f49f32b7ba2fc"
+      ],
+      "returned_document_ids": [
+        "arxiv-2409.08277v1",
+        "arxiv-2409.08277v1",
+        "arxiv-2505.20004v4",
+        "arxiv-2601.09762v1",
+        "arxiv-2602.17124v1",
+        "arxiv-2503.05839v2",
+        "arxiv-2503.05486v1",
+        "arxiv-2510.05955v1",
+        "arxiv-2404.01632v1",
+        "arxiv-2505.21532v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-1039413f49f32b7ba2fc",
+        "chunk-3aa256ccbd1194beb4a2",
+        "chunk-5e3e992673b5a18d6207",
+        "chunk-5fef839bdd9743b6a8c2",
+        "chunk-129effa77ef3b91ef019",
+        "chunk-32591a3175dff52f80d4",
+        "chunk-62b7b28c6c3f1d864a3b",
+        "chunk-8610c369dba184b16e8c",
+        "chunk-673747d526e44296afc0",
+        "chunk-a74bb4a4ab91e33cd28a"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 450.17
+    },
+    {
+      "query": "Where can the temperature mixing function be implemented in the described thermal system?",
+      "expected_document_ids": [
+        "arxiv-2408.02022v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-e6555a87485518da4050"
+      ],
+      "returned_document_ids": [
+        "arxiv-2408.02022v1",
+        "arxiv-2606.11226v1",
+        "arxiv-2408.02022v1",
+        "arxiv-2606.11226v1",
+        "arxiv-2504.12736v2",
+        "arxiv-2604.23181v2",
+        "arxiv-2406.01165v1",
+        "arxiv-2406.01165v1",
+        "arxiv-2504.10730v1",
+        "arxiv-2511.21855v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-e6555a87485518da4050",
+        "chunk-caac9e8060c91df2d567",
+        "chunk-393eb42021df02f25f15",
+        "chunk-1d7c927dc71009ebba63",
+        "chunk-0c2ab97a8de20927bdef",
+        "chunk-beb1fabe983ea721851e",
+        "chunk-028b37c5a9396aa8b350",
+        "chunk-167a72ed4fa0ca2f0d60",
+        "chunk-f93f343d2bbb0b012448",
+        "chunk-7c6cd7b7183885aedf50"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 466.253
+    },
+    {
+      "query": "How much faster is the CFD simulation time reduced for the headlamp heatsink using the proposed framework?",
+      "expected_document_ids": [
+        "arxiv-2505.06849v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-25561239e70bc9a4db8a"
+      ],
+      "returned_document_ids": [
+        "arxiv-2505.06849v1",
+        "arxiv-2505.06849v1",
+        "arxiv-2502.09692v4",
+        "arxiv-2606.11226v1",
+        "arxiv-2403.08055v2",
+        "arxiv-2409.04474v1",
+        "arxiv-2409.04474v1",
+        "arxiv-2502.09692v4",
+        "arxiv-2601.02112v1",
+        "arxiv-2411.17059v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-25561239e70bc9a4db8a",
+        "chunk-022dc85e99149f1de09f",
+        "chunk-53d63ce221476105f476",
+        "chunk-be5e6775416583af3a70",
+        "chunk-e5a6fcbace6b46d90d8f",
+        "chunk-84508756cf9ff44c829b",
+        "chunk-64b5d802e8bd0115283a",
+        "chunk-c2a1eb8d33a61d61a64d",
+        "chunk-363d1fbf10fffb43689b",
+        "chunk-af37ccd84f96bd925ef9"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 506.912
+    },
+    {
+      "query": "What happens to the battery state of charge gradient when regenerative braking is turned off?",
+      "expected_document_ids": [
+        "arxiv-2411.13951v6"
+      ],
+      "expected_chunk_ids": [
+        "chunk-28bfaf5eb8e47b293d32"
+      ],
+      "returned_document_ids": [
+        "arxiv-2411.13951v6",
+        "arxiv-2411.13951v6",
+        "arxiv-2501.15123v3",
+        "arxiv-2607.06087v1",
+        "arxiv-2407.06849v2",
+        "arxiv-2402.10761v2",
+        "arxiv-2402.07777v1",
+        "arxiv-2311.16942v1",
+        "arxiv-2402.10761v2",
+        "arxiv-2511.16399v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-28bfaf5eb8e47b293d32",
+        "chunk-3c0e2e3ed78d9f858c2c",
+        "chunk-95a2a7552bb9a525b55f",
+        "chunk-53708071964bea934205",
+        "chunk-b119da47ecd597cb5141",
+        "chunk-ed989b5e633eea1af351",
+        "chunk-9ea690965f4e3b773634",
+        "chunk-ece17bdd6094ad998400",
+        "chunk-d940f2913845b195da87",
+        "chunk-3c9cf99e498625237240"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 480.274
+    },
+    {
+      "query": "What do the attention patterns of the prediction head reveal in the transformer decoder for radar detection?",
+      "expected_document_ids": [
+        "arxiv-2601.13386v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-88674255ce0638dc674a"
+      ],
+      "returned_document_ids": [
+        "arxiv-2601.13386v1",
+        "arxiv-2601.13386v1",
+        "arxiv-2408.09362v1",
+        "arxiv-2604.03814v1",
+        "arxiv-2406.10708v2",
+        "arxiv-2411.10293v3",
+        "arxiv-2411.10293v3",
+        "arxiv-2504.00859v3",
+        "arxiv-2408.15809v1",
+        "arxiv-2408.15809v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-75644045e315ea8324a9",
+        "chunk-88674255ce0638dc674a",
+        "chunk-72382a33228080a01089",
+        "chunk-ac81aa18ab21e8d777ba",
+        "chunk-f177a409620d7ef89bcf",
+        "chunk-55a4a55a130738b7eac3",
+        "chunk-007b6d3d51a073809263",
+        "chunk-889ea2b32aa744729d68",
+        "chunk-c166c0436d05c46e08c1",
+        "chunk-79d9b5ce5979fdd37ae9"
+      ],
+      "first_relevant_rank": 2,
+      "latency_ms": 525.623
+    },
+    {
+      "query": "How did DeepSeek-14B's performance on Hard tasks change when a one-shot prompt was provided instead of zero-shot?",
+      "expected_document_ids": [
+        "arxiv-2509.17628v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-bd7b408d595b5d78e40a"
+      ],
+      "returned_document_ids": [
+        "arxiv-2509.17628v1",
+        "arxiv-2509.17628v1",
+        "arxiv-2501.12596v2",
+        "arxiv-2503.17537v1",
+        "arxiv-2409.14436v1",
+        "arxiv-2511.04849v1",
+        "arxiv-2503.12281v1",
+        "arxiv-2409.13162v1",
+        "arxiv-2503.12281v1",
+        "arxiv-2503.17537v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-bd7b408d595b5d78e40a",
+        "chunk-36f67b048df6f18cc328",
+        "chunk-b23afd4b098ce5c7f5ed",
+        "chunk-26e35f5aaee9e808b7cf",
+        "chunk-5c5a06b298d3ea593ce9",
+        "chunk-5d59ad0bc3cc03791c39",
+        "chunk-36561756d27043d1da37",
+        "chunk-ec6de43308fb4185e4d7",
+        "chunk-484fbb6e1b85616cb037",
+        "chunk-7e98b64c0d8f7d9b81cf"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 478.361
+    },
+    {
+      "query": "According to Bhatia and Breaux, what are the six categories of data processing purposes identified in privacy policies?",
+      "expected_document_ids": [
+        "arxiv-2601.10413v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-88bc43e3fb65fd05231e"
+      ],
+      "returned_document_ids": [
+        "arxiv-2601.10413v1",
+        "arxiv-2601.10413v1",
+        "arxiv-2411.10612v4",
+        "arxiv-2409.15561v1",
+        "arxiv-2407.11271v3",
+        "arxiv-2409.15561v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-88bc43e3fb65fd05231e",
+        "chunk-d780f7902a01b6b71bdf",
+        "chunk-a06fa105ed909b130832",
+        "chunk-cf050b652daad0d85ed6",
+        "chunk-0b75e77791cef6f59478",
+        "chunk-34784a3e9d7d273cbdac"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 526.491
+    },
+    {
+      "query": "What is the main difficulty with communication between customer-facing units and development teams in agile requirements development?",
+      "expected_document_ids": [
+        "arxiv-2405.18847v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-0ca129871b064ceb94c8"
+      ],
+      "returned_document_ids": [
+        "arxiv-2405.18847v1",
+        "arxiv-2405.18847v1",
+        "arxiv-2503.02049v1",
+        "arxiv-2409.11778v1",
+        "arxiv-2405.18841v1",
+        "arxiv-2409.11781v1",
+        "arxiv-2409.11781v1",
+        "arxiv-2405.18841v1",
+        "arxiv-2405.18838v1",
+        "arxiv-2409.12676v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-0ca129871b064ceb94c8",
+        "chunk-dce61e2e1a68f1916b85",
+        "chunk-af4f1d0d4886b5a857fa",
+        "chunk-840cced877f7ce4b6f2b",
+        "chunk-ac858eab9355211a6ed4",
+        "chunk-bd0ebfffb1f2885bcc91",
+        "chunk-4c8aff48c22b8a0db059",
+        "chunk-88707a8049daff2be273",
+        "chunk-4df4963e60e5abac67d1",
+        "chunk-2c9b3a8afc4bed1fceac"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 504.091
+    },
+    {
+      "query": "What are the limitations of static benchmarks for task-oriented dialogues mentioned in the text?",
+      "expected_document_ids": [
+        "arxiv-2605.25162v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-38790a9cdf7302b7f8d8"
+      ],
+      "returned_document_ids": [
+        "arxiv-2605.25162v1",
+        "arxiv-2605.25162v1",
+        "arxiv-2605.21086v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-85ebc1f6530d18eb96cf",
+        "chunk-71d840f43ef6aa920751",
+        "chunk-5695ccd0c71b27e7c66d"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 493.233
+    },
+    {
+      "query": "What is the average error of the Bent-Pyramid (BP) format for vector-matrix multiplication benchmarking?",
+      "expected_document_ids": [
+        "arxiv-2511.17265v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-06340d4a9f91cc45878f"
+      ],
+      "returned_document_ids": [
+        "arxiv-2511.17265v2",
+        "arxiv-2511.17265v2",
+        "arxiv-2604.09559v1",
+        "arxiv-2605.22270v1",
+        "arxiv-2602.09554v1",
+        "arxiv-2509.08328v2",
+        "arxiv-2507.10747v1",
+        "arxiv-2401.08081v1",
+        "arxiv-2511.05596v1",
+        "arxiv-2410.02771v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-06340d4a9f91cc45878f",
+        "chunk-a4328fd5800833727be9",
+        "chunk-6e0824192fcd9930a197",
+        "chunk-57c76c095f09c250485f",
+        "chunk-9dab81c2dcbcb3fee53c",
+        "chunk-fb7606a9bc25b1bcd07e",
+        "chunk-30f354534ddb2f22bf0f",
+        "chunk-4d26fc9c0544ee626123",
+        "chunk-b158761b2cac125eb9c9",
+        "chunk-e0ec9e148e64c713e77f"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 493.426
+    },
+    {
+      "query": "What are the five first-level indicators in the P-CAFE evaluation system for intelligent cockpit large models?",
+      "expected_document_ids": [
+        "arxiv-2409.15795v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-6b00e56a05ee68aa99bb"
+      ],
+      "returned_document_ids": [
+        "arxiv-2409.15795v1",
+        "arxiv-2409.15795v1",
+        "arxiv-2509.06736v1",
+        "arxiv-2512.02924v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-6b00e56a05ee68aa99bb",
+        "chunk-9e12de446cc88e9f6d62",
+        "chunk-08572638021ec3b34de9",
+        "chunk-9725710f57645f9b0b30"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 497.463
+    },
+    {
+      "query": "Why is it necessary to develop a comprehensive framework that integrates both cybersecurity and functional safety for smart electric vehicles?",
+      "expected_document_ids": [
+        "arxiv-2511.07713v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-0be900149c452efcce96"
+      ],
+      "returned_document_ids": [
+        "arxiv-2511.07713v1",
+        "arxiv-2511.07713v1",
+        "arxiv-2501.00261v1",
+        "arxiv-2501.00261v1",
+        "arxiv-2410.14600v1",
+        "arxiv-2604.17391v1",
+        "arxiv-2407.00483v1",
+        "arxiv-2511.16399v1",
+        "arxiv-2504.13425v2",
+        "arxiv-2412.08862v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-d0b6eaff99a1fe552bc6",
+        "chunk-7e17772b35f3c236d284",
+        "chunk-74a16421fb6b8bbc017c",
+        "chunk-d9e424c5c97543459f2b",
+        "chunk-bc45f6f0abbea49b9e34",
+        "chunk-f2ba4f96effe25b2ecd4",
+        "chunk-cbf8e90c61867f542295",
+        "chunk-b3656940cbc149b6333c",
+        "chunk-a36828b033aea7516861",
+        "chunk-aafda0f79a1a4f3895f3"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 541.198
+    },
+    {
+      "query": "What specific recommendation does the MEVDT dataset provide for handling parked vehicles in Scene A during model training?",
+      "expected_document_ids": [
+        "arxiv-2407.20446v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-609b94d8a2f2cc434ee0"
+      ],
+      "returned_document_ids": [
+        "arxiv-2407.20446v1",
+        "arxiv-2407.20446v1",
+        "arxiv-2604.08074v1",
+        "arxiv-2405.17788v1",
+        "arxiv-2605.00531v1",
+        "arxiv-2402.06826v1",
+        "arxiv-2407.19320v4",
+        "arxiv-2605.00531v1",
+        "arxiv-2406.09624v2",
+        "arxiv-2601.13386v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-609b94d8a2f2cc434ee0",
+        "chunk-8e79dbc74e63ae93294e",
+        "chunk-981f49116e32d09bd9bb",
+        "chunk-24c9060b205c8b66a76f",
+        "chunk-b3d02de846d2210560ac",
+        "chunk-9dd5ec2878d3ce543555",
+        "chunk-751e308f849820f00163",
+        "chunk-acebc50e5970788e9db5",
+        "chunk-bcb21be1daf2fd2feff0",
+        "chunk-75d6935b34accf415304"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 509.906
+    },
+    {
+      "query": "Under what conditions is the Single-Snapshot ESPRIT (SS-ESPRIT) algorithm preferred over SS-MUSIC in sparse ELAA-based radar systems?",
+      "expected_document_ids": [
+        "arxiv-2509.17511v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-f6cb83953c3443622360"
+      ],
+      "returned_document_ids": [
+        "arxiv-2509.17511v1",
+        "arxiv-2509.17511v1",
+        "arxiv-2403.06337v1",
+        "arxiv-2405.02788v1",
+        "arxiv-2406.07399v1",
+        "arxiv-2602.04169v4",
+        "arxiv-2602.04169v4",
+        "arxiv-2605.28180v1",
+        "arxiv-2401.06502v1",
+        "arxiv-2503.05486v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-f6cb83953c3443622360",
+        "chunk-59b7aa8fde5c0e5c9382",
+        "chunk-5c8ca7c4d91769b0496f",
+        "chunk-678245dacfbd9ebadd84",
+        "chunk-d155d0d2086a0e805df1",
+        "chunk-730cb7d1cf2ab8f13cc5",
+        "chunk-d4ad68fd7344c4e01a7b",
+        "chunk-91d2b94028ce91183186",
+        "chunk-86bb4fc262b6560abec6",
+        "chunk-8fae0d382ecd92e4a59d"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 485.942
+    },
+    {
+      "query": "What are the two hardware approaches mentioned to improve spatial resolution in automotive radar?",
+      "expected_document_ids": [
+        "arxiv-2501.07649v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-f2b85013b529ebd101c2"
+      ],
+      "returned_document_ids": [
+        "arxiv-2501.07649v1",
+        "arxiv-2501.07649v1",
+        "arxiv-2511.01431v2",
+        "arxiv-2401.06502v1",
+        "arxiv-2403.08168v1",
+        "arxiv-2409.04474v1",
+        "arxiv-2311.07212v1",
+        "arxiv-2409.04474v1",
+        "arxiv-2506.10524v1",
+        "arxiv-2604.01921v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-f2b85013b529ebd101c2",
+        "chunk-80855bc15778f5eb8fb1",
+        "chunk-b5c45b8eecb8268ff7b4",
+        "chunk-19ee2e3cca6e2e3d6250",
+        "chunk-ed5698e3381f673bb1dc",
+        "chunk-b6ed2c37faeb29c52d7d",
+        "chunk-347cefd072d731f90ff2",
+        "chunk-ff6b75f00a3ba78b8093",
+        "chunk-296353a3a9d160fe169e",
+        "chunk-3321397c68df6b707203"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 479.477
+    },
+    {
+      "query": "According to the Oxford Spires dataset evaluation, which SLAM system performs better for large-loop sequences and why?",
+      "expected_document_ids": [
+        "arxiv-2411.10546v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-a36ce01a80f2a6adf842"
+      ],
+      "returned_document_ids": [
+        "arxiv-2411.10546v2",
+        "arxiv-2411.10546v2",
+        "arxiv-2512.14428v2"
+      ],
+      "returned_chunk_ids": [
+        "chunk-54419370e77c528d70cd",
+        "chunk-fef86686e791c095f173",
+        "chunk-2edc4115c21546576dba"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 507.836
+    },
+    {
+      "query": "Why is frequency hopping alone considered insufficient for avoiding interference in automotive FMCW radar?",
+      "expected_document_ids": [
+        "arxiv-2503.02327v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-88f099539eac9a789563"
+      ],
+      "returned_document_ids": [
+        "arxiv-2503.02327v2",
+        "arxiv-2503.02327v2",
+        "arxiv-2512.24619v1",
+        "arxiv-2512.24619v1",
+        "arxiv-2603.04944v1",
+        "arxiv-2603.04944v1",
+        "arxiv-2405.17297v1",
+        "arxiv-2401.05385v1",
+        "arxiv-2405.17297v1",
+        "arxiv-2405.14319v3"
+      ],
+      "returned_chunk_ids": [
+        "chunk-c0ab90d6602cf37ad8b8",
+        "chunk-88f099539eac9a789563",
+        "chunk-dbedb159fad6c3727e23",
+        "chunk-7009704c213004ee1419",
+        "chunk-a1629f93ad5be494360a",
+        "chunk-3706884c08385f09b3b6",
+        "chunk-236e7521c27d11b26b99",
+        "chunk-5a479e60cfd360594ea3",
+        "chunk-baadfc474c0b2feff07e",
+        "chunk-be875d214f706f7b290a"
+      ],
+      "first_relevant_rank": 2,
+      "latency_ms": 452.711
+    },
+    {
+      "query": "What types of modeling methods are used to predict heat transfer in composite materials for high-performance automotive applications?",
+      "expected_document_ids": [
+        "arxiv-2501.15231v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-5f65dcd96f73beacfbd9"
+      ],
+      "returned_document_ids": [
+        "arxiv-2501.15231v1",
+        "arxiv-2501.15231v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-5f65dcd96f73beacfbd9",
+        "chunk-f22f02420dd2d5d49ddd"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 520.671
+    },
+    {
+      "query": "Why does DDES-based initialization result in slower convergence than steady RANS initialization for transient CFD?",
+      "expected_document_ids": [
+        "arxiv-2503.15766v3"
+      ],
+      "expected_chunk_ids": [
+        "chunk-a8e6e00315799410c031"
+      ],
+      "returned_document_ids": [
+        "arxiv-2503.15766v3",
+        "arxiv-2503.15766v3",
+        "arxiv-2512.07847v1",
+        "arxiv-2603.18508v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-a8e6e00315799410c031",
+        "chunk-25a3ccb33ea65492c5ff",
+        "chunk-1c349c45c7d7436895e3",
+        "chunk-35e3baa3b37af426678c"
+      ],
+      "first_relevant_rank": 1,
+      "latency_ms": 436.126
+    },
+    {
+      "query": "What types of large language model applications are referenced in the GoNoGo paper?",
+      "expected_document_ids": [
+        "arxiv-2408.09785v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-8ec2d0ce873416e55233"
+      ],
+      "returned_document_ids": [
+        "arxiv-2408.09785v2",
+        "arxiv-2408.09785v2",
+        "arxiv-2409.12580v1",
+        "arxiv-2505.19658v1",
+        "arxiv-2509.06736v1",
+        "arxiv-2601.10413v1",
+        "arxiv-2405.06643v2",
+        "arxiv-2501.04150v1",
+        "arxiv-2404.05508v1",
+        "arxiv-2505.19658v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-789cddfe22bb9231b24a",
+        "chunk-196486bdc437693c7bf7",
+        "chunk-917e01678bc9edd79a06",
+        "chunk-49463e1858ecf0ec37bd",
+        "chunk-3bfad25e3c49843744f2",
+        "chunk-3405a6beb630bc85c178",
+        "chunk-81f5e175d28e01a9d5e7",
+        "chunk-6e7c639628d7093dd81e",
+        "chunk-18603c44a4fbfc5a1048",
+        "chunk-48cb8f326412576042dc"
+      ],
+      "first_relevant_rank": null,
+      "latency_ms": 462.291
+    },
+    {
+      "query": "What advantage does hyperspectral imaging offer over traditional RGB imaging in autonomous driving perception systems?",
+      "expected_document_ids": [
+        "arxiv-2506.18682v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-fe700f5f712eea61cf5f"
+      ],
+      "returned_document_ids": [
+        "arxiv-2508.19905v1",
+        "arxiv-2508.11301v1",
+        "arxiv-2506.18682v2",
+        "arxiv-2508.19905v1",
+        "arxiv-2603.26528v1",
+        "arxiv-2508.11301v1",
+        "arxiv-2508.10962v1",
+        "arxiv-2506.18682v2",
+        "arxiv-2603.26528v1",
+        "arxiv-2508.10962v1"
+      ],
+      "returned_chunk_ids": [
+        "chunk-5bf26d02b63c4e1cd747",
+        "chunk-0d5f6f51ce5e32d2ad57",
+        "chunk-fe700f5f712eea61cf5f",
+        "chunk-1cc58d6cc59d011afc09",
+        "chunk-1badfc16ed4f7d6659a6",
+        "chunk-d0d413509bae584a6854",
+        "chunk-3fec699d7c807050fa75",
+        "chunk-2afe0ed93c1bda346fc8",
+        "chunk-89791d63630add550c8a",
+        "chunk-4646eff281ba65ceb561"
+      ],
+      "first_relevant_rank": 3,
+      "latency_ms": 431.033
+    }
+  ],
+  "index_version": "340566ad7c85"
+}

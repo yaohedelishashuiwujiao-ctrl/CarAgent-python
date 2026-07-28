@@ -1,0 +1,2013 @@
+{
+  "suite_id": "automotive-arxiv-silver-v1",
+  "label_quality": "silver_model_generated_not_human_held_out",
+  "description": "Model-generated questions grounded in one sampled evidence chunk per document. Suitable for retrieval regression and ablation, not a production accuracy claim until human review.",
+  "generator_model": "deepseek-v4-flash-260425",
+  "seed": 20260719,
+  "cases": [
+    {
+      "id": "silver-001",
+      "query": "How does accounting for chromatic aberration affect monocular depth estimation models according to the SOLAS study?",
+      "reference_answer": "It improves performance on real-world tasks.",
+      "expected_document_ids": [
+        "arxiv-2501.17872v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-a0ea70ce53a5a8097bee"
+      ],
+      "relevance": {
+        "chunk-a0ea70ce53a5a8097bee": 2
+      },
+      "evidence": {
+        "page_start": 1,
+        "page_end": 2,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-002",
+      "query": "Which model performs worst among those evaluated for DOA estimation and why?",
+      "reference_answer": "BaseNet1 exhibits the poorest performance; BaseNet2 significantly surpasses it due to the SA layer which enables effective management of randomly sparsed input signals.",
+      "expected_document_ids": [
+        "arxiv-2501.07008v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-0af0d33d70762838e9fb"
+      ],
+      "relevance": {
+        "chunk-0af0d33d70762838e9fb": 2
+      },
+      "evidence": {
+        "page_start": 4,
+        "page_end": 4,
+        "section_path": [
+          "ABSTRACT generate a pseudo-angle spectrum on a fixed grid, treating DOA"
+        ]
+      }
+    },
+    {
+      "id": "silver-003",
+      "query": "Why do most electric cars not require a multi-speed transmission?",
+      "reference_answer": "Due to the wide rpm range of the motor and low gear ratio, only a single fixed gear is needed to span the entire speed range, whereas a combustion engine requires four gears for the same range.",
+      "expected_document_ids": [
+        "arxiv-2505.09631v4"
+      ],
+      "expected_chunk_ids": [
+        "chunk-52c5e9a50252c83970f3"
+      ],
+      "relevance": {
+        "chunk-52c5e9a50252c83970f3": 2
+      },
+      "evidence": {
+        "page_start": 9,
+        "page_end": 10,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-004",
+      "query": "How does the ROS Master facilitate communication between nodes in the ADORE framework?",
+      "reference_answer": "The ROS Master acts as a directory service; when nodes are launched, they register their intention to publish or subscribe to specific topics. The Master does not transmit data but facilitates discovery, after which nodes communicate directly peer-to-peer.",
+      "expected_document_ids": [
+        "arxiv-2508.17985v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-8c80d1eb4bfd9945643c"
+      ],
+      "relevance": {
+        "chunk-8c80d1eb4bfd9945643c": 2
+      },
+      "evidence": {
+        "page_start": 3,
+        "page_end": 3,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-005",
+      "query": "What is one recommended approach to bridge the Sim-to-Real gap for embodied AI systems?",
+      "reference_answer": "Using Vision-Language-Action (VLA) models and transformers to translate high-level semantic intent into literal physical joint positions.",
+      "expected_document_ids": [
+        "arxiv-2605.10653v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-a51d8ee22c4eeadba0b1"
+      ],
+      "relevance": {
+        "chunk-a51d8ee22c4eeadba0b1": 2
+      },
+      "evidence": {
+        "page_start": 5,
+        "page_end": 5,
+        "section_path": [
+          "7 What Comes Next 8"
+        ]
+      }
+    },
+    {
+      "id": "silver-006",
+      "query": "What advantage does the proposed extension to RISC-V SPMP provide for automotive microcontrollers?",
+      "reference_answer": "It enables address redirection for selected address regions while maintaining the fully deterministic behavior of a memory protection unit.",
+      "expected_document_ids": [
+        "arxiv-2504.04498v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-e5cc0b087362bc910cdd"
+      ],
+      "relevance": {
+        "chunk-e5cc0b087362bc910cdd": 2
+      },
+      "evidence": {
+        "page_start": 1,
+        "page_end": 1,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-007",
+      "query": "For subproblems where an improvement is eventually found, which solver performs almost as well as the virtual best solver?",
+      "reference_answer": "The non-incremental approach based on kissat is almost as good as the virtual best solver for subproblems where an improvement is eventually found.",
+      "expected_document_ids": [
+        "arxiv-2510.05955v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-4d256fc697866e2cdc12"
+      ],
+      "relevance": {
+        "chunk-4d256fc697866e2cdc12": 2
+      },
+      "evidence": {
+        "page_start": 22,
+        "page_end": 22,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-008",
+      "query": "What are the three primary referent categories in the Talk2Radar dataset?",
+      "reference_answer": "Cars, pedestrians, and cyclists.",
+      "expected_document_ids": [
+        "arxiv-2405.12821v3"
+      ],
+      "expected_chunk_ids": [
+        "chunk-758d2786158af795f300"
+      ],
+      "relevance": {
+        "chunk-758d2786158af795f300": 2
+      },
+      "evidence": {
+        "page_start": 3,
+        "page_end": 3,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-009",
+      "query": "Which algorithms are listed under the 'Fault-tolerant' column for materials science and quantum chemistry?",
+      "reference_answer": "For materials science and quantum chemistry, fault-tolerant methods include HHL, QSVT, QPE, and quantum signal processing.",
+      "expected_document_ids": [
+        "arxiv-2409.14183v3"
+      ],
+      "expected_chunk_ids": [
+        "chunk-5d62765e4c62eff6649f"
+      ],
+      "relevance": {
+        "chunk-5d62765e4c62eff6649f": 2
+      },
+      "evidence": {
+        "page_start": 13,
+        "page_end": 13,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-010",
+      "query": "How do the authors use LLMs to simulate diverse viewpoints in evaluating in-car conversational systems?",
+      "reference_answer": "By using different personae descriptions in the prompt, the LLMs simulate diverse viewpoints, much like different individuals with distinct backgrounds and experiences.",
+      "expected_document_ids": [
+        "arxiv-2311.07469v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-fb00fc63168b78246c1a"
+      ],
+      "relevance": {
+        "chunk-fb00fc63168b78246c1a": 2
+      },
+      "evidence": {
+        "page_start": 5,
+        "page_end": 6,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-011",
+      "query": "What is a key challenge in automated optical inspection for high-stakes PCBs in the automotive sector?",
+      "reference_answer": "Striking the right balance between minimizing false flags while preserving optimal product quality to prevent genuine defects from passing inspection.",
+      "expected_document_ids": [
+        "arxiv-2505.03576v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-dbf48145d9a420922791"
+      ],
+      "relevance": {
+        "chunk-dbf48145d9a420922791": 2
+      },
+      "evidence": {
+        "page_start": 1,
+        "page_end": 1,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-012",
+      "query": "How does the proposed transformer-based distributed joint decoding improve upon the baseline distributed semantic segmentation approach?",
+      "reference_answer": "It increases RD (rate-distortion) performance and improves scalability of the distributed semantic segmentation service.",
+      "expected_document_ids": [
+        "arxiv-2510.16747v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-0592d28e03c7a38ac41f"
+      ],
+      "relevance": {
+        "chunk-0592d28e03c7a38ac41f": 2
+      },
+      "evidence": {
+        "page_start": 3,
+        "page_end": 3,
+        "section_path": [
+          "VOLUME , 1"
+        ]
+      }
+    },
+    {
+      "id": "silver-013",
+      "query": "Under what conditions does the proposed regularized estimation method for automotive radar ghost identification show enhanced performance compared to MP-IAA?",
+      "reference_answer": "It substantially enhances the quality of angle-grid estimation across various multipath scenarios, particularly in low SNR environments.",
+      "expected_document_ids": [
+        "arxiv-2602.11441v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-7b075719b8d4376cd41b"
+      ],
+      "relevance": {
+        "chunk-7b075719b8d4376cd41b": 2
+      },
+      "evidence": {
+        "page_start": 1,
+        "page_end": 1,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-014",
+      "query": "In what year was the paper on semi-supervised semantic mapping through label propagation with semantic texture meshes published?",
+      "reference_answer": "2020",
+      "expected_document_ids": [
+        "arxiv-2405.19921v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-5524921ecef61c546dbd"
+      ],
+      "relevance": {
+        "chunk-5524921ecef61c546dbd": 2
+      },
+      "evidence": {
+        "page_start": 13,
+        "page_end": 13,
+        "section_path": [
+          "12 VILLAR-CORRALES ET AL. : MCDS-VSS: VIDEO SEMANTIC SEGMENTATION",
+          "VILLAR-CORRALES ET AL. : MCDS-VSS: VIDEO SEMANTIC SEGMENTATION 13"
+        ]
+      }
+    },
+    {
+      "id": "silver-015",
+      "query": "What approach is used to overcome the limited availability of micro-CT data for training keypoint estimation models for self-piercing rivet joints?",
+      "reference_answer": "Leveraging synthetic data for initial training and then employing transfer learning by fine-tuning with a small amount of real µCT data.",
+      "expected_document_ids": [
+        "arxiv-2502.16752v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-98cbdc81a52fe8fed080"
+      ],
+      "relevance": {
+        "chunk-98cbdc81a52fe8fed080": 2
+      },
+      "evidence": {
+        "page_start": 1,
+        "page_end": 1,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-016",
+      "query": "How does NeRF++ handle the unbounded spatial coordinates in outdoor scene reconstruction?",
+      "reference_answer": "It decomposes the scene into foreground enclosed by a unit sphere and background enclosed by an inverted sphere, and maps unbounded spatial inputs to bounded ones by using (x', 1/r) where x' is x projected onto the unit sphere and r is the distance from the sphere's center.",
+      "expected_document_ids": [
+        "arxiv-2402.06826v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-f039402ca227d436f743"
+      ],
+      "relevance": {
+        "chunk-f039402ca227d436f743": 2
+      },
+      "evidence": {
+        "page_start": 2,
+        "page_end": 2,
+        "section_path": [
+          "ABSTRACT"
+        ]
+      }
+    },
+    {
+      "id": "silver-017",
+      "query": "How does the proposed method improve the coherence between generated and known regions in diffusion-based driving scenario imputation?",
+      "reference_answer": "By adapting the advanced time schedule of RePaint, where intermediate samples are diffused back j time steps using the forward process before proceeding with the next reverse steps, repeated r times to allow generated regions to better harmonize with known regions.",
+      "expected_document_ids": [
+        "arxiv-2509.12375v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-2ce3da8eefd95e6166ca"
+      ],
+      "relevance": {
+        "chunk-2ce3da8eefd95e6166ca": 2
+      },
+      "evidence": {
+        "page_start": 3,
+        "page_end": 3,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-018",
+      "query": "What advantage do FPGAs provide in the proposed HIL framework for automotive network security validation?",
+      "reference_answer": "They allow much simpler reconfiguration of the setup for different testing/development scenarios while offering real-time performance as dedicated hardware-based setups.",
+      "expected_document_ids": [
+        "arxiv-2505.15393v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-2f4c7f7a67e258272134"
+      ],
+      "relevance": {
+        "chunk-2f4c7f7a67e258272134": 2
+      },
+      "evidence": {
+        "page_start": 2,
+        "page_end": 3,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-019",
+      "query": "How does the acceptance ratio of critical frames in MCFS-2L compare to NWTT and R-NWTT as the number of TSN frames increases?",
+      "reference_answer": "MCFS-2L maintains 100% acceptance ratio when the number of TSN frames is relatively small, and is generally higher than NWTT and R-NWTT under the same number of TSN frames, due to frame aggregation and dynamic reassembly.",
+      "expected_document_ids": [
+        "arxiv-2605.09888v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-7be4ea7b3dca887011cb"
+      ],
+      "relevance": {
+        "chunk-7be4ea7b3dca887011cb": 2
+      },
+      "evidence": {
+        "page_start": 5,
+        "page_end": 6,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-020",
+      "query": "Under the Garage Still condition without data augmentation, how does the benchmark implementation's performance compare to TURNIP's?",
+      "reference_answer": "The performance is comparable in terms of PTE6, but the RMSE is 15% higher.",
+      "expected_document_ids": [
+        "arxiv-2411.00919v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-5c759f2ca99ecce82511"
+      ],
+      "relevance": {
+        "chunk-5c759f2ca99ecce82511": 2
+      },
+      "evidence": {
+        "page_start": 2,
+        "page_end": 2,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-021",
+      "query": "What key features are missing from existing public datasets that would be needed for a comprehensive 3D FSI benchmark?",
+      "reference_answer": "Existing datasets lack a combination of broad design variations, reproducible generation processes, and comprehensive 3D FSI benchmark with multiple modalities like point cloud and STL.",
+      "expected_document_ids": [
+        "arxiv-2511.05596v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-53c112ab3626c363b3b6"
+      ],
+      "relevance": {
+        "chunk-53c112ab3626c363b3b6": 2
+      },
+      "evidence": {
+        "page_start": 3,
+        "page_end": 3,
+        "section_path": [
+          "1 Introduction"
+        ]
+      }
+    },
+    {
+      "id": "silver-022",
+      "query": "What technique does the proposed RTM use to reduce test suite size while preserving requirements coverage?",
+      "reference_answer": "RTM combines text embedding, a distance function, and a genetic algorithm to reduce test suite size while preserving full requirement coverage under a fixed budget constraint.",
+      "expected_document_ids": [
+        "arxiv-2505.20004v4"
+      ],
+      "expected_chunk_ids": [
+        "chunk-6f4d63ce4b81165eec70"
+      ],
+      "relevance": {
+        "chunk-6f4d63ce4b81165eec70": 2
+      },
+      "evidence": {
+        "page_start": 22,
+        "page_end": 22,
+        "section_path": [
+          "3 https://github.com/ICSE19-FAST-R/FAST-R"
+        ]
+      }
+    },
+    {
+      "id": "silver-023",
+      "query": "What is a key limitation of the EVITA framework for threat modeling in vehicular systems?",
+      "reference_answer": "EVITA does not align with ISO 26262 for severity ratings, which limits its regulatory compliance.",
+      "expected_document_ids": [
+        "arxiv-2505.09048v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-09c9d7158b9557300b1b"
+      ],
+      "relevance": {
+        "chunk-09c9d7158b9557300b1b": 2
+      },
+      "evidence": {
+        "page_start": 3,
+        "page_end": 3,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-024",
+      "query": "Under what condition can the peak-and-spur group not be used for phase shifter error estimation of a specific transmitter?",
+      "reference_answer": "When the condition QK−1 = 0.5 ≤ 2 is not satisfied, the peak-and-spur group cannot be used for Tx2 phase shifter error estimation.",
+      "expected_document_ids": [
+        "arxiv-2406.17320v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-5a298a648a4b8be4c725"
+      ],
+      "relevance": {
+        "chunk-5a298a648a4b8be4c725": 2
+      },
+      "evidence": {
+        "page_start": 4,
+        "page_end": 4,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-025",
+      "query": "Which organization funded the research described in this paper?",
+      "reference_answer": "The Austrian Research Promotion Agency (FFG) project pDrive number 12451001.",
+      "expected_document_ids": [
+        "arxiv-2602.17472v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-a0fa447b10755058132b"
+      ],
+      "relevance": {
+        "chunk-a0fa447b10755058132b": 2
+      },
+      "evidence": {
+        "page_start": 4,
+        "page_end": 4,
+        "section_path": [
+          "T=0 T=1 T=2"
+        ]
+      }
+    },
+    {
+      "id": "silver-026",
+      "query": "How does RampoNN classify a set of trajectories with respect to a given STL specification based on the reachable robustness interval?",
+      "reference_answer": "If the entire output interval (after conservative bounds) lies above zero, i.e., ρmin > 0, then all trajectories within X are predicted to satisfy the STL specification.",
+      "expected_document_ids": [
+        "arxiv-2511.16765v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-2b90399d6887f4225fa6"
+      ],
+      "relevance": {
+        "chunk-2b90399d6887f4225fa6": 2
+      },
+      "evidence": {
+        "page_start": 6,
+        "page_end": 6,
+        "section_path": [
+          "Abstract—Detecting kinetic vulnerabilities in Cyber-Physical !\"#$%&'%()$*+,%\" -.\"/0*(1&'%()$*+,%\""
+        ]
+      }
+    },
+    {
+      "id": "silver-027",
+      "query": "What is the focus of the study by Kalenda et al. (2018) as cited in the paper?",
+      "reference_answer": "Scaling agile in large organizations: Practices, challenges, and success factors.",
+      "expected_document_ids": [
+        "arxiv-2511.02445v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-0b625c2aaf3eb89d6915"
+      ],
+      "relevance": {
+        "chunk-0b625c2aaf3eb89d6915": 2
+      },
+      "evidence": {
+        "page_start": 29,
+        "page_end": 29,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-028",
+      "query": "What benefits have been demonstrated for Attentive User Interfaces in the context of automated driving take-over requests?",
+      "reference_answer": "AUIs improve driving performance, reduce the stress induced to drivers, and reduce the variance in the response times of scheduled take-over requests.",
+      "expected_document_ids": [
+        "arxiv-2402.10664v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-8a963ac7ca0284c15a70"
+      ],
+      "relevance": {
+        "chunk-8a963ac7ca0284c15a70": 2
+      },
+      "evidence": {
+        "page_start": 3,
+        "page_end": 3,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-029",
+      "query": "In the outdoor experiments, why did the corner reflector show a stronger reflection compared to the car?",
+      "reference_answer": "The corner reflector was positioned twice as close as the car, giving it an additional 12 dB advantage.",
+      "expected_document_ids": [
+        "arxiv-2601.01551v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-bfc05faad18c0fd13226"
+      ],
+      "relevance": {
+        "chunk-bfc05faad18c0fd13226": 2
+      },
+      "evidence": {
+        "page_start": 15,
+        "page_end": 16,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-030",
+      "query": "How is product-level closeness centrality defined in the context of predicting the emergence of a new comparative advantage?",
+      "reference_answer": "It is defined as the average inverse distance from product p to all products that were already comparative advantages of country c in that year.",
+      "expected_document_ids": [
+        "arxiv-2512.13178v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-7c7fa14066760c18a2d4"
+      ],
+      "relevance": {
+        "chunk-7c7fa14066760c18a2d4": 2
+      },
+      "evidence": {
+        "page_start": 11,
+        "page_end": 12,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-031",
+      "query": "Where can the composition data and associated code for the bismuth telluride thermoelectric study be accessed?",
+      "reference_answer": "The composition data and related codes are available on Figshare.com with a DOI that will be activated upon publication.",
+      "expected_document_ids": [
+        "arxiv-2507.06101v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-68cc6fd08ac37e2f615e"
+      ],
+      "relevance": {
+        "chunk-68cc6fd08ac37e2f615e": 2
+      },
+      "evidence": {
+        "page_start": 25,
+        "page_end": 25,
+        "section_path": [
+          "120 K, and further to 7.40% at Δ𝑇 = 240 K. When parasitic resistances are included, both voltage and"
+        ]
+      }
+    },
+    {
+      "id": "silver-032",
+      "query": "Which security property is guaranteed by transmitting binaries over a MAC-authenticated channel in the migration protocol?",
+      "reference_answer": "Code integrity (S2) is guaranteed, as any modification is detected before the binary is instantiated.",
+      "expected_document_ids": [
+        "arxiv-2603.17757v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-7ff02d14cee94be0e498"
+      ],
+      "relevance": {
+        "chunk-7ff02d14cee94be0e498": 2
+      },
+      "evidence": {
+        "page_start": 9,
+        "page_end": 9,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-033",
+      "query": "What technique does the collaborative automotive radar sensing approach use to recover azimuth angles from quantized measurements?",
+      "reference_answer": "It uses low-rank properties of the constructed Hankel matrix of the mixed-precision array to perform mixed-quantized Hankel matrix completion.",
+      "expected_document_ids": [
+        "arxiv-2403.08168v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-007ec7cfc17a509c3548"
+      ],
+      "relevance": {
+        "chunk-007ec7cfc17a509c3548": 2
+      },
+      "evidence": {
+        "page_start": 1,
+        "page_end": 1,
+        "section_path": [
+          "Abstract"
+        ]
+      }
+    },
+    {
+      "id": "silver-034",
+      "query": "In the proposed domain generalization method, what does a higher DI value signify about the feature?",
+      "reference_answer": "A higher DI value indicates that the feature does not contain domain-specific information.",
+      "expected_document_ids": [
+        "arxiv-2504.06781v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-26b465b3f32b8f27196f"
+      ],
+      "relevance": {
+        "chunk-26b465b3f32b8f27196f": 2
+      },
+      "evidence": {
+        "page_start": 4,
+        "page_end": 4,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-035",
+      "query": "What were the phase margin and settling time for the first controller design with parameters ω_L=10 and β_b=3.162?",
+      "reference_answer": "Phase margin was 91.45 degrees and settling time was 0.47 seconds.",
+      "expected_document_ids": [
+        "arxiv-2410.19811v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-3b94b415b8918c167f67"
+      ],
+      "relevance": {
+        "chunk-3b94b415b8918c167f67": 2
+      },
+      "evidence": {
+        "page_start": 7,
+        "page_end": 7,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-036",
+      "query": "What regular expression pattern must the Role field in the InterfaceDatatype class satisfy?",
+      "reference_answer": "The Role field must match the pattern '^(Consumer|Provider)$'.",
+      "expected_document_ids": [
+        "arxiv-2510.27344v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-8e8d1c47ba80e1024eea"
+      ],
+      "relevance": {
+        "chunk-8e8d1c47ba80e1024eea": 2
+      },
+      "evidence": {
+        "page_start": 9,
+        "page_end": 9,
+        "section_path": [
+          "1 All authors are from ZF Friedrichshafen AG. The authors have been listed alphabetically and have"
+        ]
+      }
+    },
+    {
+      "id": "silver-037",
+      "query": "What is one drawback of using cache coloring for memory bandwidth management?",
+      "reference_answer": "Cache coloring is hardware-specific, requiring knowledge of cache structure details like size, associativity, and mapping policies, which limits portability.",
+      "expected_document_ids": [
+        "arxiv-2502.02437v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-3cd6eed17ac81ad6750b"
+      ],
+      "relevance": {
+        "chunk-3cd6eed17ac81ad6750b": 2
+      },
+      "evidence": {
+        "page_start": 4,
+        "page_end": 4,
+        "section_path": [
+          "1 Introduction"
+        ]
+      }
+    },
+    {
+      "id": "silver-038",
+      "query": "How many distinct products are included in the Furniture v1 dataset?",
+      "reference_answer": "The Furniture v1 dataset contains 50,641 unique products.",
+      "expected_document_ids": [
+        "arxiv-2603.17186v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-c65d5dcd90f54a0f28c5"
+      ],
+      "relevance": {
+        "chunk-c65d5dcd90f54a0f28c5": 2
+      },
+      "evidence": {
+        "page_start": 6,
+        "page_end": 6,
+        "section_path": [
+          "Abstract"
+        ]
+      }
+    },
+    {
+      "id": "silver-039",
+      "query": "At what frequency was the C910 core evaluated when running the Embench-IoT matmult-int benchmark near its maximum achievable frequency?",
+      "reference_answer": "The C910 was evaluated at 1300 MHz.",
+      "expected_document_ids": [
+        "arxiv-2505.24363v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-b56aa34a5f6c080be93f"
+      ],
+      "relevance": {
+        "chunk-b56aa34a5f6c080be93f": 2
+      },
+      "evidence": {
+        "page_start": 8,
+        "page_end": 8,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-040",
+      "query": "What percentage cost reduction did the adaptive policy achieve over the baseline in the stationary environment?",
+      "reference_answer": "The adaptive policy achieved a 7.4% cost reduction, with total costs of £8,484 compared to £9,163.",
+      "expected_document_ids": [
+        "arxiv-2511.06479v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-87dcb986c578ea655fc3"
+      ],
+      "relevance": {
+        "chunk-87dcb986c578ea655fc3": 2
+      },
+      "evidence": {
+        "page_start": 6,
+        "page_end": 7,
+        "section_path": [
+          "4 Experimental Results",
+          "4.3 Stationary Environment Results"
+        ]
+      }
+    },
+    {
+      "id": "silver-041",
+      "query": "What problem arises when using standard cross-entropy loss for binary classification on imbalanced radar data, and how is it addressed?",
+      "reference_answer": "Standard cross-entropy assumes balanced classes, so it would cause the network to predict low magnitude at all bins. The balanced cross-entropy loss (BCE) addresses this by weighting the individual terms of the cross-entropy loss.",
+      "expected_document_ids": [
+        "arxiv-2312.09790v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-68855573adcf3d7accc8"
+      ],
+      "relevance": {
+        "chunk-68855573adcf3d7accc8": 2
+      },
+      "evidence": {
+        "page_start": 2,
+        "page_end": 2,
+        "section_path": [
+          "Abstract—In this paper we propose a new method for training Interfered Radar Signal"
+        ]
+      }
+    },
+    {
+      "id": "silver-042",
+      "query": "What two methods are described for constructing the final semantic network from term embeddings?",
+      "reference_answer": "Simple thresholding connects terms whose embeddings have cosine distance ≤0.5. Semantic co-occurrence represents each topic by its cosine distance with every document, then uses Tanimoto similarity of these membership vectors to define topic similarity.",
+      "expected_document_ids": [
+        "arxiv-2409.20010v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-85b118c1e342bc46095a"
+      ],
+      "relevance": {
+        "chunk-85b118c1e342bc46095a": 2
+      },
+      "evidence": {
+        "page_start": 3,
+        "page_end": 3,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-043",
+      "query": "How does the multi-weight voting strategy select the optimal cable grasping node?",
+      "reference_answer": "It generates 50 linearly spaced weight pairs from pure distance-first to pure angle-first, computes a weighted score for each candidate node, selects the highest-scoring node per weight pair, and then picks the node that appears most frequently among those 50 selected nodes.",
+      "expected_document_ids": [
+        "arxiv-2508.09558v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-d5f6c4c6da9ef4519f94"
+      ],
+      "relevance": {
+        "chunk-d5f6c4c6da9ef4519f94": 2
+      },
+      "evidence": {
+        "page_start": 5,
+        "page_end": 5,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-044",
+      "query": "What were the key experimental results of the format-preserving encryption method for protecting automotive location data?",
+      "reference_answer": "The average relative distance retention rate (RDR) was 0.0844, and the number of hotspots in the critical area decreased by 98.9% after encryption.",
+      "expected_document_ids": [
+        "arxiv-2510.20300v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-e257e26e436f202db191"
+      ],
+      "relevance": {
+        "chunk-e257e26e436f202db191": 2
+      },
+      "evidence": {
+        "page_start": 1,
+        "page_end": 1,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-045",
+      "query": "What experimental setup was used to validate the simulation framework for automotive radar interference?",
+      "reference_answer": "Three radar systems served as hosts, and an array of 30 interfering radars was used to emulate simulated conditions, allowing direct comparison between measured and simulated results.",
+      "expected_document_ids": [
+        "arxiv-2605.19081v3"
+      ],
+      "expected_chunk_ids": [
+        "chunk-46f200639fb5f8372363"
+      ],
+      "relevance": {
+        "chunk-46f200639fb5f8372363": 2
+      },
+      "evidence": {
+        "page_start": 2,
+        "page_end": 3,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-046",
+      "query": "How does the first stage of the card game construct a backstory for human-vehicle collaboration?",
+      "reference_answer": "Participants draw one card from the Social Relationships deck (e.g., 'sidekick') and one from the AV Functional Roles deck (e.g., private-owned) to imagine a protagonist and their relationship with the AV, then complete a prompt about the protagonist's trip destination.",
+      "expected_document_ids": [
+        "arxiv-2601.04601v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-1ffa17f68e5d576aa8dc"
+      ],
+      "relevance": {
+        "chunk-1ffa17f68e5d576aa8dc": 2
+      },
+      "evidence": {
+        "page_start": 3,
+        "page_end": 3,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-047",
+      "query": "What is the approach of the AssocRules method for CAN bus intrusion detection?",
+      "reference_answer": "It clusters CAN messages into multi-dimensional regions to identify typical legitimate vehicle states and then applies association rule mining to discover frequent relationships among these states.",
+      "expected_document_ids": [
+        "arxiv-2606.30430v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-2806b935c15b439c5938"
+      ],
+      "relevance": {
+        "chunk-2806b935c15b439c5938": 2
+      },
+      "evidence": {
+        "page_start": 3,
+        "page_end": 3,
+        "section_path": [
+          "Abstract—The increasing connectivity of modern vehicles reported performance metrics make it difficult to reliably"
+        ]
+      }
+    },
+    {
+      "id": "silver-048",
+      "query": "How does the proposed method combine the lidar-like model and the object detection formulation for radar point cloud prediction?",
+      "reference_answer": "It uses the expected depth from the NFF to determine ray return positions, transforms them to Cartesian coordinates, and adds the resulting embeddings to the feature vector from the NFF, thereby incorporating geometry information.",
+      "expected_document_ids": [
+        "arxiv-2504.00859v3"
+      ],
+      "expected_chunk_ids": [
+        "chunk-5a9df00a2edfe2ab577a"
+      ],
+      "relevance": {
+        "chunk-5a9df00a2edfe2ab577a": 2
+      },
+      "evidence": {
+        "page_start": 4,
+        "page_end": 4,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-049",
+      "query": "What are the key specifications of the Waymo dataset used in this work?",
+      "reference_answer": "It consists of 1000 driving segments of 20 seconds each, with 200,000 frames per sensor at 10 Hz, collected from five lidars and five cameras, containing 12 million 3D labels and 1.2 million 2D labels.",
+      "expected_document_ids": [
+        "arxiv-2505.01446v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-ef0d209ea6c8249aa7da"
+      ],
+      "relevance": {
+        "chunk-ef0d209ea6c8249aa7da": 2
+      },
+      "evidence": {
+        "page_start": 3,
+        "page_end": 4,
+        "section_path": [
+          "1.1 Behavioural Cloning",
+          "1.3 Organization"
+        ]
+      }
+    },
+    {
+      "id": "silver-050",
+      "query": "According to the text, how does the test error behave as algorithm complexity increases?",
+      "reference_answer": "The test error decreases initially, reaches a minimum at optimal complexity, and then increases. The decreasing part corresponds to underfitting, and the increasing part to overfitting.",
+      "expected_document_ids": [
+        "arxiv-2411.08913v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-79abe0d7c6d1533095d5"
+      ],
+      "relevance": {
+        "chunk-79abe0d7c6d1533095d5": 2
+      },
+      "evidence": {
+        "page_start": 22,
+        "page_end": 22,
+        "section_path": [
+          "SYSTEM RELIABILITY ENGINEERING IN THE AGE OF INDUSTRY 4.0: CHALLENGES AND INNOVATIONS 3",
+          "SYSTEM RELIABILITY ENGINEERING IN THE AGE OF INDUSTRY 4.0: CHALLENGES AND INNOVATIONS 21"
+        ]
+      }
+    },
+    {
+      "id": "silver-051",
+      "query": "What requirement does the evidence architecture need to address based on the Volkswagen emissions testing failure?",
+      "reference_answer": "The requirement is honesty of scope: an evidence architecture must state that document-centric evidence is not sufficient to capture behavior outside the test.",
+      "expected_document_ids": [
+        "arxiv-2607.04924v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-91dde0b557b11087177a"
+      ],
+      "relevance": {
+        "chunk-91dde0b557b11087177a": 2
+      },
+      "evidence": {
+        "page_start": 11,
+        "page_end": 11,
+        "section_path": [
+          "2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024"
+        ]
+      }
+    },
+    {
+      "id": "silver-052",
+      "query": "According to the abstract, what advantages does the deterministic task scheduling approach provide?",
+      "reference_answer": "It can better adapt to varying operating conditions while enabling efficient resource utilization, thereby preventing resource saturation and enhancing scalability.",
+      "expected_document_ids": [
+        "arxiv-2604.16143v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-908250d041a78e7b2351"
+      ],
+      "relevance": {
+        "chunk-908250d041a78e7b2351": 2
+      },
+      "evidence": {
+        "page_start": 1,
+        "page_end": 2,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-053",
+      "query": "According to interviewee ID02, what is the benefit of integrating human factors specialists into regular work using agile practices?",
+      "reference_answer": "It helps break silos and ensures HF is effectively considered in product development, as opposed to keeping it separate.",
+      "expected_document_ids": [
+        "arxiv-2405.18838v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-ccd551d284fee8a7bd99"
+      ],
+      "relevance": {
+        "chunk-ccd551d284fee8a7bd99": 2
+      },
+      "evidence": {
+        "page_start": 9,
+        "page_end": 9,
+        "section_path": [
+          "Abstract—The integration of human factors (HF) knowledge of AV development, where the driving task is increasingly"
+        ]
+      }
+    },
+    {
+      "id": "silver-054",
+      "query": "How does the soft-phase exponent α1 change with increasing hard segment weight fraction (HSWF) in polyurea-graphene nanocomposites?",
+      "reference_answer": "It decreases as HSWF is increased.",
+      "expected_document_ids": [
+        "arxiv-2311.07721v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-7e7fd2667efa68e608c3"
+      ],
+      "relevance": {
+        "chunk-7e7fd2667efa68e608c3": 2
+      },
+      "evidence": {
+        "page_start": 13,
+        "page_end": 14,
+        "section_path": [
+          "6 Department of Chemical Engineering and Materials Science, Michigan State University, East Lansing, Mich-"
+        ]
+      }
+    },
+    {
+      "id": "silver-055",
+      "query": "What sensitivity does the PTNWs/graphene heterostructure pressure sensor achieve in the 20-35 kPa pressure range?",
+      "reference_answer": "Up to 7.56 × 10⁻⁴ kPa⁻¹.",
+      "expected_document_ids": [
+        "arxiv-2410.02256v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-b60753e9ace599318de4"
+      ],
+      "relevance": {
+        "chunk-b60753e9ace599318de4": 2
+      },
+      "evidence": {
+        "page_start": 10,
+        "page_end": 10,
+        "section_path": [
+          "IEEE SENSORS JOURNAL, VOL. XX, NO. XX, MONTH X, XXXX 1"
+        ]
+      }
+    },
+    {
+      "id": "silver-056",
+      "query": "Why does the lack of standardized definitions for distraction hinder VLM performance in driver monitoring systems?",
+      "reference_answer": "Without clear and consistent definitions, it is difficult to create precise instructions for VLMs, leading to variability and inconsistency in predictions, and the model cannot accurately identify distractions that are not explicitly in the training set.",
+      "expected_document_ids": [
+        "arxiv-2503.12281v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-4e6fff5ddecd63279a18"
+      ],
+      "relevance": {
+        "chunk-4e6fff5ddecd63279a18": 2
+      },
+      "evidence": {
+        "page_start": 6,
+        "page_end": 6,
+        "section_path": [
+          "Methodology"
+        ]
+      }
+    },
+    {
+      "id": "silver-057",
+      "query": "What constraint ensures that a flow follows the same path in every period in the TTEthernet scheduling model?",
+      "reference_answer": "The periodical transmission constraint: if a flow is transmitted over a link in one time slot, it must traverse that link in time slots separated by multiples of its period.",
+      "expected_document_ids": [
+        "arxiv-2401.06579v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-5402fcd85310be075984"
+      ],
+      "relevance": {
+        "chunk-5402fcd85310be075984": 2
+      },
+      "evidence": {
+        "page_start": 8,
+        "page_end": 8,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-058",
+      "query": "How do functional mixture regression models differ from functional clustering methods in handling heterogeneity?",
+      "reference_answer": "FMR models detect clusters characterized by different regression structures, while functional clustering methods only cluster the functions themselves.",
+      "expected_document_ids": [
+        "arxiv-2410.20138v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-1e7bc6bef3da19d830a8"
+      ],
+      "relevance": {
+        "chunk-1e7bc6bef3da19d830a8": 2
+      },
+      "evidence": {
+        "page_start": 4,
+        "page_end": 5,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-059",
+      "query": "What effect does setting the partitioning threshold to zero have on multicast stream partitioning?",
+      "reference_answer": "It results in full partitioning with unicast streams only.",
+      "expected_document_ids": [
+        "arxiv-2510.20440v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-963953b2c69679728e1e"
+      ],
+      "relevance": {
+        "chunk-963953b2c69679728e1e": 2
+      },
+      "evidence": {
+        "page_start": 5,
+        "page_end": 6,
+        "section_path": [
+          "5 Multicast Partitioning",
+          "5.2 Partitioning Threshold Parameter"
+        ]
+      }
+    },
+    {
+      "id": "silver-060",
+      "query": "What deep learning model architecture is developed for fault detection and diagnosis in this work?",
+      "reference_answer": "A hybrid 1dCNN-GRU-based DL model architecture.",
+      "expected_document_ids": [
+        "arxiv-2603.08165v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-6042b8627f252d4b7295"
+      ],
+      "relevance": {
+        "chunk-6042b8627f252d4b7295": 2
+      },
+      "evidence": {
+        "page_start": 3,
+        "page_end": 3,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-061",
+      "query": "How long can cognitive distraction from in-vehicle voice interactions impair attentional recovery after the interaction ends?",
+      "reference_answer": "Up to 27 seconds.",
+      "expected_document_ids": [
+        "arxiv-2602.05877v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-daa7d01fe26911db72fb"
+      ],
+      "relevance": {
+        "chunk-daa7d01fe26911db72fb": 2
+      },
+      "evidence": {
+        "page_start": 2,
+        "page_end": 2,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-062",
+      "query": "What accuracy targets relative to FP32 baseline were set for BEVFormer and Deeplabv3+/SSD in the MLPerf Automotive benchmark?",
+      "reference_answer": "99% for BEVFormer and 99.9% for Deeplabv3+ and SSD.",
+      "expected_document_ids": [
+        "arxiv-2510.27065v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-4ee3df4fb815f89e835c"
+      ],
+      "relevance": {
+        "chunk-4ee3df4fb815f89e835c": 2
+      },
+      "evidence": {
+        "page_start": 8,
+        "page_end": 8,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-063",
+      "query": "How many epochs were used to train the CNNs (GANet, HD3 Net, PSMNet) when applying the CADE algorithm?",
+      "reference_answer": "10 epochs.",
+      "expected_document_ids": [
+        "arxiv-2312.08946v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-27c28b95430055bc8c05"
+      ],
+      "relevance": {
+        "chunk-27c28b95430055bc8c05": 2
+      },
+      "evidence": {
+        "page_start": 3,
+        "page_end": 3,
+        "section_path": [
+          "COLOR AGNOSTIC CROSS-SPECTRAL DISPARITY ESTIMATION"
+        ]
+      }
+    },
+    {
+      "id": "silver-064",
+      "query": "In the described default RAG-based approach, what determines whether a document's context is discarded after retrieval?",
+      "reference_answer": "If the document does not contain any relevant information, the context gets discarded.",
+      "expected_document_ids": [
+        "arxiv-2504.11243v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-376fce5dfe91eb6dbc55"
+      ],
+      "relevance": {
+        "chunk-376fce5dfe91eb6dbc55": 2
+      },
+      "evidence": {
+        "page_start": 4,
+        "page_end": 4,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-065",
+      "query": "What were the precision and recall scores achieved by the mean-shift based anomaly detector in the elimination scenario?",
+      "reference_answer": "Precision and recall were both 1.00.",
+      "expected_document_ids": [
+        "arxiv-2405.01324v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-2fdc7c95eb03ec96a075"
+      ],
+      "relevance": {
+        "chunk-2fdc7c95eb03ec96a075": 2
+      },
+      "evidence": {
+        "page_start": 6,
+        "page_end": 6,
+        "section_path": [
+          "Abstract—Connected cars are susceptible to cyberattacks. [4]. Monitoring in-car communication enables the detection"
+        ]
+      }
+    },
+    {
+      "id": "silver-066",
+      "query": "What is the sample rate of the full simulation model implemented in MATLAB/Simulink for the thermal torque derating study?",
+      "reference_answer": "100 Hz.",
+      "expected_document_ids": [
+        "arxiv-2504.12736v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-d62fbfcdc5142e44ac50"
+      ],
+      "relevance": {
+        "chunk-d62fbfcdc5142e44ac50": 2
+      },
+      "evidence": {
+        "page_start": 6,
+        "page_end": 7,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-067",
+      "query": "For a software-defined vehicle with 100 ECUs, what is the total vehicle version manifest verification latency according to the benchmarking of Uptane?",
+      "reference_answer": "15.4 seconds per vehicle.",
+      "expected_document_ids": [
+        "arxiv-2607.07371v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-dd6c5185c27492bc831b"
+      ],
+      "relevance": {
+        "chunk-dd6c5185c27492bc831b": 2
+      },
+      "evidence": {
+        "page_start": 2,
+        "page_end": 2,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-068",
+      "query": "What was the measured static contact angle of the chip surface after micromilling, and with what droplet volume was it determined?",
+      "reference_answer": "93 ± 5° with a water droplet volume of 1 µL.",
+      "expected_document_ids": [
+        "arxiv-2408.14083v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-6667730cd2c0cf4c81e2"
+      ],
+      "relevance": {
+        "chunk-6667730cd2c0cf4c81e2": 2
+      },
+      "evidence": {
+        "page_start": 5,
+        "page_end": 6,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-069",
+      "query": "In the definition of the eta function for the Binary Paint Shop Problem, under what condition does η(x,i) equal 1?",
+      "reference_answer": "When exactly one of the conditions (xi+1 ∈ {x1,...,xi} and xi ∉ {x1,...,xi-1}) or (xi+1 ∉ {x1,...,xi} and xi ∈ {x1,...,xi-1}) holds.",
+      "expected_document_ids": [
+        "arxiv-2509.15294v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-b7813990d848900638b0"
+      ],
+      "relevance": {
+        "chunk-b7813990d848900638b0": 2
+      },
+      "evidence": {
+        "page_start": 14,
+        "page_end": 15,
+        "section_path": [
+          "D. Recursive QAOA III. RECASTING BPSP AS AN ISING MODEL"
+        ]
+      }
+    },
+    {
+      "id": "silver-070",
+      "query": "In the NLOS radar model, how is the reflective surface portion within each range bin modeled?",
+      "reference_answer": "As a single-lobe directive radiation antenna element.",
+      "expected_document_ids": [
+        "arxiv-2503.05413v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-0f0875eae66739b5d621"
+      ],
+      "relevance": {
+        "chunk-0f0875eae66739b5d621": 2
+      },
+      "evidence": {
+        "page_start": 3,
+        "page_end": 3,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-071",
+      "query": "What cost reduction did Zhou et al. (2024) report for modular vehicles in cargo delivery compared to traditional methods?",
+      "reference_answer": "Modular vehicles reduced delivery costs by approximately 5%.",
+      "expected_document_ids": [
+        "arxiv-2412.17885v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-12b54e37857533cf0816"
+      ],
+      "relevance": {
+        "chunk-12b54e37857533cf0816": 2
+      },
+      "evidence": {
+        "page_start": 15,
+        "page_end": 16,
+        "section_path": [
+          "2.1 Modularity Integration",
+          "2.1.2 Integration of Driving Unit and Body Module"
+        ]
+      }
+    },
+    {
+      "id": "silver-072",
+      "query": "What topic did the survey by Yu, F. R., & Zhang, P. (2021) cover?",
+      "reference_answer": "Cyber-security of connected and autonomous vehicles.",
+      "expected_document_ids": [
+        "arxiv-2407.14671v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-714978f3eb2a166e4524"
+      ],
+      "relevance": {
+        "chunk-714978f3eb2a166e4524": 2
+      },
+      "evidence": {
+        "page_start": 11,
+        "page_end": 11,
+        "section_path": [
+          "II. RELATED WORK",
+          "VII. FUTURE SCOPE"
+        ]
+      }
+    },
+    {
+      "id": "silver-073",
+      "query": "In the automotive industry visitor flow analysis, which state had the highest visitor flow throughout the study period?",
+      "reference_answer": "Texas had the highest visitor flow, peaking in Week 9.",
+      "expected_document_ids": [
+        "arxiv-2505.08822v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-7adaf56c4f56f4763514"
+      ],
+      "relevance": {
+        "chunk-7adaf56c4f56f4763514": 2
+      },
+      "evidence": {
+        "page_start": 12,
+        "page_end": 12,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-074",
+      "query": "How does the proposed flare removal method differ from previous RGB-only inpainting approaches?",
+      "reference_answer": "It additionally uses event streams to restore the underlying images.",
+      "expected_document_ids": [
+        "arxiv-2606.27576v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-c7cb7418a5e443787430"
+      ],
+      "relevance": {
+        "chunk-c7cb7418a5e443787430": 2
+      },
+      "evidence": {
+        "page_start": 4,
+        "page_end": 4,
+        "section_path": [
+          "2 Related Works"
+        ]
+      }
+    },
+    {
+      "id": "silver-075",
+      "query": "Under what condition is TVAL not required in the proposed system?",
+      "reference_answer": "When the vehicle is stationary.",
+      "expected_document_ids": [
+        "arxiv-2402.10761v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-e415c4c8927430406867"
+      ],
+      "relevance": {
+        "chunk-e415c4c8927430406867": 2
+      },
+      "evidence": {
+        "page_start": 17,
+        "page_end": 17,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-076",
+      "query": "What three discrete frequencies were used to obtain the parameters of the equivalent circuit model?",
+      "reference_answer": "0.116 Hz, 20.55 Hz, and 648.65 Hz.",
+      "expected_document_ids": [
+        "arxiv-2402.07777v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-5624f730c4ac76e38e1c"
+      ],
+      "relevance": {
+        "chunk-5624f730c4ac76e38e1c": 2
+      },
+      "evidence": {
+        "page_start": 16,
+        "page_end": 17,
+        "section_path": [
+          "Abstract"
+        ]
+      }
+    },
+    {
+      "id": "silver-077",
+      "query": "According to industry analyst John Lorenz, what advantage does Eliyan's chiplet approach offer?",
+      "reference_answer": "Economic advantages for IC design, making multi-die approaches more attractive for automotive chip suppliers.",
+      "expected_document_ids": [
+        "arxiv-2406.00182v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-53f57603ef3e7089cf6e"
+      ],
+      "relevance": {
+        "chunk-53f57603ef3e7089cf6e": 2
+      },
+      "evidence": {
+        "page_start": 27,
+        "page_end": 28,
+        "section_path": [
+          "7 IPs required for Communication",
+          "12.1 NuLink: A Novel Interconnect Packaging Technology",
+          "12.1.2 Economic Implications and Industry Recognition"
+        ]
+      }
+    },
+    {
+      "id": "silver-078",
+      "query": "What novel method does this paper introduce to address the curing challenge in multi-axis DLP printing?",
+      "reference_answer": "A cure map generation method that combines spatially resolved grayscale modulation and exposure time control for non-uniform layers.",
+      "expected_document_ids": [
+        "arxiv-2604.12236v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-cf2ece59b5882040800e"
+      ],
+      "relevance": {
+        "chunk-cf2ece59b5882040800e": 2
+      },
+      "evidence": {
+        "page_start": 2,
+        "page_end": 2,
+        "section_path": [
+          "MULTI-AXIS ADDITIVE MANUFACTURING FOR CUSTOMIZED AUTOMOTIVE COMPONENTS"
+        ]
+      }
+    },
+    {
+      "id": "silver-079",
+      "query": "What is the effect of introducing a reject class in a classifier according to the text?",
+      "reference_answer": "It adds a third probability P(reject) such that P(positive) + P(negative) + P(reject) = 1.",
+      "expected_document_ids": [
+        "arxiv-2402.08208v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-cd7ebaf6b6e90c52f544"
+      ],
+      "relevance": {
+        "chunk-cd7ebaf6b6e90c52f544": 2
+      },
+      "evidence": {
+        "page_start": 5,
+        "page_end": 5,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-080",
+      "query": "How does the proposed framework perform compared to depth completion models on ScanNetV2?",
+      "reference_answer": "It outperforms depth completion models on any metric.",
+      "expected_document_ids": [
+        "arxiv-2409.08277v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-1039413f49f32b7ba2fc"
+      ],
+      "relevance": {
+        "chunk-1039413f49f32b7ba2fc": 2
+      },
+      "evidence": {
+        "page_start": 10,
+        "page_end": 10,
+        "section_path": [
+          "3 Proposed Framework",
+          "4.1 Indoor Scenario"
+        ]
+      }
+    },
+    {
+      "id": "silver-081",
+      "query": "Where can the temperature mixing function be implemented in the described thermal system?",
+      "reference_answer": "It can be implemented in either upstream or downstream flow control.",
+      "expected_document_ids": [
+        "arxiv-2408.02022v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-e6555a87485518da4050"
+      ],
+      "relevance": {
+        "chunk-e6555a87485518da4050": 2
+      },
+      "evidence": {
+        "page_start": 2,
+        "page_end": 2,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-082",
+      "query": "How much faster is the CFD simulation time reduced for the headlamp heatsink using the proposed framework?",
+      "reference_answer": "It achieves a 100x speedup, reducing simulation time from hours to seconds.",
+      "expected_document_ids": [
+        "arxiv-2505.06849v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-25561239e70bc9a4db8a"
+      ],
+      "relevance": {
+        "chunk-25561239e70bc9a4db8a": 2
+      },
+      "evidence": {
+        "page_start": 5,
+        "page_end": 5,
+        "section_path": [
+          "S = UΣVT , (3)"
+        ]
+      }
+    },
+    {
+      "id": "silver-083",
+      "query": "What happens to the battery state of charge gradient when regenerative braking is turned off?",
+      "reference_answer": "The battery SoC has an exclusively negative gradient and decreases at a faster rate.",
+      "expected_document_ids": [
+        "arxiv-2411.13951v6"
+      ],
+      "expected_chunk_ids": [
+        "chunk-28bfaf5eb8e47b293d32"
+      ],
+      "relevance": {
+        "chunk-28bfaf5eb8e47b293d32": 2
+      },
+      "evidence": {
+        "page_start": 9,
+        "page_end": 9,
+        "section_path": [
+          "0 200 400 600 800 1 1\u0001 1\u0002 1\u0003 0 200 400 600 800 1 1\u0001 1\u0002 1\u0003"
+        ]
+      }
+    },
+    {
+      "id": "silver-084",
+      "query": "What do the attention patterns of the prediction head reveal in the transformer decoder for radar detection?",
+      "reference_answer": "They show that the prediction head consistently concentrates on spatially relevant radar returns across scales, enabling precise localization of object centers and effective separation of nearby or overlapping echoes.",
+      "expected_document_ids": [
+        "arxiv-2601.13386v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-88674255ce0638dc674a"
+      ],
+      "relevance": {
+        "chunk-88674255ce0638dc674a": 2
+      },
+      "evidence": {
+        "page_start": 6,
+        "page_end": 6,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-085",
+      "query": "How did DeepSeek-14B's performance on Hard tasks change when a one-shot prompt was provided instead of zero-shot?",
+      "reference_answer": "It dropped from 40.28 to 31.78, showing a significant degradation.",
+      "expected_document_ids": [
+        "arxiv-2509.17628v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-bd7b408d595b5d78e40a"
+      ],
+      "relevance": {
+        "chunk-bd7b408d595b5d78e40a": 2
+      },
+      "evidence": {
+        "page_start": 7,
+        "page_end": 8,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-086",
+      "query": "According to Bhatia and Breaux, what are the six categories of data processing purposes identified in privacy policies?",
+      "reference_answer": "Service Purpose, Legal Purpose, Communication Purpose, Protection Purpose, Merger Purpose, and Vague Purpose.",
+      "expected_document_ids": [
+        "arxiv-2601.10413v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-88bc43e3fb65fd05231e"
+      ],
+      "relevance": {
+        "chunk-88bc43e3fb65fd05231e": 2
+      },
+      "evidence": {
+        "page_start": 12,
+        "page_end": 12,
+        "section_path": [
+          "3 The Proposed Framework: LADFA"
+        ]
+      }
+    },
+    {
+      "id": "silver-087",
+      "query": "What is the main difficulty with communication between customer-facing units and development teams in agile requirements development?",
+      "reference_answer": "There is a lack of systematic guidance on how communication should take place, making it dependent on individual skills.",
+      "expected_document_ids": [
+        "arxiv-2405.18847v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-0ca129871b064ceb94c8"
+      ],
+      "relevance": {
+        "chunk-0ca129871b064ceb94c8": 2
+      },
+      "evidence": {
+        "page_start": 8,
+        "page_end": 8,
+        "section_path": [
+          "1 Introduction"
+        ]
+      }
+    },
+    {
+      "id": "silver-088",
+      "query": "What are the limitations of static benchmarks for task-oriented dialogues mentioned in the text?",
+      "reference_answer": "They are functionally correct but strategically shallow, missing key elements like persuasion, up-selling, and objection handling, and suffer from temporal rigidity.",
+      "expected_document_ids": [
+        "arxiv-2605.25162v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-38790a9cdf7302b7f8d8"
+      ],
+      "relevance": {
+        "chunk-38790a9cdf7302b7f8d8": 2
+      },
+      "evidence": {
+        "page_start": 3,
+        "page_end": 3,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-089",
+      "query": "What is the average error of the Bent-Pyramid (BP) format for vector-matrix multiplication benchmarking?",
+      "reference_answer": "2.13%",
+      "expected_document_ids": [
+        "arxiv-2511.17265v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-06340d4a9f91cc45878f"
+      ],
+      "relevance": {
+        "chunk-06340d4a9f91cc45878f": 2
+      },
+      "evidence": {
+        "page_start": 2,
+        "page_end": 2,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-090",
+      "query": "What are the five first-level indicators in the P-CAFE evaluation system for intelligent cockpit large models?",
+      "reference_answer": "Perception, cognition, action, feedback, and evolution.",
+      "expected_document_ids": [
+        "arxiv-2409.15795v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-6b00e56a05ee68aa99bb"
+      ],
+      "relevance": {
+        "chunk-6b00e56a05ee68aa99bb": 2
+      },
+      "evidence": {
+        "page_start": 1,
+        "page_end": 1,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-091",
+      "query": "Why is it necessary to develop a comprehensive framework that integrates both cybersecurity and functional safety for smart electric vehicles?",
+      "reference_answer": "Because a cybersecurity breach can directly impact functional safety, as hazards and risks from such a breach may immediately affect safety-related functions.",
+      "expected_document_ids": [
+        "arxiv-2511.07713v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-0be900149c452efcce96"
+      ],
+      "relevance": {
+        "chunk-0be900149c452efcce96": 2
+      },
+      "evidence": {
+        "page_start": 10,
+        "page_end": 11,
+        "section_path": []
+      }
+    },
+    {
+      "id": "silver-092",
+      "query": "What specific recommendation does the MEVDT dataset provide for handling parked vehicles in Scene A during model training?",
+      "reference_answer": "Crop or ignore the upper 15–20% of the frame in Scene A to avoid static parked vehicles, or disregard detections of parked vehicles when using pre-trained detectors like YOLOv3.",
+      "expected_document_ids": [
+        "arxiv-2407.20446v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-609b94d8a2f2cc434ee0"
+      ],
+      "relevance": {
+        "chunk-609b94d8a2f2cc434ee0": 2
+      },
+      "evidence": {
+        "page_start": 14,
+        "page_end": 14,
+        "section_path": [
+          "1 50 50 200 150 (4)"
+        ]
+      }
+    },
+    {
+      "id": "silver-093",
+      "query": "Under what conditions is the Single-Snapshot ESPRIT (SS-ESPRIT) algorithm preferred over SS-MUSIC in sparse ELAA-based radar systems?",
+      "reference_answer": "SS-ESPRIT is preferred for high-resolution direction-of-arrival estimation of closely spaced far-field targets, while SS-MUSIC is effective for near-field localization.",
+      "expected_document_ids": [
+        "arxiv-2509.17511v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-f6cb83953c3443622360"
+      ],
+      "relevance": {
+        "chunk-f6cb83953c3443622360": 2
+      },
+      "evidence": {
+        "page_start": 1,
+        "page_end": 1,
+        "section_path": [
+          "SINGLE-SNAPSHOT LOCALIZATION USING SPARSE EXTREMELY LARGE APERTURE ARRAYS"
+        ]
+      }
+    },
+    {
+      "id": "silver-094",
+      "query": "What are the two hardware approaches mentioned to improve spatial resolution in automotive radar?",
+      "reference_answer": "Cascading multiple synchronized radar chips to form a large phased array, or integrating a large number of transmit and receive channels on a single die.",
+      "expected_document_ids": [
+        "arxiv-2501.07649v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-f2b85013b529ebd101c2"
+      ],
+      "relevance": {
+        "chunk-f2b85013b529ebd101c2": 2
+      },
+      "evidence": {
+        "page_start": 3,
+        "page_end": 3,
+        "section_path": [
+          "SIGNAL PROCESSING CHALLENGES IN AUTOMOTIVE RADAR"
+        ]
+      }
+    },
+    {
+      "id": "silver-095",
+      "query": "According to the Oxford Spires dataset evaluation, which SLAM system performs better for large-loop sequences and why?",
+      "reference_answer": "VILENS-SLAM performs better in large loops because it performs loop closures.",
+      "expected_document_ids": [
+        "arxiv-2411.10546v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-a36ce01a80f2a6adf842"
+      ],
+      "relevance": {
+        "chunk-a36ce01a80f2a6adf842": 2
+      },
+      "evidence": {
+        "page_start": 10,
+        "page_end": 10,
+        "section_path": [
+          "10 Journal Title XX(X)"
+        ]
+      }
+    },
+    {
+      "id": "silver-096",
+      "query": "Why is frequency hopping alone considered insufficient for avoiding interference in automotive FMCW radar?",
+      "reference_answer": "Because frequency and time offsets are often randomly assigned without coordination, and lack of structured frequency assignment limits adaptability in dynamic situations.",
+      "expected_document_ids": [
+        "arxiv-2503.02327v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-88f099539eac9a789563"
+      ],
+      "relevance": {
+        "chunk-88f099539eac9a789563": 2
+      },
+      "evidence": {
+        "page_start": 1,
+        "page_end": 2,
+        "section_path": [
+          "1 Introduction"
+        ]
+      }
+    },
+    {
+      "id": "silver-097",
+      "query": "What types of modeling methods are used to predict heat transfer in composite materials for high-performance automotive applications?",
+      "reference_answer": "Analytical, numerical, atomistic simulation methods, and machine learning techniques.",
+      "expected_document_ids": [
+        "arxiv-2501.15231v1"
+      ],
+      "expected_chunk_ids": [
+        "chunk-5f65dcd96f73beacfbd9"
+      ],
+      "relevance": {
+        "chunk-5f65dcd96f73beacfbd9": 2
+      },
+      "evidence": {
+        "page_start": 7,
+        "page_end": 8,
+        "section_path": [
+          "3 Modeling and Predicting Heat Transfer in Composite Materials"
+        ]
+      }
+    },
+    {
+      "id": "silver-098",
+      "query": "Why does DDES-based initialization result in slower convergence than steady RANS initialization for transient CFD?",
+      "reference_answer": "Because the DDES initialization does not provide turbulence quantities (k, ω) from analogous governing equations, so these are initialized from uniform values, leading to slower convergence.",
+      "expected_document_ids": [
+        "arxiv-2503.15766v3"
+      ],
+      "expected_chunk_ids": [
+        "chunk-a8e6e00315799410c031"
+      ],
+      "relevance": {
+        "chunk-a8e6e00315799410c031": 2
+      },
+      "evidence": {
+        "page_start": 15,
+        "page_end": 16,
+        "section_path": [
+          "ϕ = α ϕDoMINO + (1 − α) ϕPF (3)"
+        ]
+      }
+    },
+    {
+      "id": "silver-099",
+      "query": "What types of large language model applications are referenced in the GoNoGo paper?",
+      "reference_answer": "Applications include mobile GUI testing, learning on tabular data, table pre-training, tabular data manipulation, chain-of-thought reasoning, and discrete reasoning over tabular and textual data.",
+      "expected_document_ids": [
+        "arxiv-2408.09785v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-8ec2d0ce873416e55233"
+      ],
+      "relevance": {
+        "chunk-8ec2d0ce873416e55233": 2
+      },
+      "evidence": {
+        "page_start": 16,
+        "page_end": 16,
+        "section_path": [
+          "8 Acknowledgement"
+        ]
+      }
+    },
+    {
+      "id": "silver-100",
+      "query": "What advantage does hyperspectral imaging offer over traditional RGB imaging in autonomous driving perception systems?",
+      "reference_answer": "It can address metamerism by distinguishing objects with different material compositions that appear identical under specific lighting conditions in RGB imaging, improving road hazard identification and material differentiation.",
+      "expected_document_ids": [
+        "arxiv-2506.18682v2"
+      ],
+      "expected_chunk_ids": [
+        "chunk-fe700f5f712eea61cf5f"
+      ],
+      "relevance": {
+        "chunk-fe700f5f712eea61cf5f": 2
+      },
+      "evidence": {
+        "page_start": 1,
+        "page_end": 1,
+        "section_path": []
+      }
+    }
+  ]
+}

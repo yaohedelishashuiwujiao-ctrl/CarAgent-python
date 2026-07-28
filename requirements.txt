@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+pillow
+python-multipart
+
+# Optional, only required when CHASSIS_MODEL_PATH points to a YOLO model:
+# ultralytics

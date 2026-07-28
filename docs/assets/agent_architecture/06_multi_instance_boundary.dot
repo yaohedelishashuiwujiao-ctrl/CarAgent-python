@@ -1,0 +1,53 @@
+digraph G {
+
+graph [
+  rankdir=TB,
+  bgcolor="white",
+  pad="0.22",
+  nodesep="0.28",
+  ranksep="0.48",
+  splines=ortho,
+  fontname="Noto Sans CJK SC",
+  labelloc="t",
+  fontsize=24
+];
+node [
+  shape=box,
+  style="rounded,filled",
+  fontname="Noto Sans CJK SC",
+  fontsize=13,
+  margin="0.12,0.08",
+  color="#3e5f6d",
+  penwidth=1.1,
+  fillcolor="#f7fafb"
+];
+edge [
+  fontname="Noto Sans CJK SC",
+  fontsize=10,
+  color="#627b87",
+  arrowsize=0.65
+];
+
+graph [label="06 多实例边界：本次实测发现并修复的问题"];
+
+front [label="前端连接某个 Backend 实例\n例如 8000/8001/8002", fillcolor="#eef7ff"];
+api_a [label="Backend A\n接收 Job\n本地 _queues[A]", fillcolor="#fff8e8"];
+api_b [label="Backend B\n也可能运行\n本地 _queues[B]", fillcolor="#fff8e8"];
+redis_leader [label="旧设计：Redis 全局 Scheduler Leader\n只有一个实例调度", fillcolor="#fdf2f2", color="#9b4a4a"];
+stuck [label="错误结果\nA 收到 Job 但 B 是 leader\nA 本地队列无人调度 -> 永远 queued", fillcolor="#fdf2f2", color="#9b4a4a"];
+
+fix_a [label="修复后：每个 API 实例调度自己的本地队列\nAGENT_SCHEDULER_GLOBAL_LEADER=false", fillcolor="#eaf8ef"];
+guard [label="跨实例安全边界\nMySQL 状态刷新\nRedis Session Lock\nexecution_token + fencing_token", fillcolor="#eaf8ef"];
+dispatch [label="共享 Dispatch Broker\nRedis Stream", fillcolor="#fff8e8"];
+worker [label="Worker 执行并持久化终态\n重复/过期 token 被丢弃", fillcolor="#eaf8ef"];
+
+front -> api_a;
+front -> api_b [style=dashed, label="可能连接"];
+api_a -> redis_leader -> stuck;
+api_b -> redis_leader;
+
+api_a -> fix_a [label="修复"];
+api_b -> fix_a [label="修复"];
+fix_a -> guard -> dispatch -> worker;
+worker -> guard [label="状态回写/防重复", style=dashed];
+}

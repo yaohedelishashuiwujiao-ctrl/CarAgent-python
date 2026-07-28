@@ -1,0 +1,13 @@
+path: /home/zhaoyunpeng/Projects/SubjectsDetection/resources/chassis_seed_dataset_v1/yolo
+train: images/train
+val: images/val
+
+names:
+  0: upper_control_arm
+  1: lower_control_arm
+  2: front_subframe
+  3: brake_disc
+  4: brake_caliper
+  5: steering_knuckle
+  6: tie_rod
+  7: drive_shaft

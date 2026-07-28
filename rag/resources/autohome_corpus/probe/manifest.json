@@ -1,0 +1,16 @@
+[
+  {
+    "series_id": 6272,
+    "series_name": "赛那SIENNA",
+    "status": "downloaded",
+    "sha256": "fe2d399fb6a2895fde6d7f5e60129d5b0b5953852f7de9d892af574a3c71a94c",
+    "artifact_path": "resources/autohome_corpus/probe/raw/6272.json"
+  },
+  {
+    "series_id": 8298,
+    "series_name": "零跑D99",
+    "status": "downloaded",
+    "sha256": "56caabb09bef7177ff501a6bb8dffe6d5325610e14d41fbff9871b6aa7ed15d1",
+    "artifact_path": "resources/autohome_corpus/probe/raw/8298.json"
+  }
+]

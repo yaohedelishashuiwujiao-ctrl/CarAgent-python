@@ -1,0 +1,47 @@
+digraph G {
+
+graph [
+  rankdir=TB,
+  bgcolor="white",
+  pad="0.22",
+  nodesep="0.28",
+  ranksep="0.48",
+  splines=ortho,
+  fontname="Noto Sans CJK SC",
+  labelloc="t",
+  fontsize=24
+];
+node [
+  shape=box,
+  style="rounded,filled",
+  fontname="Noto Sans CJK SC",
+  fontsize=13,
+  margin="0.12,0.08",
+  color="#3e5f6d",
+  penwidth=1.1,
+  fillcolor="#f7fafb"
+];
+edge [
+  fontname="Noto Sans CJK SC",
+  fontsize=10,
+  color="#627b87",
+  arrowsize=0.65
+];
+
+graph [label="05 证据与输出闭环：为什么不是只生成文字"];
+
+result [label="工具结果\nSQL rows / knowledge chunks / artifact path\nstructured output", fillcolor="#edf9f2"];
+compact [label="Compact Observation\n给下一轮模型的压缩观察\n避免上下文爆炸", fillcolor="#eaf8ef"];
+full [label="完整结果保留\nfinal_metadata / tool_audit / citations", fillcolor="#f8f6ff"];
+extract [label="Evidence Extractor\ncitation_id / evidence_hash\nsource_type / content", fillcolor="#f7fafb"];
+claims [label="Claim Check\ninvalid citation / numeric mismatch\nunsupported / weak support", fillcolor="#f7fafb"];
+contract [label="TaskContract 更新\nartifact 路径有效性\nslide count / chart file / structured json", fillcolor="#fff8e8"];
+repair [label="Citation Repair\n必要时重写答案补引用\n不允许编造证据", fillcolor="#eaf8ef"];
+final [label="Final Metadata\ncitations / claims / evidence_status\nrequirements / route / budget / scheduler ledger", fillcolor="#f8f6ff"];
+worker [label="Worker 二次校验\noutput_contract_status unmet -> FAILED\n否则 final", fillcolor="#f8f6ff"];
+ui [label="前端展示\n回答 + 来源 + 过程 + 预算 + 失败边界", fillcolor="#eef7ff"];
+
+result -> compact -> "下一轮模型";
+result -> full -> extract -> claims -> contract -> repair -> final -> worker -> ui;
+contract -> "继续调用工具" [label="未满足", style=dashed];
+}

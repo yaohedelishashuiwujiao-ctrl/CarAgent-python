@@ -1,0 +1,36 @@
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+
+# Database
+PyMySQL
+redis
+
+# Agentic RAG pipeline
+PyMuPDF
+beautifulsoup4
+requests
+socksio
+llama-index>=0.14
+llama-index-vector-stores-milvus>=1.1
+llama-index-embeddings-huggingface>=0.7
+llama-index-embeddings-openai>=0.6
+pymilvus>=3.0
+opensearch-py>=3.2
+sentence-transformers
+transformers
+torch
+ragas
+pandas
+openpyxl
+
+# Agent/runtime
+openai
+
+# Observability & testing
+pytest
+pytest-asyncio
+httpx
+structlog
+sqlglot>=25,<29

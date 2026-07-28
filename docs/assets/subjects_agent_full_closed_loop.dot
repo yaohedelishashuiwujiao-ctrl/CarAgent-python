@@ -1,0 +1,134 @@
+digraph SubjectsAgentFullClosedLoop {
+  graph [
+    rankdir=TB,
+    bgcolor="white",
+    pad="0.25",
+    nodesep="0.24",
+    ranksep="0.55",
+    splines=ortho,
+    fontname="Noto Sans CJK SC",
+    labelloc="t",
+    label="Subjects Agent 完整闭环：用户问题 -> 调度 -> 通用 Agent Loop -> 工具系统 -> 输出",
+    fontsize=24
+  ];
+
+  node [
+    shape=box,
+    style="rounded,filled",
+    fontname="Noto Sans CJK SC",
+    fontsize=13,
+    margin="0.12,0.08",
+    color="#3e5f6d",
+    penwidth=1.1,
+    fillcolor="#f7fafb"
+  ];
+
+  edge [
+    fontname="Noto Sans CJK SC",
+    fontsize=10,
+    color="#627b87",
+    arrowsize=0.65
+  ];
+
+  // Layer 1: request
+  user [label="1. 用户问题\nprompt + session_id\n携带 tenant/user 权限上下文", fillcolor="#eef7ff"];
+  api [label="2. API 入口\nPOST /api/agent/chat_jobs\n校验 prompt/session/idempotency", fillcolor="#eef7ff"];
+  principal [label="3. Principal 注入\nrole_ids / data_scope / allowed_tools\ntrace_id", fillcolor="#eef7ff"];
+
+  // Layer 2: job creation
+  route_est [label="4. Job 前路由估算\nestimate_agent_job_route()\nroute / budget_class / model_tier / estimated_cost", fillcolor="#fff8e8"];
+  job_create [label="5. 创建 AgentJob\nqueue_key=tenant:user\nmax_turns / idempotency / 权限快照", fillcolor="#fff8e8"];
+  persist_job [label="6. 持久化与事件\nMySQL agent_chat_jobs\nqueued event / final_metadata 预留", fillcolor="#f8f6ff"];
+
+  // Layer 3: backend scheduling
+  drr [label="7. 公平队列调度\nDRR credits\n按 estimated_cost 控制调度成本", fillcolor="#fff8e8"];
+  admission [label="8. 准入与锁\nmax_pending / per_user / worker_concurrency\nSession Lock 防同会话并发", fillcolor="#fff8e8"];
+  broker [label="9. Dispatch Broker\nMemoryQueue 或 Redis Stream\nexecution_token + fencing_token", fillcolor="#fff8e8"];
+  worker [label="10. Worker 执行\nRUNNING 状态\nHeartbeat / Lease / Cancel / Retry", fillcolor="#fff8e8"];
+
+  // Layer 4: runtime entry
+  proxy [label="11. 调用 Agent Runtime\n_execute_proxy_blocking()\n读取 NDJSON stream：tool_use / final / error", fillcolor="#eaf8ef"];
+  runtime [label="12. run_agent_loop()\n通用多轮 Agent 主循环\n报告/PPT 只是 artifact 路由分支", fillcolor="#eaf8ef"];
+
+  // Layer 5: runtime initialization
+  route_decision [label="13A. RouteDecision\nvehicle_spec / manual_qa / trend_analysis /\nartifact_generation / general\n输出模型档位、预算、工具 profile", fillcolor="#fff8e8"];
+  task_contract [label="13B. TaskRequirementState\nOutputContract 只识别显式交付约束\nPPTX / Chart / Structured JSON / Evidence", fillcolor="#fff8e8"];
+  run_state [label="13C. AgentRunState\n模型拥有计划，Runtime 记录执行账本\nplan / evidence / failed_paths / replan", fillcolor="#fff8e8"];
+  run_budget [label="13D. RunBudget\nmodel turns / token usage\ntool requested-dispatched-rejected\nlow-yield actions", fillcolor="#fff8e8"];
+
+  // Layer 6: model turn preparation
+  turn_context [label="14. 构造每轮上下文\nroute policy + citation policy + execution policy\ncontract reminder + run-state ledger", fillcolor="#eaf8ef"];
+  candidates [label="15. 工具候选暴露\nprimary -> fallback -> completion_recovery\n权限、路由、计划 toolHints 动态收窄", fillcolor="#eaf8ef"];
+  model [label="16. 模型回合 provider.chat()\n输出文本或多个 tool_use\n一轮 = 一个依赖层", fillcolor="#eaf8ef"];
+
+  // Layer 7: no-tool branch
+  no_tool [label="17. 无 tool_use\n检查 contract 是否满足\n满足 finalize；不满足提醒继续/阻塞", fillcolor="#fdf2f2"];
+
+  // Layer 8: tool scheduling
+  scheduler [label="18. ToolCallScheduler\nnormalize aliases / schema preflight / dedupe\nbatch / parallel / serial 决策", fillcolor="#edf9f2"];
+  registry [label="19. ToolRegistry\nToolSpec / Capability / ExecutionPolicy\nAllowlist / Permission / DataScope / ResultSize", fillcolor="#edf9f2"];
+  parallel [label="20. 并行执行判定\nread-only + idempotent + no side effect\nsupports_parallel / supports_batch", fillcolor="#edf9f2"];
+
+  // Layer 9: tool surface
+  subjects [label="21A. 结构化数据能力\nSubjectsAttributeLookup / Stats / Catalog\nSubjectsSqlSchema / Glob / Query", fillcolor="#edf9f2"];
+  knowledge [label="21B. 知识与资料能力\nKnowledgeSearch / KnowledgeFetch\nWebSearch / WebFetch", fillcolor="#edf9f2"];
+  artifacts [label="21C. 产物能力分支\nAutoChartGenerate / AutoPptxGenerate\n仅用户要求图表/PPT/导出时进入", fillcolor="#edf9f2"];
+  control [label="21D. 控制与交互能力\nTodoWrite / ToolSearch / SendUserMessage\nStructuredOutput", fillcolor="#edf9f2"];
+
+  // Layer 10: feedback
+  observation [label="22. 工具结果回写\ncompact observation 给下一轮模型\n完整结果进入 audit/citation/final_metadata", fillcolor="#f7fafb"];
+  evidence [label="23. 证据与引用闭环\nextract evidence candidates\ncitation_id / evidence_hash\nclaim consistency / numeric mismatch", fillcolor="#f7fafb"];
+  state_update [label="24. 状态与预算更新\nrequirement update\nrun_state.record_action()\nrun_budget.record_tool_result()", fillcolor="#f7fafb"];
+  decision [label="25. 继续/重规划/降级/停止\n目标满足 -> finalize\n停滞/低收益 -> replan 或 blocked", fillcolor="#f7fafb"];
+
+  // Layer 11: final publication
+  finalizer [label="26. Finalize\n引用修复 / 证据状态 / contract 状态\nroute_decision / run_budget / tool_audit 汇总", fillcolor="#eaf8ef"];
+  worker_publish [label="27. Worker 二次校验\noutput_contract_status=unmet -> FAILED\n否则 SUCCEEDED + final event", fillcolor="#f8f6ff"];
+  persistence [label="28. 持久化审计\nagent_chat_jobs / agent_events / agent_tool_audit\nusage / citations / claims / scheduler_ledger", fillcolor="#f8f6ff"];
+  sse [label="29. SSE 推送\nqueued/admitted/running/tool_use/final/error\nafter_seq / Last-Event-ID 断点续传", fillcolor="#eef7ff"];
+  frontend [label="30. 用户最终看到\n文本回答 / 引用 / 下载产物 / 错误边界 / 运行状态", fillcolor="#eef7ff"];
+
+  { rank=same; route_decision; task_contract; run_state; run_budget; }
+  { rank=same; subjects; knowledge; artifacts; control; }
+  { rank=same; persistence; sse; }
+
+  user -> api -> principal -> route_est -> job_create -> persist_job -> drr -> admission -> broker -> worker -> proxy -> runtime;
+
+  runtime -> route_decision;
+  runtime -> task_contract;
+  runtime -> run_state;
+  runtime -> run_budget;
+  route_decision -> turn_context;
+  task_contract -> turn_context;
+  run_state -> turn_context;
+  run_budget -> turn_context;
+
+  turn_context -> candidates -> model;
+
+  model -> no_tool [label="文本完成"];
+  no_tool -> finalizer [label="契约满足"];
+  no_tool -> turn_context [label="契约未满足"];
+
+  model -> scheduler [label="tool_use[]"];
+  scheduler -> registry -> parallel;
+  parallel -> subjects;
+  parallel -> knowledge;
+  parallel -> artifacts;
+  parallel -> control;
+
+  subjects -> observation;
+  knowledge -> observation;
+  artifacts -> observation;
+  control -> observation;
+
+  observation -> evidence -> state_update -> decision;
+  decision -> turn_context [label="继续下一轮 / replan"];
+  decision -> finalizer [label="目标或契约满足"];
+  decision -> no_tool [label="无可用路径 / blocked"];
+
+  finalizer -> worker_publish;
+  worker_publish -> persistence;
+  worker_publish -> sse;
+  persistence -> frontend [label="查询状态/历史"];
+  sse -> frontend [label="实时事件"];
+}

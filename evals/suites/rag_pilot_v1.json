@@ -1,0 +1,59 @@
+{
+  "suite_id": "subjects-agent-rag-pilot-v1",
+  "description": "Exploratory 10-case retrieval-only pilot. Labels were assembled from the checked-in corpus manifests and inspected against the current index, so this is not a held-out benchmark.",
+  "cases": [
+    {
+      "query": "问界M5纯电遥控泊车",
+      "expected_document_ids": ["aito-m5ev-se-manual-2025-cn-zh"]
+    },
+    {
+      "query": "哈弗H9拖车牵引注意事项",
+      "expected_document_ids": ["haval-h9-manual-2020-cn-zh"]
+    },
+    {
+      "query": "蔚来ET5轮胎气压",
+      "expected_document_ids": ["nio-et5-2025-cn-zh-manual-11-pdf-1"]
+    },
+    {
+      "query": "乐道L60儿童安全座椅",
+      "expected_document_ids": [
+        "onvo-l60-2025-cn-zh-manual-18-pdf-2",
+        "onvo-l60-2025-cn-zh-manual-18-pdf-3",
+        "onvo-l60-2025-cn-zh-manual-18-pdf-4"
+      ]
+    },
+    {
+      "query": "欧拉好猫充电",
+      "expected_document_ids": [
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-5",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-6",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-7",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-8",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-9",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-10",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-11",
+        "ora-goodcat-2025-cn-zh-manual-36-pdf-12"
+      ]
+    },
+    {
+      "query": "Model 3 rear wheel arch collision repair",
+      "expected_document_ids": ["tesla-model-3-collision-repair-rear-wheel-arch-cn-zh"]
+    },
+    {
+      "query": "理想ONE保养周期",
+      "expected_document_ids": ["lixiang-one-maintenance-schedule-cn-zh"]
+    },
+    {
+      "query": "Global EV Outlook 2026",
+      "expected_document_ids": ["iea-global-ev-outlook-2026", "iea-global-ev-data-2026"]
+    },
+    {
+      "query": "2025 全国汽车召回",
+      "expected_document_ids": ["samr-auto-recalls-2025"]
+    },
+    {
+      "query": "汽车行业稳增长工作方案 2025 2026",
+      "expected_document_ids": ["cn-auto-growth-plan-2025-2026"]
+    }
+  ]
+}

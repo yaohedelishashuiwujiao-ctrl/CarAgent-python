@@ -1,0 +1,56 @@
+digraph G {
+
+graph [
+  rankdir=TB,
+  bgcolor="white",
+  pad="0.22",
+  nodesep="0.28",
+  ranksep="0.48",
+  splines=ortho,
+  fontname="Noto Sans CJK SC",
+  labelloc="t",
+  fontsize=24
+];
+node [
+  shape=box,
+  style="rounded,filled",
+  fontname="Noto Sans CJK SC",
+  fontsize=13,
+  margin="0.12,0.08",
+  color="#3e5f6d",
+  penwidth=1.1,
+  fillcolor="#f7fafb"
+];
+edge [
+  fontname="Noto Sans CJK SC",
+  fontsize=10,
+  color="#627b87",
+  arrowsize=0.65
+];
+
+graph [label="01 总览：Subjects Agent 端到端闭环"];
+
+user [label="用户问题\nprompt / session / tenant-user", fillcolor="#eef7ff"];
+frontend [label="前端 AgentPage\n输入、SSE 订阅、过程展示", fillcolor="#eef7ff"];
+api [label="Agent Jobs API\nPOST /chat_jobs\nGET /events", fillcolor="#eef7ff"];
+job [label="AgentJob\n状态机 + 权限快照 + 幂等键", fillcolor="#fff8e8"];
+scheduler [label="调度层\nDRR / Session Lock / Dispatch / Worker", fillcolor="#fff8e8"];
+runtime [label="通用 Agent Runtime\nrun_agent_loop()", fillcolor="#eaf8ef"];
+control [label="控制面\nRouteDecision / TaskContract\nRunState / RunBudget", fillcolor="#eaf8ef"];
+model [label="模型回合\nprovider.chat()\n文本或 tool_use[]", fillcolor="#eaf8ef"];
+tools [label="工具系统\nToolCallScheduler + ToolRegistry", fillcolor="#edf9f2"];
+tool_surface [label="工具能力面\n结构化数据 / 知识检索 / 产物 / 控制交互", fillcolor="#edf9f2"];
+evidence [label="证据与状态回写\ncitations / claims / audit / budget", fillcolor="#f7fafb"];
+finalize [label="Finalize\n引用修复 + 契约状态 + final_metadata", fillcolor="#eaf8ef"];
+publish [label="Worker 发布\nSUCCEEDED / FAILED\nSSE final/error", fillcolor="#f8f6ff"];
+output [label="用户可见结果\n回答 / 引用 / 下载产物 / 错误边界", fillcolor="#eef7ff"];
+
+user -> frontend -> api -> job -> scheduler -> runtime -> control -> model;
+model -> tools [label="tool_use[]"];
+tools -> tool_surface -> evidence -> control [label="下一轮"];
+control -> model [label="继续/重规划"];
+model -> finalize [label="无 tool_use 且满足"];
+evidence -> finalize [label="目标/契约满足"];
+finalize -> publish -> output;
+publish -> frontend [label="SSE"];
+}

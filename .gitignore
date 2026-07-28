@@ -1,0 +1,67 @@
+# Local secrets
+.env
+.env.*
+!.env.example
+!config/env/.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Node / frontend
+node_modules/
+dist/
+build/
+*.tsbuildinfo
+
+# Runtime state
+*.log
+logs/
+outputs/
+.port_sessions/
+.web_home/
+backups/
+
+# Databases / caches
+*.sqlite
+*.sqlite3
+*.db
+.cache/
+
+# Large RAG corpus payloads: keep manifests and scripts in git, mount/download data locally
+rag/resources/**/artifacts/
+rag/resources/**/documents/
+rag/resources/**/*.pdf
+rag/resources/**/*.part
+rag/resources/**/*.html
+rag/resources/**/*.htm
+rag/resources/**/*.txt
+rag/resources/**/*.png
+rag/resources/**/*.jpg
+rag/resources/**/*.jpeg
+rag/resources/**/*.webp
+rag/resources/**/*.xlsx
+rag/resources/**/*.csv
+!rag/resources/**/README.md
+!rag/resources/**/*.jsonl
+!rag/resources/**/*.json
+
+# Model weights
+models/*.pt
+models/*.pth
+models/*.onnx
+models/*.safetensors
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/
+
+# Collected raw API payloads; keep collection scripts/manifests, not raw snapshots
+rag/resources/autohome_corpus/**/raw/

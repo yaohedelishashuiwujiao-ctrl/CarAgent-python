@@ -1,0 +1,49 @@
+digraph G {
+
+graph [
+  rankdir=TB,
+  bgcolor="white",
+  pad="0.22",
+  nodesep="0.28",
+  ranksep="0.48",
+  splines=ortho,
+  fontname="Noto Sans CJK SC",
+  labelloc="t",
+  fontsize=24
+];
+node [
+  shape=box,
+  style="rounded,filled",
+  fontname="Noto Sans CJK SC",
+  fontsize=13,
+  margin="0.12,0.08",
+  color="#3e5f6d",
+  penwidth=1.1,
+  fillcolor="#f7fafb"
+];
+edge [
+  fontname="Noto Sans CJK SC",
+  fontsize=10,
+  color="#627b87",
+  arrowsize=0.65
+];
+
+graph [label="02 后端任务调度：从请求入队到 Worker 执行"];
+
+api [label="create_chat_job()\n校验 prompt/session/idempotency", fillcolor="#eef7ff"];
+principal [label="Principal\nrole_ids / data_scope / allowed_tools", fillcolor="#eef7ff"];
+route [label="estimate_agent_job_route()\nroute / budget / estimated_cost", fillcolor="#fff8e8"];
+persist [label="MySQL 持久化\nagent_chat_jobs + queued event", fillcolor="#f8f6ff"];
+queue [label="进程内 Admission Queue\nqueue_key = tenant:user", fillcolor="#fff8e8"];
+drr [label="DRR 公平调度\ncredit += quantum\ncredit >= estimated_cost 才出队", fillcolor="#fff8e8"];
+session [label="Redis Session Lock\n同 session 串行\n防并发上下文冲突", fillcolor="#fff8e8"];
+stage [label="stage_dispatch()\nfencing_token++\nexecution_token", fillcolor="#f8f6ff"];
+broker [label="Dispatch Broker\nRedis Stream / Memory Queue", fillcolor="#fff8e8"];
+worker [label="Worker Loop\nRUNNING / heartbeat / lease", fillcolor="#fff8e8"];
+proxy [label="Proxy Runtime\n_execute_proxy_blocking()\n读取 runtime stream", fillcolor="#eaf8ef"];
+settle [label="Settle\nACK / retry / failed\n释放 session lock", fillcolor="#f8f6ff"];
+
+api -> principal -> route -> persist -> queue -> drr -> session -> stage -> broker -> worker -> proxy -> settle;
+settle -> queue [label="可重试失败", style=dashed];
+worker -> persist [label="状态/事件/心跳", style=dashed];
+}

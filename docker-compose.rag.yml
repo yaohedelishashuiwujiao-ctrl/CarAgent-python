@@ -1,0 +1,62 @@
+services:
+  rag-etcd:
+    image: quay.io/coreos/etcd:v3.5.18
+    command:
+      - etcd
+      - --advertise-client-urls=http://127.0.0.1:2379
+      - --listen-client-urls=http://0.0.0.0:2379
+      - --data-dir=/etcd
+    volumes:
+      - rag-etcd:/etcd
+
+  rag-minio:
+    image: minio/minio:RELEASE.2025-04-22T22-12-26Z
+    command: minio server /minio_data
+    environment:
+      MINIO_ACCESS_KEY: minioadmin
+      MINIO_SECRET_KEY: minioadmin
+    ports:
+      - "9001:9000"
+    volumes:
+      - rag-minio:/minio_data
+
+  rag-milvus:
+    image: milvusdb/milvus:v2.5.10
+    command: ["milvus", "run", "standalone"]
+    environment:
+      ETCD_ENDPOINTS: rag-etcd:2379
+      MINIO_ADDRESS: rag-minio:9000
+    ports:
+      - "19530:19530"
+      - "9091:9091"
+    volumes:
+      - rag-milvus:/var/lib/milvus
+    depends_on:
+      - rag-etcd
+      - rag-minio
+
+  rag-opensearch:
+    image: opensearchproject/opensearch:2.17.1
+    environment:
+      discovery.type: single-node
+      DISABLE_SECURITY_PLUGIN: "true"
+      OPENSEARCH_JAVA_OPTS: "-Xms1g -Xmx1g"
+      bootstrap.memory_lock: "true"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    ports:
+      - "9200:9200"
+      - "9600:9600"
+    volumes:
+      - rag-opensearch:/usr/share/opensearch/data
+
+volumes:
+  rag-etcd:
+  rag-minio:
+  rag-milvus:
+  rag-opensearch:

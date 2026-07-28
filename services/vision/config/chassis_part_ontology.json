@@ -1,0 +1,98 @@
+{
+  "version": "0.1.0",
+  "principle": "The detector predicts visual part types. Vehicle model, system, installation position and part instance are linked later by platform IDs and attributes.",
+  "systems": [
+    {
+      "code": "suspension",
+      "name": "悬架系统",
+      "classes": ["upper_control_arm", "lower_control_arm", "front_subframe"]
+    },
+    {
+      "code": "braking",
+      "name": "制动系统",
+      "classes": ["brake_disc", "brake_caliper"]
+    },
+    {
+      "code": "steering",
+      "name": "转向系统",
+      "classes": ["steering_knuckle", "tie_rod"]
+    },
+    {
+      "code": "powertrain",
+      "name": "动力/传动系统",
+      "classes": ["drive_shaft"]
+    }
+  ],
+  "classes": [
+    {
+      "id": 0,
+      "code": "upper_control_arm",
+      "name": "上控制臂/上摆臂",
+      "system": "suspension",
+      "aliases": ["upper wishbone", "upper suspension arm", "upper A-arm", "上摆臂", "上控制臂"],
+      "query_terms": ["upper control arm suspension", "upper wishbone suspension", "automotive upper control arm"]
+    },
+    {
+      "id": 1,
+      "code": "lower_control_arm",
+      "name": "下控制臂/下摆臂",
+      "system": "suspension",
+      "aliases": ["lower wishbone", "lower suspension arm", "lower A-arm", "下摆臂", "下控制臂"],
+      "query_terms": ["lower control arm suspension", "lower wishbone suspension", "automotive lower control arm"]
+    },
+    {
+      "id": 2,
+      "code": "front_subframe",
+      "name": "前副车架",
+      "system": "suspension",
+      "aliases": ["subframe", "engine cradle", "front cradle", "前副车架"],
+      "query_terms": ["automotive front subframe", "vehicle subframe", "engine cradle subframe"]
+    },
+    {
+      "id": 3,
+      "code": "brake_disc",
+      "name": "制动盘/刹车盘",
+      "system": "braking",
+      "aliases": ["brake rotor", "disc brake rotor", "刹车盘", "制动盘"],
+      "query_terms": ["disc brake rotor", "automotive brake rotor", "brake disc car"]
+    },
+    {
+      "id": 4,
+      "code": "brake_caliper",
+      "name": "制动卡钳",
+      "system": "braking",
+      "aliases": ["caliper", "disc brake caliper", "刹车卡钳", "制动卡钳"],
+      "query_terms": ["disc brake caliper", "automotive brake caliper", "car brake caliper"]
+    },
+    {
+      "id": 5,
+      "code": "steering_knuckle",
+      "name": "转向节/羊角",
+      "system": "steering",
+      "aliases": ["upright", "hub carrier", "wheel carrier", "羊角", "转向节"],
+      "query_terms": ["steering knuckle", "automotive upright knuckle", "wheel hub carrier"]
+    },
+    {
+      "id": 6,
+      "code": "tie_rod",
+      "name": "转向拉杆",
+      "system": "steering",
+      "aliases": ["track rod", "steering tie rod", "tie rod end", "转向拉杆"],
+      "query_terms": ["steering tie rod", "tie rod end car", "automotive track rod"]
+    },
+    {
+      "id": 7,
+      "code": "drive_shaft",
+      "name": "半轴/驱动轴",
+      "system": "powertrain",
+      "aliases": ["half shaft", "cv axle", "drive axle", "半轴", "驱动轴"],
+      "query_terms": ["cv axle shaft", "automotive half shaft", "drive shaft automobile"]
+    }
+  ],
+  "position_attributes": ["front", "rear", "left", "right", "upper", "lower"],
+  "annotation_rules": {
+    "bbox": "Box the visible body of each part instance. Do not include unrelated background.",
+    "occlusion": "Set occluded=true when the part is materially hidden.",
+    "position": "Do not encode left/right/front/rear into the visual class. Store it as metadata."
+  }
+}

@@ -1,0 +1,55 @@
+digraph G {
+
+graph [
+  rankdir=TB,
+  bgcolor="white",
+  pad="0.22",
+  nodesep="0.28",
+  ranksep="0.48",
+  splines=ortho,
+  fontname="Noto Sans CJK SC",
+  labelloc="t",
+  fontsize=24
+];
+node [
+  shape=box,
+  style="rounded,filled",
+  fontname="Noto Sans CJK SC",
+  fontsize=13,
+  margin="0.12,0.08",
+  color="#3e5f6d",
+  penwidth=1.1,
+  fillcolor="#f7fafb"
+];
+edge [
+  fontname="Noto Sans CJK SC",
+  fontsize=10,
+  color="#627b87",
+  arrowsize=0.65
+];
+
+graph [label="03 Runtime 控制面：通用 Agent 如何被约束"];
+
+entry [label="run_agent_loop()\n读取用户请求和会话上下文", fillcolor="#eaf8ef"];
+route [label="RouteDecision\nroute / model_tier / budget_class\ntool_profile / preferred_tools", fillcolor="#fff8e8"];
+contract [label="TaskRequirementState\nOutputContract\n显式交付约束：PPTX/Chart/JSON/Evidence", fillcolor="#fff8e8"];
+state [label="AgentRunState\n模型拥有计划\nRuntime 记录 plan/progress/failed_paths/evidence", fillcolor="#fff8e8"];
+budget [label="RunBudget\ntokens / model_turns / tool ledger\nlow-yield / degrade", fillcolor="#fff8e8"];
+prompt [label="每轮系统上下文\nroute policy + citation policy\nexecution policy + contract reminder\nrun-state ledger", fillcolor="#eaf8ef"];
+candidates [label="工具候选集\nprimary -> fallback -> completion_recovery\nroute + auth + toolHints", fillcolor="#eaf8ef"];
+model [label="模型回合\n输出文本或 tool_use[]", fillcolor="#eaf8ef"];
+review [label="Runtime Review\ncontract 是否满足\n是否停滞/低收益/需要重规划", fillcolor="#f7fafb"];
+
+entry -> route;
+entry -> contract;
+entry -> state;
+entry -> budget;
+route -> prompt;
+contract -> prompt;
+state -> prompt;
+budget -> prompt;
+prompt -> candidates -> model -> review;
+review -> prompt [label="继续/重规划"];
+review -> model [label="下一依赖层"];
+review -> "Finalize" [label="满足或阻塞"];
+}
